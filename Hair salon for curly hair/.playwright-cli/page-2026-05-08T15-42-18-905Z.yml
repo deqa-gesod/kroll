@@ -1,0 +1,974 @@
+- generic [ref=e1]:
+  - dialog "Cookie Consent Banner" [ref=e2]:
+    - button "Close this dialog" [ref=e3] [cursor=pointer]:
+      - img "Close this dialog" [ref=e4]
+    - generic [ref=e5]:
+      - generic [ref=e6]: We use cookies to help our website function. By clicking Accept, we'll also use cookies to measure & improve the site, personalize content & ads, and interact with social media. We'll share information with our social media, advertising & analytics partners. If you don't want these cookies, click Decline. You can also read our You may change your settings at any time or accept the default settings. You may close this banner to continue with only essential cookies.
+      - link "Privacy Policy" [ref=e7] [cursor=pointer]:
+        - /url: https://www.vagaro.com/pro/privacy
+    - generic [ref=e8]:
+      - button "Manage Preferences" [ref=e9] [cursor=pointer]
+      - button "Accept All" [ref=e10] [cursor=pointer]
+      - button "Reject Non-Essential" [ref=e11] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]: 
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - combobox [ref=e23] [cursor=pointer]: San Francisco, CA, United States
+        - textbox [ref=e24]:
+          - /placeholder: Business Name or Location
+          - text: San Francisco, CA, United States
+      - generic [ref=e25]:
+        - generic [ref=e26]: 
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - combobox [ref=e31] [cursor=pointer]
+        - textbox [ref=e32]:
+          - /placeholder: Search Services and Classes
+      - generic [ref=e34]:
+        - generic [ref=e35]: 
+        - button "Choose Date And Time" [ref=e36] [cursor=pointer]: May 8 at 5:45 PM
+      - button "Search" [ref=e37] [cursor=pointer]
+    - text: 
+  - text: 
+  - text: 
+  - navigation [ref=e38]:
+    - generic [ref=e39]:
+      - link "Vagaro" [ref=e41] [cursor=pointer]:
+        - /url: /
+        - img "Vagaro" [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]: 
+        - textbox [ref=e46]:
+          - /placeholder: San Francisco, CA, United States
+          - text: San Francisco, CA, United States
+    - generic [ref=e47]:
+      - link "For Business" [ref=e48] [cursor=pointer]:
+        - /url: https://www.vagaro.com/pro
+      - link "Daily Deals" [ref=e49] [cursor=pointer]:
+        - /url: https://www.vagaro.com/deals/san-francisco--ca
+      - link "Professionals" [ref=e50] [cursor=pointer]:
+        - /url: https://www.vagaro.com/professionals/san-francisco--ca
+      - link "Gallery" [ref=e51] [cursor=pointer]:
+        - /url: https://www.vagaro.com/photos/san-francisco--ca
+      - link "Login" [ref=e52] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - text: 
+  - generic [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e57]:
+        - generic "hair rules studio NYC Logo" [ref=e59]
+        - generic [ref=e62]:
+          - banner "hair rules studio NYC" [ref=e63]
+          - generic [ref=e64]:
+            - heading "New York NY" [level=5] [ref=e65]: New York, NY
+            - link "Share Combo box Button" [ref=e67] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - generic [ref=e68]: 
+              - generic [ref=e69]: Share
+          - link "Book Now Dropdown" [ref=e71] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e72]: Book Now
+      - generic [ref=e73]:
+        - tablist [ref=e75]:
+          - tab "About" [ref=e76] [cursor=pointer]
+          - tab "Staff" [ref=e77] [cursor=pointer]
+          - tab "Services" [selected] [ref=e78] [cursor=pointer]
+          - tab "Gift Cards" [ref=e79] [cursor=pointer]
+        - link "cart having 0" [ref=e82] [cursor=pointer]:
+          - /url: javascript:void(0);
+          - generic "cart having" [ref=e83]: 
+          - generic [ref=e84]: "0"
+      - generic [ref=e91]:
+        - generic [ref=e93]: Services
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - link " Haircuts & Styling" [expanded] [ref=e97] [cursor=pointer]
+            - generic " Haircuts & Styling" [ref=e98]:
+              - generic [ref=e99]:
+                - generic [ref=e100]:
+                  - img [ref=e101]
+                  - generic [ref=e103]:
+                    - generic [ref=e104]:
+                      - generic [ref=e106]: Cut,Shape,Trim (includes Curly or Straight Style)
+                      - generic [ref=e108]: $300.00
+                    - generic [ref=e109]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e110] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e112]: As many shades of a people, WE are as many unique textures. At hair rules we customize the cutting technique that suits your texture. We do not have different prices for different lengths. A HAIRCUT is a TRIM a TRIM is a HAIRCUT. All haircut services include your choice of leaving in a straight style or wash-n-go . All services include consultation , wash & conditioning .Fees apply to excessive tangles requiring more than 30min or more of detangling.
+                - button "Book Now" [ref=e114] [cursor=pointer]
+                - generic [ref=e115]:
+                  - img [ref=e116]
+                  - generic [ref=e118]:
+                    - generic [ref=e119]:
+                      - generic [ref=e121]: Men's Haircut
+                      - generic [ref=e123]: $300.00
+                    - generic [ref=e124]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e125] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e127]: As many shades of a people, WE are as many unique textures. At hair rules we customize the cutting technique that suits the texture. We do not have different prices for different lengths, gender or ages A HAIRCUT is a TRIM a TRIM is a HAIRCUT. We believe there are only 2 reasons to pick up a pair of scissors, 1. Health 2. Style. All haircut services include leaving in a straight style or wash-n-go style. YOUR hair, YOUR choice, YOUR rules! Fees apply to excessive tangles requiring more than 30min or more of detangling.
+                - button "Book Now" [ref=e129] [cursor=pointer]
+                - generic [ref=e130]:
+                  - img [ref=e131]
+                  - generic [ref=e133]:
+                    - generic [ref=e134]:
+                      - generic [ref=e136]: Kiddy Cut's
+                      - generic [ref=e138]: $300.00
+                    - generic [ref=e139]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e140] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e142]: Kiddy Cut's offers haircuts for children ages 5 and up at the same price as adult cuts for both men and women. Additional fees may apply for excessive tangles that require more than 30 minutes of detangling.
+                - button "Book Now" [ref=e144] [cursor=pointer]
+                - generic [ref=e145]:
+                  - img [ref=e146]
+                  - generic [ref=e148]:
+                    - generic [ref=e149]:
+                      - generic [ref=e151]: Curly Style
+                      - generic [ref=e153]: $100.00
+                    - generic [ref=e154]:
+                      - text: 4 interest-free payments or as low as $10/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e155] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e157]: "Your favorite wash-n-go, wash-n-wear, the Anthony Dickey method! Whatever you want to call this sassy style for your texture. You know how we do! All services include consultation.PLEASE READ: If you have not had a haircut in 6 month or more or your hair appears to be damaged you may be denied service and cut/trim recommended if time permits . haircuts include curly or straight styling . Fees apply to tangles that require over 30 mins of excessive detangling."
+                - button "Book Now" [ref=e159] [cursor=pointer]
+                - generic [ref=e160]:
+                  - img [ref=e161]
+                  - generic [ref=e163]:
+                    - generic [ref=e164]:
+                      - generic [ref=e166]: Blow Out/Blow Dry/Silk Press
+                      - generic [ref=e168]: $125.00
+                    - generic [ref=e169]:
+                      - text: 4 interest-free payments or as low as $12/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e170] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e172]: "For textures that are naturally drier, we recommend 2- 3 consecutive days of wash and go styling and/or sleeping with conditioner and a plastic cap the night before for the healthiest blow out.PLEASE READ: If you have not had a haircut in 6months or more or your hair appears to be damaged you may be denied service and/or suggested a cut/trim if time permits .However you choose, YOUR hair, YOUR choice, YOUR rules! All services include a consultation. Fees apply to excessive tangles requiring more than 30min or more of detangling."
+                - button "Book Now" [ref=e174] [cursor=pointer]
+                - generic [ref=e175]:
+                  - img [ref=e176]
+                  - generic [ref=e178]:
+                    - generic [ref=e179]:
+                      - generic [ref=e181]: Curly Lesson
+                      - generic [ref=e183]: $150.00
+                    - generic [ref=e184]:
+                      - text: 4 interest-free payments or as low as $14/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e185] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e187]: Our goal is to help you rediscover your natural texture, embrace the versatility it offers and wear your hair however you choose using healthy responsible methods. This wash n wear service is a very interactive appointment that is hands on with you and Dickey. If you have not had a haircut in 6months or more or if it appears as though your hair is damaged you may be denied service and/or a haircut maybe needed. Fees apply to excessive tangles requiring more than 30min or more of detangling.
+                - button "Book Now" [ref=e189] [cursor=pointer]
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - generic [ref=e193]:
+                    - generic [ref=e194]:
+                      - generic [ref=e196]: Weave/Wig Hair Cut
+                      - generic [ref=e198]: $400.00
+                    - generic [ref=e199]:
+                      - text: Starting at $37/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e200] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e202]: Breathe new life and fresh look into your wig or weaved protective styles! Does not include wash , blow dry or styling . Add blow dry/ silk press as additional service .
+                - button "Book Now" [ref=e204] [cursor=pointer]
+                - generic [ref=e205]:
+                  - img [ref=e206]
+                  - generic [ref=e208]:
+                    - generic [ref=e209]:
+                      - generic [ref=e211]: Take-Down / Detangle
+                      - generic [ref=e213]: Starting at $100.00
+                    - generic [ref=e214]:
+                      - text: 4 interest-free payments or as low as $10/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e215] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e217]: Take-Down / Detangle services focus on the gentle and thorough removal of weaves, braids, or twists, prioritizing the health and integrity of your hair during the process. The service is priced at $100 for the first hour, with an additional $50 per hour, and for excessive tangling, it is $100 for the first 30 minutes, with $25 charged for every additional 30 minutes.
+                - button "Book Now" [ref=e219] [cursor=pointer]
+          - generic [ref=e220]:
+            - link " Protectives styles" [expanded] [ref=e221] [cursor=pointer]
+            - generic " Protectives styles" [ref=e222]:
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - img [ref=e225]
+                  - generic [ref=e227]:
+                    - generic [ref=e228]:
+                      - generic [ref=e230]: Crochet Styles
+                      - generic [ref=e232]: Starting at $275.00
+                    - generic [ref=e233]:
+                      - text: Starting at $25/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e234] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e236]: Explore a wide range of unique textures and styles with our Twists/Braid Crochet Weaving service, designed to help you express your individuality while protecting your natural hair. To ensure your desired look is achieved, we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e238] [cursor=pointer]
+                - generic [ref=e239]:
+                  - img [ref=e240]
+                  - generic [ref=e242]:
+                    - generic [ref=e243]:
+                      - generic [ref=e245]: Protective Style Prep
+                      - generic [ref=e247]: $125.00
+                    - generic [ref=e248]:
+                      - text: 4 interest-free payments or as low as $12/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e249] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e251]: Wearable therapy ,protect and preserve your crown & glory. This service is a great treatment for any protective style braids, wigs, weaves or ponyl ,Its how you prep your hair before putting it away which deems it a protective style . Includes top knot or halo braid This service includes a deep cleansing & conditioning treatment and then prepped with our exclusive Scalp and Hair Ting. All services include consultation. Fees apply to excessive tangles that require over 15 min of detangling.
+                - button "Book Now" [ref=e253] [cursor=pointer]
+                - generic [ref=e254]:
+                  - img [ref=e255]
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - generic [ref=e260]: Twist or Braid Out
+                      - generic [ref=e262]: Starting at $150.00
+                    - generic [ref=e263]:
+                      - text: 4 interest-free payments or as low as $14/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e264] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e266]: Two strand twist, flat twist, braid out! This service includes a deep cleansing & conditioning treatment and then prepped with our exclusive Scalp and Hair Ting. All services include consultation. Fees apply to excessive tangles that require over 15 min of detangling
+                - button "Book Now" [ref=e268] [cursor=pointer]
+                - generic [ref=e269]:
+                  - img [ref=e270]
+                  - generic [ref=e272]:
+                    - generic [ref=e273]:
+                      - generic [ref=e275]: Cornrows / Twist straight back (up to 6) with added hair
+                      - generic [ref=e277]: Starting at $190.00
+                    - generic [ref=e278]:
+                      - text: 4 interest-free payments or as low as $18/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e279] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e281]: This service includes a deep cleansing & conditioning treatment and then prepped with our exclusive Scalp and Hair Ting Treatment . $15 per additional row . All services include consultation. Fees apply to excessive tangles that require over 15 min of detangling , we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e283] [cursor=pointer]
+                - generic [ref=e284]:
+                  - img [ref=e285]
+                  - generic [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e290]: Knotless Box Braids (medium approx 30-60)
+                      - generic [ref=e292]: Starting at $350.00
+                    - generic [ref=e293]:
+                      - text: Starting at $32/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e294] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e296]: Knotless Box Braids offer a stylish, protective hairstyle that not only enhances your look but also preserves the health of your hair. This service includes a deep cleansing and conditioning treatment, along with our exclusive Scalp and Hair Ting, ensuring your hair is well-prepared for up to 60 medium braids, with pricing adjusted based on the thickness and length of your hair,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e298] [cursor=pointer]
+                - generic [ref=e299]:
+                  - img [ref=e300]
+                  - generic [ref=e302]:
+                    - generic [ref=e303]:
+                      - generic [ref=e305]: Twist or braid out with cut
+                      - generic [ref=e307]: Starting at $75.00
+                    - generic [ref=e308]:
+                      - text: 4 interest-free payments of $19 with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e309] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e311]: The Twist or Braid Out with Cut service enhances your haircut by adding stylish twists or braids to your look. This service is exclusively available as an add-on to a haircut appointment previously booked with Dickey.
+                - button "Book Now" [ref=e313] [cursor=pointer]
+          - generic [ref=e314]:
+            - link " Virtual Services" [expanded] [ref=e315] [cursor=pointer]
+            - generic " Virtual Services" [ref=e316]:
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - img [ref=e319]
+                  - generic [ref=e321]:
+                    - generic [ref=e322]:
+                      - generic [ref=e323]:
+                        - generic [ref=e324]: Virtual Consultation
+                        - generic [ref=e325]:
+                          - emphasis [ref=e326]: 
+                          - generic [ref=e327]: Live Stream
+                      - generic [ref=e329]: $75.00
+                    - generic [ref=e330]:
+                      - text: 4 interest-free payments of $19 with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e331] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e333]: Our Virtual Consultations offer personalized, one-on-one sessions with our experts, including Texture Guru Dickey, Master Colorists Katiria, and Protective style Specialist Brittani, to address all of your hair-related inquiries. Simply click the green "Join Live Stream" button in your email confirmation . The $75 fee can be applied to any follow up service in the salon .
+                - button "Book Now" [ref=e335] [cursor=pointer]
+          - generic [ref=e336]:
+            - link " Color" [expanded] [ref=e337] [cursor=pointer]
+            - generic " Color" [ref=e338]:
+              - generic [ref=e339]:
+                - generic [ref=e340]:
+                  - img [ref=e341]
+                  - generic [ref=e343]:
+                    - generic [ref=e344]:
+                      - generic [ref=e346]: Few Highlights
+                      - generic [ref=e348]: Starting at $180.00
+                    - generic [ref=e349]:
+                      - text: 4 interest-free payments or as low as $17/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e350] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e352]: A lightening procedure for the hair. It can range from a few HL to a full head of HL. This service does not include a blow dry or style in the pricing. Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e354] [cursor=pointer]
+                - generic [ref=e355]:
+                  - img [ref=e356]
+                  - generic [ref=e358]:
+                    - generic [ref=e359]:
+                      - generic [ref=e361]: 1/2 Highlight
+                      - generic [ref=e363]: Starting at $255.00
+                    - generic [ref=e364]:
+                      - text: Starting at $24/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e365] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e367]: A lightening procedure for the hair. It can range from a few HL to a full head of HL. This does not include a blow dry or style in the pricing.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e369] [cursor=pointer]
+                - generic [ref=e370]:
+                  - img [ref=e371]
+                  - generic [ref=e373]:
+                    - generic [ref=e374]:
+                      - generic [ref=e376]: Full Highlight
+                      - generic [ref=e378]: Starting at $300.00
+                    - generic [ref=e379]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e380] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e382]: A lightening procedure for the hair. It can range from a few HL to a full head of HL. This does not include a blow dry or style in the pricing.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e384] [cursor=pointer]
+                - generic [ref=e385]:
+                  - img [ref=e386]
+                  - generic [ref=e388]:
+                    - generic [ref=e389]:
+                      - generic [ref=e391]: Single Process Retouch for pre-existing clients only
+                      - generic [ref=e393]: Starting at $135.00
+                    - generic [ref=e394]:
+                      - text: 4 interest-free payments or as low as $13/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e395] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e397]: A retouch of single process color (rinse, demi-permanent, semi-permanent, and permanent) that includes a wash and conditioning treatment. This service does not include a blow dry or style. Please book styling separately . Guest must arrive with tangle free product free hair. pre-existing clients only
+                - button "Book Now" [ref=e399] [cursor=pointer]
+                - generic [ref=e400]:
+                  - img [ref=e401]
+                  - generic [ref=e403]:
+                    - generic [ref=e404]:
+                      - generic [ref=e406]: SIngle Process Retouch + Few Highlight
+                      - generic [ref=e408]: Starting at $220.00
+                    - generic [ref=e409]:
+                      - text: 4 interest-free payments or as low as $20/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e410] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e412]: A retouch of single process color (rinse, demi-permanent, semi-permanent, and permanent) that includes highlights. This service does not include a blow dry or style. Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e414] [cursor=pointer]
+                - generic [ref=e415]:
+                  - img [ref=e416]
+                  - generic [ref=e418]:
+                    - generic [ref=e419]:
+                      - generic [ref=e421]: Single Process Retouch + 1/2 Highlight
+                      - generic [ref=e423]: $325.00
+                    - generic [ref=e424]:
+                      - text: Starting at $30/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e425] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e427]: A retouch of single process color (rinse, demi-permanent, semi-permanent, and permanent) that includes highlights. This service does not include a blow dry or style. Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e429] [cursor=pointer]
+                - generic [ref=e430]:
+                  - img [ref=e431]
+                  - generic [ref=e433]:
+                    - generic [ref=e434]:
+                      - generic [ref=e436]: Single Process Retouch + Full Highlight
+                      - generic [ref=e438]: $375.00
+                    - generic [ref=e439]:
+                      - text: Starting at $34/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e440] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e442]: A retouch of single process color (rinse, demi-permanent, semi-permanent, and permanent) that includes highlights. This service does not include a blow dry or style. Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e444] [cursor=pointer]
+                - generic [ref=e445]:
+                  - img [ref=e446]
+                  - generic [ref=e448]:
+                    - generic [ref=e449]:
+                      - generic [ref=e451]: Single Process (new clients)
+                      - generic [ref=e453]: $135.00
+                    - generic [ref=e454]:
+                      - text: 4 interest-free payments or as low as $13/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e455] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e457]: A single process color (rinse, demi-permanent, semi-permanent, and permanent). This service does not include a blow dry or style. Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e459] [cursor=pointer]
+                - generic [ref=e460]:
+                  - img [ref=e461]
+                  - generic [ref=e463]:
+                    - generic [ref=e464]:
+                      - generic [ref=e466]: Weave Color
+                      - generic [ref=e468]: Starting at $400.00
+                    - generic [ref=e469]:
+                      - text: Starting at $37/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e470] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e472]: Weave Color offers a specialized service that enhances your hair extensions with vibrant, lasting color. Our expert stylists utilize high-quality dyes to ensure a seamless blend and a stunning finish that elevates your overall look.
+                - button "Book Now" [ref=e474] [cursor=pointer]
+                - generic [ref=e475]:
+                  - img [ref=e476]
+                  - generic [ref=e478]:
+                    - generic [ref=e479]:
+                      - generic [ref=e481]: Color Correction
+                      - generic [ref=e483]: Starting at $375.00
+                    - generic [ref=e484]:
+                      - text: Starting at $34/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e485] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e487]: Must be booked following a consultation.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e489] [cursor=pointer]
+                - generic [ref=e490]:
+                  - img [ref=e491]
+                  - generic [ref=e493]:
+                    - generic [ref=e494]:
+                      - generic [ref=e496]: Double Process
+                      - generic [ref=e498]: Starting at $350.00
+                    - generic [ref=e499]:
+                      - text: Starting at $32/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e500] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e502]: This service is perfect for those multi-dimensional looks! It's called double process because it is actually a two step process. First the hair is bleached to remove your natural color, then toned to create the shade you're going for.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e504] [cursor=pointer]
+                - generic [ref=e505]:
+                  - img [ref=e506]
+                  - generic [ref=e508]:
+                    - generic [ref=e509]:
+                      - generic [ref=e511]: Olaplex Treatment
+                      - generic [ref=e513]: $50.00
+                    - generic [ref=e514]:
+                      - text: 4 interest-free payments of $13 with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e515] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e517]: The Olaplex Treatment is a powerful hair repair service designed to restore and strengthen damaged hair, enhancing its overall health and appearance. Guests are required to arrive with tangle-free, product-free hair, and styling should be booked separately to ensure optimal results.
+                - button "Book Now" [ref=e519] [cursor=pointer]
+                - generic [ref=e520]:
+                  - img [ref=e521]
+                  - generic [ref=e523]:
+                    - generic [ref=e524]:
+                      - generic [ref=e526]: Creative Color
+                      - generic [ref=e528]: Starting at $250.00
+                    - generic [ref=e529]:
+                      - text: Starting at $23/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e530] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e532]: Get creative with your color...purples, pinks, blues, anything in between or a little bit of the rainbow.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e534] [cursor=pointer]
+                - generic [ref=e535]:
+                  - img [ref=e536]
+                  - generic [ref=e538]:
+                    - generic [ref=e539]:
+                      - generic [ref=e541]: Balayage Color
+                      - generic [ref=e543]: Starting at $350.00
+                    - generic [ref=e544]:
+                      - text: Starting at $32/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e545] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e547]: Balayage is a unique painting technique used to highlight the hair seamlessly.Please book styling separately . Guest must arrive with tangle free product free hair.
+                - button "Book Now" [ref=e549] [cursor=pointer]
+                - generic [ref=e550]:
+                  - img [ref=e551]
+                  - generic [ref=e553]:
+                    - generic [ref=e554]:
+                      - generic [ref=e556]: Wash n Go (add on)
+                      - generic [ref=e558]: $40.00
+                    - generic [ref=e559]:
+                      - text: Pay with Affirm on orders over $50.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e560] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e562]: Curly Style
+                - button "Book Now" [ref=e564] [cursor=pointer]
+                - generic [ref=e565]:
+                  - img [ref=e566]
+                  - generic [ref=e568]:
+                    - generic [ref=e569]:
+                      - generic [ref=e571]: GLOSS (add on)
+                      - generic [ref=e573]: $40.00
+                    - generic [ref=e574]:
+                      - text: Pay with Affirm on orders over $50.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e575] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e577]: Brings luster & shine back to dull natural or enhanced color , giving hair a healthier richer look
+                - button "Book Now" [ref=e579] [cursor=pointer]
+          - generic [ref=e580]:
+            - link " Treatments" [expanded] [ref=e581] [cursor=pointer]
+            - generic " Treatments" [ref=e582]:
+              - generic [ref=e583]:
+                - generic [ref=e584]:
+                  - img [ref=e585]
+                  - generic [ref=e587]:
+                    - generic [ref=e588]:
+                      - generic [ref=e590]: Scalp and Hair "TING" Treatment (add on service)
+                      - generic [ref=e592]: $100.00
+                    - generic [ref=e593]:
+                      - text: 4 interest-free payments or as low as $10/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e594] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e596]: A luxurious composition of essential oils, each containing specific therapeutic properties to alleviate whatever your "ting" is! Each contains essential oils that address different needs. this is an add on service . does not include a style .
+                - button "Book Now" [ref=e598] [cursor=pointer]
+                - generic [ref=e599]:
+                  - img [ref=e600]
+                  - generic [ref=e602]:
+                    - generic [ref=e603]:
+                      - generic [ref=e605]: Deep Conditioning Treatment (add on service)
+                      - generic [ref=e607]: $50.00
+                    - generic [ref=e608]:
+                      - text: 4 interest-free payments of $13 with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e609] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e611]: A hydrating and softening deep conditioner is always a great add-on treat for your hair! This service can only be booked as an add-on service.
+                - button "Book Now" [ref=e613] [cursor=pointer]
+                - generic [ref=e614]:
+                  - img [ref=e615]
+                  - generic [ref=e617]:
+                    - generic [ref=e618]:
+                      - generic [ref=e620]: Solo Keratin Zero (formaldehyde free)
+                      - generic [ref=e622]: $400.00
+                    - generic [ref=e623]:
+                      - text: Starting at $37/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e624] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e626]: Keratin technology is by far the most advanced way to both repair damaged hair and enhance your natural texture whether you want relaxed straight without any damage, while improving the quality of your hair, and leaving it stronger or with better curl definition or free of frizz. You'll have easy manageability and a shorter drying time for both straight and curly styling for 6-12 weeks or twice a year .If you have not had a haircut in 3 month or more or your hair appears to be damaged you may be denied service and cut/trim recommended if time permits
+                - button "Book Now" [ref=e628] [cursor=pointer]
+                - generic [ref=e629]:
+                  - img [ref=e630]
+                  - generic [ref=e632]:
+                    - generic [ref=e633]:
+                      - generic [ref=e635]: Keratin Follow Up
+                      - generic [ref=e637]: $0.00
+                    - paragraph [ref=e639]: Follow up service to the Solo Keratin Zero. First time Keratin appointments only. You cannot book a follow up more than 2 weeks from your 1 st keratin. if you are outside of the 2 week window you will be required to pay full price $100 for the follow up. YOU CANNOT book a "follow up" with a stylist that did not perform your keratin.
+                - button "Book Now" [ref=e641] [cursor=pointer]
+          - generic [ref=e642]:
+            - link " Formal Style" [expanded] [ref=e643] [cursor=pointer]
+            - generic " Formal Style" [ref=e644]:
+              - generic [ref=e645]:
+                - generic [ref=e646]:
+                  - img [ref=e647]
+                  - generic [ref=e649]:
+                    - generic [ref=e650]:
+                      - generic [ref=e652]: Formal Style
+                      - generic [ref=e654]: Starting at $300.00
+                    - generic [ref=e655]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e656] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e658]: Formal Style offers a sophisticated range of hair services, including silk pressing, setting, curly styles, braids, twists, and elegant updos tailored for special events. Each style is designed to enhance your natural beauty while ensuring you look stunning for any occasion,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e660] [cursor=pointer]
+                - generic [ref=e661]:
+                  - img [ref=e662]
+                  - generic [ref=e664]:
+                    - generic [ref=e665]:
+                      - generic [ref=e667]: In-Salon Trial
+                      - generic [ref=e669]: Starting at $300.00
+                    - generic [ref=e670]:
+                      - text: Starting at $28/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e671] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e673]: The In-Salon Trial service offers clients the opportunity to experience a professional updo or an intricate hairstyle tailored for special events or weddings. This personalized session ensures that you achieve the perfect look, allowing for adjustments and styling preferences to be discussed with our skilled stylists.
+                - button "Book Now" [ref=e675] [cursor=pointer]
+          - generic [ref=e676]:
+            - link " On Location" [expanded] [ref=e677] [cursor=pointer]
+            - generic " On Location" [ref=e678]:
+              - generic [ref=e679]:
+                - generic [ref=e680]:
+                  - img [ref=e681]
+                  - generic [ref=e683]:
+                    - generic [ref=e684]:
+                      - generic [ref=e685]:
+                        - generic [ref=e686]: On Location 3hrs or more .
+                        - generic [ref=e687]:
+                          - emphasis [ref=e688]: 
+                          - generic [ref=e689]: Mobile Service
+                      - generic [ref=e691]: Starting at $3000.00
+                    - generic [ref=e692]:
+                      - text: Starting at $104/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e693] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e695]: Includes any style and/or cut on any texture . up or down ,formal ,wedding or casual . $3000 rate is per day .$1500 if travel day is required. $500 per additional person . Must provide travel , cost and hotel accommodations if outside of manhattan and /or overnight. Must be paid in cash only upon arrival before service begins . NO EXCEPTIONS.
+                - button "Book Now" [ref=e697] [cursor=pointer]
+          - generic [ref=e698]:
+            - link " Locs" [expanded] [ref=e699] [cursor=pointer]
+            - generic " Locs" [ref=e700]:
+              - generic [ref=e701]:
+                - generic [ref=e702]:
+                  - img [ref=e703]
+                  - generic [ref=e705]:
+                    - generic [ref=e706]:
+                      - generic [ref=e708]: Locs - Re-Twist and Style
+                      - generic [ref=e710]: Starting at $190.00
+                    - generic [ref=e711]:
+                      - text: 4 interest-free payments or as low as $18/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e712] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e714]: Locs - Re-Twist and Style involves meticulously gathering and re-twisting the roots to align with the mid-shaft and ends of your hair. Utilizing various techniques, including backcombing, twisting, and crochet weaving, we encourage the formation of beautiful, intentional locks tailored to your unique hair texture.
+                - button "Book Now" [ref=e716] [cursor=pointer]
+                - generic [ref=e717]:
+                  - img [ref=e718]
+                  - generic [ref=e720]:
+                    - generic [ref=e721]:
+                      - generic [ref=e723]: Locs - Style
+                      - generic [ref=e725]: Starting at $100.00
+                    - generic [ref=e726]:
+                      - text: 4 interest-free payments or as low as $10/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e727] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e729]: Locs can be styled formally or casually, utilizing various methods to promote their formation. Techniques may include weaving the hair with a crochet hook to create intricate shapes, knots, and unique styles that reflect individual personality.
+                - button "Book Now" [ref=e731] [cursor=pointer]
+                - generic [ref=e732]:
+                  - img [ref=e733]
+                  - generic [ref=e735]:
+                    - generic [ref=e736]:
+                      - generic [ref=e738]: Twists / Braid Crotchet Weaving
+                      - generic [ref=e740]: $200.00
+                    - generic [ref=e741]:
+                      - text: 4 interest-free payments or as low as $19/mo with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e742] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e744]: Experience a diverse array of textures and styles with Twists/Braid Crochet Weaving, allowing you to express your individuality while selecting your preferred hair. This service not only enhances your look but also safeguards your natural hair, ensuring it remains healthy and vibrant,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e746] [cursor=pointer]
+                - generic [ref=e747]:
+                  - img [ref=e748]
+                  - generic [ref=e750]:
+                    - generic [ref=e751]:
+                      - generic [ref=e753]: Sisterlocs
+                      - generic [ref=e755]: Starting at $450.00
+                    - generic [ref=e756]:
+                      - text: Starting at $41/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e757] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e759]: Sisterlocks is a specialized method of locking natural hair that creates small, uniform locks for a versatile and stylish look. This technique promotes healthy hair growth and allows for various styling options while maintaining the natural texture of the hair,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e761] [cursor=pointer]
+          - generic [ref=e762]:
+            - link " Braids and Twists" [expanded] [ref=e763] [cursor=pointer]
+            - generic " Braids and Twists" [ref=e764]:
+              - generic [ref=e765]:
+                - generic [ref=e766]:
+                  - img [ref=e767]
+                  - generic [ref=e769]:
+                    - generic [ref=e770]:
+                      - generic [ref=e772]: Natural Twist with added hair
+                      - generic [ref=e774]: Starting at $250.00
+                    - generic [ref=e775]:
+                      - text: Starting at $23/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e776] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e778]: Natural Twist with added hair provides a sophisticated stylish and voluminous look, perfect for enhancing your natural texture. This service incorporates high-quality added extensions to create beautifully twisted styles that last and turn heads. $250-350 depending on length ,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e780] [cursor=pointer]
+                - generic [ref=e781]:
+                  - img [ref=e782]
+                  - generic [ref=e784]:
+                    - generic [ref=e785]:
+                      - generic [ref=e787]: Goddess Braids
+                      - generic [ref=e789]: Starting at $400.00
+                    - generic [ref=e790]:
+                      - text: Starting at $37/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e791] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e793]: Goddess Braids offer a stunning and versatile hairstyle that combines intricate braiding techniques with added length and volume. Perfect for various occasions, these braids can be styled in multiple ways, enhancing your natural beauty while providing a low-maintenance option,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e795] [cursor=pointer]
+          - generic [ref=e796]:
+            - link " Clip-ins" [expanded] [ref=e797] [cursor=pointer]
+            - generic " Clip-ins" [ref=e798]:
+              - generic [ref=e799]:
+                - generic [ref=e800]:
+                  - img [ref=e801]
+                  - generic [ref=e803]:
+                    - generic [ref=e804]:
+                      - generic [ref=e806]: Sew-in Weaving
+                      - generic [ref=e808]: Starting at $250.00
+                    - generic [ref=e809]:
+                      - text: Starting at $23/mo or 0% APR with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e810] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e812]: Sew-in weaving provides a durable and versatile method for adding volume and length to natural hair using hair extensions. This technique involves securely attaching the extensions to the client's hair with a needle and thread, ensuring a seamless and natural appearance,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e814] [cursor=pointer]
+                - generic [ref=e815]:
+                  - img [ref=e816]
+                  - generic [ref=e818]:
+                    - generic [ref=e819]:
+                      - generic [ref=e821]: Partial Weaving (weft per-track)
+                      - generic [ref=e823]: $50.00
+                    - generic [ref=e824]:
+                      - text: 4 interest-free payments of $13 with Affirm.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e825] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e827]: Partial weaving (per-track) offers a seamless way to enhance your hairstyle by integrating extensions into select sections of your hair for added volume and length. This technique allows for a natural look while maintaining the flexibility to style your hair as desired,we recommend pre-booking a virtual consultation, with the $75 fee applicable towards any follow-up salon service.
+                - button "Book Now" [ref=e829] [cursor=pointer]
+          - generic [ref=e830]:
+            - link " Other" [expanded] [ref=e831] [cursor=pointer]
+            - generic " Other" [ref=e832]:
+              - generic [ref=e833]:
+                - generic [ref=e834]:
+                  - img [ref=e835]
+                  - generic [ref=e837]:
+                    - generic [ref=e838]:
+                      - generic [ref=e840]: CLIP - IN TRACKS
+                      - generic [ref=e842]: Starting at $25.00
+                    - generic [ref=e843]:
+                      - text: Pay with Affirm on orders over $50.
+                      - link "Learn more - Learn more about Affirm Financing (opens in modal)" [ref=e844] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - text: Learn more
+                    - paragraph [ref=e846]: Add a little more Glamour length & volume with a few extra tracks @ $25 per track
+                - button "Book Now" [ref=e848] [cursor=pointer]
+    - generic [ref=e850]:
+      - contentinfo [ref=e851]:
+        - generic [ref=e852]:
+          - generic [ref=e854]:
+            - generic [ref=e855]:
+              - heading "For businesses" [level=4] [ref=e856]
+              - generic [ref=e857]:
+                - link [ref=e858] [cursor=pointer]:
+                  - /url: https://apps.apple.com/app/apple-store/id346778559?pt=317944&ct=Vagaro-Pro-App-Page&mt=8
+                  - img [ref=e859]
+                - link [ref=e866] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.semaphore.login
+                  - img [ref=e867]
+            - generic [ref=e876]:
+              - heading "For customers" [level=4] [ref=e877]
+              - generic [ref=e878]:
+                - link [ref=e879] [cursor=pointer]:
+                  - /url: https://itunes.apple.com/us/app/vagaro/id536110000?mt=8
+                  - img [ref=e880]
+                - link [ref=e887] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.vagaro&hl=en
+                  - img [ref=e888]
+          - generic [ref=e898]:
+            - generic [ref=e899]:
+              - heading "Find Businesses" [level=3] [ref=e900]
+              - list [ref=e901]:
+                - listitem [ref=e902]:
+                  - link "Salon" [ref=e903] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/hair/san-francisco--ca
+                - listitem [ref=e904]:
+                  - link "Spa" [ref=e905] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/spa/san-francisco--ca
+                - listitem [ref=e906]:
+                  - link "Medical Spa" [ref=e907] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/med-spa/san-francisco--ca
+                - listitem [ref=e908]:
+                  - link "Barber" [ref=e909] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/barber/san-francisco--ca
+                - listitem [ref=e910]:
+                  - link "Daily Deals" [ref=e911] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/deals/san-francisco--ca
+            - generic [ref=e912]:
+              - heading "Business Software" [level=3] [ref=e913]
+              - list [ref=e914]:
+                - listitem [ref=e915]:
+                  - link "Booth Renter" [ref=e916] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/booth-renter
+                - listitem [ref=e917]:
+                  - link "Salon" [ref=e918] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/salon-software
+                - listitem [ref=e919]:
+                  - link "Spa" [ref=e920] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/spa-software
+                - listitem [ref=e921]:
+                  - link "Medical Spa" [ref=e922] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/medical-spa-software
+                - listitem [ref=e923]:
+                  - link "Barber" [ref=e924] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/barber-software
+                - listitem [ref=e925]:
+                  - link "Tanning" [ref=e926] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/tanning-salon-software
+                - listitem [ref=e927]:
+                  - link "Nail" [ref=e928] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/nail-salon-software
+                - listitem [ref=e929]:
+                  - link "Pilates" [ref=e930] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pilates-software
+                - listitem [ref=e931]:
+                  - link "Mental Health" [ref=e932] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/mental-health-software
+            - generic [ref=e933]:
+              - heading "Business Features" [level=3] [ref=e934]
+              - list [ref=e935]:
+                - listitem [ref=e936]:
+                  - link "Online Booking" [ref=e937] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/online-booking
+                - listitem [ref=e938]:
+                  - link "Calendar" [ref=e939] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/calendar
+                - listitem [ref=e940]:
+                  - link "Pay Later" [ref=e941] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pay-later
+                - listitem [ref=e942]:
+                  - link "MySite" [ref=e943] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/booking-website-builder
+                - listitem [ref=e944]:
+                  - link "Forms" [ref=e945] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/forms
+                - listitem [ref=e946]:
+                  - link "Reports" [ref=e947] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/reports
+                - listitem [ref=e948]:
+                  - link "Vagaro Capital" [ref=e949] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/vagaro-capital
+                - listitem [ref=e950]:
+                  - link "Branded App" [ref=e951] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/branded-app
+            - generic [ref=e952]:
+              - heading "Business Products" [level=3] [ref=e953]
+              - list [ref=e954]:
+                - listitem [ref=e955]:
+                  - link "PayPro" [ref=e956] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/terminal
+                - listitem [ref=e957]:
+                  - link "PayPro Mini" [ref=e958] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/tablet
+                - listitem [ref=e959]:
+                  - link "PayPro Duo" [ref=e960] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/terminal-dual-screen
+                - listitem [ref=e961]:
+                  - link "Card Reader" [ref=e962] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/credit-card-reader
+                - listitem [ref=e963]:
+                  - link "Pay Swivel Stand" [ref=e964] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/stand
+                - listitem [ref=e965]:
+                  - link "QR Scanner" [ref=e966] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/barcode-scanner
+                - listitem [ref=e967]:
+                  - link "Receipt Printer" [ref=e968] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/thermal-receipt-printer
+                - listitem [ref=e969]:
+                  - link "Cash Drawer" [ref=e970] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/cash-register
+            - generic [ref=e971]:
+              - heading "Company" [level=3] [ref=e972]
+              - list [ref=e973]:
+                - listitem [ref=e974]:
+                  - link "About Us" [ref=e975] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/about-us
+                - listitem [ref=e976]:
+                  - link "Careers" [ref=e977] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/careers
+                - listitem [ref=e978]:
+                  - link "Contact Us" [ref=e979] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/contact
+                - listitem [ref=e980]:
+                  - link "Vagaro Cares" [ref=e981] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/vagaro-cares
+                - listitem [ref=e982]:
+                  - link "Updates" [ref=e983] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/updates
+                - listitem [ref=e984]:
+                  - link "Partnerships" [ref=e985] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/partners
+                - listitem [ref=e986]:
+                  - link "MySite Updates" [ref=e987] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/mysite-updates
+                - listitem [ref=e988]:
+                  - link "iconic.25" [ref=e989] [cursor=pointer]:
+                    - /url: https://mysite.vagaro.com/iconic25
+            - generic [ref=e990]:
+              - heading "Resources" [level=3] [ref=e991]
+              - list [ref=e992]:
+                - listitem [ref=e993]:
+                  - link "Status" [ref=e994] [cursor=pointer]:
+                    - /url: https://status.vagaro.com/
+                - listitem [ref=e995]:
+                  - link "Support" [ref=e996] [cursor=pointer]:
+                    - /url: https://support.vagaro.com/
+                - listitem [ref=e997]:
+                  - link "Blog" [ref=e998] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/learn
+                - listitem [ref=e999]:
+                  - link "Newsroom" [ref=e1000] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/news
+                - listitem [ref=e1001]:
+                  - link "Compare Us" [ref=e1002] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/compare
+          - generic [ref=e1004]:
+            - generic [ref=e1007] [cursor=pointer]:
+              - img "US Flag" [ref=e1008]
+              - generic [ref=e1009]: United States
+              - img [ref=e1010]
+            - generic [ref=e1012]:
+              - link "Facebook" [ref=e1013] [cursor=pointer]:
+                - /url: https://www.facebook.com/vagaropro
+                - img [ref=e1014]
+              - link "Twitter" [ref=e1016] [cursor=pointer]:
+                - /url: https://x.com/Vagaro
+                - img [ref=e1017]
+              - link "Instagram" [ref=e1019] [cursor=pointer]:
+                - /url: https://www.instagram.com/vagaropro/
+                - img [ref=e1020]
+              - link "Pinterest" [ref=e1022] [cursor=pointer]:
+                - /url: https://www.pinterest.com/VagaroPins/
+                - img [ref=e1023]
+              - link "Youtube" [ref=e1025] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/VagaroSupport
+                - img [ref=e1026]
+          - generic [ref=e1028]:
+            - 'link "Contact Sales: (925) 718-0971 ext. 1" [ref=e1029] [cursor=pointer]':
+              - /url: tel:92571809711
+            - 'link "Contact Support: (925) 464-1932 ext. 2" [ref=e1030] [cursor=pointer]':
+              - /url: tel:92546419322
+            - generic [ref=e1031]:
+              - link "Privacy Policy" [ref=e1032] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/privacy
+              - link "User Agreement" [ref=e1033] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/user-agreement
+              - link "Participation Agreement" [ref=e1034] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/vagaro-customer-participation-agreement
+              - link "GDPR" [ref=e1035] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/general-data-protection-regulation
+              - link "Cookie Preferences" [ref=e1036] [cursor=pointer]:
+                - /url: javascript:void(0)
+              - link "Your Privacy Choices" [ref=e1037] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e1039]
+                - text: Your Privacy Choices
+          - generic [ref=e1046]:
+            - paragraph [ref=e1047]: © 2025 Vagaro, Inc.
+            - paragraph [ref=e1048]: Vagaro Merchant Services is a registered ISO of PNC Bank, N.A., Pittsburgh, PA.
+          - generic [ref=e1049]:
+            - img "HIPAA" [ref=e1050]
+            - img [ref=e1051]
+      - generic [ref=e1053]:
+        - generic [ref=e1054]: For every step.
+        - img [ref=e1055]
+  - generic:           
+  - alert
+  - status [ref=e1057]
+  - status [ref=e1058]
+  - generic [ref=e1061]:
+    - generic [ref=e1062]:
+      - button [ref=e1063] [cursor=pointer]:  
+      - heading "Oops!" [active] [level=4] [ref=e1064]
+    - generic [ref=e1066]: An Error Has Occurredhttps://api.vagaro.com/US03/api/v2/public/promotion/getallpromotiondetailsbybusinessid
+    - button "OK" [ref=e1068] [cursor=pointer]

@@ -1,0 +1,161 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Jackson & Coil — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e6]:
+        - link "Cuts & services" [ref=e7] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e8] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e9] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e10] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e11] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e12] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e13] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "Switch to English" [pressed] [ref=e17]: EN
+          - generic [ref=e18]: /
+          - button "Bytt til norsk" [ref=e19]: "NO"
+        - link "Book" [ref=e20] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e21]:
+    - generic [ref=e23]:
+      - paragraph [ref=e24]: Journal
+      - heading "Journal." [level=1] [ref=e25]
+      - paragraph [ref=e26]: Notes from the chair. What we know about curls, the products we keep on the shelf, and the people who come through the door.
+    - link "Curl-type typology Education How to read your curl pattern The Andre Walker scale gets you 60% of the way. Porosity and density do the other 40%. Here is how to read all three at home, in a mirror, in five minutes. 8 min read · April 22, 2026" [ref=e29] [cursor=pointer]:
+      - /url: "#"
+      - img "Curl-type typology" [ref=e31]
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: Education
+        - heading "How to read your curl pattern" [level=2] [ref=e34]
+        - paragraph [ref=e35]: The Andre Walker scale gets you 60% of the way. Porosity and density do the other 40%. Here is how to read all three at home, in a mirror, in five minutes.
+        - paragraph [ref=e36]: 8 min read · April 22, 2026
+    - generic [ref=e39]:
+      - paragraph [ref=e40]: More notes
+      - generic [ref=e41]:
+        - link "Mixed-heritage community meetup at the salon Community Mixed-heritage Mondays — what we're listening to Recap of last week's meetup at the salon. Twelve women. One playlist. A slightly burned focaccia. Notes from the conversation. 5 min read · April 14, 2026" [ref=e42] [cursor=pointer]:
+          - /url: "#"
+          - img "Mixed-heritage community meetup at the salon" [ref=e44]
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: Community
+            - heading "Mixed-heritage Mondays — what we're listening to" [level=2] [ref=e47]
+            - paragraph [ref=e48]: Recap of last week's meetup at the salon. Twelve women. One playlist. A slightly burned focaccia. Notes from the conversation.
+            - paragraph [ref=e49]: 5 min read · April 14, 2026
+        - link "Parent and child curl session Family Doing a child's hair without tears Four parents, two stylists, one child who finally sat still. The order of operations that works for tender heads, and the products we keep on the shelf. 6 min read · April 2, 2026" [ref=e50] [cursor=pointer]:
+          - /url: "#"
+          - img "Parent and child curl session" [ref=e52]
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: Family
+            - heading "Doing a child's hair without tears" [level=2] [ref=e55]
+            - paragraph [ref=e56]: Four parents, two stylists, one child who finally sat still. The order of operations that works for tender heads, and the products we keep on the shelf.
+            - paragraph [ref=e57]: 6 min read · April 2, 2026
+        - link "Scalp oil ritual Products The 3 oils we never run out of Mielle's rosemary mint for the scalp. Bread's hair oil for finishing. A house-blended castor for sealing. What each one does, and when not to reach for it. 4 min read · March 28, 2026" [ref=e58] [cursor=pointer]:
+          - /url: "#"
+          - img "Scalp oil ritual" [ref=e60]
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Products
+            - heading "The 3 oils we never run out of" [level=2] [ref=e63]
+            - paragraph [ref=e64]: Mielle's rosemary mint for the scalp. Bread's hair oil for finishing. A house-blended castor for sealing. What each one does, and when not to reach for it.
+            - paragraph [ref=e65]: 4 min read · March 28, 2026
+    - generic [ref=e69]:
+      - paragraph [ref=e70]: Subscribe
+      - heading "Notes from the chair, once a month." [level=2] [ref=e71]
+      - paragraph [ref=e72]: New articles, new products on the shelf, and the occasional invitation to a meetup. No more often than that.
+      - generic [ref=e73]:
+        - generic [ref=e74]: Email
+        - textbox "Email" [ref=e75]:
+          - /placeholder: your@email.com
+        - button "Subscribe" [ref=e76]
+  - contentinfo [ref=e77]:
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - link "Jackson & Coil." [ref=e80] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e81]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - heading "Visit" [level=3] [ref=e84]
+          - paragraph [ref=e85]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e86]:
+          - heading "Hours" [level=3] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - generic [ref=e90]: Tuesday
+              - generic [ref=e91]: 10:00 — 19:00
+            - listitem [ref=e92]:
+              - generic [ref=e93]: Wednesday
+              - generic [ref=e94]: 10:00 — 19:00
+            - listitem [ref=e95]:
+              - generic [ref=e96]: Thursday
+              - generic [ref=e97]: 10:00 — 20:00
+            - listitem [ref=e98]:
+              - generic [ref=e99]: Friday
+              - generic [ref=e100]: 10:00 — 19:00
+            - listitem [ref=e101]:
+              - generic [ref=e102]: Saturday
+              - generic [ref=e103]: 10:00 — 17:00
+            - listitem [ref=e104]:
+              - generic [ref=e105]: Sunday & Monday
+              - generic [ref=e106]: Closed
+        - generic [ref=e107]:
+          - heading "Contact" [level=3] [ref=e108]
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - link "hei@jacksonandcoil.no" [ref=e111] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e112]: +47 22 00 00 00
+            - listitem [ref=e113]:
+              - link "@jacksonandcoil" [ref=e114] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e115]:
+          - heading "Pages" [level=3] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "Cuts & services" [ref=e119] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e120]:
+              - link "The method" [ref=e121] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e122]:
+              - link "The team" [ref=e123] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e124]:
+              - link "Portfolio" [ref=e125] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e126]:
+              - link "Shop" [ref=e127] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e128]:
+              - link "Journal" [ref=e129] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e130]:
+              - link "Visit" [ref=e131] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e132]:
+              - link "About" [ref=e133] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e134]:
+              - link "Book" [ref=e135] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e136]:
+        - generic [ref=e137]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e138]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e144] [cursor=pointer]:
+    - img [ref=e145]
+  - alert [ref=e148]

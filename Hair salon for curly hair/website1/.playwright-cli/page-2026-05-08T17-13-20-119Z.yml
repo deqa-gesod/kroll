@@ -1,0 +1,214 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Jackson & Coil — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e7]
+    - navigation [ref=e12]:
+      - link "Cuts & services" [ref=e13] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e14] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e15] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e16] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e17] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e18] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e19] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e20] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e21] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e22]:
+        - button "EN" [ref=e23]
+        - generic [ref=e24]: /
+        - button "NO" [ref=e25]
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: Portfolio
+      - heading "Every cut, every type, by the team." [level=1] [ref=e30]
+      - paragraph [ref=e31]: One gallery for the whole spectrum. Type 4 is the home base; 3A and 2C live here too. Filter by curl type to find a head that looks like yours.
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Filter by curl type
+          - radiogroup "Filter by curl type" [ref=e37]:
+            - radio "All" [checked] [ref=e38]
+            - radio "2A" [ref=e39]
+            - radio "2B" [ref=e40]
+            - radio "2C" [ref=e41]
+            - radio "3A" [ref=e42]
+            - radio "3B" [ref=e43]
+            - radio "3C" [ref=e44]
+            - radio "4A" [ref=e45]
+            - radio "4B" [ref=e46]
+            - radio "4C" [ref=e47]
+            - radio "Men's cuts" [ref=e48]
+            - radio "Color" [ref=e49]
+        - paragraph [ref=e50]: 13 results
+      - generic [ref=e51]:
+        - button "Type 2A finished cut, Oslo street — Inés" [ref=e52]:
+          - img "Type 2A finished cut, Oslo street" [ref=e53]
+          - generic [ref=e54]: 2A
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: Jackson Cut — Inés
+            - paragraph [ref=e57]: Loose 2A waves recut to shoulder length, day-2 hair, no styling.
+        - button "Type 2B/2C cut, studio — Inés" [ref=e58]:
+          - img "Type 2B/2C cut, studio" [ref=e59]
+          - generic [ref=e60]: 2B / 2C
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Jackson Cut — Inés
+            - paragraph [ref=e63]: Mid-length 2B/2C with face-framing layers, dry-cut on the natural pattern.
+        - button "Type 3A spiral curls, finished cut — Nia" [ref=e64]:
+          - img "Type 3A spiral curls, finished cut" [ref=e65]
+          - generic [ref=e66]: 3A
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: Jackson Cut — Nia
+            - paragraph [ref=e69]: 3A spirals shaped curl by curl. First visit, walked in skeptical.
+        - button "Type 3B ringlet curls, finished cut — Nia" [ref=e70]:
+          - img "Type 3B ringlet curls, finished cut" [ref=e71]
+          - generic [ref=e72]: 3B
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: Jackson Cut — Nia
+            - paragraph [ref=e75]: Voluminous 3B ringlets, mid-length, weight removed at the canopy.
+        - button "Type 3C corkscrew curls, Oslo street — Vanessa" [ref=e76]:
+          - img "Type 3C corkscrew curls, Oslo street" [ref=e77]
+          - generic [ref=e78]: 3C
+          - generic [ref=e79]:
+            - paragraph [ref=e80]: Jackson Cut — Vanessa
+            - paragraph [ref=e81]: 3C corkscrews on day-1, finished outside on a Grünerløkka morning.
+        - button "Type 4A coils, defined and shaped — Vanessa" [ref=e82]:
+          - img "Type 4A coils, defined and shaped" [ref=e83]
+          - generic [ref=e84]: 4A
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: Jackson Cut — Vanessa
+            - paragraph [ref=e87]: 4A coils shaped into a defined round silhouette. No tension, no wet cut.
+        - button "Type 4B tapered afro, sculpted — Vanessa" [ref=e88]:
+          - img "Type 4B tapered afro, sculpted" [ref=e89]
+          - generic [ref=e90]: 4B
+          - generic [ref=e91]:
+            - paragraph [ref=e92]: Jackson Cut — Vanessa
+            - paragraph [ref=e93]: 3-month grow-out, recut into a tapered crown. 4B Z-pattern, dry-cut.
+        - button "Type 4C crown, freshly shaped — Mira" [ref=e94]:
+          - img "Type 4C crown, freshly shaped" [ref=e95]
+          - generic [ref=e96]: 4C
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: Jackson Cut — Mira
+            - paragraph [ref=e99]: 4C crown shaped for a strong silhouette. Fourth visit. We know her hair now.
+        - button "Black man, low-fade with defined coils on top — Adé" [ref=e100]:
+          - img "Black man, low-fade with defined coils on top" [ref=e101]
+          - generic [ref=e102]: 4A
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: Sculpt Cut — Adé
+            - paragraph [ref=e105]: Low fade with defined 4A coils on top. Clipper and scissor work, one chair.
+        - button "Black man with sisterlocks — Mira" [ref=e106]:
+          - img "Black man with sisterlocks" [ref=e107]
+          - generic [ref=e108]: Men's
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Loc maintenance — Mira
+            - paragraph [ref=e111]: Mid-length sisterlocks, freshly retwisted and shaped at the perimeter.
+        - button "Curl-safe auburn balayage on Type 3B — Inés" [ref=e112]:
+          - img "Curl-safe auburn balayage on Type 3B" [ref=e113]
+          - generic [ref=e114]: 3B
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Curl-safe color — Inés
+            - paragraph [ref=e117]: Deep auburn balayage on 3B. Bond-builder throughout, no breakage.
+        - button "Copper highlights on Type 4A coils — Vanessa" [ref=e118]:
+          - img "Copper highlights on Type 4A coils" [ref=e119]
+          - generic [ref=e120]: 4A
+          - generic [ref=e121]:
+            - paragraph [ref=e122]: Curl-safe color — Vanessa
+            - paragraph [ref=e123]: Subtle copper through the canopy on 4A coils. Two-tone, no global lift.
+        - button "Stylist Vanessa Jackson dry-cutting a client's Type 3c curls in the salon — Vanessa" [ref=e124]:
+          - img "Stylist Vanessa Jackson dry-cutting a client's Type 3c curls in the salon" [ref=e125]
+          - generic [ref=e126]: 3C
+          - generic [ref=e127]:
+            - paragraph [ref=e128]: Process shot — Vanessa
+            - paragraph [ref=e129]: Mid-cut. Vanessa working a 3C section dry, curl by curl.
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - link "Jackson & Coil." [ref=e133] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e134]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - heading "Visit" [level=3] [ref=e137]
+          - paragraph [ref=e138]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e139]:
+          - heading "Hours" [level=3] [ref=e140]
+          - list [ref=e141]:
+            - listitem [ref=e142]:
+              - generic [ref=e143]: Tuesday
+              - generic [ref=e144]: 10:00 — 19:00
+            - listitem [ref=e145]:
+              - generic [ref=e146]: Wednesday
+              - generic [ref=e147]: 10:00 — 19:00
+            - listitem [ref=e148]:
+              - generic [ref=e149]: Thursday
+              - generic [ref=e150]: 10:00 — 20:00
+            - listitem [ref=e151]:
+              - generic [ref=e152]: Friday
+              - generic [ref=e153]: 10:00 — 19:00
+            - listitem [ref=e154]:
+              - generic [ref=e155]: Saturday
+              - generic [ref=e156]: 10:00 — 17:00
+            - listitem [ref=e157]:
+              - generic [ref=e158]: Sunday & Monday
+              - generic [ref=e159]: Closed
+        - generic [ref=e160]:
+          - heading "Contact" [level=3] [ref=e161]
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - link "hei@jacksonandcoil.no" [ref=e164] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e165]: +47 22 00 00 00
+            - listitem [ref=e166]:
+              - link "@jacksonandcoil" [ref=e167] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e168]:
+          - heading "Pages" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "Cuts & services" [ref=e172] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e173]:
+              - link "The method" [ref=e174] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e175]:
+              - link "The team" [ref=e176] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e177]:
+              - link "Portfolio" [ref=e178] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e179]:
+              - link "Shop" [ref=e180] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e181]:
+              - link "Journal" [ref=e182] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e183]:
+              - link "Visit" [ref=e184] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e185]:
+              - link "About" [ref=e186] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e187]:
+              - link "Book" [ref=e188] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e189]:
+        - generic [ref=e190]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e191]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e197] [cursor=pointer]:
+    - img [ref=e198]
+  - alert [ref=e201]

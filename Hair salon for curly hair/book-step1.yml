@@ -1,0 +1,79 @@
+- generic [ref=e2]:
+  - banner:
+    - generic [ref=e3]:
+      - link "Pular para conteúdo" [ref=e4] [cursor=pointer]:
+        - /url: "#page"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - navigation [ref=e11]:
+            - link "Services" [ref=e13] [cursor=pointer]:
+              - /url: /services
+            - link "Team" [ref=e15] [cursor=pointer]:
+              - /url: /team
+            - link "Health and safety" [ref=e17] [cursor=pointer]:
+              - /url: /health-safety
+            - link "Book" [ref=e19] [cursor=pointer]:
+              - /url: /book-now
+            - link "Policies" [ref=e21] [cursor=pointer]:
+              - /url: /policies
+            - link "FAQs" [ref=e23] [cursor=pointer]:
+              - /url: /faqs
+          - link "The Curl Bar London" [ref=e26] [cursor=pointer]:
+            - /url: /
+        - link "Book Now" [ref=e29] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book-now
+  - main [ref=e30]:
+    - article [ref=e31]:
+      - generic [ref=e36]:
+        - paragraph [ref=e38]: FIND YOUR AVAILABLE SLOT
+        - list [ref=e39]:
+          - listitem [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - heading "MYDDLETON ROAD" [level=2] [ref=e43]
+                - generic [ref=e44]:
+                  - paragraph [ref=e45]: 79 Myddleton Road, N22 8NE
+                  - paragraph [ref=e46]: 0203 624 3533
+                  - paragraph [ref=e47]:
+                    - strong [ref=e48]: "OPEN ON:"
+                    - emphasis [ref=e49]: Wednesdayto Saturday from 10am to 7pm (with some Tuesdays per month)
+                  - paragraph [ref=e50]:
+                    - strong [ref=e51]: "PARKING:"
+                    - emphasis [ref=e52]: Free after 12pm on Marlborough Road
+                  - paragraph [ref=e53]:
+                    - strong [ref=e54]: "HIJAB PRIVACY:"
+                    - emphasis [ref=e55]: We have a private room for our clients who require privacy during their service.
+                  - paragraph [ref=e56]:
+                    - strong [ref=e57]: "SERVICES OFFERED:"
+                    - emphasis [ref=e58]: Cuts, Treatments and Styling
+                  - paragraph [ref=e59]:
+                    - strong [ref=e60]: "STYLISTS AVAILABLE:"
+                    - emphasis [ref=e61]: Andrina, Mia, Nia and Niah
+              - link "BOOK NOW" [ref=e64] [cursor=pointer]:
+                - /url: https://www.thecurlbarlondon.com/book-appointment-1
+  - contentinfo [ref=e65]:
+    - generic [ref=e71]:
+      - paragraph [ref=e77]:
+        - strong [ref=e78]: MYDDLETON ROAD BRANCH
+        - strong [ref=e79]: "Wednesday to Saturday: 10am till 7pm"
+        - text: 020 3624 3533
+        - link "79 Myddleton Road, London, N22 8NE" [ref=e80] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/CgAoKtDWRFKEPka96?g_st=ic
+        - link "info@thecurlbarlondon.com" [ref=e81] [cursor=pointer]:
+          - /url: mailto:info@thecurlbarlondon.com
+      - paragraph [ref=e87]:
+        - strong [ref=e88]: SITE MAP
+        - link "Services" [ref=e89] [cursor=pointer]:
+          - /url: /services
+        - link "Team" [ref=e90] [cursor=pointer]:
+          - /url: /team
+        - link "Health and Safety" [ref=e91] [cursor=pointer]:
+          - /url: /health-safety
+        - link "Contact" [ref=e92] [cursor=pointer]:
+          - /url: /contact
+        - link "Book Now" [ref=e93] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book
+      - paragraph [ref=e99]:
+        - strong [ref=e100]: FOLLOW US
+        - link "Instagram" [ref=e101] [cursor=pointer]:
+          - /url: https://www.instagram.com/thecurlbarlondon

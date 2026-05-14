@@ -1,0 +1,262 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Hopp til innhold" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: J&C
+          - generic [ref=e8]: Jackson & Coil
+        - navigation "Hovednavigasjon" [ref=e9]:
+          - link "Klipp" [ref=e10] [cursor=pointer]:
+            - /url: /cuts-and-services
+          - link "Team" [ref=e11] [cursor=pointer]:
+            - /url: /the-team
+          - link "Portfolio" [ref=e12] [cursor=pointer]:
+            - /url: /portfolio
+          - link "Metoden" [ref=e13] [cursor=pointer]:
+            - /url: /the-method
+          - link "Butikk" [ref=e14] [cursor=pointer]:
+            - /url: /shop
+          - link "Journal" [ref=e15] [cursor=pointer]:
+            - /url: /journal
+          - link "Besøk" [ref=e16] [cursor=pointer]:
+            - /url: /visit
+          - link "Om" [ref=e17] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=e18]:
+          - button "Bytt språk" [ref=e19]: EN
+          - link "Book time" [ref=e20] [cursor=pointer]:
+            - /url: /booking
+    - main [ref=e21]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Grunnlagt av Vanessa Jackson
+          - heading "Oslos første salong bygget rundt hele curl spectrum." [level=1] [ref=e27]
+          - paragraph [ref=e28]: Fra løse bølger til tette coils får hvert mønster samme faglige behandling, hos stylister som faktisk har trent på det.
+          - generic [ref=e29]:
+            - link "Book time" [ref=e30] [cursor=pointer]:
+              - /url: /booking
+              - text: Book time
+              - img [ref=e31]
+            - link "Se tjenester" [ref=e33] [cursor=pointer]:
+              - /url: /cuts-and-services
+          - generic [ref=e34]:
+            - generic [ref=e35]: Gratis 15 min tørr konsultasjon
+            - generic [ref=e36]: Type 2A-4C
+            - generic [ref=e37]: Pris før du booker
+        - generic [ref=e38]:
+          - img "Black woman with Type 4 coils laughing in a salon chair during a dry cut" [ref=e40]
+          - img "Black man with fade and defined Type 4 coils in warm documentary light" [ref=e42]
+          - generic [ref=e43]:
+            - paragraph [ref=e44]: Fotoregelen
+            - paragraph [ref=e45]: "Hero-rotasjon: Amara og Daniel, over folden, ikke en egen herreside."
+      - region "Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up." [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e49]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e50]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e51]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e52]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e53]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e54]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+          - generic [ref=e55]: Spectrum er arbeidsordet. Én stol for coils, krøller, bølger, fade og shape-up.
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - paragraph [ref=e58]: Booking
+          - heading "Booking er en del av klippen." [level=2] [ref=e59]
+          - paragraph [ref=e60]: Velg tjeneste, stylist, reell ledig tid og krølltype uten å forlate siden. Ingen widget-redirect, ingen kontaktskjema-felle.
+          - link "Book time" [ref=e61] [cursor=pointer]:
+            - /url: /booking
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "01"
+            - heading "Første besøk" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Konsultasjon + Jackson Cut + finish + førstegangs-rabatt på retail.
+            - generic [ref=e67]: 90 min / 750 NOK
+          - generic [ref=e68]:
+            - generic [ref=e69]: "02"
+            - heading "The Jackson Cut" [level=3] [ref=e70]
+            - paragraph [ref=e71]: Tørr, krøll-for-krøll-klipp for Type 2-4 hår.
+            - generic [ref=e72]: 75 min / 750 NOK
+          - generic [ref=e73]:
+            - generic [ref=e74]: "03"
+            - heading "The Sculpt Cut" [level=3] [ref=e75]
+            - paragraph [ref=e76]: Fade, lineup og tørr coil-forming i samme stol.
+            - generic [ref=e77]: 60 min / 850 NOK
+      - generic [ref=e78]:
+        - img "Close detail of dry curl-by-curl cutting on Type 4 hair" [ref=e80]
+        - generic [ref=e81]:
+          - paragraph [ref=e82]: Metode
+          - heading "The Jackson Cut kartlegger håret før det klippes." [level=2] [ref=e83]
+          - paragraph [ref=e84]: Vurdering, kart, tørr klipp, finish, opplæring. Metoden er synlig fordi tillit ikke skal bygges på stemning alene.
+          - link "Les metoden" [ref=e85] [cursor=pointer]:
+            - /url: /the-method
+      - generic [ref=e86]:
+        - img "Vanessa Jackson working with a client, hands in hair, mid-laugh" [ref=e88]
+        - generic [ref=e89]:
+          - paragraph [ref=e90]: Gründer
+          - heading "Vanessa, på jobb." [level=2] [ref=e91]
+          - paragraph [ref=e92]: Trent ved Curl Bar London og Devachan NYC. Salongen er det som skjer når hun slutter å låne stoler hos andre.
+          - link "Om" [ref=e93] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - paragraph [ref=e96]: Portfolio
+          - heading "Samme vegg. Hele spekteret." [level=2] [ref=e97]
+          - paragraph [ref=e98]: Type 4 er hjemmebasen. Type 3 ligger i galleriet. Daniels Sculpt Cut er integrert fra dag én.
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - img "Dag-tre 4B form-reset" [ref=e102]
+            - generic [ref=e103]:
+              - paragraph [ref=e104]: Type 4
+              - heading "Dag-tre 4B form-reset" [level=3] [ref=e105]
+          - generic [ref=e106]:
+            - img "3A-klipp med naturlig volum" [ref=e108]
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: Type 3
+              - heading "3A-klipp med naturlig volum" [level=3] [ref=e111]
+          - generic [ref=e112]:
+            - img "Fade, taper, coil definition" [ref=e114]
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: Sculpt Cut
+              - heading "Fade, taper, coil definition" [level=3] [ref=e117]
+          - generic [ref=e118]:
+            - img "Detalj fra tørr klipp" [ref=e120]
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: Metode
+              - heading "Detalj fra tørr klipp" [level=3] [ref=e123]
+        - link "Portfolio" [ref=e124] [cursor=pointer]:
+          - /url: /portfolio
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Bevis
+          - heading "Standarden, helt konkret." [level=2] [ref=e128]
+        - generic [ref=e129]:
+          - generic [ref=e131]:
+            - figure "Verifisert prototypekunde" [ref=e132]:
+              - blockquote [ref=e133]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e134]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e135]:
+              - blockquote [ref=e136]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e137]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e138]:
+              - blockquote [ref=e139]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e140]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e141]:
+              - blockquote [ref=e142]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e143]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e144]:
+              - blockquote [ref=e145]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e146]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e147]:
+              - blockquote [ref=e148]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e149]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e150]:
+              - blockquote [ref=e151]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e152]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e153]:
+              - blockquote [ref=e154]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e155]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e156]:
+              - blockquote [ref=e157]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e158]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e159]:
+              - blockquote [ref=e160]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e161]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e162]:
+              - blockquote [ref=e163]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e164]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e165]:
+              - blockquote [ref=e166]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e167]: Verifisert prototypekunde
+          - generic [ref=e169]:
+            - figure "Verifisert prototypekunde" [ref=e170]:
+              - blockquote [ref=e171]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e172]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e173]:
+              - blockquote [ref=e174]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e175]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e176]:
+              - blockquote [ref=e177]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e178]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e179]:
+              - blockquote [ref=e180]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e181]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e182]:
+              - blockquote [ref=e183]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e184]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e185]:
+              - blockquote [ref=e186]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e187]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e188]:
+              - blockquote [ref=e189]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e190]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e191]:
+              - blockquote [ref=e192]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e193]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e194]:
+              - blockquote [ref=e195]: “Prisene sto der før jeg trykket videre.”
+              - generic [ref=e196]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e197]:
+              - blockquote [ref=e198]: “Faden og coilene skjedde i samme stol.”
+              - generic [ref=e199]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e200]:
+              - blockquote [ref=e201]: “Jeg booket på mobilen etter leggetid og hadde time på under to minutter.”
+              - generic [ref=e202]: Verifisert prototypekunde
+            - figure "Verifisert prototypekunde" [ref=e203]:
+              - blockquote [ref=e204]: “Ingen spurte om håret mitt var for mye.”
+              - generic [ref=e205]: Verifisert prototypekunde
+      - generic [ref=e206]:
+        - img "Lean warm Scandinavian salon interior with terracotta accents" [ref=e208]
+        - generic [ref=e209]:
+          - paragraph [ref=e210]: Besøk
+          - heading "Et varmt rom, ikke en forestilling." [level=2] [ref=e211]
+          - paragraph [ref=e212]: Papirvarme vegger, terrakottadetalj, ekte dagslys og retail som løser Norge-gapet.
+          - link "Besøk salongen" [ref=e213] [cursor=pointer]:
+            - /url: /visit
+    - contentinfo [ref=e214]:
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - paragraph [ref=e217]: Grünerløkka, Oslo
+          - heading "Tørr konsultasjon først. Så klippen." [level=2] [ref=e218]
+          - paragraph [ref=e219]: En krøllspesialist for hele spekteret, med prisene på siden og booking som blir inne i merkevaren.
+          - generic [ref=e220]:
+            - link "Book time" [ref=e221] [cursor=pointer]:
+              - /url: /booking
+            - link "Besøk salongen" [ref=e222] [cursor=pointer]:
+              - /url: /visit
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - heading "Naviger" [level=3] [ref=e225]
+            - generic [ref=e226]:
+              - link "Klipp" [ref=e227] [cursor=pointer]:
+                - /url: /cuts-and-services
+              - link "Team" [ref=e228] [cursor=pointer]:
+                - /url: /the-team
+              - link "Portfolio" [ref=e229] [cursor=pointer]:
+                - /url: /portfolio
+              - link "Metoden" [ref=e230] [cursor=pointer]:
+                - /url: /the-method
+              - link "Butikk" [ref=e231] [cursor=pointer]:
+                - /url: /shop
+              - link "Journal" [ref=e232] [cursor=pointer]:
+                - /url: /journal
+              - link "Besøk" [ref=e233] [cursor=pointer]:
+                - /url: /visit
+          - generic [ref=e234]:
+            - heading "Detaljer" [level=3] [ref=e235]
+            - generic [ref=e236]:
+              - paragraph [ref=e237]:
+                - text: Markveien 58
+                - text: Grünerløkka, Oslo
+              - paragraph [ref=e238]:
+                - text: Tue-Fri 10-20
+                - text: Sat 10-17
+              - link "+47 22 55 01 44" [ref=e239] [cursor=pointer]:
+                - /url: tel:+4722550144
+              - link "Instagram only" [ref=e240] [cursor=pointer]:
+                - /url: https://instagram.com
+      - generic [ref=e241]: © 2026 Jackson & Coil. Prototype website2.
+  - alert [ref=e242]

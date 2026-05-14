@@ -1,0 +1,165 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: J&C
+          - generic [ref=e8]: Jackson & Coil
+        - navigation "Primary navigation" [ref=e9]:
+          - link "Cuts" [ref=e10] [cursor=pointer]:
+            - /url: /cuts-and-services
+          - link "Team" [ref=e11] [cursor=pointer]:
+            - /url: /the-team
+          - link "Portfolio" [ref=e12] [cursor=pointer]:
+            - /url: /portfolio
+          - link "Method" [ref=e13] [cursor=pointer]:
+            - /url: /the-method
+          - link "Shop" [ref=e14] [cursor=pointer]:
+            - /url: /shop
+          - link "Journal" [ref=e15] [cursor=pointer]:
+            - /url: /journal
+          - link "Visit" [ref=e16] [cursor=pointer]:
+            - /url: /visit
+          - link "About" [ref=e17] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=e18]:
+          - button "Switch language" [ref=e19]: "NO"
+          - link "Book now" [ref=e20] [cursor=pointer]:
+            - /url: /booking
+    - main [ref=e21]:
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: Booking
+        - heading "Book on your phone in two minutes." [level=1] [ref=e24]
+        - paragraph [ref=e25]: Mock availability, real interaction model. No third-party widget. Curl-type intake included and skippable.
+      - generic [ref=e28]:
+        - complementary [ref=e29]:
+          - paragraph [ref=e30]: Returning
+          - heading "Daniel, book the same again" [level=2] [ref=e31]
+          - paragraph [ref=e32]: Sculpt Cut with Vanessa. Last visit March 14. Next available Tuesday 18:30.
+          - button "Rebook same cut" [ref=e33]:
+            - text: Rebook same cut
+            - img [ref=e34]
+          - generic [ref=e36]:
+            - paragraph [ref=e37]: Summary
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - term [ref=e40]: Service
+                - definition [ref=e41]: First Visit Bundle
+              - generic [ref=e42]:
+                - term [ref=e43]: Stylist
+                - definition [ref=e44]: No preference
+              - generic [ref=e45]:
+                - term [ref=e46]: Time
+                - definition [ref=e47]: Tue 18:30
+        - generic [ref=e48]:
+          - list "Booking steps" [ref=e49]:
+            - listitem [ref=e50]:
+              - button "01 Service" [ref=e51]:
+                - generic [ref=e52]: "01"
+                - text: Service
+            - listitem [ref=e53]:
+              - button "02 Stylist" [ref=e54]:
+                - generic [ref=e55]: "02"
+                - text: Stylist
+            - listitem [ref=e56]:
+              - button "03 Time" [ref=e57]:
+                - generic [ref=e58]: "03"
+                - text: Time
+            - listitem [ref=e59]:
+              - button "04 Curl intake" [ref=e60]:
+                - generic [ref=e61]: "04"
+                - text: Curl intake
+            - listitem [ref=e62]:
+              - button "05 Confirm" [ref=e63]:
+                - generic [ref=e64]: "05"
+                - text: Confirm
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - img [ref=e195]
+              - heading "Choose the stylist" [level=2] [ref=e197]
+            - generic [ref=e198]:
+              - button "No preference We'll pair you with the best fit for your pattern and service. best fit all patterns" [ref=e199]:
+                - generic [ref=e201]:
+                  - heading "No preference" [level=3] [ref=e202]
+                  - paragraph [ref=e203]: We'll pair you with the best fit for your pattern and service.
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: best fit
+                    - generic [ref=e206]: all patterns
+              - 'button "Vanessa Jackson Founder. Type 4 dry cuts, shape resets and first-time consults. 4a-4c dry cuts training: Curl Bar + Devachan" [ref=e207]':
+                - generic [ref=e209]:
+                  - heading "Vanessa Jackson" [level=3] [ref=e210]
+                  - paragraph [ref=e211]: Founder. Type 4 dry cuts, shape resets and first-time consults.
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: 4a-4c
+                    - generic [ref=e214]: dry cuts
+                    - generic [ref=e215]: "training: Curl Bar + Devachan"
+              - button "Iman Ali Color-safe curl work, porosity reads and finish education. color porosity shape reset" [ref=e216]:
+                - generic [ref=e218]:
+                  - heading "Iman Ali" [level=3] [ref=e219]
+                  - paragraph [ref=e220]: Color-safe curl work, porosity reads and finish education.
+                  - generic [ref=e221]:
+                    - generic [ref=e222]: color
+                    - generic [ref=e223]: porosity
+                    - generic [ref=e224]: shape reset
+              - button "Jonas Bekele Sculpt Cut, taper, line, beard and coil definition. fade + coils taper line work" [ref=e225]:
+                - generic [ref=e227]:
+                  - heading "Jonas Bekele" [level=3] [ref=e228]
+                  - paragraph [ref=e229]: Sculpt Cut, taper, line, beard and coil definition.
+                  - generic [ref=e230]:
+                    - generic [ref=e231]: fade + coils
+                    - generic [ref=e232]: taper
+                    - generic [ref=e233]: line work
+          - generic [ref=e148]:
+            - button "Back" [ref=e149]
+            - button "Next" [active] [ref=e151]:
+              - text: Next
+              - img [ref=e152]
+    - contentinfo [ref=e154]:
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - paragraph [ref=e157]: Grünerløkka, Oslo
+          - heading "Dry consultation first. Then the cut." [level=2] [ref=e158]
+          - paragraph [ref=e159]: A curl-specialist salon for the full spectrum, with prices on the page and booking that stays inside the brand.
+          - generic [ref=e160]:
+            - link "Book now" [ref=e161] [cursor=pointer]:
+              - /url: /booking
+            - link "Visit the salon" [ref=e162] [cursor=pointer]:
+              - /url: /visit
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - heading "Navigate" [level=3] [ref=e165]
+            - generic [ref=e166]:
+              - link "Cuts" [ref=e167] [cursor=pointer]:
+                - /url: /cuts-and-services
+              - link "Team" [ref=e168] [cursor=pointer]:
+                - /url: /the-team
+              - link "Portfolio" [ref=e169] [cursor=pointer]:
+                - /url: /portfolio
+              - link "Method" [ref=e170] [cursor=pointer]:
+                - /url: /the-method
+              - link "Shop" [ref=e171] [cursor=pointer]:
+                - /url: /shop
+              - link "Journal" [ref=e172] [cursor=pointer]:
+                - /url: /journal
+              - link "Visit" [ref=e173] [cursor=pointer]:
+                - /url: /visit
+          - generic [ref=e174]:
+            - heading "Details" [level=3] [ref=e175]
+            - generic [ref=e176]:
+              - paragraph [ref=e177]:
+                - text: Markveien 58
+                - text: Grünerløkka, Oslo
+              - paragraph [ref=e178]:
+                - text: Tue-Fri 10-20
+                - text: Sat 10-17
+              - link "+47 22 55 01 44" [ref=e179] [cursor=pointer]:
+                - /url: tel:+4722550144
+              - link "Instagram only" [ref=e180] [cursor=pointer]:
+                - /url: https://instagram.com
+      - generic [ref=e181]: © 2026 Jackson & Coil. Prototype website2.
+  - button "Open Next.js Dev Tools" [ref=e187] [cursor=pointer]:
+    - img [ref=e188]
+  - alert [ref=e191]

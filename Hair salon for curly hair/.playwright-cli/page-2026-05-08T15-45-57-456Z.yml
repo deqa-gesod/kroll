@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e3]:
+      - link "12930 Ventura Blvd, Suite 216 | Studio City, CA" [ref=e5] [cursor=pointer]:
+        - /url: https://goo.gl/maps/4j87ZgzYCmgXUhzu8
+    - generic [ref=e6]:
+      - link "Visit the Capella Salonhome page":
+        - /url: /
+        - img [ref=e7] [cursor=pointer]
+      - navigation [ref=e21]:
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /about
+        - link "Services & Hours" [ref=e23] [cursor=pointer]:
+          - /url: /salon-services
+        - link "Curl Prep Instructions" [ref=e24] [cursor=pointer]:
+          - /url: /curl-prep-instructions
+        - link "Press & Media" [ref=e25] [cursor=pointer]:
+          - /url: /press-media
+        - link "The Curl Doctor" [ref=e26] [cursor=pointer]:
+          - /url: http://www.shaiamiel.com
+        - link "Policies" [ref=e27] [cursor=pointer]:
+          - /url: /policies
+        - link "Contact" [ref=e28] [cursor=pointer]:
+          - /url: /appointments
+      - link "Menu" [ref=e29] [cursor=pointer]:
+        - /url: "#menu"
+        - generic [ref=e30]: Menu
+      - link "818-784-4247" [ref=e31] [cursor=pointer]:
+        - /url: tel:818-784-4247
+  - main [ref=e32]:
+    - heading "About" [level=1] [ref=e36]
+    - generic [ref=e39]:
+      - heading "About Capella Salon" [level=1] [ref=e40]
+      - paragraph [ref=e41]: Capella Salon was created in 1995 and is run by Shai and Nicole Amiel to provide the finest salon services. With some of the most advanced hair stylists, the salon is dedicated to offering unparalleled styling techniques along with the most current technologies. Capella was founded on the goal of gratifying our clientele through the identification of our client’s uniqueness and individuality. Whether it is for a stunning and vibrant coloring, or a hair style that highlights facial features, Capella Salon and our staff are here to to satisfy our clients' every need.
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - heading "Menu" [level=4] [ref=e44]
+      - list [ref=e45]:
+        - listitem [ref=e46]:
+          - link "About" [ref=e47] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e48]:
+          - link "Services" [ref=e49] [cursor=pointer]:
+            - /url: /salon-services
+        - listitem [ref=e50]:
+          - link "Curl Prep Instructions" [ref=e51] [cursor=pointer]:
+            - /url: /curl-prep-instructions
+      - paragraph
+    - generic [ref=e52]:
+      - heading [level=4]
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - link "Press & Media" [ref=e55] [cursor=pointer]:
+            - /url: /press-media
+        - listitem [ref=e56]:
+          - link "The Curl Doctor" [ref=e57] [cursor=pointer]:
+            - /url: http://shaiamiel.com/
+        - listitem [ref=e58]:
+          - link "Policies" [ref=e59] [cursor=pointer]:
+            - /url: /policies
+        - listitem [ref=e60]:
+          - link "Contact" [ref=e61] [cursor=pointer]:
+            - /url: /appointments
+      - paragraph
+    - generic [ref=e62]:
+      - heading "Information" [level=4] [ref=e63]
+      - list [ref=e64]:
+        - listitem [ref=e65]:
+          - link "Privacy Policy" [ref=e66] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=e67]:
+          - link "Terms of Use" [ref=e68] [cursor=pointer]:
+            - /url: /terms-of-use
+      - paragraph
+    - generic [ref=e69]:
+      - heading "Social" [level=4] [ref=e70]
+      - generic "Follow us on social media" [ref=e71]:
+        - link "Instagram" [ref=e72] [cursor=pointer]:
+          - /url: https://www.instagram.com/capellasalon/
+          - img [ref=e74]
+        - link "Facebook" [ref=e77] [cursor=pointer]:
+          - /url: https://www.facebook.com/CapellaSalonLA/
+          - img [ref=e79]
+        - link "twitter" [ref=e82] [cursor=pointer]:
+          - /url: https://www.twitter.com/capellasalon/
+          - img [ref=e84]
+        - link "YouTube" [ref=e86] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/CapellaSalon
+          - img [ref=e88]
+        - link "Pinterest" [ref=e93] [cursor=pointer]:
+          - /url: https://pinterest.com/shaiamiel/
+          - img [ref=e95]
+  - paragraph [ref=e101]:
+    - text: © 2026
+    - link "Capella Salon" [ref=e102] [cursor=pointer]:
+      - /url: /
+    - text: . All Rights Reserved. Site by
+    - link "Sixty Five Design" [ref=e103] [cursor=pointer]:
+      - /url: http://www.sixtyfivedesign.com

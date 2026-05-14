@@ -1,0 +1,558 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3] [cursor=pointer]:
+    - img [ref=e5]
+    - generic:
+      - img
+  - generic [ref=e11]:
+    - region "top of page"
+    - generic [ref=e18]:
+      - navigation "Site" [ref=e20]:
+        - list [ref=e21]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Home" [ref=e23]:
+              - /url: https://www.curlspa.nl
+              - paragraph [ref=e26]: Home
+            - button "More Home pages" [ref=e27]:
+              - img [ref=e28]
+          - listitem [ref=e30] [cursor=pointer]:
+            - link "Price List" [ref=e31]:
+              - /url: https://www.curlspa.nl/krullenkapper
+              - paragraph [ref=e34]: Price List
+          - listitem [ref=e35] [cursor=pointer]:
+            - link "BOOK WITH A CURL SPECIALIST" [ref=e36]:
+              - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+              - paragraph [ref=e39]: BOOK WITH A CURL SPECIALIST
+          - listitem [ref=e40] [cursor=pointer]:
+            - link "Webshop" [ref=e41]:
+              - /url: https://www.curlspa.nl/shop
+              - paragraph [ref=e44]: Webshop
+            - button "More Webshop pages" [ref=e45]:
+              - img [ref=e46]
+          - listitem [ref=e48] [cursor=pointer]:
+            - link "Blog" [ref=e49]:
+              - /url: https://www.curlspa.nl/blog
+              - paragraph [ref=e52]: Blog
+          - listitem [ref=e53] [cursor=pointer]:
+            - link "About" [ref=e54]:
+              - /url: https://www.curlspa.nl/about
+              - paragraph [ref=e57]: About
+          - listitem [ref=e58] [cursor=pointer]:
+            - link "FAQ" [ref=e59]:
+              - /url: https://www.curlspa.nl/faq
+              - paragraph [ref=e62]: FAQ
+          - listitem [ref=e63] [cursor=pointer]:
+            - link "Contact" [ref=e64]:
+              - /url: https://www.curlspa.nl/contact
+              - paragraph [ref=e67]: Contact
+      - button [ref=e71] [cursor=pointer]:
+        - img [ref=e73]
+      - banner [ref=e77]:
+        - generic [ref=e83]:
+          - generic:
+            - generic:
+              - list "Social Bar" [ref=e85]:
+                - listitem [ref=e86]:
+                  - link "Whatsapp" [ref=e87] [cursor=pointer]:
+                    - /url: tel:+31(0)613346640
+                    - img "Whatsapp" [ref=e88]
+                - listitem [ref=e89]:
+                  - link "Youtube" [ref=e90] [cursor=pointer]:
+                    - /url: https://www.youtube.com/@CurlSpa
+                    - img "Youtube" [ref=e91]
+                - listitem [ref=e92]:
+                  - link "Instagram" [ref=e93] [cursor=pointer]:
+                    - /url: http://www.instagram.com/curl_spa_salon_
+                    - img "Instagram" [ref=e94]
+              - heading "Curl Spa Salon" [level=3] [ref=e95]:
+                - link "Curl Spa Salon" [ref=e97] [cursor=pointer]:
+                  - /url: https://www.curlspa.nl
+              - paragraph [ref=e98]:
+                - link "Hair Salon & Webshop" [ref=e99] [cursor=pointer]:
+                  - /url: https://www.curlspa.nl
+              - link "Book Now" [ref=e101] [cursor=pointer]:
+                - /url: https://www.fresha.com/book-now/curl-spa-salon-p1pm70jw/all-offer?share=true&pId=2693546
+                - generic [ref=e102]: Book Now
+              - button "Log In" [ref=e104] [cursor=pointer]:
+                - img [ref=e108]
+                - generic [ref=e111]: Log In
+      - main [ref=e113]:
+        - generic [ref=e119]:
+          - generic:
+            - generic:
+              - heading "Our Favorite Products" [level=2] [ref=e123]
+              - generic [ref=e129]:
+                - complementary [ref=e131]:
+                  - generic [ref=e132]:
+                    - heading "Filter by" [level=2] [ref=e135]
+                    - list [ref=e136]:
+                      - generic [ref=e137]:
+                        - listitem [ref=e138]:
+                          - button "Collection" [expanded] [ref=e139] [cursor=pointer]:
+                            - generic [ref=e140]: Collection
+                            - img [ref=e142]
+                          - radiogroup [ref=e147]:
+                            - listitem [ref=e148] [cursor=pointer]:
+                              - generic [ref=e149]:
+                                - radio "All" [checked] [ref=e150]
+                                - text: All
+                            - listitem [ref=e151] [cursor=pointer]:
+                              - generic [ref=e152]:
+                                - radio "Curly" [ref=e153]
+                                - text: Curly
+                            - listitem [ref=e154] [cursor=pointer]:
+                              - generic [ref=e155]:
+                                - radio "Eden Body Works" [ref=e156]
+                                - text: Eden Body Works
+                            - listitem [ref=e157] [cursor=pointer]:
+                              - generic [ref=e158]:
+                                - radio "Body" [ref=e159]
+                                - text: Body
+                        - listitem [ref=e160]:
+                          - button "Price" [ref=e161] [cursor=pointer]:
+                            - generic [ref=e162]: Price
+                            - img [ref=e164]
+                          - generic [ref=e169]:
+                            - generic [ref=e170]: €7
+                            - generic [ref=e171] [cursor=pointer]:
+                              - slider [ref=e173]
+                              - slider [ref=e174]
+                            - generic [ref=e175]: €33
+                        - listitem [ref=e176]:
+                          - button "Color" [ref=e177] [cursor=pointer]:
+                            - generic [ref=e178]: Color
+                            - img [ref=e180]
+                          - list [ref=e185]:
+                            - listitem [ref=e186]:
+                              - checkbox [ref=e188]
+                            - listitem [ref=e190]:
+                              - checkbox [ref=e192]
+                            - listitem [ref=e194]:
+                              - checkbox [ref=e196]
+                            - listitem [ref=e198]:
+                              - checkbox [ref=e200]
+                        - listitem [ref=e202]:
+                          - button "Rose Oil" [ref=e203] [cursor=pointer]:
+                            - generic [ref=e204]: Rose Oil
+                            - img [ref=e206]
+                          - list [ref=e210]:
+                            - listitem [ref=e211]:
+                              - checkbox [ref=e212]
+                              - generic [ref=e213] [cursor=pointer]: Rose
+                        - listitem [ref=e214]:
+                          - button "Size" [ref=e215] [cursor=pointer]:
+                            - generic [ref=e216]: Size
+                            - img [ref=e218]
+                          - list [ref=e222]:
+                            - listitem [ref=e223]:
+                              - checkbox [ref=e224]
+                              - generic [ref=e225] [cursor=pointer]: iPhone 11
+                            - listitem [ref=e226]:
+                              - checkbox [ref=e227]
+                              - generic [ref=e228] [cursor=pointer]: iPhone 11 Pro
+                            - listitem [ref=e229]:
+                              - checkbox [ref=e230]
+                              - generic [ref=e231] [cursor=pointer]: iPhone 11 Pro Max
+                            - listitem [ref=e232]:
+                              - checkbox [ref=e233]
+                              - generic [ref=e234] [cursor=pointer]: iPhone 12
+                            - listitem [ref=e235]:
+                              - checkbox [ref=e236]
+                              - generic [ref=e237] [cursor=pointer]: iPhone 12 mini
+                            - listitem [ref=e238]:
+                              - checkbox [ref=e239]
+                              - generic [ref=e240] [cursor=pointer]: iPhone 12 Pro
+                            - listitem [ref=e241]:
+                              - checkbox [ref=e242]
+                              - generic [ref=e243] [cursor=pointer]: iPhone 12 Pro Max
+                            - listitem [ref=e244]:
+                              - checkbox [ref=e245]
+                              - generic [ref=e246] [cursor=pointer]: iPhone 13
+                            - listitem [ref=e247]:
+                              - checkbox [ref=e248]
+                              - generic [ref=e249] [cursor=pointer]: iPhone 13 mini
+                            - listitem [ref=e250]:
+                              - checkbox [ref=e251]
+                              - generic [ref=e252] [cursor=pointer]: iPhone 13 Pro
+                            - listitem [ref=e253]:
+                              - checkbox [ref=e254]
+                              - generic [ref=e255] [cursor=pointer]: iPhone 13 Pro Max
+                            - listitem [ref=e256]:
+                              - checkbox [ref=e257]
+                              - generic [ref=e258] [cursor=pointer]: iPhone 14
+                            - listitem [ref=e259]:
+                              - checkbox [ref=e260]
+                              - generic [ref=e261] [cursor=pointer]: iPhone 14 Plus
+                            - listitem [ref=e262]:
+                              - checkbox [ref=e263]
+                              - generic [ref=e264] [cursor=pointer]: iPhone 14 Pro
+                            - listitem [ref=e265]:
+                              - checkbox [ref=e266]
+                              - generic [ref=e267] [cursor=pointer]: iPhone 14 Pro Max
+                            - listitem [ref=e268]:
+                              - checkbox [ref=e269]
+                              - generic [ref=e270] [cursor=pointer]: iPhone 15
+                            - listitem [ref=e271]:
+                              - checkbox [ref=e272]
+                              - generic [ref=e273] [cursor=pointer]: iPhone 15 Plus
+                            - listitem [ref=e274]:
+                              - checkbox [ref=e275]
+                              - generic [ref=e276] [cursor=pointer]: iPhone 15 Pro
+                            - listitem [ref=e277]:
+                              - checkbox [ref=e278]
+                              - generic [ref=e279] [cursor=pointer]: iPhone 15 Pro Max
+                            - listitem [ref=e280]:
+                              - checkbox [ref=e281]
+                              - generic [ref=e282] [cursor=pointer]: iPhone 16
+                            - listitem [ref=e283]:
+                              - checkbox [ref=e284]
+                              - generic [ref=e285] [cursor=pointer]: iPhone 16 Plus
+                            - listitem [ref=e286]:
+                              - checkbox [ref=e287]
+                              - generic [ref=e288] [cursor=pointer]: iPhone 16 Pro
+                            - listitem [ref=e289]:
+                              - checkbox [ref=e290]
+                              - generic [ref=e291] [cursor=pointer]: iPhone 16 Pro Max
+                            - listitem [ref=e292]:
+                              - checkbox [ref=e293]
+                              - generic [ref=e294] [cursor=pointer]: iPhone 17
+                            - listitem [ref=e295]:
+                              - checkbox [ref=e296]
+                              - generic [ref=e297] [cursor=pointer]: iPhone 17 Air
+                            - listitem [ref=e298]:
+                              - checkbox [ref=e299]
+                              - generic [ref=e300] [cursor=pointer]: iPhone 17 Pro
+                            - listitem [ref=e301]:
+                              - checkbox [ref=e302]
+                              - generic [ref=e303] [cursor=pointer]: iPhone 17 Pro Max
+                - generic [ref=e305]:
+                  - combobox [ref=e311] [cursor=pointer]:
+                    - generic [ref=e313]: Sort by
+                    - img [ref=e315]
+                  - region "Product Gallery" [ref=e317]:
+                    - generic [ref=e318]:
+                      - list [ref=e319]:
+                        - listitem [ref=e320]:
+                          - group "Tough Case for iPhone® gallery" [ref=e322]:
+                            - link "Quick View" [ref=e323] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/tough-case-for-iphone
+                              - button "Quick View" [ref=e329]
+                            - link "Tough Case for iPhone® Price €17.50" [ref=e332] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/tough-case-for-iphone
+                              - generic [ref=e335]:
+                                - paragraph [ref=e337]: Tough Case for iPhone®
+                                - generic [ref=e340]:
+                                  - generic [ref=e341]: Price
+                                  - generic [ref=e342]: €17.50
+                        - listitem [ref=e343]:
+                          - group "Eden Peppermint Tea Tree Leave in Conditioner Milk. Best Seller gallery" [ref=e345]:
+                            - link "Quick View Best Seller" [ref=e346] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-peppermint-tea-tree-leave-in-conditioner-milk
+                              - generic [ref=e347]:
+                                - button "Quick View" [ref=e352]
+                                - generic [ref=e355]: Best Seller
+                            - link "Eden Peppermint Tea Tree Leave in Conditioner Milk Price €11.75" [ref=e358] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-peppermint-tea-tree-leave-in-conditioner-milk
+                              - generic [ref=e361]:
+                                - paragraph [ref=e363]: Eden Peppermint Tea Tree Leave in Conditioner Milk
+                                - generic [ref=e366]:
+                                  - generic [ref=e367]: Price
+                                  - generic [ref=e368]: €11.75
+                        - listitem [ref=e369]:
+                          - group "Pure Moroccan Argan Oil. New* gallery" [ref=e371]:
+                            - link "Quick View New*" [ref=e372] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/pure-moroccan-argan-oil
+                              - generic [ref=e373]:
+                                - button "Quick View" [ref=e378]
+                                - generic [ref=e381]: New*
+                            - link "Pure Moroccan Argan Oil Price €18.00" [ref=e384] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/pure-moroccan-argan-oil
+                              - generic [ref=e387]:
+                                - paragraph [ref=e389]: Pure Moroccan Argan Oil
+                                - generic [ref=e392]:
+                                  - generic [ref=e393]: Price
+                                  - generic [ref=e394]: €18.00
+                        - listitem [ref=e395]:
+                          - group "Eden body works coconut shea Co-wash 473 mL. Best Seller gallery" [ref=e397]:
+                            - link "Quick View Best Seller" [ref=e398] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-body-works-coconut-shea-co-wash-473-ml
+                              - generic [ref=e399]:
+                                - button "Quick View" [ref=e404]
+                                - generic [ref=e407]: Best Seller
+                            - link "Eden body works coconut shea Co-wash 473 mL Price €20.00" [ref=e410] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-body-works-coconut-shea-co-wash-473-ml
+                              - generic [ref=e413]:
+                                - paragraph [ref=e415]: Eden body works coconut shea Co-wash 473 mL
+                                - generic [ref=e418]:
+                                  - generic [ref=e419]: Price
+                                  - generic [ref=e420]: €20.00
+                        - listitem [ref=e421]:
+                          - group "Bounce Curl Brush . Best Seller gallery" [ref=e423]:
+                            - link "Quick View Best Seller" [ref=e424] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/bounce-curl-brush
+                              - generic [ref=e425]:
+                                - button "Quick View" [ref=e430]
+                                - generic [ref=e433]: Best Seller
+                            - link "Bounce Curl Brush Out of stock" [ref=e436] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/bounce-curl-brush
+                              - generic [ref=e438]:
+                                - paragraph [ref=e441]: Bounce Curl Brush
+                                - generic [ref=e444]: Out of stock
+                        - listitem [ref=e445]:
+                          - group "OWAY No-Rinse Moist Conditioner 160 mL gallery" [ref=e447]:
+                            - link "Quick View" [ref=e448] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/oway-no-rinse-moist-conditioner-160-ml
+                              - button "Quick View" [ref=e454]
+                            - link "OWAY No-Rinse Moist Conditioner 160 mL Price €33.00" [ref=e457] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/oway-no-rinse-moist-conditioner-160-ml
+                              - generic [ref=e460]:
+                                - paragraph [ref=e462]: OWAY No-Rinse Moist Conditioner 160 mL
+                                - generic [ref=e465]:
+                                  - generic [ref=e466]: Price
+                                  - generic [ref=e467]: €33.00
+                        - listitem [ref=e468]:
+                          - group "Eden Bodyworks Jojoba Monoi Moisturizing Shampoo 235 mL. Best Seller gallery" [ref=e470]:
+                            - link "Quick View Best Seller" [ref=e471] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-jojoba-monoi-moisturizing-shampoo
+                              - generic [ref=e472]:
+                                - button "Quick View" [ref=e477]
+                                - generic [ref=e480]: Best Seller
+                            - link "Eden Bodyworks Jojoba Monoi Moisturizing Shampoo 235 mL Price €16.00" [ref=e483] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-jojoba-monoi-moisturizing-shampoo
+                              - generic [ref=e486]:
+                                - paragraph [ref=e488]: Eden Bodyworks Jojoba Monoi Moisturizing Shampoo 235 mL
+                                - generic [ref=e491]:
+                                  - generic [ref=e492]: Price
+                                  - generic [ref=e493]: €16.00
+                        - listitem [ref=e494]:
+                          - group "Eden Bodyworks Coconut Shea Moisture Shampoo 235 mL gallery" [ref=e496]:
+                            - link "Quick View" [ref=e497] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-moisture-shampoo
+                              - button "Quick View" [ref=e503]
+                            - link "Eden Bodyworks Coconut Shea Moisture Shampoo 235 mL Price €16.00" [ref=e506] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-moisture-shampoo
+                              - generic [ref=e509]:
+                                - paragraph [ref=e511]: Eden Bodyworks Coconut Shea Moisture Shampoo 235 mL
+                                - generic [ref=e514]:
+                                  - generic [ref=e515]: Price
+                                  - generic [ref=e516]: €16.00
+                        - listitem [ref=e517]:
+                          - group "Eden Bodyworks Coconut Shea Leave in Conditioner 235 mL gallery" [ref=e519]:
+                            - link "Quick View" [ref=e520] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-leave-in-conditioner
+                              - button "Quick View" [ref=e526]
+                            - link "Eden Bodyworks Coconut Shea Leave in Conditioner 235 mL Price €18.00" [ref=e529] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-leave-in-conditioner
+                              - generic [ref=e532]:
+                                - paragraph [ref=e534]: Eden Bodyworks Coconut Shea Leave in Conditioner 235 mL
+                                - generic [ref=e537]:
+                                  - generic [ref=e538]: Price
+                                  - generic [ref=e539]: €18.00
+                        - listitem [ref=e540]:
+                          - group "Eden Bodyworks Papaya Foam Conditioner . Best Seller gallery" [ref=e542]:
+                            - link "Quick View Best Seller" [ref=e543] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-papaya-foam-conditioner
+                              - generic [ref=e544]:
+                                - button "Quick View" [ref=e549]
+                                - generic [ref=e552]: Best Seller
+                            - link "Eden Bodyworks Papaya Foam Conditioner Price €16.00" [ref=e555] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-papaya-foam-conditioner
+                              - generic [ref=e558]:
+                                - paragraph [ref=e560]: Eden Bodyworks Papaya Foam Conditioner
+                                - generic [ref=e563]:
+                                  - generic [ref=e564]: Price
+                                  - generic [ref=e565]: €16.00
+                        - listitem [ref=e566]:
+                          - group "Shampoo Brush Massager. New* gallery" [ref=e568]:
+                            - link "Quick View New*" [ref=e569] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/shampoo-brush-massager
+                              - generic [ref=e570]:
+                                - button "Quick View" [ref=e575]
+                                - generic [ref=e578]: New*
+                            - link "Shampoo Brush Massager Price €12.50" [ref=e581] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/shampoo-brush-massager
+                              - generic [ref=e584]:
+                                - paragraph [ref=e586]: Shampoo Brush Massager
+                                - generic [ref=e589]:
+                                  - generic [ref=e590]: Price
+                                  - generic [ref=e591]: €12.50
+                        - listitem [ref=e592]:
+                          - group "Curl Spa Aloe Vera Gel. New* gallery" [ref=e594]:
+                            - link "Quick View New*" [ref=e595] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-aloe-vera-gel
+                              - generic [ref=e596]:
+                                - button "Quick View" [ref=e601]
+                                - generic [ref=e604]: New*
+                            - link "Curl Spa Aloe Vera Gel Price €18.00" [ref=e607] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-aloe-vera-gel
+                              - generic [ref=e610]:
+                                - paragraph [ref=e612]: Curl Spa Aloe Vera Gel
+                                - generic [ref=e615]:
+                                  - generic [ref=e616]: Price
+                                  - generic [ref=e617]: €18.00
+                        - listitem [ref=e618]:
+                          - group "Curl Spa Mousse. Best Seller gallery" [ref=e620]:
+                            - link "Quick View Best Seller" [ref=e621] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-mousse
+                              - generic [ref=e622]:
+                                - button "Quick View" [ref=e627]
+                                - generic [ref=e630]: Best Seller
+                            - link "Curl Spa Mousse Price €18.00" [ref=e633] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-mousse
+                              - generic [ref=e636]:
+                                - paragraph [ref=e638]: Curl Spa Mousse
+                                - generic [ref=e641]:
+                                  - generic [ref=e642]: Price
+                                  - generic [ref=e643]: €18.00
+                        - listitem [ref=e644]:
+                          - group "Curl Spa Mask - Large Size. Best Seller gallery" [ref=e646]:
+                            - link "Quick View Best Seller" [ref=e647] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-hydra-mask
+                              - generic [ref=e648]:
+                                - button "Quick View" [ref=e653]
+                                - generic [ref=e656]: Best Seller
+                            - link "Curl Spa Mask - Large Size Price €25.00" [ref=e659] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-hydra-mask
+                              - generic [ref=e662]:
+                                - paragraph [ref=e664]: Curl Spa Mask - Large Size
+                                - generic [ref=e667]:
+                                  - generic [ref=e668]: Price
+                                  - generic [ref=e669]: €25.00
+                        - listitem [ref=e670]:
+                          - group "CURL SPA Towel gallery" [ref=e672]:
+                            - link "Quick View" [ref=e673] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-towel
+                              - button "Quick View" [ref=e679]
+                            - link "CURL SPA Towel Price €31.85" [ref=e682] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/curl-spa-towel
+                              - generic [ref=e685]:
+                                - paragraph [ref=e687]: CURL SPA Towel
+                                - generic [ref=e690]:
+                                  - generic [ref=e691]: Price
+                                  - generic [ref=e692]: €31.85
+                        - listitem [ref=e693]:
+                          - group "Eden Body Works Peppermint Tea Tree Shampoo. Best Seller gallery" [ref=e695]:
+                            - link "Quick View Best Seller" [ref=e696] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-body-works-peppermint-tea-tree-shampoo
+                              - generic [ref=e697]:
+                                - button "Quick View" [ref=e702]
+                                - generic [ref=e705]: Best Seller
+                            - link "Eden Body Works Peppermint Tea Tree Shampoo Price €16.00" [ref=e708] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-body-works-peppermint-tea-tree-shampoo
+                              - generic [ref=e711]:
+                                - paragraph [ref=e713]: Eden Body Works Peppermint Tea Tree Shampoo
+                                - generic [ref=e716]:
+                                  - generic [ref=e717]: Price
+                                  - generic [ref=e718]: €16.00
+                        - listitem [ref=e719]:
+                          - group "Wide Tooth Curl Comb gallery" [ref=e721]:
+                            - link "Quick View" [ref=e722] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/wide-tooth-curl-comb
+                              - button "Quick View" [ref=e728]
+                            - link "Wide Tooth Curl Comb Price €7.00" [ref=e731] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/wide-tooth-curl-comb
+                              - generic [ref=e734]:
+                                - paragraph [ref=e736]: Wide Tooth Curl Comb
+                                - generic [ref=e739]:
+                                  - generic [ref=e740]: Price
+                                  - generic [ref=e741]: €7.00
+                        - listitem [ref=e742]:
+                          - group "Eden Bodyworks Coconut Shea Cleansing Co Wash gallery" [ref=e744]:
+                            - link "Quick View" [ref=e745] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-cleansing-co-wash
+                              - button "Quick View" [ref=e751]
+                            - link "Eden Bodyworks Coconut Shea Cleansing Co Wash Price €16.00" [ref=e754] [cursor=pointer]:
+                              - /url: https://www.curlspa.nl/product-page/eden-bodyworks-coconut-shea-cleansing-co-wash
+                              - generic [ref=e757]:
+                                - paragraph [ref=e759]: Eden Bodyworks Coconut Shea Cleansing Co Wash
+                                - generic [ref=e762]:
+                                  - generic [ref=e763]: Price
+                                  - generic [ref=e764]: €16.00
+                      - button "Load More" [ref=e765] [cursor=pointer]
+      - contentinfo [ref=e767]:
+        - generic [ref=e771]:
+          - generic:
+            - generic:
+              - generic [ref=e777]:
+                - generic:
+                  - generic:
+                    - navigation "Site" [ref=e781]:
+                      - list [ref=e782]:
+                        - listitem [ref=e783]:
+                          - link "Home" [ref=e786] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl
+                        - listitem [ref=e787]:
+                          - link "Price List" [ref=e790] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/krullenkapper
+                        - listitem [ref=e791]:
+                          - link "BOOK WITH A CURL SPECIALIST" [ref=e794] [cursor=pointer]:
+                            - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+                        - listitem [ref=e795]:
+                          - link "Webshop" [ref=e798] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/shop
+                        - listitem [ref=e799]:
+                          - link "Blog" [ref=e802] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/blog
+                        - listitem [ref=e803]:
+                          - link "About" [ref=e806] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/about
+                        - listitem [ref=e807]:
+                          - link "FAQ" [ref=e810] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/faq
+                        - listitem [ref=e811]:
+                          - link "Contact" [ref=e814] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/contact
+                    - generic:
+                      - paragraph [ref=e815]:
+                        - link "FAQ" [ref=e817] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/faq
+                      - paragraph [ref=e818]:
+                        - link "Shipping & Returns" [ref=e820] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/terms-conditions
+                      - paragraph [ref=e821]:
+                        - link "Store Policy" [ref=e823] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/copy-of-terms-conditions
+                      - paragraph [ref=e824]:
+                        - link "Wholesale" [ref=e828] [cursor=pointer]:
+                          - /url: http://curlspa.faire.com
+                      - paragraph [ref=e829]:
+                        - link "whatsapp +31(0)613346640" [ref=e830] [cursor=pointer]:
+                          - /url: tel:+31(0)613346640
+                          - generic [ref=e832]: whatsapp +31(0)613346640
+                    - region "Slideshow" [ref=e835]:
+                      - generic [ref=e841]:
+                        - generic:
+                          - generic:
+                            - paragraph [ref=e842]:
+                              - generic [ref=e848]: Subscribe to our mailing list
+                            - textbox "Name" [ref=e851]
+                            - textbox "Email Address" [ref=e854]
+                            - button "Subscribe Now" [ref=e856] [cursor=pointer]:
+                              - generic [ref=e857]: Subscribe Now
+                    - list "Social Bar" [ref=e859]:
+                      - listitem [ref=e860]:
+                        - link "Facebook" [ref=e861] [cursor=pointer]:
+                          - /url: https://www.facebook.com/curlspasalon
+                          - img "Facebook" [ref=e862]
+                      - listitem [ref=e863]:
+                        - link "Instagram" [ref=e864] [cursor=pointer]:
+                          - /url: https://www.instagram.com/curl_spa_salon_
+                          - img "Instagram" [ref=e865]
+              - list "Social Bar" [ref=e867]:
+                - listitem [ref=e868]:
+                  - link "Youtube" [ref=e869] [cursor=pointer]:
+                    - /url: http://www.youtube.com/@CurlSpa
+                    - img "Youtube" [ref=e870]
+                - listitem [ref=e871]:
+                  - link "Instagram" [ref=e872] [cursor=pointer]:
+                    - /url: http://www.instagram.com/curl_spa_salon_
+                    - img "Instagram" [ref=e873]
+              - heading "BECOME A CURL SPECIALIST" [level=2] [ref=e874]:
+                - link "BECOME A CURL SPECIALIST" [ref=e875] [cursor=pointer]:
+                  - /url: https://www.curl-academy.com/
+                  - generic [ref=e879]: BECOME A CURL SPECIALIST
+              - paragraph [ref=e889]:
+                - generic [ref=e891]:
+                  - text: AMSTERDAM TWEEDE HUGO DE GROOT STRAAT 24H
+                  - text: THE HAGUE - BADHUISSTRAAT 207 SCHEVENINGEN
+                  - text: Patent 2026 by Curl Spa Salons B.V
+    - region "bottom of page"

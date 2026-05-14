@@ -1,0 +1,1833 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1440" />
+<title>Jackson & Coil / Luxe Shop, v2 (matched to W1)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --cream:        #FAF7F2;
+    --cream-deep:   #F3EEE5;
+    --ink:          #1A1612;
+    --ink-soft:     #3A322B;
+    --ink-muted:    #6F655C;
+    --terracotta:   #B5532A;
+    --terracotta-deep: #8E3F1F;
+    --terracotta-soft: #D68A5D;
+    --bookgreen:    #1F4D3F;
+    --line:         #E0D8CC;
+
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-sans:    "Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono:    "JetBrains Mono", "SF Mono", Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--cream); color: var(--ink); }
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "ss02";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    min-width: 1440px;
+  }
+  img { display: block; max-width: 100%; }
+
+  ::selection { background: var(--terracotta); color: var(--cream); }
+
+  /* Reusable display class */
+  .fd {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracotta-deep);
+  }
+  .eyebrow.muted { color: var(--ink-muted); }
+  .mono {
+    font-family: var(--font-mono);
+  }
+  .hr { height: 1px; background: var(--line); border: 0; margin: 0; }
+  button { font-family: inherit; }
+
+  /* --------- harness header ---------- */
+  .harness-header {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+  .harness-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 14px 32px 0;
+  }
+  .harness-top {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .harness-brand {
+    font-family: var(--font-display);
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .harness-brand small {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-left: 12px;
+  }
+  .harness-actions {
+    display: flex; gap: 8px;
+  }
+  .harness-btn {
+    background: var(--cream);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .harness-btn:hover { border-color: var(--ink); }
+  .harness-btn.primary {
+    background: var(--ink); color: var(--cream); border-color: var(--ink);
+  }
+  .harness-btn.primary:hover { background: var(--terracotta); border-color: var(--terracotta); }
+
+  .harness-tabs {
+    display: flex; gap: 0;
+    overflow-x: auto;
+  }
+  .harness-tab {
+    flex: 0 0 auto;
+    background: transparent;
+    border: 0;
+    padding: 14px 18px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .harness-tab[aria-selected="true"] {
+    color: var(--ink);
+    border-bottom-color: var(--terracotta);
+  }
+  .harness-tab small {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    color: inherit;
+    margin-top: 4px;
+  }
+
+  /* --------- shared canvas per design ---------- */
+  .design {
+    display: none;
+    background: var(--cream);
+  }
+  .design[data-active="true"] { display: block; }
+  .design .frame {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+  }
+  .design-header {
+    padding: 36px 32px 28px;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--line);
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 32px;
+  }
+  .design-header h2 {
+    margin: 8px 0 0;
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    font-size: 56px;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .design-header .lede {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 440px;
+  }
+
+  /* --------- shared toolbar (filters / sort) ---------- */
+  .toolbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: end;
+  }
+  .toolbar-left { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end; }
+  .filter-group {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    background: var(--cream);
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+    padding: 6px 11px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--cream);
+    border-color: var(--ink);
+  }
+  .price-row {
+    display: flex; gap: 10px; align-items: center;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+  }
+  .price-row input[type="range"] {
+    accent-color: var(--terracotta);
+    width: 160px;
+  }
+  .price-row .price-val { color: var(--ink); min-width: 64px; }
+
+  .sort-select {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 8px 28px 8px 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%), linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+    background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%;
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .toolbar-right {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  }
+  .count-strip {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  /* --------- pagination ---------- */
+  .pagination {
+    display: flex; justify-content: center; gap: 4px;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+  }
+  .page-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 10px 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    cursor: pointer;
+    min-width: 44px;
+  }
+  .page-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .page-btn[aria-current="page"] {
+    background: var(--ink); color: var(--cream); border-color: var(--ink);
+  }
+  .page-btn[disabled] {
+    color: var(--ink-muted);
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  /* --------- product card primitives ---------- */
+  .pc-image {
+    position: relative;
+    background: var(--cream-deep);
+    overflow: hidden;
+  }
+  .pc-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+  .pc-image:hover img { transform: scale(1.04); }
+  .pc-image .pick-tag {
+    position: absolute; top: 12px; left: 12px;
+    background: var(--terracotta); color: var(--cream);
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 4px 8px;
+  }
+  .pc-image .stock-tag {
+    position: absolute; top: 12px; right: 12px;
+    background: var(--cream); color: var(--terracotta);
+    border: 1px solid var(--terracotta);
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 4px 8px;
+  }
+  .pc-image .stock-tag.out {
+    background: var(--ink); color: var(--cream); border-color: var(--ink);
+  }
+  .pc-brand {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .pc-name {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .pc-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .pc-price {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .pc-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .pc-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border: 1px solid var(--line);
+    padding: 2px 6px;
+  }
+  .add-btn {
+    background: var(--ink);
+    color: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .add-btn:hover { background: var(--terracotta); border-color: var(--terracotta); }
+  .add-btn.ghost { background: transparent; color: var(--ink); }
+  .add-btn.ghost:hover { background: var(--ink); color: var(--cream); }
+
+  .empty-msg {
+    padding: 64px 0;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  /* =========================================================
+     Design 1: Editorial 4-col grid
+     ========================================================= */
+  .d1 .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 56px;
+    padding-top: 48px;
+  }
+  .d1 .pc { display: flex; flex-direction: column; }
+  .d1 .pc-image { aspect-ratio: 4/5; }
+  .d1 .pc-meta { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .d1 .pc-brand { margin-bottom: 2px; }
+  .d1 .pc-name { font-size: 22px; }
+  .d1 .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 10px; }
+
+  /* =========================================================
+     Design 2: Magazine asymmetric (1 big + 2 medium, then 3-col)
+     ========================================================= */
+  .d2 .hero-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 24px;
+    padding-top: 48px;
+  }
+  .d2 .hero-row .pc-image { aspect-ratio: 4/5; }
+  .d2 .hero-row .pc.big .pc-image { aspect-ratio: 4/5; }
+  .d2 .hero-row .pc.big .pc-name { font-size: 36px; }
+  .d2 .hero-row .pc { display: flex; flex-direction: column; }
+  .d2 .hero-row .pc-meta { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .d2 .hero-row .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; gap: 10px; }
+  .d2 .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 56px;
+    padding-top: 56px;
+  }
+  .d2 .products .pc-image { aspect-ratio: 1/1; }
+  .d2 .products .pc-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .d2 .products .pc-name { font-size: 24px; }
+  .d2 .products .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 10px; }
+  .d2 .section-rule {
+    margin: 64px 0 0;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .d2 .section-rule h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+
+  /* =========================================================
+     Design 3: Gallery 2-col big images
+     ========================================================= */
+  .d3 .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    row-gap: 88px;
+    padding-top: 56px;
+  }
+  .d3 .pc { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .d3 .pc-image { aspect-ratio: 4/5; }
+  .d3 .pc-meta {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 24px;
+    row-gap: 6px;
+    align-items: end;
+  }
+  .d3 .pc-brand { grid-column: 1 / 2; }
+  .d3 .pc-name {
+    font-size: 34px;
+    grid-column: 1 / 2;
+  }
+  .d3 .pc-price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: end;
+    font-size: 18px;
+  }
+  .d3 .pc-desc { grid-column: 1 / -1; max-width: 520px; }
+  .d3 .pc-foot { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 14px; }
+
+  /* =========================================================
+     Design 4: List-view editorial (horizontal rows)
+     ========================================================= */
+  .d4 .products {
+    display: flex; flex-direction: column;
+    gap: 0;
+    padding-top: 24px;
+  }
+  .d4 .pc {
+    display: grid;
+    grid-template-columns: 340px 1fr 220px;
+    gap: 48px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: start;
+  }
+  .d4 .pc-image { aspect-ratio: 1/1; }
+  .d4 .pc-mid { display: flex; flex-direction: column; gap: 10px; padding-top: 8px; }
+  .d4 .pc-name { font-size: 30px; }
+  .d4 .pc-desc { max-width: 540px; }
+  .d4 .pc-right {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 14px;
+    padding-top: 8px;
+  }
+  .d4 .pc-right .pc-price { font-size: 16px; }
+  .d4 .pc-tags-strip {
+    display: flex; gap: 16px; margin-top: 4px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .d4 .pc-tags-strip span b { font-weight: 500; color: var(--ink-soft); }
+
+  /* =========================================================
+     Design 5: Tabbed by category (3-col grid per tab)
+     ========================================================= */
+  .d5 .cat-tabs {
+    display: flex;
+    gap: 0;
+    padding-top: 32px;
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+  }
+  .d5 .cat-tab {
+    background: transparent;
+    border: 0;
+    padding: 8px 0 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    text-align: left;
+    flex: 0 0 auto;
+  }
+  .d5 .cat-tab .num {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .d5 .cat-tab .name {
+    font-family: var(--font-display);
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    color: var(--ink-muted);
+    line-height: 1;
+  }
+  .d5 .cat-tab[aria-selected="true"] .name { color: var(--ink); }
+  .d5 .cat-tab[aria-selected="true"] {
+    border-bottom: 2px solid var(--terracotta);
+    margin-bottom: -1px;
+  }
+  .d5 .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 56px;
+    padding-top: 48px;
+  }
+  .d5 .pc { display: flex; flex-direction: column; }
+  .d5 .pc-image { aspect-ratio: 1/1; }
+  .d5 .pc-meta { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .d5 .pc-name { font-size: 26px; }
+  .d5 .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; gap: 10px; }
+
+  /* =========================================================
+     Design 6: Curated stories (themed blocks)
+     ========================================================= */
+  .d6 .story {
+    padding-top: 56px;
+  }
+  .d6 .story + .story { padding-top: 80px; }
+  .d6 .story-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: end;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .d6 .story-head h3 {
+    margin: 8px 0 0;
+    font-family: var(--font-display);
+    font-size: 48px;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+    font-weight: 400;
+  }
+  .d6 .story-head p {
+    color: var(--ink-soft); font-size: 14px; line-height: 1.6; max-width: 480px;
+    margin: 0;
+  }
+  .d6 .story-head .num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracotta-deep);
+  }
+  .d6 .story-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-top: 32px;
+  }
+  .d6 .pc-image { aspect-ratio: 4/5; }
+  .d6 .pc-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .d6 .pc-name { font-size: 20px; }
+  .d6 .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 8px; }
+
+  /* =========================================================
+     Design 7: Hero bestseller + dense grid
+     ========================================================= */
+  .d7 .hero-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 48px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+  }
+  .d7 .hero-card .pc-image { aspect-ratio: 4/5; }
+  .d7 .hero-card .hero-meta {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .d7 .hero-card .hero-meta .pc-name { font-size: 56px; line-height: 0.98; }
+  .d7 .hero-card .hero-meta .pc-desc { font-size: 16px; max-width: 460px; }
+  .d7 .hero-card .hero-meta .pc-foot {
+    display: flex; align-items: center; gap: 20px; margin-top: 8px;
+  }
+  .d7 .hero-card .hero-meta .pc-price { font-size: 18px; }
+  .d7 .hero-card .hero-meta .add-btn { padding: 14px 24px; }
+  .d7 .hero-card .ribbon {
+    display: inline-flex; align-self: flex-start;
+    background: var(--ink); color: var(--cream);
+    padding: 6px 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .d7 .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 48px;
+    padding-top: 48px;
+  }
+  .d7 .pc-image { aspect-ratio: 1/1; }
+  .d7 .pc-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 5px; }
+  .d7 .pc-name { font-size: 20px; }
+  .d7 .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; gap: 8px; }
+
+  /* =========================================================
+     Design 8: Sidebar filter + 3-col luxe grid
+     ========================================================= */
+  .d8 .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 56px;
+    padding-top: 48px;
+  }
+  .d8 aside {
+    position: sticky;
+    top: 140px;
+    align-self: flex-start;
+    border-right: 1px solid var(--line);
+    padding-right: 32px;
+  }
+  .d8 aside .filter-group {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+  }
+  .d8 aside .filter-group:last-child {
+    border-bottom: 0;
+  }
+  .d8 aside h4 {
+    margin: 0 0 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .d8 aside .chips { gap: 6px; }
+  .d8 .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+  }
+  .d8 .pc-image { aspect-ratio: 4/5; }
+  .d8 .pc-meta { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .d8 .pc-name { font-size: 24px; }
+  .d8 .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 10px; }
+
+  .d8 .main-toolbar {
+    display: flex; align-items: end; justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0;
+  }
+
+  /* =========================================================
+     Modal (shared)
+     ========================================================= */
+  .modal {
+    position: fixed; inset: 0;
+    background: rgba(26, 22, 18, 0.55);
+    display: none;
+    z-index: 100;
+    align-items: center; justify-content: center;
+    padding: 40px;
+  }
+  .modal[data-open="true"] { display: flex; }
+  .modal-card {
+    background: var(--cream);
+    width: min(1080px, 100%);
+    max-height: 86vh;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+  .modal-card .img {
+    background: var(--cream-deep);
+    aspect-ratio: 4/5;
+    overflow: hidden;
+  }
+  .modal-card .img img { width: 100%; height: 100%; object-fit: cover; }
+  .modal-card .info {
+    padding: 40px 40px 36px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .modal-card .info .pc-brand { margin-bottom: 0; }
+  .modal-card .info h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .modal-card .info .lede {
+    color: var(--ink-soft); font-size: 15px; line-height: 1.6;
+  }
+  .modal-card .info .long {
+    color: var(--ink-soft); font-size: 14px; line-height: 1.7;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .modal-card .info .meta-row {
+    display: grid; grid-template-columns: auto 1fr; gap: 10px 18px;
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--ink-muted);
+    padding-top: 14px; border-top: 1px solid var(--line);
+  }
+  .modal-card .info .meta-row b { color: var(--ink-soft); font-weight: 500; }
+  .modal-card .info .foot {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 14px; border-top: 1px solid var(--line);
+    margin-top: 8px;
+  }
+  .modal-card .info .foot .price {
+    font-family: var(--font-mono); font-size: 20px; color: var(--ink);
+  }
+  .modal-close {
+    position: absolute;
+    top: 28px; right: 28px;
+    background: var(--cream); color: var(--ink);
+    border: 1px solid var(--line);
+    width: 36px; height: 36px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .modal-card { position: relative; }
+
+  /* --------- toast for copy ---------- */
+  .toast {
+    position: fixed; left: 50%; bottom: 28px;
+    transform: translateX(-50%);
+    background: var(--ink); color: var(--cream);
+    padding: 12px 20px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .toast[data-show="true"] { opacity: 1; }
+
+  /* Bottom select-bar */
+  .select-bar {
+    position: sticky;
+    bottom: 0;
+    background: var(--cream);
+    border-top: 1px solid var(--line);
+    padding: 16px 32px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    z-index: 40;
+  }
+  .select-bar .left {
+    display: flex; align-items: center; gap: 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .select-bar .left b { color: var(--ink); font-weight: 500; }
+  .select-bar .right { display: flex; gap: 8px; }
+</style>
+</head>
+<body>
+
+<header class="harness-header">
+  <div class="harness-inner">
+    <div class="harness-top">
+      <div class="harness-brand">
+        Jackson &amp; Coil
+        <small>Luxe Shop / Designvalg v2</small>
+      </div>
+      <div class="harness-actions">
+        <button class="harness-btn" id="copy-btn" type="button">Kopier valg JSON</button>
+      </div>
+    </div>
+    <nav class="harness-tabs" role="tablist" id="design-tabs"></nav>
+  </div>
+</header>
+
+<main id="designs"></main>
+
+<div class="select-bar">
+  <div class="left">
+    Valgt design: <b id="selected-name">Ingen</b>
+  </div>
+  <div class="right">
+    <button class="harness-btn primary" id="select-current">Velg dette designet</button>
+  </div>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-card" id="modal-card">
+    <button class="modal-close" id="modal-close" aria-label="Lukk">x</button>
+    <div class="img"><img id="m-img" alt="" /></div>
+    <div class="info">
+      <span class="pc-brand" id="m-brand">Brand</span>
+      <h3 id="m-name">Product</h3>
+      <p class="lede" id="m-lede"></p>
+      <p class="long" id="m-long"></p>
+      <div class="meta-row" id="m-meta"></div>
+      <div class="foot">
+        <span class="price" id="m-price"></span>
+        <button class="add-btn" id="m-add">Legg i kurv</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Kopiert</div>
+
+<script>
+/* ------------------------------------------------------------
+   Product data, hardcoded subset of the 36 W1 products.
+   Image paths are relative to this HTML file.
+   ------------------------------------------------------------ */
+const IMG_BASE = "website1/public/images/shop/";
+const PLACEHOLDER = IMG_BASE + "placeholder.svg";
+
+const PRODUCTS = [
+  { slug:"pattern-curl-mousse", name:"Pattern Beauty Curl Mousse", brand:"Pattern Beauty", price:420, category:"styler", hairTypes:["3B","3C","4A","4B","4C"], porosity:["medium","high"], rating:4.6, reviewCount:612, bestseller:true, stylistPick:"Vanessa sin favoritt for fint 3C-hår som ikke tåler gel.",
+    description:"Lett krøllmousse med marshmallow-rot og castor-olje. Gir volum og definisjon uten knase.",
+    longDescription:"Pattern sin mousse luftes opp uten å tørke ut med alkohol. Ta to håndflate-store doser på dryppvått hår, scrunch, og diffuser på lav varme. Holder definisjonen i to dager.",
+    img:"pattern-curl-mousse.jpg", stock:"in_stock" },
+  { slug:"innersense-i-create-definition", name:"Innersense I Create Definition", brand:"Innersense Organic Beauty", price:390, category:"styler", hairTypes:["2C","3A","3B","3C"], porosity:["low","medium"], rating:4.7, reviewCount:482, bestseller:true,
+    description:"Lett definisjonskrem med sheasmør og tamanu-olje. Mykt grep og ingen hvit hinne.",
+    longDescription:"En definer du tåler hver dag, fungerer med lavsåpe-vask. Et tynt lag på vått hår, scrunch, og lufttørk eller diffuser. Friske opp med vann på dag to.",
+    img:"innersense-i-create-definition.jpg", stock:"in_stock" },
+  { slug:"ufd-curly-magic", name:"Uncle Funky's Daughter Curly Magic", brand:"Uncle Funky's Daughter", price:695, category:"styler", hairTypes:["3B","3C","4A","4B"], porosity:["medium","high"], rating:4.8, reviewCount:743, bestseller:true, stylistPick:"Vanessa sin favoritt for tykt 3C til 4A-hår som suger til seg produkt.",
+    description:"Gele-krem med aloe, marshmallow-rot og brennesle. Gir definisjon med skikkelig glid.",
+    longDescription:"En vannbasert gele-krem som dobler som leave-in. Skikkelig glid gjør at både fingre og Denman går rett gjennom. Holder definerte krøller i fuktig vær uten å flake.",
+    img:"ufd-curly-magic.jpg", stock:"low_stock" },
+  { slug:"boucleme-super-volumising-foam", name:"Bouclème Super Volumising Foam", brand:"Bouclème", price:349, category:"styler", hairTypes:["2A","2B","2C","3A"], porosity:["low"], rating:4.5, reviewCount:318, stylistPick:"Inés anbefaler til fint Type 2-hår som faller flatt etter lunsj.",
+    description:"Skum fra UK med linfrø-ekstrakt. Løfter rotpartiet på fine bølger uten å stivne.",
+    longDescription:"En fjærlett foam som bygger volum fra roten. To pumpetrykk på vått hår, scrunch og lufttørk. Uten protein, vegansk, fungerer på fint hår.",
+    img:"boucleme-super-volumising-foam.jpg", stock:"in_stock" },
+  { slug:"boucleme-curl-defining-gel", name:"Bouclème Curl Defining Gel", brand:"Bouclème", price:379, category:"styler", hairTypes:["2C","3A","3B","3C"], porosity:["medium"], rating:4.6, reviewCount:421,
+    description:"Geleserum med medium grep, linfrø og aloe. Glatter frizz uten å klistre seg.",
+    longDescription:"En geleserum som glatter overflaten uten å flake. Legges over leave-in for et mykt cast som scruncher seg ut til definerte krøller.",
+    img:"boucleme-curl-defining-gel.jpg", stock:"in_stock" },
+  { slug:"curlsmith-flexi-jelly", name:"Curlsmith Hydro Style Flexi-Jelly", brand:"Curlsmith", price:360, category:"styler", hairTypes:["2B","2C","3A","3B"], porosity:["low","medium"], rating:4.4, reviewCount:297, newArrival:true,
+    description:"Ultralett gelé som glir gjennom våte krøller. Scrunch ut casten for myk definisjon.",
+    longDescription:"En silkemyk gelé for deg som synes vanlig gel blir for tung. Sitter lett på vått hår, tørker med lett crunch, og scruncher seg ut til luftige krøller.",
+    img:"curlsmith-flexi-jelly.jpg", stock:"in_stock" },
+  { slug:"camille-rose-curl-maker", name:"Camille Rose Curl Maker", brand:"Camille Rose", price:320, category:"styler", hairTypes:["3B","3C","4A"], porosity:["medium"], rating:4.5, reviewCount:588,
+    description:"Definerende gelé med marshmallow-rot og gylden agave. Mykt grep og dyp fukt.",
+    longDescription:"En kremgelé-hybrid som styler og pleier samtidig. Honning-aktig konsistens som glatter frizz og låser klumper for en krøll-styling som holder.",
+    img:"camille-rose-curl-maker.jpg", stock:"in_stock" },
+  { slug:"innersense-i-create-volume", name:"Innersense I Create Volume", brand:"Innersense Organic Beauty", price:390, category:"styler", hairTypes:["2A","2B","2C","3A"], porosity:["low"], rating:4.4, reviewCount:214,
+    description:"Mineral-lett rotspray med havsalt og aloe. Løfter slappe bølger uten å tørke ut.",
+    longDescription:"En salt-og-aloe-spray som bygger volum ved roten uten sandpapir-tekstur. Spray på fuktige røtter, scrunch lengdene, diffuser.",
+    img:"innersense-i-create-volume.jpg", stock:"in_stock" },
+  { slug:"innersense-hydrating-hairbath", name:"Innersense Hydrating Cream Hairbath", brand:"Innersense Organic Beauty", price:380, category:"shampoo", hairTypes:["3A","3B","3C","4A"], porosity:["medium","high"], rating:4.7, reviewCount:695, bestseller:true,
+    description:"Mild cream-rens med honning og kokos. Sulfatfri, lagd for ofte krøll-vask.",
+    longDescription:"En kremaktig vask som ikke skummer hardt og som tar vare på krøllen. Masser inn i hodebunnen, og la skyllingen gli gjennom lengdene.",
+    img:"innersense-hydrating-hairbath.jpg", stock:"in_stock" },
+  { slug:"innersense-clarity-hairbath", name:"Innersense Clarity Hairbath", brand:"Innersense Organic Beauty", price:380, category:"shampoo", hairTypes:["2B","2C","3A","3B"], porosity:["low","medium"], rating:4.6, reviewCount:401,
+    description:"Sulfatfri klargjørende vask for krøller med belegg. Sitrongress og bergamott.",
+    longDescription:"Fjerner produktrester uten å fjerne fukten. Skum, la sitte i to minutter, skyll. Følg opp med en deep conditioner samme dag.",
+    img:"innersense-clarity-hairbath.jpg", stock:"in_stock" },
+  { slug:"cbb-creamy-cleanser", name:"Curls by Brown Creamy Hair Cleanser", brand:"Curls by Brown", price:399, category:"shampoo", hairTypes:["3C","4A","4B","4C"], porosity:["high"], rating:4.7, reviewCount:523, bestseller:true, stylistPick:"Adé foreslår denne til klienter som vasker to eller tre ganger i uken.",
+    description:"Pleiende co-wash for tette krøller mellom vanlige vasker. Uten sulfater og silikoner.",
+    longDescription:"En kremaktig vask-conditioner som løfter olje uten å tørke ut. Masser inn i hodebunnen seksjon for seksjon, og la lengdene få avrenningen.",
+    img:"cbb-creamy-cleanser.jpg", stock:"in_stock" },
+  { slug:"boucleme-scalp-exfoliating-shampoo", name:"Bouclème Scalp Exfoliating Shampoo", brand:"Bouclème", price:399, category:"shampoo", hairTypes:["2C","3A","3B","3C","4A"], porosity:["medium"], rating:4.5, reviewCount:244, newArrival:true,
+    description:"Mild eksfolierende vask med bambus og pre-biotisk ferment.",
+    longDescription:"Mikro-eksfolierende perler oppløses mens du masserer. Pre-biotisk ferment mater hodebunns-biomet.",
+    img:"boucleme-scalp-exfoliating-shampoo.jpg", stock:"in_stock" },
+  { slug:"k18-peptide-prep-detox", name:"K18 Peptide Prep Detox Shampoo", brand:"K18", price:360, category:"shampoo", hairTypes:["2C","3A","3B","3C"], porosity:["medium"], rating:4.4, reviewCount:367, stylistPick:"Vanessa: steg én i hver hjemme-K18 eller hjemme-Olaplex-rutine.",
+    description:"Klargjørende vask som fjerner mineraler. Brukes dagen før K18-mask.",
+    longDescription:"En målrettet klargjøring laget for å forberede håret til K18-mask. Fjerner kobber, jern og klor som blokkerer bond-reparasjon.",
+    img:"k18-peptide-prep-detox.jpg", stock:"in_stock" },
+  { slug:"innersense-color-awakening-hairbath", name:"Innersense Color Awakening Hairbath", brand:"Innersense Organic Beauty", price:380, category:"shampoo", hairTypes:["2C","3A","3B","3C","4A"], porosity:["medium"], rating:4.6, reviewCount:198,
+    description:"Sulfatfri vask laget for fargede krøller. Aloe, jojoba og irlandsk mose.",
+    longDescription:"Designet for fargede og balayage-krøller. UV-filtre i formelen bremser oksidering og falming.",
+    img:"innersense-color-awakening-hairbath.jpg", stock:"low_stock" },
+  { slug:"pattern-heavy-conditioner", name:"Pattern Beauty Heavy Conditioner", brand:"Pattern Beauty", price:420, category:"conditioner", hairTypes:["3C","4A","4B","4C"], porosity:["high"], rating:4.8, reviewCount:821, bestseller:true, stylistPick:"Vanessa griper denne til klienter med tykt Type 4-hår og lang utgreiingsjobb.",
+    description:"Tung fukt-conditioner fra Tracee Ellis Ross. Greier ut tette krøller i dusjen.",
+    longDescription:"En smør-aktig formel med saflor, avokado og shea. Laget for å brukes gavmildt, med hender og bredtannet kam, og deretter skylles med kaldt vann.",
+    img:"pattern-heavy-conditioner.jpg", stock:"in_stock" },
+  { slug:"innersense-hydrating-cream-conditioner", name:"Innersense Hydrating Cream Conditioner", brand:"Innersense Organic Beauty", price:400, category:"conditioner", hairTypes:["3A","3B","3C","4A"], porosity:["medium","high"], rating:4.7, reviewCount:502,
+    description:"Skylle-ut conditioner med shea, jojoba og honning. Fukt som tåler daglig bruk.",
+    longDescription:"Conditioneren som passer Hydrating Hairbath. Mykgjør, greier ut, og etterlater ingen rester.",
+    img:"innersense-hydrating-cream-conditioner.jpg", stock:"in_stock" },
+  { slug:"innersense-hydrating-hair-mask", name:"Innersense Hydrating Hair Mask", brand:"Innersense Organic Beauty", price:440, category:"deep-treatment", hairTypes:["3B","3C","4A","4B","4C"], porosity:["medium","high"], rating:4.8, reviewCount:654, bestseller:true, stylistPick:"Mira lar denne ligge under plast med lav varme i ti minutter.",
+    description:"Ukentlig kur med sheasmør, tamanu og jojoba. Reparerer kløyvde tupper.",
+    longDescription:"En profesjonell deep treatment som brukes ved stolen. Påfør på nyvasket hår, dekk med plastikkhette, la sitte 10 til 20 minutter under lav varme.",
+    img:"innersense-hydrating-hair-mask.jpg", stock:"in_stock" },
+  { slug:"k18-leave-in-mask", name:"K18 Leave-in Molecular Repair Hair Mask", brand:"K18", price:890, category:"deep-treatment", hairTypes:["2C","3A","3B","3C","4A"], porosity:["medium","high"], rating:4.7, reviewCount:1284, bestseller:true, stylistPick:"Vanessa anbefaler etter hver fargebehandling for fargede krøller.",
+    description:"Bioaktiv peptid-behandling som reparerer skader fra bleking, farge og varme.",
+    longDescription:"Brukes etter klargjøring. Litt per seksjon, la sitte fire minutter, og styl som vanlig. Synlig bond-reparasjon etter én syklus.",
+    img:"k18-leave-in-mask.jpg", stock:"low_stock" },
+  { slug:"innersense-detox-hair-mask", name:"Innersense Detox Hair Mask", brand:"Innersense Organic Beauty", price:440, category:"deep-treatment", hairTypes:["2C","3A","3B","3C","4A"], porosity:["medium"], rating:4.5, reviewCount:211,
+    description:"Bentonite-leir-kur med grønn te og shea. Trekker ut rester og resetter krøllmønsteret.",
+    longDescription:"En klargjørende leirebehandling som detoxer uten å tørke ut. Bland med vann om den er veldig tjukk, påfør på fuktig hår, la sitte 10 minutter.",
+    img:"innersense-detox-hair-mask.jpg", stock:"in_stock" },
+  { slug:"innersense-color-radiance-conditioner", name:"Innersense Color Radiance Daily Conditioner", brand:"Innersense Organic Beauty", price:400, category:"conditioner", hairTypes:["2C","3A","3B","3C"], porosity:["medium"], rating:4.6, reviewCount:273,
+    description:"Fargelåsende conditioner med hibiskus og kokos. Holder nyfargede krøller blanke.",
+    longDescription:"Designet for å passe Color Awakening Hairbath. Hibiskus låser pigmentet, jojoba forsegler overflaten.",
+    img:"innersense-color-radiance-conditioner.jpg", stock:"in_stock" },
+  { slug:"boucleme-revive-oil", name:"Bouclème Revive 5 Hair Oil", brand:"Bouclème", price:439, category:"oil", hairTypes:["2C","3A","3B","3C","4A","4B"], porosity:["medium","high"], rating:4.7, reviewCount:358, bestseller:true,
+    description:"Plantebasert finish-olje med kahai, moringa og mongongo. Forsegler under styling.",
+    longDescription:"En ren multi-olje. Noen dråper på fuktige tupper forsegler fukt, større mengder fungerer som pre-wash over natten.",
+    img:"boucleme-revive-oil.jpg", stock:"in_stock" },
+  { slug:"innersense-harmonic-treatment-oil", name:"Innersense Harmonic Treatment Oil", brand:"Innersense Organic Beauty", price:350, category:"oil", hairTypes:["2B","2C","3A","3B"], porosity:["low","medium"], rating:4.5, reviewCount:187,
+    description:"Pre-wash- og natt-olje med saflor, blå tansy og tamanu.",
+    longDescription:"Lett nok for fint hår, rik nok for en hodebunn-massasje. Bruk én til to dråper på tørt hår for å glatte.",
+    img:"innersense-harmonic-treatment-oil.jpg", stock:"in_stock" },
+  { slug:"bread-everyday-gloss-oil", name:"Bread Beauty Supply Everyday Gloss Hair Oil", brand:"Bread Beauty Supply", price:595, category:"oil", hairTypes:["2B","2C","3A","3B","3C"], porosity:["low","medium"], rating:4.6, reviewCount:1042, bestseller:true,
+    description:"Silikonfri olje med kakadu-plomme. Gir glans uten å tynge krøllene.",
+    longDescription:"En australsk blanding med kakadu-plomme og macadamia. Lukter som jordbær-lip-balm, gir glans uten fett.",
+    img:"bread-everyday-gloss-oil.jpg", stock:"in_stock" },
+  { slug:"innersense-refresh-dry-shampoo", name:"Innersense Refresh Dry Shampoo", brand:"Innersense Organic Beauty", price:350, category:"oil", hairTypes:["2A","2B","2C","3A","3B"], porosity:["low"], rating:4.3, reviewCount:142, newArrival:true,
+    description:"Pulver-refresh med ris og arrowroot mellom vaskedager.",
+    longDescription:"Et pulver i pumpe som suger opp olje ved roten uten å etterlate rester. Masser inn med fingertuppene, rist ut det overflødige.",
+    img:"innersense-refresh-dry-shampoo.jpg", stock:"in_stock" },
+  { slug:"mielle-ph-leave-in", name:"Mielle Pomegranate & Honey Leave-In Conditioner", brand:"Mielle Organics", price:240, category:"leave-in", hairTypes:["3C","4A","4B","4C"], porosity:["high"], rating:4.6, reviewCount:928, bestseller:true, stylistPick:"Adé: et mellomprispriset Type 4-staple jeg ikke skjuler for klientene.",
+    description:"Leave-in med honning, babassu og granateple for Type 4.",
+    longDescription:"Et rimelig Type 4-staple. Honning som humektant trekker inn fukt, babassu forsegler.",
+    img:"mielle-ph-leave-in.jpg", stock:"low_stock" },
+  { slug:"bounce-curl-edgelift", name:"Bounce Curl Define EdgeLift Brush", brand:"Bounce Curl", price:449, category:"tool", hairTypes:["3A","3B","3C","4A","4B"], porosity:["medium","high"], rating:4.7, reviewCount:412, stylistPick:"Adé bruker denne for skarpe kanter på fade og taperte krøllklipp.",
+    description:"To-i-én-børste. Den ene siden glatter kanter, den andre løfter og separerer.",
+    longDescription:"Define-siden har faste, korte bust for skarpe kanter. Lift-siden gir rotvolum og bryter opp klumper.",
+    img:"bounce-curl-edgelift.jpg", stock:"in_stock" },
+  { slug:"denman-d3", name:"Denman D3 7-Row Brush", brand:"Denman", price:280, category:"tool", hairTypes:["2C","3A","3B","3C"], porosity:["low","medium"], rating:4.6, reviewCount:1547, bestseller:true, stylistPick:"Inés viser hver nye Type 3-klient hvordan Denman skal brukes ved stolen.",
+    description:"Syv rader nylonpinner. Definerer klumper i fuktig hår.",
+    longDescription:"Den klassiske krøll-definerende børsten. Påfør leave-in, og børst fra rot til tupp i små seksjoner.",
+    img:"denman-d3.jpg", stock:"in_stock" },
+  { slug:"cbb-bamboo-pick", name:"Curls by Brown Bamboo Afro Pick", brand:"Curls by Brown", price:190, category:"tool", hairTypes:["3C","4A","4B","4C"], porosity:["high"], rating:4.4, reviewCount:96,
+    description:"Lett bambus-pick for å strekke krøller uten statisk elektrisitet.",
+    longDescription:"En naturlig bambus-pick som løfter og former Type 4 uten å hekte seg.",
+    img:"cbb-bamboo-pick.jpg", stock:"in_stock" },
+  { slug:"bounce-curl-volume-edgelift", name:"Bounce Curl Volume EdgeLift Brush", brand:"Bounce Curl", price:449, category:"tool", hairTypes:["2C","3A","3B","3C"], porosity:["low","medium"], rating:4.6, reviewCount:224, newArrival:true,
+    description:"Volumside-børste for å løfte flate røtter og rede ut uten å brekke håret.",
+    longDescription:"Lengre pinner enn Define-versjonen, lagd for bølger og løsere krøller som trenger rotløft.",
+    img:"bounce-curl-volume-edgelift.jpg", stock:"in_stock" },
+  { slug:"universal-hooded-diffuser", name:"Universal Hooded Diffuser Attachment", brand:"Jackson & Coil House", price:540, category:"tool", hairTypes:["2C","3A","3B","3C","4A"], porosity:["medium"], rating:4.2, reviewCount:47,
+    description:"Hette-diffusor i silikon som passer de fleste hårfønere.",
+    longDescription:"Sammenleggbar hette i silikon med dyp skål. Universalstrikk i åpningen passer Dyson, Bio Ionic, BaByliss.",
+    img:"placeholder.svg", stock:"out_of_stock" },
+  { slug:"bounce-curl-satin-turban", name:"Bounce Curl Satin Microfiber Turban", brand:"Bounce Curl", price:320, category:"accessory", hairTypes:["2A","2B","2C","3A","3B","3C","4A","4B","4C"], porosity:["low","medium","high"], rating:4.5, reviewCount:178,
+    description:"Satin-foret mikrofiber-turban for plopping av våte krøller.",
+    longDescription:"Mikrofiber på innsiden suger vann, ytre satin-lag hindrer frizz fra grovt stoff.",
+    img:"bounce-curl-satin-turban.jpg", stock:"in_stock" },
+  { slug:"house-silk-pillowcase-teal", name:"Mulberry Silk Pillowcase, Deep Teal", brand:"Jackson & Coil House", price:540, category:"accessory", hairTypes:["2A","2B","2C","3A","3B","3C","4A","4B","4C"], porosity:["low","medium","high"], rating:4.8, reviewCount:233, bestseller:true, stylistPick:"Vanessa: det enkleste kjøpet som gir størst utslag på krøll-helsen.",
+    description:"22 momme mulberry-silke med skjult glidelås i standard størrelse.",
+    longDescription:"Kjølig mot huden, naturlig hypoallergenisk. Kombinerer med silke-hetten for en komplett natt-rutine.",
+    img:"placeholder.svg", stock:"out_of_stock" },
+  { slug:"house-satin-sleep-bonnet", name:"Satin Sleep Bonnet, Adjustable", brand:"Jackson & Coil House", price:220, category:"accessory", hairTypes:["3B","3C","4A","4B","4C"], porosity:["medium","high"], rating:4.4, reviewCount:89,
+    description:"Justerbar satin-foret hette som sitter natten gjennom.",
+    longDescription:"Dobbeltlag satin med strikk og borrelås. Romslig innside for å holde uttrukne stiler i form.",
+    img:"placeholder.svg", stock:"in_stock" },
+  { slug:"house-silk-durag", name:"Silk Durag, 22 Momme", brand:"Jackson & Coil House", price:240, category:"accessory", hairTypes:["3C","4A","4B","4C"], porosity:["medium","high"], rating:4.6, reviewCount:64, newArrival:true,
+    description:"Mulberry-silke durag for waves, twists og hold over natten.",
+    longDescription:"22 momme mulberry-silke for lite friksjon over natten. Lang hale gir godt feste uten å sette merker.",
+    img:"placeholder.svg", stock:"in_stock" },
+  { slug:"house-tshirt-towel", name:"Cotton T-Shirt Hair Towel", brand:"Jackson & Coil House", price:180, category:"accessory", hairTypes:["2A","2B","2C","3A","3B","3C"], porosity:["low","medium"], rating:4.5, reviewCount:51,
+    description:"Plopping-håndkle i myk økologisk jersey-bomull.",
+    longDescription:"GOTS-sertifisert økologisk bomull-jersey, vaskbart og brukbart i mange år.",
+    img:"placeholder.svg", stock:"in_stock" },
+  { slug:"house-silk-scrunchies", name:"Silk Scrunchies, 3-pack", brand:"Jackson & Coil House", price:90, category:"accessory", hairTypes:["2A","2B","2C","3A","3B","3C","4A"], porosity:["low","medium"], rating:4.6, reviewCount:122,
+    description:"Tre mulberry-silke scrunchies i oliven, sand og sort.",
+    longDescription:"Myke nok til å bruke om natten, stretchy nok til en treningshalehale.",
+    img:"placeholder.svg", stock:"in_stock" }
+];
+
+// Resolve image src
+function imgSrc(p) {
+  if (!p || !p.img) return PLACEHOLDER;
+  return IMG_BASE + p.img;
+}
+
+function formatNok(n) {
+  return n.toLocaleString("nb-NO").replace(/,/g, " ") + " kr";
+}
+
+/* ------------------------------------------------------------
+   Design definitions: 7 variants
+   ------------------------------------------------------------ */
+const DESIGNS = [
+  { id: 1, key: "editorial-4col",  num: "01", name: "Editorial / 4-col grid", note: "Fire-kolonners redaktørgrid, hairline-divider mellom seksjoner, store Fraunces produktnavn.",
+    lede: "Et fire-kolonners arkiv. Store tørre-trykk-rom mellom radene, mono-eyebrows, og Fraunces produktnavn satt i 22px med optical sizing." },
+  { id: 2, key: "magazine-asymmetric", num: "02", name: "Magazine / asymmetri", note: "Første rad: én stor + to medium. Deretter ren tre-kolonners flyt.",
+    lede: "Forsiden av et redaksjonelt blad. Bestselgeren får dobbel bredde i toppen, og resten av arkivet flyter under i et trekolonners raster." },
+  { id: 3, key: "gallery-2col", num: "03", name: "Galleri / to-kolonners", note: "Bare to kolonner. Hvert produkt får monumentalt bilde og stor Fraunces produktnavn.",
+    lede: "Et lite, kuratert galleri. Hvert produkt får sin egen sceneskala, og prisen står ut til høyre i mono uten å skrike." },
+  { id: 4, key: "list-editorial", num: "04", name: "Liste / apothecary-rad", note: "Horisontale rader. Bilde til venstre, lang Fraunces tittel og monografisk metadata til høyre.",
+    lede: "En apothecary-protokoll lest som et trykt katalog-blad. Hver rad har bilde, navn, kuratert beskrivelse, hårtype-taxonomi og pris i mono." },
+  { id: 5, key: "category-tabs", num: "05", name: "Kategori-tabs", note: "Store Fraunces-tabs øverst (Cleanse / Condition / Style / Tool / Accessory). Tre-kolonners grid per tab.",
+    lede: "Et redaksjonelt magasin satt i seksjoner. Klikk en kategori i seriffont, så bytter griddet under. Tabs henger på et hairline-rule." },
+  { id: 6, key: "curated-stories", num: "06", name: "Kuraterte historier", note: "Tematiske blokker (Vanessa sin edit, første-gangs-bundle, etter-farge). Hver blokk har 4 produkter.",
+    lede: "Tre seksjoner kuratert som journalsider. Hver historie får sin egen overskrift, lille intro, og en rad på fire produkter under." },
+  { id: 7, key: "hero-dense-grid", num: "07", name: "Hero + tett grid", note: "Månedens bestselger i full bredde øverst. Fire-kolonners grid under.",
+    lede: "Månedens valg står stort på toppen, halvt-bilde halvt-tekst. Under flyter resten av arkivet i et tettere fire-kolonners grid." },
+  { id: 8, key: "sidebar-3col", num: "08", name: "Sidebar-filter / luxe", note: "Sticky filter-kolonne til venstre, tre-kolonners grid med 4/5-aspect-bilder til høyre.",
+    lede: "Den klassiske avanserte shopen, men i Jackson sin tørre kremtone. Filter står sticky til venstre, bildene puster i tre kolonner." }
+];
+
+/* ------------------------------------------------------------
+   Per-design state (filter / sort / page)
+   ------------------------------------------------------------ */
+const STATES = {};
+DESIGNS.forEach(d => {
+  STATES[d.id] = {
+    categories: new Set(),
+    hairTypes: new Set(),
+    porosity: new Set(),
+    priceMin: 0,
+    priceMax: 1000,
+    sort: "featured",
+    page: 1,
+    activeCategory: null  // for design 5
+  };
+});
+
+const CATEGORIES = [
+  { key: "shampoo", label: "Shampoo" },
+  { key: "conditioner", label: "Conditioner" },
+  { key: "leave-in", label: "Leave-in" },
+  { key: "deep-treatment", label: "Deep treatment" },
+  { key: "styler", label: "Styler" },
+  { key: "oil", label: "Olje" },
+  { key: "tool", label: "Verktøy" },
+  { key: "accessory", label: "Tilbehør" }
+];
+const HAIR_TYPES = ["2A","2B","2C","3A","3B","3C","4A","4B","4C"];
+const POROSITY = [
+  { key: "low", label: "Low" },
+  { key: "medium", label: "Medium" },
+  { key: "high", label: "High" }
+];
+const SORTS = [
+  { key: "featured", label: "Anbefalt" },
+  { key: "price-asc", label: "Lavest pris" },
+  { key: "price-desc", label: "Høyest pris" },
+  { key: "name-asc", label: "A til Å" },
+  { key: "bestseller", label: "Mest solgt" }
+];
+
+const PAGE_SIZE = 12;
+
+function filterAndSort(state) {
+  let out = PRODUCTS.filter(p => {
+    if (state.categories.size && !state.categories.has(p.category)) return false;
+    if (state.hairTypes.size && !p.hairTypes.some(t => state.hairTypes.has(t))) return false;
+    if (state.porosity.size && !p.porosity.some(t => state.porosity.has(t))) return false;
+    if (p.price < state.priceMin || p.price > state.priceMax) return false;
+    return true;
+  });
+  switch (state.sort) {
+    case "price-asc":  out.sort((a,b) => a.price - b.price); break;
+    case "price-desc": out.sort((a,b) => b.price - a.price); break;
+    case "name-asc":   out.sort((a,b) => a.name.localeCompare(b.name, "nb")); break;
+    case "bestseller": out.sort((a,b) => (b.bestseller?1:0) - (a.bestseller?1:0) || b.reviewCount - a.reviewCount); break;
+    default: /* featured */ out.sort((a,b) => (b.bestseller?1:0) - (a.bestseller?1:0) || b.rating - a.rating);
+  }
+  return out;
+}
+
+function paginate(rows, page) {
+  const total = rows.length;
+  const pageCount = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const safePage = Math.min(Math.max(1, page), pageCount);
+  const start = (safePage - 1) * PAGE_SIZE;
+  return {
+    items: rows.slice(start, start + PAGE_SIZE),
+    total, pageCount, page: safePage
+  };
+}
+
+/* ------------------------------------------------------------
+   HTML builders
+   ------------------------------------------------------------ */
+function el(html) {
+  const d = document.createElement("div");
+  d.innerHTML = html.trim();
+  return d.firstChild;
+}
+
+function escAttr(s) {
+  return String(s).replace(/"/g, "&quot;");
+}
+
+function badgeHTML(p) {
+  let parts = "";
+  if (p.stylistPick) parts += '<span class="pick-tag">Stylist favoritt</span>';
+  if (p.stock === "low_stock") parts += '<span class="stock-tag">Bare noen få</span>';
+  if (p.stock === "out_of_stock") parts += '<span class="stock-tag out">Utsolgt</span>';
+  return parts;
+}
+
+function imageBlockHTML(p) {
+  return `<div class="pc-image"><img src="${imgSrc(p)}" alt="${escAttr(p.brand + " " + p.name)}" loading="lazy" />${badgeHTML(p)}</div>`;
+}
+
+function tagsHTML(p, max) {
+  const list = max ? p.hairTypes.slice(0, max) : p.hairTypes;
+  return `<div class="pc-tags">${list.map(t => `<span class="pc-tag">${t}</span>`).join("")}</div>`;
+}
+
+function priceAddHTML(p) {
+  const sold = p.stock === "out_of_stock";
+  return `
+    <span class="pc-price">${formatNok(p.price)}</span>
+    ${ sold
+      ? '<button class="add-btn" disabled style="opacity:.55;cursor:not-allowed">Venteliste</button>'
+      : '<button class="add-btn js-add">Legg i kurv</button>'}
+  `;
+}
+
+/* Card variants per design --------------------------------- */
+function card_D1(p) {
+  return `
+    <article class="pc js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-meta">
+        <span class="pc-brand">${p.brand}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.description}</p>
+        ${tagsHTML(p, 4)}
+        <div class="pc-foot">${priceAddHTML(p)}</div>
+      </div>
+    </article>`;
+}
+function card_D2_big(p) {
+  return `
+    <article class="pc big js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-meta">
+        <span class="pc-brand">${p.brand}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.description}</p>
+        ${tagsHTML(p, 5)}
+        <div class="pc-foot">${priceAddHTML(p)}</div>
+      </div>
+    </article>`;
+}
+function card_D2_small(p) {
+  return `
+    <article class="pc js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-meta">
+        <span class="pc-brand">${p.brand}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.description}</p>
+        <div class="pc-foot">${priceAddHTML(p)}</div>
+      </div>
+    </article>`;
+}
+function card_D3(p) {
+  return `
+    <article class="pc js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-meta">
+        <span class="pc-brand">${p.brand}</span>
+        <span class="pc-price">${formatNok(p.price)}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.longDescription}</p>
+        <div class="pc-foot">
+          ${tagsHTML(p, 5)}
+          ${p.stock === "out_of_stock"
+            ? '<button class="add-btn" disabled style="opacity:.55;cursor:not-allowed">Venteliste</button>'
+            : '<button class="add-btn js-add">Legg i kurv</button>'}
+        </div>
+      </div>
+    </article>`;
+}
+function card_D4(p) {
+  return `
+    <article class="pc js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-mid">
+        <span class="pc-brand">${p.brand}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.longDescription}</p>
+        <div class="pc-tags-strip">
+          <span><b>Type:</b> ${p.hairTypes.join(", ")}</span>
+          <span><b>Porositet:</b> ${p.porosity.join(", ")}</span>
+        </div>
+      </div>
+      <div class="pc-right">
+        <span class="pc-price">${formatNok(p.price)}</span>
+        ${ p.stock === "out_of_stock"
+          ? '<button class="add-btn" disabled style="opacity:.55;cursor:not-allowed">Venteliste</button>'
+          : '<button class="add-btn js-add">Legg i kurv</button>'}
+        <button class="add-btn ghost js-detail">Detaljer</button>
+      </div>
+    </article>`;
+}
+function card_D5(p) {
+  return card_D1(p).replace('class="pc js-card"', 'class="pc js-card"');
+}
+function card_D6(p) {
+  return card_D1(p).replace('class="pc js-card"', 'class="pc js-card"');
+}
+function card_D7(p) {
+  return card_D1(p).replace('class="pc js-card"', 'class="pc js-card"');
+}
+function card_D8(p) {
+  return `
+    <article class="pc js-card" data-slug="${p.slug}">
+      ${imageBlockHTML(p)}
+      <div class="pc-meta">
+        <span class="pc-brand">${p.brand}</span>
+        <h3 class="pc-name">${p.name}</h3>
+        <p class="pc-desc">${p.description}</p>
+        ${tagsHTML(p, 4)}
+        <div class="pc-foot">${priceAddHTML(p)}</div>
+      </div>
+    </article>`;
+}
+
+/* ------------------------------------------------------------
+   Toolbar (filter / sort / count)
+   ------------------------------------------------------------ */
+function renderToolbar(designId, state, total) {
+  const cats = CATEGORIES.map(c =>
+    `<button type="button" class="chip" data-kind="category" data-value="${c.key}" aria-pressed="${state.categories.has(c.key)}">${c.label}</button>`
+  ).join("");
+  const types = HAIR_TYPES.map(t =>
+    `<button type="button" class="chip" data-kind="hairType" data-value="${t}" aria-pressed="${state.hairTypes.has(t)}">${t}</button>`
+  ).join("");
+  const pors = POROSITY.map(p =>
+    `<button type="button" class="chip" data-kind="porosity" data-value="${p.key}" aria-pressed="${state.porosity.has(p.key)}">${p.label}</button>`
+  ).join("");
+  const sortOptions = SORTS.map(s => `<option value="${s.key}" ${s.key === state.sort ? "selected" : ""}>${s.label}</option>`).join("");
+
+  return `
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <div class="filter-group">
+          <span class="filter-label">Kategori</span>
+          <div class="chips">${cats}</div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Hårtype</span>
+          <div class="chips">${types}</div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Porositet</span>
+          <div class="chips">${pors}</div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Pris</span>
+          <div class="price-row">
+            <span class="price-val" data-role="price-min">${state.priceMin} kr</span>
+            <input type="range" min="0" max="1000" step="10" value="${state.priceMin}" data-kind="priceMin" />
+            <input type="range" min="0" max="1000" step="10" value="${state.priceMax}" data-kind="priceMax" />
+            <span class="price-val" data-role="price-max">${state.priceMax} kr</span>
+          </div>
+        </div>
+      </div>
+      <div class="toolbar-right">
+        <span class="count-strip"><span data-role="count">${total}</span> produkter</span>
+        <select class="sort-select" data-kind="sort">
+          ${sortOptions}
+        </select>
+      </div>
+    </div>
+  `;
+}
+
+/* Pagination */
+function renderPagination(state, pageCount) {
+  if (pageCount <= 1) return "";
+  let pages = "";
+  for (let i = 1; i <= pageCount; i++) {
+    pages += `<button class="page-btn" data-page="${i}" aria-current="${i === state.page ? "page" : "false"}">${i}</button>`;
+  }
+  return `
+    <div class="pagination">
+      <button class="page-btn" data-page="prev" ${state.page === 1 ? "disabled" : ""}>Forrige</button>
+      ${pages}
+      <button class="page-btn" data-page="next" ${state.page === pageCount ? "disabled" : ""}>Neste</button>
+    </div>
+  `;
+}
+
+/* ------------------------------------------------------------
+   Design renderers
+   ------------------------------------------------------------ */
+function renderDesignBody(design) {
+  const state = STATES[design.id];
+  if (design.id === 5) {
+    return renderDesign5(design, state);
+  }
+  if (design.id === 6) {
+    return renderDesign6(design, state);
+  }
+  if (design.id === 7) {
+    return renderDesign7(design, state);
+  }
+  if (design.id === 8) {
+    return renderDesign8(design, state);
+  }
+  return renderStandard(design, state);
+}
+
+function renderStandard(design, state) {
+  const filtered = filterAndSort(state);
+  const { items, total, pageCount, page } = paginate(filtered, state.page);
+  state.page = page;
+
+  let cards = "";
+  if (design.id === 1) cards = items.map(card_D1).join("");
+  else if (design.id === 2) {
+    const head = items.slice(0, 3);
+    const rest = items.slice(3);
+    const headHTML = head.length ? `
+      <div class="hero-row">
+        ${head[0] ? card_D2_big(head[0]) : ""}
+        ${head[1] ? card_D2_small(head[1]) : ""}
+        ${head[2] ? card_D2_small(head[2]) : ""}
+      </div>` : "";
+    const subhead = rest.length ? `
+      <div class="section-rule">
+        <h3>Resten av arkivet</h3>
+        <span class="eyebrow muted">${rest.length} produkter</span>
+      </div>` : "";
+    cards = headHTML + subhead + `<div class="products">${rest.map(card_D2_small).join("")}</div>`;
+  }
+  else if (design.id === 3) cards = items.map(card_D3).join("");
+  else if (design.id === 4) cards = items.map(card_D4).join("");
+
+  const productsWrap = (design.id === 2)
+    ? cards
+    : `<div class="products">${cards}</div>`;
+
+  const empty = total === 0 ? `<p class="empty-msg">Ingen produkter matcher filtrene ennå. Fjern en chip eller to.</p>` : "";
+
+  return `
+    <div class="design-header">
+      <div>
+        <span class="eyebrow">Design ${design.num} / ${design.key}</span>
+        <h2>${design.name}</h2>
+      </div>
+      <p class="lede">${design.lede}</p>
+    </div>
+    <div class="frame d${design.id}">
+      ${renderToolbar(design.id, state, total)}
+      ${productsWrap}
+      ${empty}
+      ${renderPagination(state, pageCount)}
+    </div>
+  `;
+}
+
+function renderDesign5(design, state) {
+  // Tabbed by category. We override category filter using activeCategory tab.
+  const tabs = [{key: null, label: "Alle"}, ...CATEGORIES];
+  const activeKey = state.activeCategory;
+  // For data, ignore state.categories and use activeCategory only.
+  const tempState = { ...state, categories: new Set(activeKey ? [activeKey] : []) };
+  const filtered = filterAndSort(tempState);
+  const { items, total, pageCount, page } = paginate(filtered, state.page);
+  state.page = page;
+
+  return `
+    <div class="design-header">
+      <div>
+        <span class="eyebrow">Design ${design.num} / ${design.key}</span>
+        <h2>${design.name}</h2>
+      </div>
+      <p class="lede">${design.lede}</p>
+    </div>
+    <div class="frame d${design.id}">
+      <nav class="cat-tabs" role="tablist">
+        ${tabs.map((t, i) => `
+          <button class="cat-tab" data-cat="${t.key === null ? "" : t.key}" aria-selected="${(t.key||null) === activeKey}">
+            <span class="num">${String(i).padStart(2, "0")}</span>
+            <span class="name">${t.label}</span>
+          </button>`).join("")}
+      </nav>
+      ${renderToolbar(design.id, state, total)}
+      <div class="products">${items.map(card_D5).join("")}</div>
+      ${total === 0 ? `<p class="empty-msg">Ingen produkter i denne kategorien med filtrene satt.</p>` : ""}
+      ${renderPagination(state, pageCount)}
+    </div>
+  `;
+}
+
+function renderDesign6(design, state) {
+  const filtered = filterAndSort(state);
+  // Build curated stories from filtered set.
+  const vanessa = filtered.filter(p => p.stylistPick).slice(0, 4);
+  const firstTime = filtered.filter(p => ["leave-in","conditioner","shampoo","tool"].includes(p.category)).slice(0, 4);
+  const afterColor = filtered.filter(p => /color/i.test(p.slug) || p.category === "deep-treatment" || p.slug.includes("k18")).slice(0, 4);
+
+  const stories = [
+    { num: "Edit 01", title: "Vanessa sin redaksjon", lede: "Det Vanessa peker på fra hyllen, hver gang en klient spør hva som er hennes.", items: vanessa },
+    { num: "Edit 02", title: "Første-gangs-rituale", lede: "Et lite oppstart-sett for nye klienter. Vask, conditioner, leave-in og et verktøy.", items: firstTime },
+    { num: "Edit 03", title: "Etter farge", lede: "Reparasjon og farge-lås for håret som akkurat har vært på fargestolen.", items: afterColor }
+  ];
+
+  const total = filtered.length;
+  const empty = total === 0 ? `<p class="empty-msg">Ingen historier matcher filtrene ennå.</p>` : "";
+
+  return `
+    <div class="design-header">
+      <div>
+        <span class="eyebrow">Design ${design.num} / ${design.key}</span>
+        <h2>${design.name}</h2>
+      </div>
+      <p class="lede">${design.lede}</p>
+    </div>
+    <div class="frame d${design.id}">
+      ${renderToolbar(design.id, state, total)}
+      ${empty}
+      ${stories.map(s => s.items.length ? `
+        <section class="story">
+          <div class="story-head">
+            <div>
+              <span class="num">${s.num}</span>
+              <h3>${s.title}</h3>
+            </div>
+            <p>${s.lede}</p>
+          </div>
+          <div class="story-grid">${s.items.map(card_D6).join("")}</div>
+        </section>
+      ` : "").join("")}
+    </div>
+  `;
+}
+
+function renderDesign7(design, state) {
+  const filtered = filterAndSort(state);
+  if (filtered.length === 0) {
+    return `
+      <div class="design-header">
+        <div><span class="eyebrow">Design ${design.num} / ${design.key}</span><h2>${design.name}</h2></div>
+        <p class="lede">${design.lede}</p>
+      </div>
+      <div class="frame d${design.id}">
+        ${renderToolbar(design.id, state, 0)}
+        <p class="empty-msg">Ingen produkter matcher filtrene ennå.</p>
+      </div>`;
+  }
+  const hero = filtered[0];
+  const rest = filtered.slice(1);
+  const { items, total, pageCount, page } = paginate(rest, state.page);
+  state.page = page;
+
+  return `
+    <div class="design-header">
+      <div>
+        <span class="eyebrow">Design ${design.num} / ${design.key}</span>
+        <h2>${design.name}</h2>
+      </div>
+      <p class="lede">${design.lede}</p>
+    </div>
+    <div class="frame d${design.id}">
+      ${renderToolbar(design.id, state, filtered.length)}
+      <article class="hero-card js-card" data-slug="${hero.slug}">
+        ${imageBlockHTML(hero)}
+        <div class="hero-meta">
+          <span class="ribbon">Månedens bestselger</span>
+          <span class="pc-brand">${hero.brand}</span>
+          <h3 class="pc-name">${hero.name}</h3>
+          <p class="pc-desc">${hero.longDescription}</p>
+          <div class="pc-foot">
+            <span class="pc-price">${formatNok(hero.price)}</span>
+            ${hero.stock === "out_of_stock"
+              ? '<button class="add-btn" disabled style="opacity:.55;cursor:not-allowed">Venteliste</button>'
+              : '<button class="add-btn js-add">Legg i kurv</button>'}
+            <button class="add-btn ghost js-detail">Les mer</button>
+          </div>
+        </div>
+      </article>
+      <div class="products">${items.map(card_D7).join("")}</div>
+      ${renderPagination(state, pageCount)}
+    </div>
+  `;
+}
+
+function renderDesign8(design, state) {
+  const filtered = filterAndSort(state);
+  const { items, total, pageCount, page } = paginate(filtered, state.page);
+  state.page = page;
+
+  // Custom sidebar toolbar inside aside; main toolbar only has sort + count.
+  const cats = CATEGORIES.map(c =>
+    `<button type="button" class="chip" data-kind="category" data-value="${c.key}" aria-pressed="${state.categories.has(c.key)}">${c.label}</button>`
+  ).join("");
+  const types = HAIR_TYPES.map(t =>
+    `<button type="button" class="chip" data-kind="hairType" data-value="${t}" aria-pressed="${state.hairTypes.has(t)}">${t}</button>`
+  ).join("");
+  const pors = POROSITY.map(p =>
+    `<button type="button" class="chip" data-kind="porosity" data-value="${p.key}" aria-pressed="${state.porosity.has(p.key)}">${p.label}</button>`
+  ).join("");
+  const sortOptions = SORTS.map(s => `<option value="${s.key}" ${s.key === state.sort ? "selected" : ""}>${s.label}</option>`).join("");
+
+  return `
+    <div class="design-header">
+      <div>
+        <span class="eyebrow">Design ${design.num} / ${design.key}</span>
+        <h2>${design.name}</h2>
+      </div>
+      <p class="lede">${design.lede}</p>
+    </div>
+    <div class="frame d${design.id}">
+      <div class="layout">
+        <aside>
+          <div class="filter-group">
+            <h4>Kategori</h4>
+            <div class="chips">${cats}</div>
+          </div>
+          <div class="filter-group">
+            <h4>Hårtype</h4>
+            <div class="chips">${types}</div>
+          </div>
+          <div class="filter-group">
+            <h4>Porositet</h4>
+            <div class="chips">${pors}</div>
+          </div>
+          <div class="filter-group">
+            <h4>Pris</h4>
+            <div class="price-row">
+              <span class="price-val" data-role="price-min">${state.priceMin} kr</span>
+              <input type="range" min="0" max="1000" step="10" value="${state.priceMin}" data-kind="priceMin" />
+            </div>
+            <div class="price-row" style="margin-top:8px">
+              <input type="range" min="0" max="1000" step="10" value="${state.priceMax}" data-kind="priceMax" />
+              <span class="price-val" data-role="price-max">${state.priceMax} kr</span>
+            </div>
+          </div>
+        </aside>
+        <div>
+          <div class="main-toolbar">
+            <span class="count-strip"><span data-role="count">${total}</span> produkter</span>
+            <select class="sort-select" data-kind="sort">${sortOptions}</select>
+          </div>
+          <div class="products" style="padding-top:40px">
+            ${items.map(card_D8).join("")}
+          </div>
+          ${total === 0 ? `<p class="empty-msg">Ingen produkter matcher filtrene ennå. Fjern en chip eller to.</p>` : ""}
+          ${renderPagination(state, pageCount)}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/* ------------------------------------------------------------
+   Render & event wiring
+   ------------------------------------------------------------ */
+let activeDesignId = 1;
+let selectedDesignId = null;
+
+function bootstrapTabs() {
+  const tabs = document.getElementById("design-tabs");
+  tabs.innerHTML = DESIGNS.map(d => `
+    <button class="harness-tab" data-design="${d.id}" role="tab"
+            aria-selected="${d.id === activeDesignId}">
+      <span>${d.num} / ${d.key}</span>
+      <small>${d.name}</small>
+    </button>
+  `).join("");
+  tabs.addEventListener("click", (ev) => {
+    const t = ev.target.closest(".harness-tab");
+    if (!t) return;
+    const id = Number(t.dataset.design);
+    if (id === activeDesignId) return;
+    activeDesignId = id;
+    [...tabs.children].forEach(c => c.setAttribute("aria-selected", String(Number(c.dataset.design) === id)));
+    showDesign(id);
+  });
+}
+
+function bootstrapDesigns() {
+  const root = document.getElementById("designs");
+  root.innerHTML = DESIGNS.map(d => `
+    <section class="design" data-design="${d.id}" data-active="${d.id === activeDesignId}">
+      <div class="design-body"></div>
+    </section>
+  `).join("");
+  DESIGNS.forEach(d => rerenderDesign(d.id));
+}
+
+function showDesign(id) {
+  document.querySelectorAll(".design").forEach(s => {
+    s.setAttribute("data-active", String(Number(s.dataset.design) === id));
+  });
+}
+
+function rerenderDesign(id) {
+  const design = DESIGNS.find(d => d.id === id);
+  const root = document.querySelector(`.design[data-design="${id}"] .design-body`);
+  root.innerHTML = renderDesignBody(design);
+  wireDesign(id);
+}
+
+function wireDesign(id) {
+  const state = STATES[id];
+  const root = document.querySelector(`.design[data-design="${id}"]`);
+  if (!root) return;
+
+  // Chip clicks (categories, hair types, porosity)
+  root.querySelectorAll(".chip").forEach(el => {
+    el.addEventListener("click", () => {
+      const kind = el.dataset.kind;
+      const value = el.dataset.value;
+      if (kind === "category") {
+        if (state.categories.has(value)) state.categories.delete(value); else state.categories.add(value);
+      } else if (kind === "hairType") {
+        if (state.hairTypes.has(value)) state.hairTypes.delete(value); else state.hairTypes.add(value);
+      } else if (kind === "porosity") {
+        if (state.porosity.has(value)) state.porosity.delete(value); else state.porosity.add(value);
+      }
+      state.page = 1;
+      rerenderDesign(id);
+    });
+  });
+
+  // Price range
+  root.querySelectorAll('input[type="range"]').forEach(input => {
+    input.addEventListener("input", (e) => {
+      const val = Number(e.target.value);
+      if (e.target.dataset.kind === "priceMin") state.priceMin = Math.min(val, state.priceMax);
+      if (e.target.dataset.kind === "priceMax") state.priceMax = Math.max(val, state.priceMin);
+      state.page = 1;
+      rerenderDesign(id);
+    });
+  });
+
+  // Sort
+  root.querySelectorAll('select[data-kind="sort"]').forEach(sel => {
+    sel.addEventListener("change", () => {
+      state.sort = sel.value;
+      state.page = 1;
+      rerenderDesign(id);
+    });
+  });
+
+  // Pagination
+  root.querySelectorAll(".page-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (btn.hasAttribute("disabled")) return;
+      const v = btn.dataset.page;
+      if (v === "prev") state.page = Math.max(1, state.page - 1);
+      else if (v === "next") state.page = state.page + 1;
+      else state.page = Number(v);
+      rerenderDesign(id);
+      // Scroll to top of design
+      const top = document.querySelector(`.design[data-design="${id}"]`).getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+  });
+
+  // Category tabs (design 5 only)
+  root.querySelectorAll(".cat-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const v = tab.dataset.cat || null;
+      state.activeCategory = v;
+      state.page = 1;
+      rerenderDesign(id);
+    });
+  });
+
+  // Card clicks -> modal
+  root.querySelectorAll(".js-card").forEach(card => {
+    card.addEventListener("click", (ev) => {
+      // Don't double-trigger when an inner button is clicked
+      if (ev.target.closest(".js-add")) return;
+      openModal(card.dataset.slug);
+    });
+  });
+
+  // Add to bag (mock)
+  root.querySelectorAll(".js-add").forEach(btn => {
+    btn.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      toast("Lagt i kurv");
+    });
+  });
+
+  root.querySelectorAll(".js-detail").forEach(btn => {
+    btn.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      const card = btn.closest(".js-card");
+      if (card) openModal(card.dataset.slug);
+    });
+  });
+}
+
+/* ------------------------------------------------------------
+   Modal
+   ------------------------------------------------------------ */
+function openModal(slug) {
+  const p = PRODUCTS.find(x => x.slug === slug);
+  if (!p) return;
+  document.getElementById("m-img").src = imgSrc(p);
+  document.getElementById("m-img").alt = p.brand + " " + p.name;
+  document.getElementById("m-brand").textContent = p.brand;
+  document.getElementById("m-name").textContent = p.name;
+  document.getElementById("m-lede").textContent = p.description;
+  document.getElementById("m-long").textContent = p.longDescription;
+  document.getElementById("m-price").textContent = formatNok(p.price);
+  document.getElementById("m-meta").innerHTML = `
+    <span><b>Kategori</b></span><span>${p.category}</span>
+    <span><b>Hårtype</b></span><span>${p.hairTypes.join(", ")}</span>
+    <span><b>Porositet</b></span><span>${p.porosity.join(", ")}</span>
+    <span><b>Vurdering</b></span><span>${p.rating.toFixed(1)} / ${p.reviewCount} omtaler</span>
+    ${p.stylistPick ? `<span><b>Stylist</b></span><span style="color:var(--terracotta-deep)">${p.stylistPick}</span>` : ""}
+  `;
+  const add = document.getElementById("m-add");
+  if (p.stock === "out_of_stock") {
+    add.textContent = "Sett på venteliste";
+    add.disabled = true;
+    add.style.opacity = "0.55";
+    add.style.cursor = "not-allowed";
+  } else {
+    add.textContent = "Legg i kurv";
+    add.disabled = false;
+    add.style.opacity = "1";
+    add.style.cursor = "pointer";
+  }
+  document.getElementById("modal").setAttribute("data-open", "true");
+}
+function closeModal() {
+  document.getElementById("modal").setAttribute("data-open", "false");
+}
+document.getElementById("modal-close").addEventListener("click", closeModal);
+document.getElementById("modal").addEventListener("click", (e) => {
+  if (e.target.id === "modal") closeModal();
+});
+document.getElementById("m-add").addEventListener("click", () => {
+  if (!document.getElementById("m-add").disabled) {
+    toast("Lagt i kurv");
+    closeModal();
+  }
+});
+window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+/* ------------------------------------------------------------
+   Selection + copy
+   ------------------------------------------------------------ */
+document.getElementById("select-current").addEventListener("click", () => {
+  selectedDesignId = activeDesignId;
+  const d = DESIGNS.find(x => x.id === activeDesignId);
+  document.getElementById("selected-name").textContent = `Design ${d.num} / ${d.name}`;
+  toast("Design valgt");
+});
+document.getElementById("copy-btn").addEventListener("click", async () => {
+  const d = selectedDesignId
+    ? DESIGNS.find(x => x.id === selectedDesignId)
+    : DESIGNS.find(x => x.id === activeDesignId);
+  const payload = {
+    selectedDesign: {
+      id: d.id,
+      num: d.num,
+      key: d.key,
+      name: d.name
+    },
+    timestamp: new Date().toISOString()
+  };
+  const text = JSON.stringify(payload, null, 2);
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("Kopiert");
+  } catch {
+    // Fallback
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); ta.remove();
+    toast("Kopiert");
+  }
+});
+
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.setAttribute("data-show", "true");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.setAttribute("data-show", "false"), 1600);
+}
+
+/* ------------------------------------------------------------
+   Boot
+   ------------------------------------------------------------ */
+bootstrapTabs();
+bootstrapDesigns();
+showDesign(activeDesignId);
+</script>
+
+</body>
+</html>

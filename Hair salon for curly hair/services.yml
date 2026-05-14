@@ -1,0 +1,74 @@
+- generic [ref=e2]:
+  - banner:
+    - generic [ref=e3]:
+      - link "Pular para conteúdo" [ref=e4] [cursor=pointer]:
+        - /url: "#page"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - navigation [ref=e11]:
+            - link "Services" [ref=e13] [cursor=pointer]:
+              - /url: /services
+            - link "Team" [ref=e15] [cursor=pointer]:
+              - /url: /team
+            - link "Health and safety" [ref=e17] [cursor=pointer]:
+              - /url: /health-safety
+            - link "Book" [ref=e19] [cursor=pointer]:
+              - /url: /book-now
+            - link "Policies" [ref=e21] [cursor=pointer]:
+              - /url: /policies
+            - link "FAQs" [ref=e23] [cursor=pointer]:
+              - /url: /faqs
+          - link "The Curl Bar London" [ref=e26] [cursor=pointer]:
+            - /url: /
+        - link "Book Now" [ref=e29] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book-now
+  - main [ref=e30]:
+    - article [ref=e31]:
+      - generic [ref=e38]:
+        - heading "Our Services" [level=2] [ref=e44]
+        - generic [ref=e46]:
+          - generic [ref=e50]:
+            - tablist [ref=e51]:
+              - tab "Curl Cut" [selected] [ref=e52] [cursor=pointer]
+              - tab "STYLING" [ref=e53] [cursor=pointer]
+              - tab "TREATMENTS" [ref=e54] [cursor=pointer]
+            - tabpanel "Curl Cut" [ref=e56]:
+              - generic [ref=e57]:
+                - generic [ref=e59]: Curl Cut
+                - generic [ref=e60]:
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: Curl Bar Cut
+                    - generic [ref=e63]: from £80
+                  - generic [ref=e64]:
+                    - generic [ref=e65]: Curl By Curl Cut
+                    - generic [ref=e66]: from £110
+                  - generic [ref=e67]:
+                    - generic [ref=e68]: Big Chop
+                    - generic [ref=e69]: from £80
+          - figure [ref=e76]
+  - contentinfo [ref=e80]:
+    - generic [ref=e86]:
+      - paragraph [ref=e92]:
+        - strong [ref=e93]: MYDDLETON ROAD BRANCH
+        - strong [ref=e94]: "Wednesday to Saturday: 10am till 7pm"
+        - text: 020 3624 3533
+        - link "79 Myddleton Road, London, N22 8NE" [ref=e95] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/CgAoKtDWRFKEPka96?g_st=ic
+        - link "info@thecurlbarlondon.com" [ref=e96] [cursor=pointer]:
+          - /url: mailto:info@thecurlbarlondon.com
+      - paragraph [ref=e102]:
+        - strong [ref=e103]: SITE MAP
+        - link "Services" [ref=e104] [cursor=pointer]:
+          - /url: /services
+        - link "Team" [ref=e105] [cursor=pointer]:
+          - /url: /team
+        - link "Health and Safety" [ref=e106] [cursor=pointer]:
+          - /url: /health-safety
+        - link "Contact" [ref=e107] [cursor=pointer]:
+          - /url: /contact
+        - link "Book Now" [ref=e108] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book
+      - paragraph [ref=e114]:
+        - strong [ref=e115]: FOLLOW US
+        - link "Instagram" [ref=e116] [cursor=pointer]:
+          - /url: https://www.instagram.com/thecurlbarlondon

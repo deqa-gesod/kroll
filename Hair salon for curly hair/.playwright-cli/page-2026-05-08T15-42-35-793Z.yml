@@ -1,0 +1,44 @@
+- generic [ref=e6]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - navigation:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Profile" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Profile
+          - listitem [ref=e15]:
+            - button "Bookings" [ref=e16] [cursor=pointer]:
+              - generic [ref=e19]: Bookings
+          - listitem [ref=e20]:
+            - button "Deposits" [ref=e21] [cursor=pointer]:
+              - generic [ref=e25]: Deposits
+      - banner [ref=e26]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: Powered by
+          - img "Slick logo" [ref=e33]
+        - generic [ref=e43]: Welcome to HARE & BONE FITZROVIA
+    - generic [ref=e34]:
+      - text: Founded in 2016 by Sam Burnett, HARE & BONE is a fashion-forward salon collective driven by creativity, craftsmanship and an instinctive understanding of style. Every cut, colour and finish
+      - button "read more..." [ref=e44] [cursor=pointer]
+    - button "CHANGE LOCATION" [ref=e36] [cursor=pointer]:
+      - generic [ref=e37]: CHANGE LOCATION
+    - generic [ref=e46]:
+      - button "COLOUR dropdown arrow" [ref=e48] [cursor=pointer]:
+        - generic [ref=e49]: COLOUR
+        - img "dropdown arrow" [ref=e51]
+      - button "COLOUR PACKAGES dropdown arrow" [ref=e53] [cursor=pointer]:
+        - generic [ref=e54]: COLOUR PACKAGES
+        - img "dropdown arrow" [ref=e56]
+      - button "CUTTING & STYLING dropdown arrow" [ref=e58] [cursor=pointer]:
+        - generic [ref=e59]: CUTTING & STYLING
+        - img "dropdown arrow" [ref=e61]
+      - button "KERASILK dropdown arrow" [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: KERASILK
+        - img "dropdown arrow" [ref=e66]
+      - button "GENTS dropdown arrow" [ref=e68] [cursor=pointer]:
+        - generic [ref=e69]: GENTS
+        - img "dropdown arrow" [ref=e71]
+      - button "CONSULTATIONS dropdown arrow" [ref=e73] [cursor=pointer]:
+        - generic [ref=e74]: CONSULTATIONS
+        - img "dropdown arrow" [ref=e76]
+  - button "NEXT" [disabled] [ref=e42]

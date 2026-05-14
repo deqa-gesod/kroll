@@ -1,0 +1,181 @@
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - link "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e8] [cursor=pointer]:
+        - /url: ./
+        - img "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e10]
+      - generic [ref=e11]:
+        - link "Link Button" [ref=e13] [cursor=pointer]:
+          - /url: ./studio
+          - heading "Studio" [level=5] [ref=e15]
+          - heading "Studio" [level=5] [ref=e17]
+        - link "Link Button" [ref=e19] [cursor=pointer]:
+          - /url: ./consulting
+          - heading "Consulting" [level=5] [ref=e21]
+          - heading "Consulting" [level=5] [ref=e23]
+        - link "Link Button" [ref=e25] [cursor=pointer]:
+          - /url: ./proartistry
+          - heading "Pro Artistry" [level=5] [ref=e27]
+          - heading "Pro Artistry" [level=5] [ref=e29]
+        - link "Link Button" [ref=e31] [cursor=pointer]:
+          - /url: ./about
+          - heading "About" [level=5] [ref=e33]
+          - heading "About" [level=5] [ref=e35]
+        - link "Link Button" [ref=e37] [cursor=pointer]:
+          - /url: ./insights
+          - heading "Insights" [level=5] [ref=e39]
+          - heading "Insights" [level=5] [ref=e41]
+  - img "Woman jumping in the air, kicking a golden soccer ball" [ref=e46]
+  - generic [ref=e48]:
+    - heading "P r o A r t i s t r y" [level=2] [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: P
+        - generic [ref=e54]: r
+        - generic [ref=e55]: o
+      - generic [ref=e56]:
+        - generic [ref=e57]: A
+        - generic [ref=e58]: r
+        - generic [ref=e59]: t
+        - generic [ref=e60]: i
+        - generic [ref=e61]: s
+        - generic [ref=e62]: t
+        - generic [ref=e63]: r
+        - generic [ref=e64]: "y"
+    - generic [ref=e66]:
+      - heading "Celebrity. Editorial. On-Camera." [level=2] [ref=e67]
+      - heading "When the spotlight is on, Dickey knows there’s no room for guesswork." [level=2] [ref=e68]
+  - generic [ref=e71]:
+    - heading "Booking" [level=5] [ref=e74]
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Dickey’s professional artistry and appearance bookings are handled exclusively through his representation." [level=2] [ref=e77]
+        - heading "For availability, rates, and inquiries, please contact The Rex Agency." [level=2] [ref=e78]
+      - link "Button" [ref=e82] [cursor=pointer]:
+        - /url: mailto:Kimberly@therexagency.com
+        - generic [ref=e83]:
+          - heading "Book via email" [level=5] [ref=e85]
+          - heading "Book via email" [level=5] [ref=e87]
+        - img [ref=e91]
+  - generic [ref=e95]:
+    - generic [ref=e96]:
+      - figure [ref=e98] [cursor=pointer]
+      - figure [ref=e101] [cursor=pointer]
+      - figure [ref=e104] [cursor=pointer]
+      - figure [ref=e107] [cursor=pointer]
+      - figure [ref=e110] [cursor=pointer]
+      - figure [ref=e113] [cursor=pointer]
+      - figure [ref=e116] [cursor=pointer]
+      - figure [ref=e119] [cursor=pointer]
+    - generic [ref=e121]:
+      - figure [ref=e123] [cursor=pointer]
+      - figure [ref=e126] [cursor=pointer]
+      - figure [ref=e129] [cursor=pointer]
+      - figure [ref=e132] [cursor=pointer]
+      - figure [ref=e135] [cursor=pointer]
+      - figure [ref=e138] [cursor=pointer]
+      - figure [ref=e141] [cursor=pointer]
+      - figure [ref=e144] [cursor=pointer]
+    - generic [ref=e146]:
+      - figure [ref=e148] [cursor=pointer]
+      - figure [ref=e151] [cursor=pointer]
+      - figure [ref=e154] [cursor=pointer]
+      - figure [ref=e157] [cursor=pointer]
+      - figure [ref=e160] [cursor=pointer]
+      - figure [ref=e163] [cursor=pointer]
+      - figure [ref=e166] [cursor=pointer]
+      - generic "Button" [ref=e169] [cursor=pointer]:
+        - generic [ref=e170]:
+          - heading "Load more" [level=5] [ref=e172]
+          - heading "Load more" [level=5] [ref=e174]
+    - generic [ref=e177]:
+      - figure [ref=e179] [cursor=pointer]
+      - figure [ref=e182] [cursor=pointer]
+      - figure [ref=e185] [cursor=pointer]
+      - figure [ref=e188] [cursor=pointer]
+      - figure [ref=e191] [cursor=pointer]
+      - figure [ref=e194] [cursor=pointer]
+      - figure [ref=e197] [cursor=pointer]
+  - contentinfo [ref=e201]:
+    - generic [ref=e203]:
+      - generic [ref=e204]:
+        - link "Got hair questions? Button" [ref=e205] [cursor=pointer]:
+          - /url: ./askdickey
+          - generic [ref=e207]:
+            - heading "Got hair questions?" [level=5] [ref=e209]
+            - generic "Button" [ref=e210]:
+              - heading "Submit a question" [level=5] [ref=e213]
+              - img [ref=e217]
+        - generic [ref=e221]:
+          - heading "Ready to get started?" [level=5] [ref=e223]
+          - link "Button" [ref=e225] [cursor=pointer]:
+            - /url: https://www.vagaro.com/hairrules/services
+            - generic [ref=e226]:
+              - heading "Book at the Studio" [level=5] [ref=e228]
+              - heading "Book at the Studio" [level=5] [ref=e230]
+            - img [ref=e234]
+          - link "Button" [ref=e237] [cursor=pointer]:
+            - /url: ./consulting-inquiry
+            - generic [ref=e238]:
+              - heading "Start a brand conversation" [level=5] [ref=e240]
+              - heading "Start a brand conversation" [level=5] [ref=e242]
+            - img [ref=e246]
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - heading "Navigate" [level=5] [ref=e251]
+          - generic [ref=e252]:
+            - link "Link Button" [ref=e254] [cursor=pointer]:
+              - /url: ./studio
+              - heading "Studio" [level=2] [ref=e256]
+              - heading "Studio" [level=2] [ref=e258]
+            - link "Link Button" [ref=e260] [cursor=pointer]:
+              - /url: ./consulting
+              - heading "Consulting" [level=2] [ref=e262]
+              - heading "Consulting" [level=2] [ref=e264]
+            - link "Link Button" [ref=e266] [cursor=pointer]:
+              - /url: ./proartistry
+              - heading "Pro Artistry" [level=2] [ref=e268]
+              - heading "Pro Artistry" [level=2] [ref=e270]
+            - link "Link Button" [ref=e272] [cursor=pointer]:
+              - /url: ./about
+              - heading "About" [level=2] [ref=e274]
+              - heading "About" [level=2] [ref=e276]
+            - link "Link Button" [ref=e278] [cursor=pointer]:
+              - /url: ./insights
+              - heading "Insights" [level=2] [ref=e280]
+              - heading "Insights" [level=2] [ref=e282]
+            - link "Link Button" [ref=e284] [cursor=pointer]:
+              - /url: ./contact
+              - heading "Contact" [level=2] [ref=e286]
+              - heading "Contact" [level=2] [ref=e288]
+        - generic [ref=e289]:
+          - heading "Follow us" [level=5] [ref=e291]
+          - generic [ref=e292]:
+            - link "Link Button" [ref=e294] [cursor=pointer]:
+              - /url: https://www.instagram.com/hairrules
+              - heading "Instagram" [level=2] [ref=e296]
+              - heading "Instagram" [level=2] [ref=e298]
+            - link "Link Button" [ref=e300] [cursor=pointer]:
+              - /url: https://youtube.com/hairrules?reload=9
+              - heading "Youtube" [level=2] [ref=e302]
+              - heading "Youtube" [level=2] [ref=e304]
+            - link "Link Button" [ref=e306] [cursor=pointer]:
+              - /url: https://www.pinterest.com/hairrules/
+              - heading "Pinterest" [level=2] [ref=e308]
+              - heading "Pinterest" [level=2] [ref=e310]
+            - link "Link Button" [ref=e312] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@hairrules_
+              - heading "TikTok" [level=2] [ref=e314]
+              - heading "TikTok" [level=2] [ref=e316]
+            - link "Link Button" [ref=e318] [cursor=pointer]:
+              - /url: https://www.facebook.com/hairrules
+              - heading "Facebook" [level=2] [ref=e320]
+              - heading "Facebook" [level=2] [ref=e322]
+    - generic [ref=e323]:
+      - generic [ref=e325]:
+        - text: © 2026
+        - link "Hair Rules" [ref=e326] [cursor=pointer]:
+          - /url: https://slidecreative.co
+        - text: . All rights reserved.
+      - link "Web by" [ref=e327] [cursor=pointer]:
+        - /url: https://slidecreative.co
+        - paragraph [ref=e329]: Web by

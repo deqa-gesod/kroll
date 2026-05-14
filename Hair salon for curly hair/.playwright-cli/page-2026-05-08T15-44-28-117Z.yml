@@ -1,0 +1,181 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - heading "We value your privacy" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - paragraph [ref=e8]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+      - generic [ref=e9]:
+        - button "Customize" [ref=e10] [cursor=pointer]
+        - button "Reject All" [ref=e11] [cursor=pointer]
+        - button "Accept All" [ref=e12] [cursor=pointer]
+  - link "" [ref=e14] [cursor=pointer]:
+    - /url: "#back-to-top"
+    - generic [ref=e15]: 
+  - generic [ref=e16]:
+    - banner:
+      - generic [ref=e18]:
+        - generic [ref=e21]:
+          - link "Shai Amiel" [ref=e23] [cursor=pointer]:
+            - /url: https://www.shaiamiel.com/
+            - img "Shai Amiel" [ref=e24]
+          - navigation [ref=e26]:
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "About" [ref=e29] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/about/
+              - listitem [ref=e30]:
+                - link "Salon Services" [ref=e31] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/services/
+              - listitem [ref=e32]:
+                - link "Gallery" [ref=e33] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/gallery/
+              - listitem [ref=e34]:
+                - link "Policies" [ref=e35] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/policies/
+              - listitem [ref=e36]:
+                - link "Press & Media" [ref=e37] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/press/
+              - listitem [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/contact-us/
+              - listitem [ref=e40]:
+                - link "Shop" [ref=e41] [cursor=pointer]:
+                  - /url: https://www.thecurldoctor.com
+              - listitem [ref=e42]:
+                - link "" [ref=e43] [cursor=pointer]:
+                  - /url: https://twitter.com/ShaiAmiel
+                  - generic [ref=e44]: 
+              - listitem [ref=e45]:
+                - link "" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.instagram.com/ShaiAmiel/
+                  - generic [ref=e47]: 
+              - listitem [ref=e48]:
+                - link "" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/ShaiAmielDr
+                  - generic [ref=e50]: 
+              - listitem [ref=e51]:
+                - link "" [ref=e52] [cursor=pointer]:
+                  - /url: https://shaiamiel.tumblr.com/
+                  - generic [ref=e53]: 
+        - navigation [ref=e54]:
+          - list [ref=e55]:
+            - listitem [ref=e56]:
+              - link "About" [ref=e57] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/about/
+            - listitem [ref=e58]:
+              - link "Salon Services" [ref=e59] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/services/
+            - listitem [ref=e60]:
+              - link "Gallery" [ref=e61] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/gallery/
+            - listitem [ref=e62]:
+              - link "Policies" [ref=e63] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/policies/
+            - listitem [ref=e64]:
+              - link "Press & Media" [ref=e65] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/press/
+            - listitem [ref=e66]:
+              - link "Contact" [ref=e67] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/contact-us/
+            - listitem [ref=e68]:
+              - link "Shop" [ref=e69] [cursor=pointer]:
+                - /url: https://www.thecurldoctor.com
+            - listitem [ref=e70]:
+              - link "" [ref=e71] [cursor=pointer]:
+                - /url: https://twitter.com/ShaiAmiel
+                - generic [ref=e72]: 
+            - listitem [ref=e73]:
+              - link "" [ref=e74] [cursor=pointer]:
+                - /url: https://www.instagram.com/ShaiAmiel/
+                - generic [ref=e75]: 
+            - listitem [ref=e76]:
+              - link "" [ref=e77] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/ShaiAmielDr
+                - generic [ref=e78]: 
+            - listitem [ref=e79]:
+              - link "" [ref=e80] [cursor=pointer]:
+                - /url: https://shaiamiel.tumblr.com/
+                - generic [ref=e81]: 
+    - main [ref=e97]:
+      - article [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e104]:
+            - generic [ref=e109]:
+              - heading "About Shai" [level=6] [ref=e111]
+              - generic [ref=e112]:
+                - paragraph [ref=e113]: After the first day many years ago that go-to curly hair expert Shai Amiel was handed a diffuser by the curly headed boss he was then assisting and told, “dry my curly hair,” Shai was fascinated. He saw that curly hair must be handled differently than straight hair, and he began a search for the special product, cut and color that would give curly hair the look he wanted.
+                - paragraph [ref=e114]: Shai Amiel has resuscitated so many curly locks that many clients, stylists and Hollywood celebrities have dubbed him “The Curl Doctor.”
+            - generic [ref=e120]:
+              - paragraph [ref=e122]: Shai’s passion for celebrating naturally curly hair has led him to become one of the rare masters of the curl-by-curl dry haircut.
+              - generic [ref=e123]: Featured in such fashion magazines as InStyle, People, Us, Essence and Teen Vogue, Shai has lent his curly hair expertise to many television talk show and news outlets.
+          - generic [ref=e137]:
+            - figure [ref=e140]:
+              - img "Shai Amiel" [ref=e141]
+            - figure [ref=e144]:
+              - img "curldoctor-1-1-480x360" [ref=e145]
+            - figure [ref=e148]:
+              - img "Shai Amiel" [ref=e149]
+            - figure [ref=e152]:
+              - img "Shai Amiel" [ref=e153]
+            - figure [ref=e156]:
+              - img "shai-7" [ref=e157]
+            - figure [ref=e160]:
+              - img "Shai Amiel" [ref=e161]
+            - figure [ref=e164]:
+              - img "Shai Amiel" [ref=e165]
+            - figure [ref=e168]:
+              - img "Shai Amiel" [ref=e169]
+            - figure [ref=e172]:
+              - img "Shai Amiel" [ref=e173]
+            - figure [ref=e176]:
+              - img "Shai Amiel" [ref=e177]
+            - figure [ref=e180]:
+              - img "shai-2" [ref=e181]
+            - figure [ref=e184]:
+              - img "Shai Amiel" [ref=e185]
+            - figure [ref=e188]:
+              - img "Shai Amiel" [ref=e189]
+            - figure [ref=e192]:
+              - img "Shai Amiel" [ref=e193]
+            - figure [ref=e196]:
+              - img "curldoctor-1-1-480x360" [ref=e197]
+            - figure [ref=e200]:
+              - img "Shai Amiel" [ref=e201]
+            - figure [ref=e204]:
+              - img "Shai Amiel" [ref=e205]
+            - figure [ref=e208]:
+              - img "shai-7" [ref=e209]
+            - figure [ref=e212]:
+              - img "Shai Amiel" [ref=e213]
+            - figure [ref=e216]:
+              - img "Shai Amiel" [ref=e217]
+            - figure [ref=e220]:
+              - img "Shai Amiel" [ref=e221]
+            - figure [ref=e224]:
+              - img "Shai Amiel" [ref=e225]
+            - figure [ref=e228]:
+              - img "Shai Amiel" [ref=e229]
+    - contentinfo [ref=e230]:
+      - generic [ref=e234]:
+        - list [ref=e236]:
+          - listitem [ref=e237]:
+            - link "" [ref=e238] [cursor=pointer]:
+              - /url: https://twitter.com/ShaiAmiel
+              - generic [ref=e239]: 
+          - listitem [ref=e240]:
+            - link "" [ref=e241] [cursor=pointer]:
+              - /url: https://www.instagram.com/shaiamiel/
+              - generic [ref=e242]: 
+          - listitem [ref=e243]:
+            - link "" [ref=e244] [cursor=pointer]:
+              - /url: http://pinterest.com/ShaiAmiel/
+              - generic [ref=e245]: 
+          - listitem [ref=e246]:
+            - link "" [ref=e247] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/ShaiAmielDr
+              - generic [ref=e248]: 
+        - generic [ref=e249]:
+          - text: © Shai Amiel. All Rights Reserved |
+          - generic [ref=e250]:
+            - text: Site by
+            - link "Sixty Five Design" [ref=e251] [cursor=pointer]:
+              - /url: http://www.sixtyfivedesign.com

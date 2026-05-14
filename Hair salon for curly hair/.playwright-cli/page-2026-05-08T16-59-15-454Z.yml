@@ -1,0 +1,172 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Cuts & services" [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [pressed] [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - paragraph [ref=e23]: About — Vanessa Jackson
+      - heading "The salon is what happens when she stops borrowing chairs." [level=1] [ref=e24]
+      - paragraph [ref=e25]: Jackson & Coil is the salon Vanessa Jackson spent seven years in Oslo not opening. This is how she got here, and what she promises to the chair.
+    - generic [ref=e28]:
+      - img "Founder Vanessa Jackson, portrait against cream backdrop" [ref=e29]
+      - generic [ref=e30]: Vanessa Jackson, founder
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - paragraph [ref=e34]: Tottenham, kitchen, Saturday morning
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Vanessa grew up in Tottenham, North London, the youngest daughter of Jamaican parents who ran a small Caribbean grocery on Bruce Grove. Her hair was 4a. Her grandmother did it every Saturday morning at the kitchen table — hot-comb on the gas hob, coconut oil, the smell of burned newspaper on the windowsill.
+          - paragraph [ref=e37]: By the time she was sixteen she was doing the hair of every girl in her year for ten quid and a Lucozade. By eighteen she'd worked out that the thing she'd been doing for free at kitchen tables was a craft people in actual salons hadn't bothered to learn.
+      - img "Close-up of hands working through Type 4 coils" [ref=e40]
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: London, then New York, then back
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: She trained formally at Curl Bar London under Michelle Sultan. Then she crossed to New York for a year — the original Devachan, then a season studying with Anthony Dickey at Hair Rules. Two of the rooms where the modern art of curl-cutting was being written.
+          - paragraph [ref=e46]: "She came back to London with one clear opinion: that the binary the industry insisted on — Black hair in one shop, everything else in another — was a failure of craft, not of biology. Curl is curl. The technique is the same. The knowledge is the part you go and get."
+      - blockquote [ref=e48]:
+        - paragraph [ref=e49]: “Every curl pattern is the same job done with knowledge — and knowledge is something you go and get, not something you wait for.”
+        - generic [ref=e50]: — Vanessa Jackson
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Why Oslo, then
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: She moved here at 28 for a Norwegian boyfriend who didn't last but a city that did. For the next seven years she worked out of a borrowed chair at three different Oslo salons — quietly building a tightly-kept client list of women and men who'd otherwise have been on flights to London or Stockholm.
+          - paragraph [ref=e56]: "What she heard in those chairs, on repeat, in three languages: that nobody in this country sees this hair properly. Not really. Not at the level the hair deserves. The choice was either get on a plane every six weeks, or accept a haircut that wasn't quite right. Most people accepted it. Some cried in the car on the way home."
+          - paragraph [ref=e57]: Jackson & Coil is the answer to that, in one room, on Markveien. The whole curl spectrum — Type 2A through 4C, women and men — done by stylists who actually trained for it. No kids' table. No referral up the road. No crying in the car.
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - paragraph [ref=e61]: What we believe
+        - heading "Three things we won't argue about." [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - text: "01"
+          - heading "Every curl pattern is the same job, done with knowledge." [level=3] [ref=e65]
+          - paragraph [ref=e66]: The technique is the same. The training is the difference. We trained for all of it — Type 2A loose waves through Type 4C tight coils — and we don't have a 'specialist' page for some of it and a regular page for the rest.
+        - generic [ref=e67]:
+          - text: "02"
+          - heading "We cut you for your curl, not against it." [level=3] [ref=e68]
+          - paragraph [ref=e69]: Dry. Curl by curl. On the natural pattern. Wet-cutting and tension-stretching hide what the hair is actually doing — and that's exactly the part we need to see.
+        - generic [ref=e70]:
+          - text: "03"
+          - heading "You leave knowing what was done and why." [level=3] [ref=e71]
+          - paragraph [ref=e72]: Every appointment ends with a short education — the cut, the products, the technique you can actually recreate at home on a Tuesday morning when the salon is closed. No mystery, no dependency.
+    - generic [ref=e75]:
+      - img "Salon interior with cream walls and terracotta accents" [ref=e77]
+      - generic [ref=e78]:
+        - paragraph [ref=e79]: The room
+        - heading "Lean Scandinavian, warm where it counts." [level=2] [ref=e80]
+        - paragraph [ref=e81]: Markveien 35. Cream walls, brass shelving, a single terracotta accent, plants, music in Vanessa's taste. Two chairs, a private styling room for clients who want one. The same playlist every visit, the same scent, the same coffee.
+        - link "Plan a visit" [ref=e82] [cursor=pointer]:
+          - /url: /visit
+    - generic [ref=e84]:
+      - heading "Book the chair she stopped borrowing." [level=2] [ref=e85]:
+        - text: Book the chair
+        - text: she stopped borrowing.
+      - generic [ref=e86]:
+        - link "Book a chair" [ref=e87] [cursor=pointer]:
+          - /url: /booking
+        - link "Visit the salon" [ref=e88] [cursor=pointer]:
+          - /url: /visit
+  - contentinfo [ref=e89]:
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - link "Jackson & Coil." [ref=e92] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e93]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - heading "Visit" [level=3] [ref=e96]
+          - paragraph [ref=e97]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e98]:
+          - heading "Hours" [level=3] [ref=e99]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - generic [ref=e102]: Tuesday
+              - generic [ref=e103]: 10:00 — 19:00
+            - listitem [ref=e104]:
+              - generic [ref=e105]: Wednesday
+              - generic [ref=e106]: 10:00 — 19:00
+            - listitem [ref=e107]:
+              - generic [ref=e108]: Thursday
+              - generic [ref=e109]: 10:00 — 20:00
+            - listitem [ref=e110]:
+              - generic [ref=e111]: Friday
+              - generic [ref=e112]: 10:00 — 19:00
+            - listitem [ref=e113]:
+              - generic [ref=e114]: Saturday
+              - generic [ref=e115]: 10:00 — 17:00
+            - listitem [ref=e116]:
+              - generic [ref=e117]: Sunday & Monday
+              - generic [ref=e118]: Closed
+        - generic [ref=e119]:
+          - heading "Contact" [level=3] [ref=e120]
+          - list [ref=e121]:
+            - listitem [ref=e122]:
+              - link "hei@jacksonandcoil.no" [ref=e123] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e124]: +47 22 00 00 00
+            - listitem [ref=e125]:
+              - link "@jacksonandcoil" [ref=e126] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e127]:
+          - heading "Pages" [level=3] [ref=e128]
+          - list [ref=e129]:
+            - listitem [ref=e130]:
+              - link "Cuts & services" [ref=e131] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e132]:
+              - link "The method" [ref=e133] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e134]:
+              - link "The team" [ref=e135] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e136]:
+              - link "Portfolio" [ref=e137] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e138]:
+              - link "Shop" [ref=e139] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e140]:
+              - link "Journal" [ref=e141] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e142]:
+              - link "Visit" [ref=e143] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e144]:
+              - link "About" [ref=e145] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e146]:
+              - link "Book" [ref=e147] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e148]:
+        - generic [ref=e149]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e150]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e156] [cursor=pointer]:
+    - img [ref=e157]

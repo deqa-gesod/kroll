@@ -1,0 +1,26 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - paragraph [ref=e7]:
+      - text: We use cookies (and other similar technologies) to collect data to improve your experience on our site. By using our website, you’re agreeing to the collection of data as described in our
+      - link "Website Data Collection Policy" [ref=e8] [cursor=pointer]:
+        - /url: https://www.getslick.com/privacy-policy
+      - text: .
+    - generic [ref=e9]:
+      - button "Essential cookies only" [ref=e10] [cursor=pointer]
+      - button "Accept all cookies" [ref=e11] [cursor=pointer]
+  - generic [ref=e14]:
+    - banner [ref=e16]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Powered by
+        - img "Slick logo" [ref=e23]
+      - generic [ref=e24]: Welcome to Hare & Bone
+    - generic [ref=e25]: "Choose a location to book:"
+    - generic [ref=e28]:
+      - link "HARE & BONE ESHER Arrow to salon location" [ref=e29] [cursor=pointer]:
+        - /url: https://tinyurl.com/27h5womo
+        - generic [ref=e31]: HARE & BONE ESHER
+        - img "Arrow to salon location" [ref=e33]
+      - link "HARE & BONE FITZROVIA Arrow to salon location" [ref=e34] [cursor=pointer]:
+        - /url: https://tinyurl.com/28w6fy4y
+        - generic [ref=e36]: HARE & BONE FITZROVIA
+        - img "Arrow to salon location" [ref=e38]

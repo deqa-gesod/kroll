@@ -1,0 +1,162 @@
+- generic [ref=e2]:
+  - banner:
+    - generic [ref=e3]:
+      - link "Pular para conteúdo" [ref=e4] [cursor=pointer]:
+        - /url: "#page"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - navigation [ref=e11]:
+            - link "Services" [ref=e13] [cursor=pointer]:
+              - /url: /services
+            - link "Team" [ref=e15] [cursor=pointer]:
+              - /url: /team
+            - link "Health and safety" [ref=e17] [cursor=pointer]:
+              - /url: /health-safety
+            - link "Book" [ref=e19] [cursor=pointer]:
+              - /url: /book-now
+            - link "Policies" [ref=e21] [cursor=pointer]:
+              - /url: /policies
+            - link "FAQs" [ref=e23] [cursor=pointer]:
+              - /url: /faqs
+          - link "The Curl Bar London" [ref=e26] [cursor=pointer]:
+            - /url: /
+        - link "Book Now" [ref=e29] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book-now
+  - main [ref=e30]:
+    - article [ref=e31]:
+      - iframe [active] [ref=e42]:
+        - generic [ref=f1e3]:
+          - banner [ref=f1e4]:
+            - list [ref=f1e6]:
+              - listitem [ref=f1e7]:
+                - button "Sign Up" [ref=f1e8] [cursor=pointer]:
+                  - generic [ref=f1e134]: Sign Up
+              - listitem [ref=f1e12]:
+                - button "Login" [ref=f1e13] [cursor=pointer]:
+                  - generic [ref=f1e135]: Login
+            - paragraph [ref=f1e19]:
+              - paragraph [ref=f1e20]:
+                - strong [ref=f1e23]: HELLO,
+              - paragraph [ref=f1e24]: Please have a read through the variety of treatments to ensure you have chosen the right one for you.
+              - paragraph [ref=f1e25]: Before you book your appointment, please visit our policy page to see our terms and conditions. We also have a FAQ page that answers common queries.
+              - paragraph [ref=f1e26]:
+                - strong [ref=f1e29]:
+                  - generic [ref=f1e30]: "HOW TO ARRIVE:"
+              - list [ref=f1e31]:
+                - listitem [ref=f1e32]:
+                  - emphasis [ref=f1e34]: Wash and detangle your hair one to two days before your appointment. You can apply product if this makes you feel more comfortable but we'd prefer if it was minimal.
+                - listitem [ref=f1e35]:
+                  - emphasis [ref=f1e37]: Avoid slicking your hair into a bun, twists or plaits to avoid manipulation
+                - listitem [ref=f1e38]:
+                  - emphasis [ref=f1e40]: Do not brush out the curls once it is dry, (we want to see how your curls naturally sit)
+              - paragraph [ref=f1e41]:
+                - generic [ref=f1e42]:
+                  - text: Please book the correct service for your hair type as we have carefully dedicated the required time for you. If you are unsure which hair type you are between wavy, curly and coily send us a message on our Instagram
+                  - emphasis [ref=f1e43]: (@TheCurlBarLondon)
+                  - text: or eMail us at
+                  - emphasis [ref=f1e44]: (Info@thecurlbarlondon.com)
+              - paragraph [ref=f1e45]:
+                - generic [ref=f1e46]:
+                  - strong [ref=f1e47]: CONSULTATION/ UNSURE WHAT TO BOOK? -
+                  - text: If you are unsure of what to book, please send us photos of your hair to our email or Instagram DM and we will advise you there.
+              - paragraph [ref=f1e48]:
+                - generic [ref=f1e49]:
+                  - strong [ref=f1e50]: HIJAB/ PRIVACY ROOM -
+                  - text: For all of our beautiful Queens who wear a hijab, we have a private room so you will not be seen by anyone other than your stylist during your appointment unless there is another client who is also wearing a hijab with another stylist.
+              - paragraph [ref=f1e51]:
+                - generic [ref=f1e52]:
+                  - strong [ref=f1e53]: APPOINTMENT SLOTS -
+                  - text: Our slots are released on the 1st of every month at 8pm. We post cancellations on our Instagram stories as soon as they occur.
+              - paragraph [ref=f1e54]: We look forward to meeting you and pampering your curls.
+              - paragraph [ref=f1e55]:
+                - strong [ref=f1e56]: Best,
+              - paragraph [ref=f1e57]:
+                - strong [ref=f1e58]:
+                  - emphasis [ref=f1e59]:
+                    - generic [ref=f1e61]: TCBL Team
+          - generic [ref=f1e63]:
+            - main [ref=f1e64]:
+              - navigation [ref=f1e66]:
+                - button "Return to Select Appointment Category" [active] [ref=f1e137] [cursor=pointer]:
+                  - img [ref=f1e138]
+                - generic [ref=f1e69]:
+                  - img [ref=f1e70]
+                  - heading "Select Appointment" [level=2] [ref=f1e140]
+              - list [ref=f1e141]:
+                - listitem [ref=f1e142]:
+                  - generic [ref=f1e145]:
+                    - paragraph [ref=f1e147]: Cuts
+                    - list [ref=f1e148]:
+                      - listitem [ref=f1e149]:
+                        - generic [ref=f1e150]:
+                          - generic [ref=f1e151]:
+                            - generic [ref=f1e155]:
+                              - generic [ref=f1e156]: The Curl By Curl Cut With a Wash n' Style
+                              - paragraph [ref=f1e157]: 1 hour 20 minutes @ £110.00
+                            - button "Select" [ref=f1e160] [cursor=pointer]
+                          - generic [ref=f1e161]:
+                            - paragraph [ref=f1e162]: If a clean shape or fresh new cut is what you need then the Curl By Curl Cut is perfect for you. Before your appointment we will discuss what kind of style you want to achieve for your hair making sure you are feeling confident. This se ...
+                            - button "Show All" [ref=f1e164] [cursor=pointer]:
+                              - generic [ref=f1e166]: Show All
+                      - listitem [ref=f1e167]:
+                        - generic [ref=f1e168]:
+                          - generic [ref=f1e169]:
+                            - generic [ref=f1e173]:
+                              - generic [ref=f1e174]: The Curl Bar Cut - Curly Curls
+                              - paragraph [ref=f1e175]: 1 hour 20 minutes @ £80.00
+                            - button "Select" [ref=f1e178] [cursor=pointer]
+                          - generic [ref=f1e179]:
+                            - paragraph [ref=f1e180]: The Curl Bar Cut - Curly Curls includes a wash, wet cut, style and dry (diffuse). This service is for our clients who like to wear their hair straight and curly. This is not recommended if you have tight curls (type 4) please book The C ...
+                            - button "Show All" [ref=f1e182] [cursor=pointer]:
+                              - generic [ref=f1e184]: Show All
+                      - listitem [ref=f1e185]:
+                        - generic [ref=f1e186]:
+                          - generic [ref=f1e187]:
+                            - generic [ref=f1e191]:
+                              - generic [ref=f1e192]: The Curl Bar Cut - Wavy Curls
+                              - paragraph [ref=f1e193]: 1 hour 10 minutes @ £80.00
+                            - button "Select" [ref=f1e196] [cursor=pointer]
+                          - generic [ref=f1e197]:
+                            - paragraph [ref=f1e198]: The Curl Bar Cut - Wavy Curls includes a wash, wet cut, style and dry (diffuse). This service is for our clients who like to wear their hair straight and curly. This is not recommended if you have tight curls (type 4) please book The Cu ...
+                            - button "Show All" [ref=f1e200] [cursor=pointer]:
+                              - generic [ref=f1e202]: Show All
+                      - listitem [ref=f1e203]:
+                        - generic [ref=f1e204]:
+                          - generic [ref=f1e205]:
+                            - generic [ref=f1e209]:
+                              - generic [ref=f1e210]: The Big Chop
+                              - paragraph [ref=f1e211]: 1 hour 10 minutes @ £80.00
+                            - button "Select" [ref=f1e214] [cursor=pointer]
+                          - generic [ref=f1e215]:
+                            - paragraph [ref=f1e216]: It's always great to start a fresh. We know how scary that journey can be and that is why we have devoted this service to making sure you leave the salon feeling confident and happy with your new look. The big chop is a service for thos ...
+                            - button "Show All" [ref=f1e218] [cursor=pointer]:
+                              - generic [ref=f1e220]: Show All
+            - contentinfo [ref=f1e130]:
+              - button "Check Code Balance" [ref=f1e131] [cursor=pointer]:
+                - generic [ref=f1e133]: Check Code Balance
+  - contentinfo [ref=e43]:
+    - generic [ref=e49]:
+      - paragraph [ref=e55]:
+        - strong [ref=e56]: MYDDLETON ROAD BRANCH
+        - strong [ref=e57]: "Wednesday to Saturday: 10am till 7pm"
+        - text: 020 3624 3533
+        - link "79 Myddleton Road, London, N22 8NE" [ref=e58] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/CgAoKtDWRFKEPka96?g_st=ic
+        - link "info@thecurlbarlondon.com" [ref=e59] [cursor=pointer]:
+          - /url: mailto:info@thecurlbarlondon.com
+      - paragraph [ref=e65]:
+        - strong [ref=e66]: SITE MAP
+        - link "Services" [ref=e67] [cursor=pointer]:
+          - /url: /services
+        - link "Team" [ref=e68] [cursor=pointer]:
+          - /url: /team
+        - link "Health and Safety" [ref=e69] [cursor=pointer]:
+          - /url: /health-safety
+        - link "Contact" [ref=e70] [cursor=pointer]:
+          - /url: /contact
+        - link "Book Now" [ref=e71] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book
+      - paragraph [ref=e77]:
+        - strong [ref=e78]: FOLLOW US
+        - link "Instagram" [ref=e79] [cursor=pointer]:
+          - /url: https://www.instagram.com/thecurlbarlondon

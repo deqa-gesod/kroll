@@ -1,0 +1,74 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - generic [ref=e10]:
+    - group:
+      - generic:
+        - banner:
+          - generic [ref=e11]:
+            - paragraph [ref=e16]:
+              - link "CURL ACADEMY" [ref=e17] [cursor=pointer]:
+                - /url: https://www.curl-academy.com
+            - navigation "Site" [ref=e19]:
+              - list [ref=e20]:
+                - listitem [ref=e21]:
+                  - link "Home" [ref=e23] [cursor=pointer]:
+                    - /url: https://www.curl-academy.com
+                    - generic [ref=e25]: Home
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic:
+                    - img
+      - main:
+        - generic [ref=e26]:
+          - generic "Background" [ref=e30]
+          - group:
+            - generic [ref=e32]:
+              - heading "Our New Master Class for Aspiring Curly Hair Stylists. Is Coming Soon" [level=1] [ref=e35]:
+                - generic [ref=e36]:
+                  - text: Our New Master Class for Aspiring Curly Hair Stylists.
+                  - text: Is Coming Soon
+              - generic [ref=e37]:
+                - paragraph [ref=e40]:
+                  - generic [ref=e41]:
+                    - text: Stay
+                    - text: Tuned
+                - generic [ref=e42] [cursor=pointer]:
+                  - button "Decorative Play video" [pressed] [ref=e43]:
+                    - generic "Decorative" [ref=e48]
+                  - generic [ref=e50]:
+                    - img [ref=e52]
+                    - img [ref=e57]
+      - contentinfo:
+        - generic [ref=e60]:
+          - generic [ref=e64]:
+            - group:
+              - generic [ref=e66]:
+                - paragraph [ref=e69]: Join the Waitlist and Be Part of Our Inner Circle!
+                - form "Subscriptions" [ref=e76]:
+                  - group [ref=e77]:
+                    - generic [ref=e78]:
+                      - generic [ref=e81]:
+                        - generic [ref=e83]:
+                          - text: Enter your E-mail
+                          - generic [ref=e84]: "*"
+                        - textbox "Enter your E-mail" [ref=e89]
+                        - button "Notify me" [ref=e93] [cursor=pointer]:
+                          - generic [ref=e94]: Notify me
+                      - region
+          - generic [ref=e95]:
+            - group:
+              - paragraph [ref=e98]: © 2025 by CURL SPA SALON
+              - generic [ref=e99]:
+                - paragraph [ref=e102]:
+                  - link "Instagram" [ref=e104] [cursor=pointer]:
+                    - /url: https://www.instagram.com/curl_spa_salon_
+                - paragraph [ref=e106]:
+                  - link "Facebook" [ref=e107] [cursor=pointer]:
+                    - /url: https://www.facebook.com/WixStudio
+              - paragraph [ref=e109]:
+                - link "Privacy Policy" [ref=e110] [cursor=pointer]:
+                  - /url: https://www.curl-academy.com/privacy-policy
+  - region "bottom of page"

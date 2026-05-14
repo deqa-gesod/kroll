@@ -1,0 +1,190 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e98]
+    - navigation [ref=e103]:
+      - link "Cuts & services" [ref=e104] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e105] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e106] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e107] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e108] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e109] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e110] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e111] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e112] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e113]:
+        - button "EN" [ref=e114]
+        - generic [ref=e115]: /
+        - button "NO" [ref=e116]
+  - main [ref=e20]:
+    - generic [ref=e23]:
+      - generic [ref=e117]:
+        - paragraph [ref=e118]: Booking
+        - heading "Two minutes from here to chair." [level=1] [ref=e119]
+      - generic [ref=e121]:
+        - paragraph [ref=e123]:
+          - text: Step 4
+          - generic [ref=e124]: /5
+        - generic [ref=e125]:
+          - 'button "Step 1: Service" [ref=e126] [cursor=pointer]'
+          - 'button "Step 2: Stylist" [ref=e127] [cursor=pointer]'
+          - 'button "Step 3: Date & time" [ref=e128] [cursor=pointer]'
+          - 'button "Step 4: About you" [disabled] [ref=e129]'
+          - 'button "Step 5: Confirm" [disabled] [ref=e130]'
+      - generic [ref=e131]:
+        - button "Back" [ref=e132]:
+          - generic [ref=e133]: ←
+          - text: Back
+        - paragraph [ref=e223]: The Jackson Cut · Vanessa · 2026-05-08 · 10:00
+      - generic [ref=e373]:
+        - generic [ref=e374]:
+          - generic [ref=e375]:
+            - paragraph [ref=e376]: 04 — About you
+            - button "Skip — I've been before" [ref=e377]
+          - heading "A few things, before you sit down." [level=2] [ref=e378]
+          - paragraph [ref=e379]: Optional, but every answer makes the chair time better. Two minutes, then we're done.
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - text: Your curl pattern
+            - generic [ref=e382]: Andre Walker scale. Pick the closest, or leave blank.
+          - generic [ref=e383]:
+            - button "2A" [ref=e384]
+            - button "2B" [ref=e385]
+            - button "2C" [ref=e386]
+            - button "3A" [ref=e387]
+            - button "3B" [ref=e388]
+            - button "3C" [ref=e389]
+            - button "4A" [ref=e390]
+            - button "4B" [ref=e391]
+            - button "4C" [ref=e392]
+            - button "Not sure / mixed" [ref=e393]
+        - generic [ref=e394]:
+          - generic [ref=e395]:
+            - text: Porosity
+            - generic [ref=e396]: How fast your hair takes in water. We'll tell you on the day if you're not sure.
+          - generic [ref=e397]:
+            - button "Low Water beads on your hair. Products take a while to absorb." [ref=e398]:
+              - paragraph [ref=e399]: Low
+              - paragraph [ref=e400]: Water beads on your hair. Products take a while to absorb.
+            - button "Normal Hair holds moisture without feeling dry or weighed down." [ref=e401]:
+              - paragraph [ref=e402]: Normal
+              - paragraph [ref=e403]: Hair holds moisture without feeling dry or weighed down.
+            - button "High Hair drinks water fast and dries fast. Frizz comes easy." [ref=e404]:
+              - paragraph [ref=e405]: High
+              - paragraph [ref=e406]: Hair drinks water fast and dries fast. Frizz comes easy.
+            - button "Not sure Most common. Your stylist will read it on the day." [ref=e407]:
+              - paragraph [ref=e408]: Not sure
+              - paragraph [ref=e409]: Most common. Your stylist will read it on the day.
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - text: Last chemical service
+            - generic [ref=e412]: Color, bleach, relaxer, perm — when, and what. Or just write 'none'.
+          - textbox "Last chemical service Color, bleach, relaxer, perm — when, and what. Or just write 'none'." [ref=e413]:
+            - /placeholder: e.g. Balayage, March 2024
+        - generic [ref=e414]:
+          - generic [ref=e415]:
+            - text: What you'd like
+            - generic [ref=e416]: Optional. A reference, a feeling, a length, anything.
+          - textbox "What you'd like Optional. A reference, a feeling, a length, anything." [ref=e417]:
+            - /placeholder: Shoulder-length, more definition, less weight on the canopy…
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - text: What are you nervous about?
+            - generic [ref=e420]: Optional, but really helpful. Last bad cut, a stylist who didn't know your hair, anything you want us to know before scissors come out.
+          - textbox "What are you nervous about? Optional, but really helpful. Last bad cut, a stylist who didn't know your hair, anything you want us to know before scissors come out." [ref=e421]:
+            - /placeholder: Last salon thinned the canopy and it took a year to grow back…
+        - generic [ref=e422]:
+          - paragraph [ref=e423]: All optional. Skip what you don't have an answer for.
+          - button "Continue" [ref=e424]
+  - contentinfo [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - link "Jackson & Coil." [ref=e30] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e31]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - heading "Visit" [level=3] [ref=e34]
+          - paragraph [ref=e35]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e36]:
+          - heading "Hours" [level=3] [ref=e37]
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - generic [ref=e40]: Tuesday
+              - generic [ref=e41]: 10:00 — 19:00
+            - listitem [ref=e42]:
+              - generic [ref=e43]: Wednesday
+              - generic [ref=e44]: 10:00 — 19:00
+            - listitem [ref=e45]:
+              - generic [ref=e46]: Thursday
+              - generic [ref=e47]: 10:00 — 20:00
+            - listitem [ref=e48]:
+              - generic [ref=e49]: Friday
+              - generic [ref=e50]: 10:00 — 19:00
+            - listitem [ref=e51]:
+              - generic [ref=e52]: Saturday
+              - generic [ref=e53]: 10:00 — 17:00
+            - listitem [ref=e54]:
+              - generic [ref=e55]: Sunday & Monday
+              - generic [ref=e56]: Closed
+        - generic [ref=e57]:
+          - heading "Contact" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "hei@jacksonandcoil.no" [ref=e61] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e62]: +47 22 00 00 00
+            - listitem [ref=e63]:
+              - link "@jacksonandcoil" [ref=e64] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e65]:
+          - heading "Pages" [level=3] [ref=e66]
+          - list [ref=e67]:
+            - listitem [ref=e68]:
+              - link "Cuts & services" [ref=e69] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e70]:
+              - link "The method" [ref=e71] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e72]:
+              - link "The team" [ref=e73] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e74]:
+              - link "Portfolio" [ref=e75] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e76]:
+              - link "Shop" [ref=e77] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e78]:
+              - link "Journal" [ref=e79] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e80]:
+              - link "Visit" [ref=e81] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e82]:
+              - link "About" [ref=e83] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e84]:
+              - link "Book" [ref=e85] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e86]:
+        - generic [ref=e87]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e88]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e94] [cursor=pointer]:
+    - img [ref=e95]
+  - alert [ref=e222]

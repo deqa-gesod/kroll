@@ -1,0 +1,618 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: Bespoke in salon education now available.
+      - link "Click here for details!" [ref=e5] [cursor=pointer]:
+        - /url: https://hareandbone.co.uk/education/
+    - generic [ref=e6]:
+      - generic:
+        - generic:
+          - link "logo":
+            - /url: https://hareandbone.co.uk
+            - img "logo" [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - list:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /about-hare-and-bone/
+          - listitem [ref=e13]:
+            - link "Salons" [ref=e14] [cursor=pointer]:
+              - /url: /location/
+          - listitem [ref=e15]:
+            - link "Services" [ref=e16] [cursor=pointer]:
+              - /url: /service-overview/
+          - listitem [ref=e17]:
+            - link "News & Inspiration" [ref=e18] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/news-inspiration/
+          - listitem [ref=e19]:
+            - link "Education" [ref=e20] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/education/
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/contact/
+          - listitem [ref=e23]:
+            - link "Book Online" [ref=e24] [cursor=pointer]:
+              - /url: https://book.getslick.com/#/group/62/
+  - heading "Our Prices – Fitzrovia" [level=1] [ref=e27]
+  - generic [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "Hare Packages" [level=2] [ref=e34]
+        - paragraph [ref=e35]: A dedicated appointment with your stylist to include colour, toner, hare cut & finish or blowdry. Lightening techniques include foiling & balayage. Final prices will be agreed on consultation.
+        - table [ref=e36]:
+          - rowgroup [ref=e37]:
+            - row "Stylist Salon Senior Master Director Sam" [ref=e38]:
+              - cell [ref=e39]
+              - cell "Stylist" [ref=e40]
+              - cell "Salon" [ref=e41]
+              - cell "Senior" [ref=e42]
+              - cell "Master" [ref=e43]
+              - cell "Director" [ref=e44]
+              - cell "Sam" [ref=e45]
+              - cell [ref=e46]
+              - cell [ref=e47]
+              - cell [ref=e48]
+              - cell [ref=e49]
+              - cell [ref=e50]
+              - cell [ref=e51]
+            - row "Colour packages include a Hare Cut and Finish" [ref=e52]:
+              - cell "Colour packages include a Hare Cut and Finish" [ref=e53]:
+                - strong [ref=e54]: Colour packages include a Hare Cut and Finish
+              - cell [ref=e55]
+              - cell [ref=e56]
+              - cell [ref=e57]
+              - cell [ref=e58]
+              - cell [ref=e59]
+              - cell [ref=e60]
+              - cell [ref=e61]
+              - cell [ref=e62]
+              - cell [ref=e63]
+              - cell [ref=e64]
+              - cell [ref=e65]
+              - cell [ref=e66]
+            - row "Glossing £155 £180 £215 £245 £285 £335" [ref=e67]:
+              - cell "Glossing" [ref=e68]
+              - cell "£155" [ref=e69]
+              - cell "£180" [ref=e70]
+              - cell "£215" [ref=e71]
+              - cell "£245" [ref=e72]
+              - cell "£285" [ref=e73]
+              - cell "£335" [ref=e74]
+              - cell [ref=e75]
+              - cell [ref=e76]
+              - cell [ref=e77]
+              - cell [ref=e78]
+              - cell [ref=e79]
+              - cell [ref=e80]
+            - row "Root Retouch £165 £190 £230 £260 £310 £385" [ref=e81]:
+              - cell "Root Retouch" [ref=e82]
+              - cell "£165" [ref=e83]
+              - cell "£190" [ref=e84]
+              - cell "£230" [ref=e85]
+              - cell "£260" [ref=e86]
+              - cell "£310" [ref=e87]
+              - cell "£385" [ref=e88]
+              - cell [ref=e89]
+              - cell [ref=e90]
+              - cell [ref=e91]
+              - cell [ref=e92]
+              - cell [ref=e93]
+              - cell [ref=e94]
+            - row "Full Head Colour £170 £205 £240 £275 £330 £405" [ref=e95]:
+              - cell "Full Head Colour" [ref=e96]
+              - cell "£170" [ref=e97]
+              - cell "£205" [ref=e98]
+              - cell "£240" [ref=e99]
+              - cell "£275" [ref=e100]
+              - cell "£330" [ref=e101]
+              - cell "£405" [ref=e102]
+              - cell [ref=e103]
+              - cell [ref=e104]
+              - cell [ref=e105]
+              - cell [ref=e106]
+              - cell [ref=e107]
+              - cell [ref=e108]
+            - row "Focal Flash £170 £205 £240 £270 £335 £420" [ref=e109]:
+              - cell "Focal Flash" [ref=e110]
+              - cell "£170" [ref=e111]
+              - cell "£205" [ref=e112]
+              - cell "£240" [ref=e113]
+              - cell "£270" [ref=e114]
+              - cell "£335" [ref=e115]
+              - cell "£420" [ref=e116]
+              - cell [ref=e117]
+              - cell [ref=e118]
+              - cell [ref=e119]
+              - cell [ref=e120]
+              - cell [ref=e121]
+              - cell [ref=e122]
+            - row "Quarter Head Lightening £205 £255 £305 £345 £420 £520" [ref=e123]:
+              - cell "Quarter Head Lightening" [ref=e124]
+              - cell "£205" [ref=e125]
+              - cell "£255" [ref=e126]
+              - cell "£305" [ref=e127]
+              - cell "£345" [ref=e128]
+              - cell "£420" [ref=e129]
+              - cell "£520" [ref=e130]
+              - cell [ref=e131]
+              - cell [ref=e132]
+              - cell [ref=e133]
+              - cell [ref=e134]
+              - cell [ref=e135]
+              - cell [ref=e136]
+            - row "Half Head Lightening £225 £280 £335 £385 £470 £595" [ref=e137]:
+              - cell "Half Head Lightening" [ref=e138]
+              - cell "£225" [ref=e139]
+              - cell "£280" [ref=e140]
+              - cell "£335" [ref=e141]
+              - cell "£385" [ref=e142]
+              - cell "£470" [ref=e143]
+              - cell "£595" [ref=e144]
+              - cell [ref=e145]
+              - cell [ref=e146]
+              - cell [ref=e147]
+              - cell [ref=e148]
+              - cell [ref=e149]
+              - cell [ref=e150]
+            - row "Full Head Lightening £285 £335 £385 £430 £510 £625" [ref=e151]:
+              - cell "Full Head Lightening" [ref=e152]
+              - cell "£285" [ref=e153]
+              - cell "£335" [ref=e154]
+              - cell "£385" [ref=e155]
+              - cell "£430" [ref=e156]
+              - cell "£510" [ref=e157]
+              - cell "£625" [ref=e158]
+              - cell [ref=e159]
+              - cell [ref=e160]
+              - cell [ref=e161]
+              - cell [ref=e162]
+              - cell [ref=e163]
+              - cell [ref=e164]
+            - row "Bleach Retouch £325 £370 £430 £470 £565 £685" [ref=e165]:
+              - cell "Bleach Retouch" [ref=e166]
+              - cell "£325" [ref=e167]
+              - cell "£370" [ref=e168]
+              - cell "£430" [ref=e169]
+              - cell "£470" [ref=e170]
+              - cell "£565" [ref=e171]
+              - cell "£685" [ref=e172]
+              - cell [ref=e173]
+              - cell [ref=e174]
+              - cell [ref=e175]
+              - cell [ref=e176]
+              - cell [ref=e177]
+              - cell [ref=e178]
+            - row "Bleach Full Head POA POA POA POA POA POA" [ref=e179]:
+              - cell "Bleach Full Head" [ref=e180]
+              - cell "POA" [ref=e181]
+              - cell "POA" [ref=e182]
+              - cell "POA" [ref=e183]
+              - cell "POA" [ref=e184]
+              - cell "POA" [ref=e185]
+              - cell "POA" [ref=e186]
+              - cell [ref=e187]
+              - cell [ref=e188]
+              - cell [ref=e189]
+              - cell [ref=e190]
+              - cell [ref=e191]
+              - cell [ref=e192]
+            - row "Colour packages including a blowdry" [ref=e193]:
+              - cell "Colour packages including a blowdry" [ref=e194]:
+                - strong [ref=e195]: Colour packages including a blowdry
+              - cell [ref=e196]
+              - cell [ref=e197]
+              - cell [ref=e198]
+              - cell [ref=e199]
+              - cell [ref=e200]
+              - cell [ref=e201]
+            - row "Glossing £125 £135 £165 £180 £200 £260" [ref=e202]:
+              - cell "Glossing" [ref=e203]
+              - cell "£125" [ref=e204]
+              - cell "£135" [ref=e205]
+              - cell "£165" [ref=e206]
+              - cell "£180" [ref=e207]
+              - cell "£200" [ref=e208]
+              - cell "£260" [ref=e209]
+              - cell [ref=e210]
+              - cell [ref=e211]
+              - cell [ref=e212]
+              - cell [ref=e213]
+              - cell [ref=e214]
+              - cell [ref=e215]
+            - row "Root Retouch £135 £150 £180 £195 £225 £290" [ref=e216]:
+              - cell "Root Retouch" [ref=e217]
+              - cell "£135" [ref=e218]
+              - cell "£150" [ref=e219]
+              - cell "£180" [ref=e220]
+              - cell "£195" [ref=e221]
+              - cell "£225" [ref=e222]
+              - cell "£290" [ref=e223]
+              - cell [ref=e224]
+              - cell [ref=e225]
+              - cell [ref=e226]
+              - cell [ref=e227]
+              - cell [ref=e228]
+              - cell [ref=e229]
+            - row "Full Head Colour £140 £165 £190 £210 £245 £310" [ref=e230]:
+              - cell "Full Head Colour" [ref=e231]
+              - cell "£140" [ref=e232]
+              - cell "£165" [ref=e233]
+              - cell "£190" [ref=e234]
+              - cell "£210" [ref=e235]
+              - cell "£245" [ref=e236]
+              - cell "£310" [ref=e237]
+              - cell [ref=e238]
+              - cell [ref=e239]
+              - cell [ref=e240]
+              - cell [ref=e241]
+              - cell [ref=e242]
+              - cell [ref=e243]
+            - row "Focal Flash £140 £165 £190 £205 £250 £325" [ref=e244]:
+              - cell "Focal Flash" [ref=e245]
+              - cell "£140" [ref=e246]
+              - cell "£165" [ref=e247]
+              - cell "£190" [ref=e248]
+              - cell "£205" [ref=e249]
+              - cell "£250" [ref=e250]
+              - cell "£325" [ref=e251]
+              - cell [ref=e252]
+              - cell [ref=e253]
+              - cell [ref=e254]
+              - cell [ref=e255]
+              - cell [ref=e256]
+              - cell [ref=e257]
+            - row "Quarter Head Lightening £175 £215 £255 £280 £335 £425" [ref=e258]:
+              - cell "Quarter Head Lightening" [ref=e259]
+              - cell "£175" [ref=e260]
+              - cell "£215" [ref=e261]
+              - cell "£255" [ref=e262]
+              - cell "£280" [ref=e263]
+              - cell "£335" [ref=e264]
+              - cell "£425" [ref=e265]
+              - cell [ref=e266]
+              - cell [ref=e267]
+              - cell [ref=e268]
+              - cell [ref=e269]
+              - cell [ref=e270]
+              - cell [ref=e271]
+            - row "Half Head Lightening £195 £240 £285 £320 £385 £500" [ref=e272]:
+              - cell "Half Head Lightening" [ref=e273]
+              - cell "£195" [ref=e274]
+              - cell "£240" [ref=e275]
+              - cell "£285" [ref=e276]
+              - cell "£320" [ref=e277]
+              - cell "£385" [ref=e278]
+              - cell "£500" [ref=e279]
+              - cell [ref=e280]
+              - cell [ref=e281]
+              - cell [ref=e282]
+              - cell [ref=e283]
+              - cell [ref=e284]
+              - cell [ref=e285]
+            - row "Full Head Lightening £255 £295 £335 £365 £425 £530" [ref=e286]:
+              - cell "Full Head Lightening" [ref=e287]
+              - cell "£255" [ref=e288]
+              - cell "£295" [ref=e289]
+              - cell "£335" [ref=e290]
+              - cell "£365" [ref=e291]
+              - cell "£425" [ref=e292]
+              - cell "£530" [ref=e293]
+              - cell [ref=e294]
+              - cell [ref=e295]
+              - cell [ref=e296]
+              - cell [ref=e297]
+              - cell [ref=e298]
+              - cell [ref=e299]
+            - row "Bleach Retouch £295 £330 £380 £405 £480 £590" [ref=e300]:
+              - cell "Bleach Retouch" [ref=e301]
+              - cell "£295" [ref=e302]
+              - cell "£330" [ref=e303]
+              - cell "£380" [ref=e304]
+              - cell "£405" [ref=e305]
+              - cell "£480" [ref=e306]
+              - cell "£590" [ref=e307]
+              - cell [ref=e308]
+              - cell [ref=e309]
+              - cell [ref=e310]
+              - cell [ref=e311]
+              - cell [ref=e312]
+              - cell [ref=e313]
+            - row "Bleach Full Head POA POA POA POA POA POA" [ref=e314]:
+              - cell "Bleach Full Head" [ref=e315]
+              - cell "POA" [ref=e316]
+              - cell "POA" [ref=e317]
+              - cell "POA" [ref=e318]
+              - cell "POA" [ref=e319]
+              - cell "POA" [ref=e320]
+              - cell "POA" [ref=e321]
+              - cell [ref=e322]
+              - cell [ref=e323]
+              - cell [ref=e324]
+              - cell [ref=e325]
+              - cell [ref=e326]
+              - cell [ref=e327]
+        - paragraph [ref=e328]:
+          - strong [ref=e329]: "IMPORTANT: PRIOR TO COLOUR"
+          - text: – New clients require a sensitivity test 48 hours in advance of colour services. Existing colour clients require a test if a period of six months or more passes between colour services with us.
+        - heading "HARE CUT & BLOW" [level=2] [ref=e330]
+        - paragraph [ref=e331]:
+          - emphasis [ref=e333]: Prices from
+        - table [ref=e334]:
+          - rowgroup [ref=e335]:
+            - row "Stylist Salon Senior Master Director Sam" [ref=e336]:
+              - cell [ref=e337]
+              - cell "Stylist" [ref=e338]
+              - cell "Salon" [ref=e339]
+              - cell "Senior" [ref=e340]
+              - cell "Master" [ref=e341]
+              - cell "Director" [ref=e342]
+              - cell "Sam" [ref=e343]
+            - row "Hare Cut & Finish £75 £90 £105 £125 £150 £195" [ref=e344]:
+              - cell "Hare Cut & Finish" [ref=e345]
+              - cell "£75" [ref=e346]
+              - cell "£90" [ref=e347]
+              - cell "£105" [ref=e348]
+              - cell "£125" [ref=e349]
+              - cell "£150" [ref=e350]
+              - cell "£195" [ref=e351]
+            - row "Clipper Work £50 £65 £75 £95 £115 POA" [ref=e352]:
+              - cell "Clipper Work" [ref=e353]
+              - cell "£50" [ref=e354]
+              - cell "£65" [ref=e355]
+              - cell "£75" [ref=e356]
+              - cell "£95" [ref=e357]
+              - cell "£115" [ref=e358]
+              - cell "POA" [ref=e359]
+            - row "Junior Hare Cut (up to 15 years old) £40 £45 £50" [ref=e360]:
+              - cell "Junior Hare Cut (up to 15 years old)" [ref=e361]
+              - cell "£40" [ref=e362]
+              - cell "£45" [ref=e363]
+              - cell "£50" [ref=e364]
+              - cell [ref=e365]
+              - cell [ref=e366]
+              - cell [ref=e367]
+        - paragraph
+        - heading "HARE FINISHING" [level=2] [ref=e368]
+        - paragraph [ref=e369]:
+          - emphasis [ref=e371]: Prices from. Final prices will be agreed in consultation with stylist.
+        - table [ref=e372]:
+          - rowgroup [ref=e373]:
+            - row "Stylist Salon Senior Master Director Sam" [ref=e374]:
+              - cell [ref=e375]
+              - cell "Stylist" [ref=e376]
+              - cell "Salon" [ref=e377]
+              - cell "Senior" [ref=e378]
+              - cell "Master" [ref=e379]
+              - cell "Director" [ref=e380]
+              - cell "Sam" [ref=e381]
+            - row "Blow Dry £45 £50 £55 £60 £65 £100" [ref=e382]:
+              - cell "Blow Dry" [ref=e383]
+              - cell "£45" [ref=e384]
+              - cell "£50" [ref=e385]
+              - cell "£55" [ref=e386]
+              - cell "£60" [ref=e387]
+              - cell "£65" [ref=e388]
+              - cell "£100" [ref=e389]
+            - row "Hair Up POA POA POA POA POA POA" [ref=e390]:
+              - cell "Hair Up" [ref=e391]
+              - cell "POA" [ref=e392]
+              - cell "POA" [ref=e393]
+              - cell "POA" [ref=e394]
+              - cell "POA" [ref=e395]
+              - cell "POA" [ref=e396]
+              - cell "POA" [ref=e397]
+            - row "Blowdry Club - purchase 6 blowdries for the price of 5 £225 £250 £275 £300 £325 £500" [ref=e398]:
+              - cell "Blowdry Club - purchase 6 blowdries for the price of 5" [ref=e399]
+              - cell "£225" [ref=e400]
+              - cell "£250" [ref=e401]
+              - cell "£275" [ref=e402]
+              - cell "£300" [ref=e403]
+              - cell "£325" [ref=e404]
+              - cell "£500" [ref=e405]
+        - paragraph
+        - heading "Keratin Smoothing System" [level=2] [ref=e406]
+        - paragraph [ref=e407]: We offer a range of Keratin blow-dry smoothing treatments including the express de frizz blowdry and full control keratin blowdry.
+        - paragraph [ref=e408]: Prices will be agreed in consultation and will depend on hair length & density.
+        - table [ref=e409]:
+          - rowgroup [ref=e410]:
+            - row "Stylist Salon Senior Master Director Sam" [ref=e411]:
+              - cell [ref=e412]
+              - cell "Stylist" [ref=e413]
+              - cell "Salon" [ref=e414]
+              - cell "Senior" [ref=e415]
+              - cell "Master" [ref=e416]
+              - cell "Director" [ref=e417]
+              - cell "Sam" [ref=e418]
+            - row "Price per hour from £70 £80 £90 £100 £105 £180" [ref=e419]:
+              - cell "Price per hour from" [ref=e420]
+              - cell "£70" [ref=e421]
+              - cell "£80" [ref=e422]
+              - cell "£90" [ref=e423]
+              - cell "£100" [ref=e424]
+              - cell "£105" [ref=e425]
+              - cell "£180" [ref=e426]
+        - heading "HARE EXTENSIONS" [level=2] [ref=e427]
+        - paragraph [ref=e428]: We offer an extensive range of hair extension services. Pricing will be agreed following a consultation with your stylist.
+        - table [ref=e429]:
+          - rowgroup [ref=e430]:
+            - row "Stylist Salon Senior Master Director" [ref=e431]:
+              - cell [ref=e432]
+              - cell "Stylist" [ref=e433]
+              - cell "Salon" [ref=e434]
+              - cell "Senior" [ref=e435]
+              - cell "Master" [ref=e436]
+              - cell "Director" [ref=e437]
+            - row "Application and Removal - Price per Hour £50 £60 £70 £80 £100" [ref=e438]:
+              - cell "Application and Removal - Price per Hour" [ref=e439]
+              - cell "£50" [ref=e440]
+              - cell "£60" [ref=e441]
+              - cell "£70" [ref=e442]
+              - cell "£80" [ref=e443]
+              - cell "£100" [ref=e444]
+            - row "Extension Blowdry - 75 Mins £65 £75 £85 £95 £105" [ref=e445]:
+              - cell "Extension Blowdry - 75 Mins" [ref=e446]
+              - cell "£65" [ref=e447]
+              - cell "£75" [ref=e448]
+              - cell "£85" [ref=e449]
+              - cell "£95" [ref=e450]
+              - cell "£105" [ref=e451]
+        - heading "TREATMENT MENU" [level=2] [ref=e452]
+        - paragraph [ref=e453]: Ask your stylist to recommend the best specialty conditioning treatment for your personal needs.
+        - table [ref=e454]:
+          - rowgroup [ref=e455]:
+            - row "Classic Mask Treatments" [ref=e456]:
+              - cell "Classic Mask Treatments" [ref=e457]:
+                - strong [ref=e458]: Classic Mask Treatments
+            - row "Davines £15" [ref=e459]:
+              - cell "Davines" [ref=e460]
+              - cell "£15" [ref=e461]
+            - row "Oribe £25" [ref=e462]:
+              - cell "Oribe" [ref=e463]
+              - cell "£25" [ref=e464]
+            - row "Bespoke Tailored Treatments" [ref=e465]:
+              - cell "Bespoke Tailored Treatments" [ref=e466]:
+                - strong [ref=e467]: Bespoke Tailored Treatments
+            - row "Davines £25" [ref=e468]:
+              - cell "Davines" [ref=e469]
+              - cell "£25" [ref=e470]
+            - row "Oribe £40" [ref=e471]:
+              - cell "Oribe" [ref=e472]
+              - cell "£40" [ref=e473]
+            - row "Specific Scalp Treatments" [ref=e474]:
+              - cell "Specific Scalp Treatments" [ref=e475]:
+                - strong [ref=e476]: Specific Scalp Treatments
+            - row "Davines £35" [ref=e477]:
+              - cell "Davines" [ref=e478]
+              - cell "£35" [ref=e479]
+            - row "Oribe £45" [ref=e480]:
+              - cell "Oribe" [ref=e481]
+              - cell "£45" [ref=e482]
+            - row "Bonding Treatments" [ref=e483]:
+              - cell "Bonding Treatments" [ref=e484]:
+                - strong [ref=e485]: Bonding Treatments
+            - row "Bonding Treatments from £25" [ref=e486]:
+              - cell "Bonding Treatments from" [ref=e487]
+              - cell "£25" [ref=e488]
+      - generic [ref=e490]:
+        - link "hb-meet-the-team" [ref=e492] [cursor=pointer]:
+          - /url: http://hareandbone.co.uk/meet-the-team/
+          - img "hb-meet-the-team" [ref=e493]
+        - link "news-and-inspiration" [ref=e495] [cursor=pointer]:
+          - /url: http://hareandbone.co.uk/news-inspiration/
+          - img "news-and-inspiration" [ref=e496]
+    - link "Book Now" [ref=e497] [cursor=pointer]:
+      - /url: https://book.getslick.com/#/group/62/
+    - generic [ref=e498]:
+      - generic [ref=e499]:
+        - generic [ref=e500]:
+          - paragraph [ref=e501]: Sign up to our newsletter
+          - paragraph [ref=e502]: Get exclusive salon offers, news, updates and more!
+        - generic [ref=e505]:
+          - generic:
+            - textbox [ref=e507]
+            - textbox "yourname@email.com" [ref=e509]
+            - button "SIGN-UP" [ref=e511] [cursor=pointer]
+      - generic [ref=e512]:
+        - link "instagram logo" [ref=e513] [cursor=pointer]:
+          - /url: http://instagram.com/hareandbone
+          - img "instagram logo" [ref=e514]
+        - link "youtube logo" [ref=e515] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCymYtcmfk9c5zZgYJTxI9DQ/feed
+          - img "youtube logo" [ref=e516]
+    - generic [ref=e517]:
+      - generic [ref=e518]:
+        - generic [ref=e520]:
+          - heading "HARE & BONE" [level=3] [ref=e521]
+          - list [ref=e523]:
+            - listitem [ref=e524]:
+              - link "Home" [ref=e525] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/
+            - listitem [ref=e526]:
+              - link "About Us" [ref=e527] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/about-hare-and-bone/
+            - listitem [ref=e528]:
+              - link "Sam Burnett" [ref=e529] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/sam-burnett/
+            - listitem [ref=e530]:
+              - link "Meet the Team" [ref=e531] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/meet-the-team/
+            - listitem [ref=e532]:
+              - link "Awards & Media" [ref=e533] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/awards-media/
+        - generic [ref=e535]:
+          - heading "OUR SERVICES" [level=3] [ref=e536]
+          - list [ref=e538]:
+            - listitem [ref=e539]:
+              - link "Cutting" [ref=e540] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/cutting/
+            - listitem [ref=e541]:
+              - link "Colouring" [ref=e542] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/colouring/
+            - listitem [ref=e543]:
+              - link "Finishing" [ref=e544] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/finishing/
+            - listitem [ref=e545]:
+              - link "Treatments" [ref=e546] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/treatments/
+            - listitem [ref=e547]:
+              - link "Our Prices – Fitzrovia" [ref=e548] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/our-prices-fitzrovia/
+        - generic [ref=e550]:
+          - heading "GET TO KNOW US" [level=3] [ref=e551]
+          - list [ref=e553]:
+            - listitem [ref=e554]:
+              - link "Latest News" [ref=e555] [cursor=pointer]:
+                - /url: http://hareandbone.co.uk/news-inspiration/
+            - listitem [ref=e556]:
+              - link "Inspiration" [ref=e557] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/inspiration/
+            - listitem [ref=e558]:
+              - link "Gallery" [ref=e559] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/gallery/
+            - listitem [ref=e560]:
+              - link "Hare Miles" [ref=e561] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/?page_id=132
+        - generic [ref=e563]:
+          - heading "CUSTOMER SERVICE" [level=3] [ref=e564]
+          - list [ref=e566]:
+            - listitem [ref=e567]:
+              - link "How To Find Us" [ref=e568] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e569]:
+              - link "Media Enquiries" [ref=e570] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e571]:
+              - link "Good to know" [ref=e572] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/informationfaqs/
+            - listitem [ref=e573]:
+              - link "Careers" [ref=e574] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/careers/
+            - listitem [ref=e575]:
+              - link "Opening Hours" [ref=e576] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+        - generic [ref=e578]:
+          - heading "CONTACT US" [level=3] [ref=e579]
+          - generic [ref=e580]:
+            - text: HARE & BONE - FITZROVIA
+            - text: +44 (0) 20 7401 2413
+            - link "hello@hareandbone.co.uk" [ref=e581] [cursor=pointer]:
+              - /url: mailto:hello@hareandbone.co.uk
+            - text: HARE & BONE - ESHER
+            - text: +44 (0) 1737 924800
+            - link "esher@hareandbone.co.uk" [ref=e582] [cursor=pointer]:
+              - /url: mailto:esher@hareandbone.co.uk
+      - paragraph [ref=e585]:
+        - text: © HARE & BONE 2026. All Rights Reserved.
+        - link "Disclaimer" [ref=e586] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/disclaimer/
+        - text: "|"
+        - link "Terms and Conditions" [ref=e587] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/terms-and-conditions/
+        - text: "|"
+        - link "Privacy Policy" [ref=e588] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/privacy-policy/
+  - text: Show more Enabled Enabled Enabled Enabled Enabled
+  - status [ref=e589]

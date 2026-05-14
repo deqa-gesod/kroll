@@ -1,0 +1,319 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Cuts & services" [active] [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [pressed] [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e417]:
+      - generic [ref=e418]:
+        - generic [ref=e419]:
+          - paragraph [ref=e420]: Cuts & Services — every price on the page
+          - generic [ref=e421]:
+            - heading "What it is. What it costs." [level=1] [ref=e422]:
+              - text: What it is.
+              - text: What it costs.
+            - generic [ref=e423]:
+              - paragraph [ref=e424]: No “from.” No POA. The price you see is the price you pay, unless your hair changes between the email and the chair. Color is the only exception, and we say so on the line.
+              - generic [ref=e425]: Eight services. One menu. Both languages.
+        - generic [ref=e427]:
+          - img "Stylist Vanessa Jackson dry-cutting a client's Type 3c curls in the salon" [ref=e428]
+          - generic [ref=e430]: Type 3C — dry, curl by curl
+      - generic [ref=e433]:
+        - generic [ref=e434]:
+          - paragraph [ref=e435]: How we price
+          - heading "Same craft. Same price. Whatever your texture." [level=2] [ref=e436]
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - text: "01"
+            - heading "One price per service." [level=3] [ref=e439]
+            - paragraph [ref=e440]: The Jackson Cut is 750, whether your hair is shoulder length or down your back, Type 2A or Type 4C. The work is the same. The price is the same.
+          - generic [ref=e441]:
+            - text: "02"
+            - heading "Bundles, not à la carte." [level=3] [ref=e442]
+            - paragraph [ref=e443]: Beard isn't 400 NOK on top of a cut. It's a bundle. The first-visit consultation isn't a separate ticket. It's already in.
+          - generic [ref=e444]:
+            - text: "03"
+            - heading "Color is a plan." [level=3] [ref=e445]
+            - paragraph [ref=e446]: The only service we range-price, because the only honest answer before we see your hair is a range. Final number set in writing at the consult.
+          - generic [ref=e447]:
+            - text: "04"
+            - heading "The consultation is free." [level=3] [ref=e448]
+            - paragraph [ref=e449]: First time, every time. Fifteen minutes, dry, no pressure. We'd rather give you the time and the truth, than book you into a chair and have it go wrong.
+      - generic [ref=e451]:
+        - generic [ref=e452]:
+          - generic [ref=e453]: No.
+          - generic [ref=e454]: Service
+          - generic [ref=e455]: Time
+          - generic [ref=e456]: Price (NOK)
+        - generic [ref=e457]:
+          - generic [ref=e458]:
+            - paragraph [ref=e459]: 01 — Signature
+            - heading "The Jackson Cut" [level=2] [ref=e460]
+            - paragraph [ref=e461]: Our women's cut. Dry. Curl by curl. On the natural pattern. The price doesn't change with your texture or your length.
+          - generic [ref=e462]:
+            - button "01 The Jackson Cut Dry, curl by curl, on the natural pattern. The cut every other cut answers to. Women, Type 2 — 4 75 min 750 NOK" [ref=e464]:
+              - generic [ref=e465]: "01"
+              - generic [ref=e466]:
+                - generic [ref=e467]: The Jackson Cut
+                - generic [ref=e468]: Dry, curl by curl, on the natural pattern. The cut every other cut answers to.
+                - generic [ref=e469]: Women, Type 2 — 4
+              - generic [ref=e470]: 75 min
+              - generic [ref=e472]: 750 NOK
+            - button "02 First Visit Bundle The way every first appointment with us should start. Consultation, cut, finish, and a discount on the products you actually use. First-time clients, Type 2 — 4 90 min 750 NOK" [ref=e477]:
+              - generic [ref=e478]: "02"
+              - generic [ref=e479]:
+                - generic [ref=e480]: First Visit Bundle
+                - generic [ref=e481]: The way every first appointment with us should start. Consultation, cut, finish, and a discount on the products you actually use.
+                - generic [ref=e482]: First-time clients, Type 2 — 4
+              - generic [ref=e483]: 90 min
+              - generic [ref=e485]: 750 NOK
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - paragraph [ref=e491]: 02 — Men
+            - heading "The Sculpt Cut" [level=2] [ref=e492]
+            - paragraph [ref=e493]: Clipper precision and scissor work, in one chair. Architected, not pampered. The Oslo answer to the Stockholm flight.
+          - generic [ref=e494]:
+            - button "03 The Sculpt Cut Fade, lineup and dry coil shaping in one chair. Clipper precision into scissor work — no second appointment, no Stockholm flight. Men, Type 3 — 4 60 min 850 NOK" [ref=e496]:
+              - generic [ref=e497]: "03"
+              - generic [ref=e498]:
+                - generic [ref=e499]: The Sculpt Cut
+                - generic [ref=e500]: Fade, lineup and dry coil shaping in one chair. Clipper precision into scissor work — no second appointment, no Stockholm flight.
+                - generic [ref=e501]: Men, Type 3 — 4
+              - generic [ref=e502]: 60 min
+              - generic [ref=e504]: 850 NOK
+            - button "04 Sculpt Cut + Beard The Sculpt Cut with the beard architected to match the cut — line, taper, edge. Men, Type 3 — 4 75 min 950 NOK" [ref=e509]:
+              - generic [ref=e510]: "04"
+              - generic [ref=e511]:
+                - generic [ref=e512]: Sculpt Cut + Beard
+                - generic [ref=e513]: The Sculpt Cut with the beard architected to match the cut — line, taper, edge.
+                - generic [ref=e514]: Men, Type 3 — 4
+              - generic [ref=e515]: 75 min
+              - generic [ref=e517]: 950 NOK
+        - generic [ref=e521]:
+          - generic [ref=e522]:
+            - paragraph [ref=e523]: 03 — Color
+            - heading "Color, curl-safe" [level=2] [ref=e524]
+            - paragraph [ref=e525]: Color that respects the curl. We won't book it without a consultation first — color on textured hair is a plan, not a slot.
+          - button "05 Color, curl-safe Color formulated and applied so your curl pattern survives it. Balayage, single-process, glaze, gloss, grey blending. All curl types — consultation required from 120 min 1,200 — 2,200 NOK" [ref=e528]:
+            - generic [ref=e529]: "05"
+            - generic [ref=e530]:
+              - generic [ref=e531]: Color, curl-safe
+              - generic [ref=e532]: Color formulated and applied so your curl pattern survives it. Balayage, single-process, glaze, gloss, grey blending.
+              - generic [ref=e533]: All curl types — consultation required
+            - generic [ref=e534]: from 120 min
+            - generic [ref=e536]: 1,200 — 2,200 NOK
+        - generic [ref=e540]:
+          - generic [ref=e541]:
+            - paragraph [ref=e542]: 04 — Treatment
+            - heading "Add-ons" [level=2] [ref=e543]
+            - paragraph [ref=e544]: What we add when your hair is asking for it — never as a surprise on the bill.
+          - button "06 Deep Treatment Olaplex, protein or moisture — the right one for what your hair is asking for. Add to any cut. Add-on, all curl types 30 min 350 NOK" [ref=e547]:
+            - generic [ref=e548]: "06"
+            - generic [ref=e549]:
+              - generic [ref=e550]: Deep Treatment
+              - generic [ref=e551]: Olaplex, protein or moisture — the right one for what your hair is asking for. Add to any cut.
+              - generic [ref=e552]: Add-on, all curl types
+            - generic [ref=e553]: 30 min
+            - generic [ref=e555]: 350 NOK
+        - generic [ref=e559]:
+          - generic [ref=e560]:
+            - paragraph [ref=e561]: 05 — Consultation
+            - heading "Just want to talk first" [level=2] [ref=e562]
+            - paragraph [ref=e563]: Free, dry, no obligation, no upsell. The most useful 15 minutes you'll spend before booking anywhere.
+          - button "07 Free 15-minute consultation Dry. No obligation. No upsell. Bring your hair and your questions; we'll tell you what we'd do and what it would cost. Stand-alone, or bundled into a first visit at no charge. Anyone — first-timers, color clients, the unsure 15 min 0 NOK" [ref=e566]:
+            - generic [ref=e567]: "07"
+            - generic [ref=e568]:
+              - generic [ref=e569]: Free 15-minute consultation
+              - generic [ref=e570]: Dry. No obligation. No upsell. Bring your hair and your questions; we'll tell you what we'd do and what it would cost. Stand-alone, or bundled into a first visit at no charge.
+              - generic [ref=e571]: Anyone — first-timers, color clients, the unsure
+            - generic [ref=e572]: 15 min
+            - generic [ref=e574]: 0 NOK
+        - generic [ref=e578]:
+          - generic [ref=e579]:
+            - paragraph [ref=e580]: 06 — Children
+            - heading "Children's cut" [level=2] [ref=e581]
+            - paragraph [ref=e582]: Calm, unhurried, with a stylist who's done this before.
+          - button "08 Children's cut For curly kids under 12. Calm, unhurried, with a parent in the room and a stylist who knows that the chair is the half of the appointment that takes work. Under 12, all curl types 30 min 350 NOK" [ref=e585]:
+            - generic [ref=e586]: "08"
+            - generic [ref=e587]:
+              - generic [ref=e588]: Children's cut
+              - generic [ref=e589]: For curly kids under 12. Calm, unhurried, with a parent in the room and a stylist who knows that the chair is the half of the appointment that takes work.
+              - generic [ref=e590]: Under 12, all curl types
+            - generic [ref=e591]: 30 min
+            - generic [ref=e593]: 350 NOK
+      - generic [ref=e599]:
+        - generic [ref=e600]:
+          - paragraph [ref=e601]: Before you come in
+          - heading "Arrive dry. On the natural pattern." [level=2] [ref=e602]
+          - paragraph [ref=e603]: We cut dry, on what your hair actually does — not what it does once we've stretched it under water. Coming in prepped means we get to the cut faster, and you get the time on the part that matters.
+        - generic [ref=e604]:
+          - generic [ref=e605]:
+            - generic [ref=e606]:
+              - generic [ref=e607]: "01"
+              - heading "Wash 24 — 48h before." [level=3] [ref=e608]
+            - paragraph [ref=e609]: Day-2 hair tells the truth about your pattern. Day-of-wash hair lies.
+          - generic [ref=e610]:
+            - generic [ref=e611]:
+              - generic [ref=e612]: "02"
+              - heading "Detangle gently." [level=3] [ref=e613]
+            - paragraph [ref=e614]: Wide-tooth comb on damp, conditioner-coated hair. Or fingers. Never on bone-dry hair.
+          - generic [ref=e615]:
+            - generic [ref=e616]:
+              - generic [ref=e617]: "03"
+              - heading "Minimal product." [level=3] [ref=e618]
+            - paragraph [ref=e619]: Leave-in is fine. Skip heavy gels, custards or mousse on the day. We need to read the curl, not the cast.
+          - generic [ref=e620]:
+            - generic [ref=e621]:
+              - generic [ref=e622]: "04"
+              - heading "No clips. No buns. No braids." [level=3] [ref=e623]
+            - paragraph [ref=e624]: Hair down, on the natural pattern, the way it sits. Imprints take ten minutes off your appointment.
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - generic [ref=e627]: "05"
+              - heading "Bring a reference." [level=3] [ref=e628]
+            - paragraph [ref=e629]: A photo of you on a good day, or someone with a similar pattern, helps us calibrate. Not required — useful.
+          - generic [ref=e630]:
+            - generic [ref=e631]:
+              - generic [ref=e632]: "06"
+              - heading "Allow time." [level=3] [ref=e633]
+            - paragraph [ref=e634]: We hold space for the chair to be unhurried. There is rarely anyone waiting behind you.
+      - generic [ref=e637]:
+        - generic [ref=e638]:
+          - paragraph [ref=e639]: What we don't do
+          - heading "A short list, because honesty is faster than a phone call." [level=2] [ref=e640]
+        - list [ref=e641]:
+          - listitem [ref=e642]:
+            - generic [ref=e643]: Keratin treatments
+            - generic [ref=e644]: Incompatible with our curl-affirming positioning. We won't book it, even if asked.
+          - listitem [ref=e645]:
+            - generic [ref=e646]: Chemical relaxers
+            - generic [ref=e647]: Same. We don't relax curls. Other Oslo salons can — we are not them.
+          - listitem [ref=e648]:
+            - generic [ref=e649]: Wet cutting
+            - generic [ref=e650]: Stretches the curl, hides the pattern, returns the wrong shape when the hair springs back. We dry-cut, always.
+          - listitem [ref=e651]:
+            - generic [ref=e652]: Lashes, nails, brows
+            - generic [ref=e653]: Specialism is the brand. Curls are the work. Anything else is somewhere else.
+          - listitem [ref=e654]:
+            - generic [ref=e655]: Surprise pricing
+            - generic [ref=e656]: Every price is on this page. Anything that lands on the bill that wasn't quoted, we eat.
+      - generic [ref=e659]:
+        - heading "Pick a service. Or talk first." [level=2] [ref=e660]:
+          - text: Pick a service.
+          - text: Or talk first.
+        - generic [ref=e661]:
+          - link "Book a chair" [ref=e662] [cursor=pointer]:
+            - /url: /booking
+            - generic [ref=e663]: Book a chair
+            - generic [ref=e664]: →
+          - link "Free 15-minute consultation" [ref=e665] [cursor=pointer]:
+            - /url: /booking?service=consultation
+            - generic [ref=e666]: Free 15-minute consultation
+            - generic [ref=e667]: →
+          - link "Or read about The Jackson Cut method →" [ref=e668] [cursor=pointer]:
+            - /url: /the-method
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - link "Jackson & Coil." [ref=e349] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e350]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - heading "Visit" [level=3] [ref=e353]
+          - paragraph [ref=e354]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e355]:
+          - heading "Hours" [level=3] [ref=e356]
+          - list [ref=e357]:
+            - listitem [ref=e358]:
+              - generic [ref=e359]: Tuesday
+              - generic [ref=e360]: 10:00 — 19:00
+            - listitem [ref=e361]:
+              - generic [ref=e362]: Wednesday
+              - generic [ref=e363]: 10:00 — 19:00
+            - listitem [ref=e364]:
+              - generic [ref=e365]: Thursday
+              - generic [ref=e366]: 10:00 — 20:00
+            - listitem [ref=e367]:
+              - generic [ref=e368]: Friday
+              - generic [ref=e369]: 10:00 — 19:00
+            - listitem [ref=e370]:
+              - generic [ref=e371]: Saturday
+              - generic [ref=e372]: 10:00 — 17:00
+            - listitem [ref=e373]:
+              - generic [ref=e374]: Sunday & Monday
+              - generic [ref=e375]: Closed
+        - generic [ref=e376]:
+          - heading "Contact" [level=3] [ref=e377]
+          - list [ref=e378]:
+            - listitem [ref=e379]:
+              - link "hei@jacksonandcoil.no" [ref=e380] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e381]: +47 22 00 00 00
+            - listitem [ref=e382]:
+              - link "@jacksonandcoil" [ref=e383] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e384]:
+          - heading "Pages" [level=3] [ref=e385]
+          - list [ref=e386]:
+            - listitem [ref=e387]:
+              - link "Cuts & services" [ref=e388] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e389]:
+              - link "The method" [ref=e390] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e391]:
+              - link "The team" [ref=e392] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e393]:
+              - link "Portfolio" [ref=e394] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e395]:
+              - link "Shop" [ref=e396] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e397]:
+              - link "Journal" [ref=e398] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e399]:
+              - link "Visit" [ref=e400] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e401]:
+              - link "About" [ref=e402] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e403]:
+              - link "Book" [ref=e404] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e405]:
+        - generic [ref=e406]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e407]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e413] [cursor=pointer]:
+    - img [ref=e414]
+  - alert [ref=e669]

@@ -1,0 +1,312 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Klipp og tjenester" [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "Metoden" [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "Teamet" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portefølje" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Butikk" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Magasin" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Besøk" [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "Om" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [pressed] [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - img "Type 4A coils, defined and shaped" [ref=e24]
+        - generic [ref=e28]:
+          - generic [ref=e29]: Metoden — Jackson & Coil
+          - generic [ref=e30]: Fem trinn. Ett håndverk.
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: Utdannet ved Curl Bar London. Devachan NYC. Hair Rules.
+          - heading "The Jackson Cut." [level=1] [ref=e34]
+          - paragraph [ref=e35]: En navngitt, egen, tørr klippemetode for Type 2 — 4-hår. Klippen for kvinner, Sculpt Cut for menn, begge utviklet fra de samme fem trinnene. Dette er hva vi mener med det.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - paragraph [ref=e39]: Med én setning
+          - paragraph [ref=e40]: Hvert krøllmønster er den samme jobben gjort med kunnskap — og kunnskap er noe du går og henter, ikke noe du venter på.
+        - paragraph [ref=e41]: — Vanessa Jackson
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: Se — 45 sekunder
+          - heading "Vanessa, midt i klippen, i sanntid." [level=2] [ref=e47]
+          - paragraph [ref=e48]: Ingen voiceover. Ingen musikkbygg. Bare arbeidet, tørt, på det naturlige mønsteret, akkurat slik det skjer i stolen.
+        - button "Spill av 45-sekunders metode-video" [ref=e49] [cursor=pointer]:
+          - img "Dry curl-by-curl cutting in progress" [ref=e50]
+          - img [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Type 4 / tørr / krølle for krølle
+            - generic [ref=e59]: 00:45
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - paragraph [ref=e63]: De fem trinnene
+          - heading "Vurder. Kartlegg. Klipp. Finish. Forklar." [level=2] [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: 01 / 05
+            - img "Stylist assessing dry curl pattern" [ref=e70]
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: Trinn én — Vurder
+              - heading "Les håret før du rører det." [level=3] [ref=e73]
+              - paragraph [ref=e74]: Tørt. På det naturlige mønsteret. Vi leser krølltype, tetthet, porøsitet og veksretning før saksen kommer fram — og vi skriver det ned. Samme hår på en annen dag forteller en annen historie; vi klipper det som faktisk er foran oss, ikke fotografiet fra forrige time.
+              - list [ref=e75]:
+                - listitem [ref=e76]: Krølltype
+                - listitem [ref=e77]: Tetthet
+                - listitem [ref=e78]: Porøsitet
+                - listitem [ref=e79]: Veksretning
+          - generic [ref=e81]:
+            - generic [ref=e82]: 02 / 05
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Trinn to — Kartlegg
+              - heading "Ulike regler for ulike soner." [level=3] [ref=e85]
+              - paragraph [ref=e86]: Vi markerer fire soner — topplag, underlag, nakke, tinning — og klippen følger ulike regler i hver. Topplaget rammer inn; underlaget holder formen; nakken setter silhuetten; tinningen er der lineupen lever. Kartet er det som gjør at samme klipp fungerer på Type 2A og Type 4C.
+              - list [ref=e87]:
+                - listitem [ref=e88]: Topplag
+                - listitem [ref=e89]: Underlag
+                - listitem [ref=e90]: Nakke
+                - listitem [ref=e91]: Tinning
+          - generic [ref=e93]:
+            - generic [ref=e94]: 03 / 05
+            - img "Dry curl-by-curl cutting in progress" [ref=e96]
+            - generic [ref=e97]:
+              - paragraph [ref=e98]: Trinn tre — Klipp
+              - heading "Krølle for krølle. Tørr. Aldri under spenning." [level=3] [ref=e99]
+              - paragraph [ref=e100]: Hver krølle tas individuelt, på sitt eget mønster, aldri strukket mellom fingrene, aldri våt. Formen bygges fra tilbakefjæringen, ikke mot den. Dette er den tregeste delen av timen og den jobben hviler på.
+              - list [ref=e101]:
+                - listitem [ref=e102]: Tørr klipp
+                - listitem [ref=e103]: Krølle-for-krølle
+                - listitem [ref=e104]: Tilbakefjær-form
+          - generic [ref=e106]:
+            - generic [ref=e107]: 04 / 05
+            - img "Finished coils after dry cut" [ref=e109]
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: Trinn fire — Finish
+              - heading "Style det slik du selv vil style det." [level=3] [ref=e112]
+              - paragraph [ref=e113]: Vask, balsam, leave-in, definisjons-produkt. Uansett hvilken rutine — det er den du kan kjøpe på vei ut og gjenskape en tirsdag morgen før jobb. Vi gjør ikke salong-finishes som krever tre produkter du ikke får tak i Norge.
+              - list [ref=e114]:
+                - listitem [ref=e115]: Lavskum
+                - listitem [ref=e116]: Leave-in
+                - listitem [ref=e117]: Definisjon
+                - listitem [ref=e118]: Diffuse-eller-luft
+          - generic [ref=e120]:
+            - generic [ref=e121]: 05 / 05
+            - generic [ref=e122]:
+              - paragraph [ref=e123]: Trinn fem — Forklar
+              - heading "Du går herfra og vet hva som ble gjort." [level=3] [ref=e124]
+              - paragraph [ref=e125]: "Hver klipp slutter på samme måte: med at stylisten viser deg hva som ble gjort, hvor, og hvorfor. Hvilken sone vi formet, hva porøsiteten din ba om, hva du skal vaske med på søndag. Stolen er halve timen. Overleveringen er den andre halvparten."
+              - list [ref=e126]:
+                - listitem [ref=e127]: Gjennomgang
+                - listitem [ref=e128]: Hjemme-rutine
+                - listitem [ref=e129]: Skriftlige notater
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Tabellen
+          - heading "Andre Walker. Type 2A til 4C." [level=2] [ref=e134]
+        - paragraph [ref=e136]: Andre Walker — Oprahs stylist i tjuefem år — publiserte denne typologien i 1997. Den er ikke hele sannheten (de fleste hoder har to-tre mønstre samtidig, og porøsitet betyr like mye som type), men det er det felles vokabularet krøll-verdenen bruker. Vi leser den dag én, foran speilet, med deg. Så går vi i gang.
+        - generic [ref=e137]:
+          - figure "Løs bølge Forsiktig S-bend. Fin til middels strå." [ref=e138]:
+            - generic [ref=e139]:
+              - img [ref=e140]
+              - generic [ref=e142]: 2A
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: Løs bølge
+              - paragraph [ref=e145]: Forsiktig S-bend. Fin til middels strå.
+          - figure "Definert bølge S-form, holder formen fra midten og ned." [ref=e146]:
+            - generic [ref=e147]:
+              - img [ref=e148]
+              - generic [ref=e150]: 2B
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: Definert bølge
+              - paragraph [ref=e153]: S-form, holder formen fra midten og ned.
+          - figure "Bølge med krøll S-form som strammer seg til åpne ringer." [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - generic [ref=e158]: 2C
+            - generic [ref=e159]:
+              - paragraph [ref=e160]: Bølge med krøll
+              - paragraph [ref=e161]: S-form som strammer seg til åpne ringer.
+          - figure "Løs krøll Spiral på størrelse med en kritt-stang." [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - generic [ref=e166]: 3A
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Løs krøll
+              - paragraph [ref=e169]: Spiral på størrelse med en kritt-stang.
+          - figure "Spiral-krøll Spiral på størrelse med en sprittusj." [ref=e170]:
+            - generic [ref=e171]:
+              - img [ref=e172]
+              - generic [ref=e174]: 3B
+            - generic [ref=e175]:
+              - paragraph [ref=e176]: Spiral-krøll
+              - paragraph [ref=e177]: Spiral på størrelse med en sprittusj.
+          - figure "Tett krøll Korketrekker, på størrelse med en blyant." [ref=e178]:
+            - generic [ref=e179]:
+              - img [ref=e180]
+              - generic [ref=e182]: 3C
+            - generic [ref=e183]:
+              - paragraph [ref=e184]: Tett krøll
+              - paragraph [ref=e185]: Korketrekker, på størrelse med en blyant.
+          - figure "Myk coil Coil på størrelse med en heklenål. Definert." [ref=e186]:
+            - generic [ref=e187]:
+              - img [ref=e188]
+              - generic [ref=e190]: 4A
+            - generic [ref=e191]:
+              - paragraph [ref=e192]: Myk coil
+              - paragraph [ref=e193]: Coil på størrelse med en heklenål. Definert.
+          - figure "Z-mønster coil Skarpe vinkler, mindre definert coil. Holder volum." [ref=e194]:
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e198]: 4B
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: Z-mønster coil
+              - paragraph [ref=e201]: Skarpe vinkler, mindre definert coil. Holder volum.
+          - figure "Tett coil Tettpakket Z-mønster. Spekterets krone." [ref=e202]:
+            - generic [ref=e203]:
+              - img [ref=e204]
+              - generic [ref=e206]: 4C
+            - generic [ref=e207]:
+              - paragraph [ref=e208]: Tett coil
+              - paragraph [ref=e209]: Tettpakket Z-mønster. Spekterets krone.
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - paragraph [ref=e212]: Type 2
+            - paragraph [ref=e213]: Bølge. S-formen. Sigrids hår. Ofte feildiagnostisert som «rett men frizzy» av stylister som kun leser det under spenning.
+          - generic [ref=e214]:
+            - paragraph [ref=e215]: Type 3
+            - paragraph [ref=e216]: Spiral. Definerte ringer. DevaCut-kategorien. Tyngde ved roten og tinningen er der de fleste stylister bommer på denne.
+          - generic [ref=e217]:
+            - paragraph [ref=e218]: Type 4
+            - paragraph [ref=e219]: Coil. Z-mønsteret. Amaras hår, Daniels hår. Bygget for volum og tetthet. Kategorien de fleste Oslo-salonger stille avviser — og den vi bygde for først.
+          - generic [ref=e220]:
+            - paragraph [ref=e221]: Blandet mønster
+            - paragraph [ref=e222]: De fleste hoder. Et 3B-topplag over en 4A-nakke, en 2C-krone over en 3A-side. Kartlegging-trinnet finnes på grunn av dette.
+      - generic [ref=e225]:
+        - paragraph [ref=e226]: Hvorfor tørr
+        - generic [ref=e227]:
+          - heading "Vått hår er en annen form enn håret ditt." [level=2] [ref=e228]
+          - generic [ref=e229]:
+            - paragraph [ref=e230]: En Type 4-coil klippet våt, under spenning, kommer tilbake på halve lengden når den tørker. En Type 2-bølge klippet våt og børstet rett, kommer tilbake for kort i topplaget og ujevn i nakken. Håret går tilbake til sitt mønster; klippen skulle vært bygget for det mønsteret fra starten.
+            - paragraph [ref=e231]: Tørr klipping er tregere, vanskeligere, og grunnen til at de fleste stylister ikke tilbyr det. Det er også den eneste måten å klippe for et krøllmønster på, istedenfor mot det. Vi lærte det på Curl Bar, raffinerte det på Devachan og Hair Rules, og vi avviker ikke fra det.
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - paragraph [ref=e235]: For menn
+          - heading "Samme fem trinn. Skarpere kanter." [level=2] [ref=e236]
+        - generic [ref=e238]:
+          - paragraph [ref=e239]: The Sculpt Cut tar samme vurdering, samme sonekart, samme tørre krølle-for-krølle-arbeid på toppen — og legger til maskinpresisjon for fade og lineup. Én stol. Én time. Fade og krøller er ikke to ulike ferdigheter levert til to ulike personer. Det er hele poenget.
+          - list [ref=e240]:
+            - listitem [ref=e241]: Sculpt
+            - listitem [ref=e242]: Taper
+            - listitem [ref=e243]: Definisjon
+            - listitem [ref=e244]: Linje
+            - listitem [ref=e245]: Kant
+      - generic [ref=e248]:
+        - heading "Nå er det på tide å book." [level=2] [ref=e249]
+        - generic [ref=e250]:
+          - link "Book the Jackson Cut" [ref=e251] [cursor=pointer]:
+            - /url: /booking?service=the-jackson-cut
+            - generic [ref=e252]: Book the Jackson Cut
+            - generic [ref=e253]: →
+          - link "Book the Sculpt Cut" [ref=e254] [cursor=pointer]:
+            - /url: /booking?service=the-sculpt-cut
+            - generic [ref=e255]: Book the Sculpt Cut
+            - generic [ref=e256]: →
+          - link "Eller prat først — gratis 15-min konsultasjon →" [ref=e257] [cursor=pointer]:
+            - /url: /booking?service=consultation
+  - contentinfo [ref=e258]:
+    - generic [ref=e259]:
+      - generic [ref=e260]:
+        - link "Jackson & Coil." [ref=e261] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e262]: Alle krøller. Ett sted. Stylister som er utdannet for håret ditt, ikke mot det.
+      - generic [ref=e263]:
+        - generic [ref=e264]:
+          - heading "Besøk" [level=3] [ref=e265]
+          - paragraph [ref=e266]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norge
+        - generic [ref=e267]:
+          - heading "Åpningstider" [level=3] [ref=e268]
+          - list [ref=e269]:
+            - listitem [ref=e270]:
+              - generic [ref=e271]: Tirsdag
+              - generic [ref=e272]: 10:00 — 19:00
+            - listitem [ref=e273]:
+              - generic [ref=e274]: Onsdag
+              - generic [ref=e275]: 10:00 — 19:00
+            - listitem [ref=e276]:
+              - generic [ref=e277]: Torsdag
+              - generic [ref=e278]: 10:00 — 20:00
+            - listitem [ref=e279]:
+              - generic [ref=e280]: Fredag
+              - generic [ref=e281]: 10:00 — 19:00
+            - listitem [ref=e282]:
+              - generic [ref=e283]: Lørdag
+              - generic [ref=e284]: 10:00 — 17:00
+            - listitem [ref=e285]:
+              - generic [ref=e286]: Søndag og mandag
+              - generic [ref=e287]: Stengt
+        - generic [ref=e288]:
+          - heading "Kontakt" [level=3] [ref=e289]
+          - list [ref=e290]:
+            - listitem [ref=e291]:
+              - link "hei@jacksonandcoil.no" [ref=e292] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e293]: +47 22 00 00 00
+            - listitem [ref=e294]:
+              - link "@jacksonandcoil" [ref=e295] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e296]:
+          - heading "Sider" [level=3] [ref=e297]
+          - list [ref=e298]:
+            - listitem [ref=e299]:
+              - link "Klipp og tjenester" [ref=e300] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e301]:
+              - link "Metoden" [ref=e302] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e303]:
+              - link "Teamet" [ref=e304] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e305]:
+              - link "Portefølje" [ref=e306] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e307]:
+              - link "Butikk" [ref=e308] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e309]:
+              - link "Magasin" [ref=e310] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e311]:
+              - link "Besøk" [ref=e312] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e313]:
+              - link "Om" [ref=e314] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e315]:
+              - link "Book" [ref=e316] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e317]:
+        - generic [ref=e318]: © 2026 Jackson & Coil. Alle rettigheter forbeholdt.
+        - generic [ref=e319]: Krøll-spesialisert frisørsalong. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e325] [cursor=pointer]:
+    - img [ref=e326]
+  - alert [ref=e329]

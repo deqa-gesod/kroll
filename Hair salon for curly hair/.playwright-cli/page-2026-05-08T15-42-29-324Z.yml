@@ -1,0 +1,23 @@
+- generic [ref=e6]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - navigation:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Profile" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Profile
+          - listitem [ref=e15]:
+            - button "Bookings" [ref=e16] [cursor=pointer]:
+              - generic [ref=e19]: Bookings
+          - listitem [ref=e20]:
+            - button "Deposits" [ref=e21] [cursor=pointer]:
+              - generic [ref=e25]: Deposits
+      - banner [ref=e26]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: Powered by
+          - img "Slick logo" [ref=e33]
+    - generic [ref=e34]: Please select services in the order you would like them. If you can’t find what you’re looking for, call us on undefined
+    - button "CHANGE LOCATION" [ref=e36] [cursor=pointer]:
+      - generic [ref=e37]: CHANGE LOCATION
+    - img [ref=e39]
+  - button "NEXT" [disabled] [ref=e42]

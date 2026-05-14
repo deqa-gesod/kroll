@@ -1,0 +1,308 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - heading "We value your privacy" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - paragraph [ref=e8]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+      - generic [ref=e9]:
+        - button "Customize" [ref=e10] [cursor=pointer]
+        - button "Reject All" [ref=e11] [cursor=pointer]
+        - button "Accept All" [ref=e12] [cursor=pointer]
+  - link "" [ref=e14] [cursor=pointer]:
+    - /url: "#back-to-top"
+    - generic [ref=e15]: 
+  - generic [ref=e16]:
+    - banner:
+      - generic [ref=e18]:
+        - generic [ref=e21]:
+          - link "Shai Amiel" [ref=e23] [cursor=pointer]:
+            - /url: https://www.shaiamiel.com/
+            - img "Shai Amiel" [ref=e24]
+          - navigation [ref=e26]:
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "About" [ref=e29] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/about/
+              - listitem [ref=e30]:
+                - link "Salon Services" [ref=e31] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/services/
+              - listitem [ref=e32]:
+                - link "Gallery" [ref=e33] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/gallery/
+              - listitem [ref=e34]:
+                - link "Policies" [ref=e35] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/policies/
+              - listitem [ref=e36]:
+                - link "Press & Media" [ref=e37] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/press/
+              - listitem [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/contact-us/
+              - listitem [ref=e40]:
+                - link "Shop" [ref=e41] [cursor=pointer]:
+                  - /url: https://www.thecurldoctor.com
+              - listitem [ref=e42]:
+                - link "" [ref=e43] [cursor=pointer]:
+                  - /url: https://twitter.com/ShaiAmiel
+                  - generic [ref=e44]: 
+              - listitem [ref=e45]:
+                - link "" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.instagram.com/ShaiAmiel/
+                  - generic [ref=e47]: 
+              - listitem [ref=e48]:
+                - link "" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/ShaiAmielDr
+                  - generic [ref=e50]: 
+              - listitem [ref=e51]:
+                - link "" [ref=e52] [cursor=pointer]:
+                  - /url: https://shaiamiel.tumblr.com/
+                  - generic [ref=e53]: 
+        - navigation [ref=e54]:
+          - list [ref=e55]:
+            - listitem [ref=e56]:
+              - link "About" [ref=e57] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/about/
+            - listitem [ref=e58]:
+              - link "Salon Services" [ref=e59] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/services/
+            - listitem [ref=e60]:
+              - link "Gallery" [ref=e61] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/gallery/
+            - listitem [ref=e62]:
+              - link "Policies" [ref=e63] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/policies/
+            - listitem [ref=e64]:
+              - link "Press & Media" [ref=e65] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/press/
+            - listitem [ref=e66]:
+              - link "Contact" [ref=e67] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/contact-us/
+            - listitem [ref=e68]:
+              - link "Shop" [ref=e69] [cursor=pointer]:
+                - /url: https://www.thecurldoctor.com
+            - listitem [ref=e70]:
+              - link "" [ref=e71] [cursor=pointer]:
+                - /url: https://twitter.com/ShaiAmiel
+                - generic [ref=e72]: 
+            - listitem [ref=e73]:
+              - link "" [ref=e74] [cursor=pointer]:
+                - /url: https://www.instagram.com/ShaiAmiel/
+                - generic [ref=e75]: 
+            - listitem [ref=e76]:
+              - link "" [ref=e77] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/ShaiAmielDr
+                - generic [ref=e78]: 
+            - listitem [ref=e79]:
+              - link "" [ref=e80] [cursor=pointer]:
+                - /url: https://shaiamiel.tumblr.com/
+                - generic [ref=e81]: 
+    - main [ref=e98]:
+      - article [ref=e99]:
+        - generic [ref=e103]:
+          - main [ref=e105]:
+            - paragraph
+            - article [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e112]:
+                  - generic [ref=e118]:
+                    - heading "Services" [level=2] [ref=e119]
+                    - paragraph [ref=e120]: Shai Amiel works with your hair’s natural texture and motion to enhance the beauty that’s already there. The goal is to create shapes that suit your lifestyle and bring beauty.
+                  - generic [ref=e132]:
+                    - generic [ref=e137]:
+                      - generic [ref=e139]:
+                        - figure [ref=e140]:
+                          - img "service-2" [ref=e141]
+                        - paragraph
+                      - generic [ref=e143]:
+                        - heading "Curl by Curl Haircut" [level=1] [ref=e144]
+                        - paragraph [ref=e145]: Dry cut followed by a detox cleanse, hydration treatment, styling and education.
+                        - paragraph
+                      - generic [ref=e146]:
+                        - paragraph [ref=e147]: $350
+                        - paragraph
+                    - generic [ref=e152]:
+                      - generic [ref=e154]:
+                        - figure [ref=e155]:
+                          - img "Haircut" [ref=e156]
+                        - paragraph
+                      - generic [ref=e158]:
+                        - heading "Express Curl by Curl Haircut" [level=1] [ref=e159]
+                        - paragraph [ref=e160]: Dry curl by curl cut without the wash and style.
+                        - paragraph
+                      - generic [ref=e161]:
+                        - paragraph [ref=e162]: $290
+                        - paragraph
+                    - generic [ref=e167]:
+                      - generic [ref=e169]:
+                        - figure [ref=e170]:
+                          - img "Haircut" [ref=e171]
+                        - paragraph
+                      - generic [ref=e173]:
+                        - heading "Single Process Color" [level=1] [ref=e174]: Single Process Color
+                        - paragraph
+                      - generic [ref=e175]:
+                        - paragraph [ref=e176]: $175+
+                        - paragraph
+                    - generic [ref=e181]:
+                      - generic [ref=e183]:
+                        - figure [ref=e184]:
+                          - img "Highlights" [ref=e185]
+                        - paragraph
+                      - generic [ref=e187]:
+                        - heading "Highlights / Balayage" [level=1] [ref=e188]: Highlights / Balayage
+                        - paragraph
+                      - generic [ref=e189]:
+                        - paragraph [ref=e190]: $385+
+                        - paragraph
+                - generic [ref=e195]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]:
+                      - heading "Hours" [level=1] [ref=e203]
+                      - paragraph
+                    - generic [ref=e204]:
+                      - paragraph [ref=e205]: Shai is available by appointment only Tuesday – Friday.
+                      - paragraph
+                  - generic [ref=e211]:
+                    - generic [ref=e212]:
+                      - heading "Make An Appointment" [level=6] [ref=e213]
+                      - paragraph
+                    - generic [ref=e214]:
+                      - paragraph [ref=e215]: "To make an appointment, please call Capella Salon: (818) 784-4247"
+                      - paragraph
+                  - generic [ref=e221]:
+                    - generic [ref=e222]:
+                      - heading "Policies" [level=6] [ref=e223]
+                      - paragraph
+                    - generic [ref=e224]:
+                      - paragraph [ref=e225]:
+                        - text: I look forward to your appointment! Visit our
+                        - link "Policies" [ref=e227] [cursor=pointer]:
+                          - /url: /policies
+                        - text: to learn more.
+                      - paragraph
+                - generic [ref=e239]:
+                  - generic [ref=e241]:
+                    - generic [ref=e243]:
+                      - figure [ref=e244]:
+                        - img "Shai Amiel" [ref=e245]
+                      - paragraph
+                    - generic [ref=e247]:
+                      - figure [ref=e248]:
+                        - img "Shai Amiel" [ref=e249]
+                      - paragraph
+                    - generic [ref=e251]:
+                      - figure [ref=e252]:
+                        - img "Shai Amiel" [ref=e253]
+                      - paragraph
+                    - generic [ref=e255]:
+                      - figure [ref=e256]:
+                        - img "Shai Amiel" [ref=e257]
+                      - paragraph
+                    - generic [ref=e259]:
+                      - figure [ref=e260]:
+                        - img "Shai Amiel" [ref=e261]
+                      - paragraph
+                    - generic [ref=e263]:
+                      - figure [ref=e264]:
+                        - img "Shai Amiel" [ref=e265]
+                      - paragraph
+                    - generic [ref=e267]:
+                      - figure [ref=e268]:
+                        - img "Shai Amiel" [ref=e269]
+                      - paragraph
+                    - generic [ref=e271]:
+                      - figure [ref=e272]:
+                        - img "Shai Amiel" [ref=e273]
+                      - paragraph
+                    - generic [ref=e275]:
+                      - figure [ref=e276]:
+                        - img "Shai Amiel" [ref=e277]
+                      - paragraph
+                    - generic [ref=e279]:
+                      - figure [ref=e280]:
+                        - img "Shai Amiel" [ref=e281]
+                      - paragraph
+                    - generic [ref=e283]:
+                      - figure [ref=e284]:
+                        - img "Shai Amiel" [ref=e285]
+                      - paragraph
+                    - generic [ref=e287]:
+                      - figure [ref=e288]:
+                        - img "Shai Amiel" [ref=e289]
+                      - paragraph
+                    - generic [ref=e291]:
+                      - figure [ref=e292]:
+                        - img "Shai Amiel" [ref=e293]
+                      - paragraph
+                    - generic [ref=e295]:
+                      - figure [ref=e296]:
+                        - img "Shai Amiel" [ref=e297]
+                      - paragraph
+                    - generic [ref=e299]:
+                      - figure [ref=e300]:
+                        - img "Shai Amiel" [ref=e301]
+                      - paragraph
+                    - generic [ref=e303]:
+                      - figure [ref=e304]:
+                        - img "Shai Amiel" [ref=e305]
+                      - paragraph
+                    - generic [ref=e307]:
+                      - figure [ref=e308]:
+                        - img "Shai Amiel" [ref=e309]
+                      - paragraph
+                    - generic [ref=e311]:
+                      - figure [ref=e312]:
+                        - img "Shai Amiel" [ref=e313]
+                      - paragraph
+                    - generic [ref=e315]:
+                      - figure [ref=e316]:
+                        - img "Shai Amiel" [ref=e317]
+                      - paragraph
+                    - generic [ref=e319]:
+                      - figure [ref=e320]:
+                        - img "Shai Amiel" [ref=e321]
+                      - paragraph
+                    - generic [ref=e323]:
+                      - figure [ref=e324]:
+                        - img "Shai Amiel" [ref=e325]
+                      - paragraph
+                    - generic [ref=e327]:
+                      - figure [ref=e328]:
+                        - img "Shai Amiel" [ref=e329]
+                      - paragraph
+                    - generic [ref=e331]:
+                      - figure [ref=e332]:
+                        - img "Shai Amiel" [ref=e333]
+                      - paragraph
+                  - generic [ref=e336]:
+                    - paragraph
+                - link [ref=e338] [cursor=pointer]:
+                  - /url: https://shareasale.com/r.cfm?b=1131954&u=2341878&m=72573&urllink=&afftrack=
+                  - img [ref=e339]
+              - paragraph [ref=e340]
+            - paragraph [ref=e341]
+          - paragraph
+    - contentinfo [ref=e342]:
+      - generic [ref=e346]:
+        - list [ref=e348]:
+          - listitem [ref=e349]:
+            - link "" [ref=e350] [cursor=pointer]:
+              - /url: https://twitter.com/ShaiAmiel
+              - generic [ref=e351]: 
+          - listitem [ref=e352]:
+            - link "" [ref=e353] [cursor=pointer]:
+              - /url: https://www.instagram.com/shaiamiel/
+              - generic [ref=e354]: 
+          - listitem [ref=e355]:
+            - link "" [ref=e356] [cursor=pointer]:
+              - /url: http://pinterest.com/ShaiAmiel/
+              - generic [ref=e357]: 
+          - listitem [ref=e358]:
+            - link "" [ref=e359] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/ShaiAmielDr
+              - generic [ref=e360]: 
+        - generic [ref=e361]:
+          - text: © Shai Amiel. All Rights Reserved |
+          - generic [ref=e362]:
+            - text: Site by
+            - link "Sixty Five Design" [ref=e363] [cursor=pointer]:
+              - /url: http://www.sixtyfivedesign.com

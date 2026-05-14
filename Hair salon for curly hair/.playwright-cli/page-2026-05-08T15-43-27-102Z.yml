@@ -1,0 +1,273 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - heading "We value your privacy" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - paragraph [ref=e8]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+      - generic [ref=e9]:
+        - button "Customize" [ref=e10] [cursor=pointer]
+        - button "Reject All" [ref=e11] [cursor=pointer]
+        - button "Accept All" [ref=e12] [cursor=pointer]
+  - link "" [ref=e14] [cursor=pointer]:
+    - /url: "#back-to-top"
+    - generic [ref=e15]: 
+  - generic [ref=e16]:
+    - banner:
+      - generic [ref=e18]:
+        - generic [ref=e21]:
+          - link "Shai Amiel" [ref=e23] [cursor=pointer]:
+            - /url: https://www.shaiamiel.com/
+            - img "Shai Amiel" [ref=e24]
+          - navigation [ref=e26]:
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "About" [ref=e29] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/about/
+              - listitem [ref=e30]:
+                - link "Salon Services" [ref=e31] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/services/
+              - listitem [ref=e32]:
+                - link "Gallery" [ref=e33] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/gallery/
+              - listitem [ref=e34]:
+                - link "Policies" [ref=e35] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/policies/
+              - listitem [ref=e36]:
+                - link "Press & Media" [ref=e37] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/press/
+              - listitem [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: https://www.shaiamiel.com/contact-us/
+              - listitem [ref=e40]:
+                - link "Shop" [ref=e41] [cursor=pointer]:
+                  - /url: https://www.thecurldoctor.com
+              - listitem [ref=e42]:
+                - link "" [ref=e43] [cursor=pointer]:
+                  - /url: https://twitter.com/ShaiAmiel
+                  - generic [ref=e44]: 
+              - listitem [ref=e45]:
+                - link "" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.instagram.com/ShaiAmiel/
+                  - generic [ref=e47]: 
+              - listitem [ref=e48]:
+                - link "" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/ShaiAmielDr
+                  - generic [ref=e50]: 
+              - listitem [ref=e51]:
+                - link "" [ref=e52] [cursor=pointer]:
+                  - /url: https://shaiamiel.tumblr.com/
+                  - generic [ref=e53]: 
+        - navigation [ref=e54]:
+          - list [ref=e55]:
+            - listitem [ref=e56]:
+              - link "About" [ref=e57] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/about/
+            - listitem [ref=e58]:
+              - link "Salon Services" [ref=e59] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/services/
+            - listitem [ref=e60]:
+              - link "Gallery" [ref=e61] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/gallery/
+            - listitem [ref=e62]:
+              - link "Policies" [ref=e63] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/policies/
+            - listitem [ref=e64]:
+              - link "Press & Media" [ref=e65] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/press/
+            - listitem [ref=e66]:
+              - link "Contact" [ref=e67] [cursor=pointer]:
+                - /url: https://www.shaiamiel.com/contact-us/
+            - listitem [ref=e68]:
+              - link "Shop" [ref=e69] [cursor=pointer]:
+                - /url: https://www.thecurldoctor.com
+            - listitem [ref=e70]:
+              - link "" [ref=e71] [cursor=pointer]:
+                - /url: https://twitter.com/ShaiAmiel
+                - generic [ref=e72]: 
+            - listitem [ref=e73]:
+              - link "" [ref=e74] [cursor=pointer]:
+                - /url: https://www.instagram.com/ShaiAmiel/
+                - generic [ref=e75]: 
+            - listitem [ref=e76]:
+              - link "" [ref=e77] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/ShaiAmielDr
+                - generic [ref=e78]: 
+            - listitem [ref=e79]:
+              - link "" [ref=e80] [cursor=pointer]:
+                - /url: https://shaiamiel.tumblr.com/
+                - generic [ref=e81]: 
+    - main [ref=e98]:
+      - article [ref=e99]:
+        - generic [ref=e111]:
+          - generic [ref=e120]:
+            - heading "Gallery" [level=6] [ref=e122]
+            - paragraph [ref=e124]: Healthy hair is pretty hair! This is Shai’s mantra preached all day long. Click a photo below to enlarge!
+          - generic [ref=e127]:
+            - figure [ref=e129]:
+              - link "gallery-1" [ref=e130] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-1.jpg
+                - img "gallery-1" [ref=e131]
+            - figure [ref=e133]:
+              - link "gallery-2" [ref=e134] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-2.jpg
+                - img "gallery-2" [ref=e135]
+            - figure [ref=e137]:
+              - link "gallery-3" [ref=e138] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-3.jpg
+                - img "gallery-3" [ref=e139]
+            - figure [ref=e141]:
+              - link "gallery-4" [ref=e142] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-4.jpg
+                - img "gallery-4" [ref=e143]
+            - figure [ref=e145]:
+              - link "gallery-6" [ref=e146] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-6.jpg
+                - img "gallery-6" [ref=e147]
+            - figure [ref=e149]:
+              - link "Shai Amiel" [ref=e150] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-7.jpg
+                - img "Shai Amiel" [ref=e151]
+            - figure [ref=e153]:
+              - link "Shai Amiel" [ref=e154] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-8.jpg
+                - img "Shai Amiel" [ref=e155]
+            - figure [ref=e157]:
+              - link "Shai Amiel" [ref=e158] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-9.jpg
+                - img "Shai Amiel" [ref=e159]
+            - figure [ref=e161]:
+              - link "Shai Amiel" [ref=e162] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-10.jpg
+                - img "Shai Amiel" [ref=e163]
+            - figure [ref=e165]:
+              - link "gallery-12" [ref=e166] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-12.jpg
+                - img "gallery-12" [ref=e167]
+            - figure [ref=e169]:
+              - link "Shai Amiel" [ref=e170] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-13.jpg
+                - img "Shai Amiel" [ref=e171]
+            - figure [ref=e173]:
+              - link "gallery-14" [ref=e174] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-14.jpg
+                - img "gallery-14" [ref=e175]
+            - figure [ref=e177]:
+              - link "Shai Amiel" [ref=e178] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-15.jpg
+                - img "Shai Amiel" [ref=e179]
+            - figure [ref=e181]:
+              - link "Shai Amiel" [ref=e182] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-17.jpg
+                - img "Shai Amiel" [ref=e183]
+            - figure [ref=e185]:
+              - link "Shai Amiel" [ref=e186] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-18.jpg
+                - img "Shai Amiel" [ref=e187]
+            - figure [ref=e189]:
+              - link "Shai Amiel" [ref=e190] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-19.jpg
+                - img "Shai Amiel" [ref=e191]
+            - figure [ref=e193]:
+              - link "gallery-20" [ref=e194] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-20.jpg
+                - img "gallery-20" [ref=e195]
+            - figure [ref=e197]:
+              - link "gallery-21" [ref=e198] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-21.jpg
+                - img "gallery-21" [ref=e199]
+            - figure [ref=e201]:
+              - link "gallery-22" [ref=e202] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-22.jpg
+                - img "gallery-22" [ref=e203]
+            - figure [ref=e205]:
+              - link "gallery-23" [ref=e206] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-23.jpg
+                - img "gallery-23" [ref=e207]
+            - figure [ref=e209]:
+              - link "gallery-24" [ref=e210] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-24.jpg
+                - img "gallery-24" [ref=e211]
+            - figure [ref=e213]:
+              - link "gallery-26" [ref=e214] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-26.jpg
+                - img "gallery-26" [ref=e215]
+            - figure [ref=e217]:
+              - link "Shai Amiel" [ref=e218] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-27.jpg
+                - img "Shai Amiel" [ref=e219]
+            - figure [ref=e221]:
+              - link "gallery-29" [ref=e222] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-29.jpg
+                - img "gallery-29" [ref=e223]
+            - figure [ref=e225]:
+              - link "gallery-30" [ref=e226] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-30.jpg
+                - img "gallery-30" [ref=e227]
+            - figure [ref=e229]:
+              - link "gallery-31" [ref=e230] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-31.jpg
+                - img "gallery-31" [ref=e231]
+            - figure [ref=e233]:
+              - link "gallery-32" [ref=e234] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-32.jpg
+                - img "gallery-32" [ref=e235]
+            - figure [ref=e237]:
+              - link "Press" [ref=e238] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-33.jpg
+                - img "Press" [ref=e239]
+            - figure [ref=e241]:
+              - link "gallery-34" [ref=e242] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-34.jpg
+                - img "gallery-34" [ref=e243]
+            - figure [ref=e245]:
+              - link "gallery-35" [ref=e246] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-35.jpg
+                - img "gallery-35" [ref=e247]
+            - figure [ref=e249]:
+              - link "gallery-36" [ref=e250] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-36.jpg
+                - img "gallery-36" [ref=e251]
+            - figure [ref=e253]:
+              - link "gallery-37" [ref=e254] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-37.jpg
+                - img "gallery-37" [ref=e255]
+            - figure [ref=e257]:
+              - link "gallery-38" [ref=e258] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-38.jpg
+                - img "gallery-38" [ref=e259]
+            - figure [ref=e261]:
+              - link "gallery-39" [ref=e262] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-39.jpg
+                - img "gallery-39" [ref=e263]
+            - figure [ref=e265]:
+              - link "gallery-41" [ref=e266] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-41.jpg
+                - img "gallery-41" [ref=e267]
+            - figure [ref=e269]:
+              - link "gallery-42" [ref=e270] [cursor=pointer]:
+                - /url: https://shaiamiel.wpenginepowered.com/wp-content/uploads/2018/03/gallery-42.jpg
+                - img "gallery-42" [ref=e271]
+    - contentinfo [ref=e274]:
+      - generic [ref=e278]:
+        - list [ref=e280]:
+          - listitem [ref=e281]:
+            - link "" [ref=e282] [cursor=pointer]:
+              - /url: https://twitter.com/ShaiAmiel
+              - generic [ref=e283]: 
+          - listitem [ref=e284]:
+            - link "" [ref=e285] [cursor=pointer]:
+              - /url: https://www.instagram.com/shaiamiel/
+              - generic [ref=e286]: 
+          - listitem [ref=e287]:
+            - link "" [ref=e288] [cursor=pointer]:
+              - /url: http://pinterest.com/ShaiAmiel/
+              - generic [ref=e289]: 
+          - listitem [ref=e290]:
+            - link "" [ref=e291] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/ShaiAmielDr
+              - generic [ref=e292]: 
+        - generic [ref=e293]:
+          - text: © Shai Amiel. All Rights Reserved |
+          - generic [ref=e294]:
+            - text: Site by
+            - link "Sixty Five Design" [ref=e295] [cursor=pointer]:
+              - /url: http://www.sixtyfivedesign.com

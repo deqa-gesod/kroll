@@ -1,0 +1,724 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]: Press Option+1 for screen-reader mode, Option+0 to cancel
+  - button "Use Website In a Screen-Reader Mode" [ref=e3]
+  - link "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window" [ref=e4] [cursor=pointer]:
+    - /url: https://accessibe.com/blog/knowledgebase/screen-reader-guide
+  - generic:
+    - generic:
+      - region "Skip Links":
+        - generic:
+          - link "Skip to Content":
+            - /url: "#acsbContent"
+            - text: Skip to Content
+            - generic:
+              - generic: ↵
+              - text: ENTER
+  - dialog [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - text: Simplify Text
+    - button [ref=e9] [cursor=pointer]:
+      - img [ref=e10]
+  - 'button "Open accessiBe: accessibility options, statement and help" [ref=e13] [cursor=pointer]':
+    - generic:
+      - img [ref=e14]
+      - img
+      - img
+  - generic [ref=e18]:
+    - navigation [ref=e20]:
+      - generic [ref=e21]:
+        - link "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e23] [cursor=pointer]:
+          - /url: ./
+          - img "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e25]
+        - generic [ref=e26]:
+          - link "Link Button" [ref=e28] [cursor=pointer]:
+            - /url: ./studio
+            - heading "Studio" [level=5] [ref=e30]
+            - heading "Studio" [level=5] [ref=e32]
+          - link "Link Button" [ref=e34] [cursor=pointer]:
+            - /url: ./consulting
+            - heading "Consulting" [level=5] [ref=e36]
+            - heading "Consulting" [level=5] [ref=e38]
+          - link "Link Button" [ref=e40] [cursor=pointer]:
+            - /url: ./proartistry
+            - heading "Pro Artistry" [level=5] [ref=e42]
+            - heading "Pro Artistry" [level=5] [ref=e44]
+          - link "Link Button" [ref=e46] [cursor=pointer]:
+            - /url: ./about
+            - heading "About" [level=5] [ref=e48]
+            - heading "About" [level=5] [ref=e50]
+          - link "Link Button" [ref=e52] [cursor=pointer]:
+            - /url: ./insights
+            - heading "Insights" [level=5] [ref=e54]
+            - heading "Insights" [level=5] [ref=e56]
+    - generic [ref=e58]:
+      - heading "A n t h o n y D i c k e y" [level=2] [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]: A
+          - generic [ref=e64]: "n"
+          - generic [ref=e65]: t
+          - generic [ref=e66]: h
+          - generic [ref=e67]: o
+          - generic [ref=e68]: "n"
+          - generic [ref=e69]: "y"
+        - generic [ref=e70]:
+          - generic [ref=e71]: D
+          - generic [ref=e72]: i
+          - generic [ref=e73]: c
+          - generic [ref=e74]: k
+          - generic [ref=e75]: e
+          - generic [ref=e76]: "y"
+      - generic [ref=e78]:
+        - heading "Pioneering a new standard of beauty." [level=2] [ref=e79]
+        - heading "Touted as one of the 15 top curly specialists in the world" [level=2] [ref=e80]
+    - img "A man wearing a hat smiling, styping a woman with curly hair" [ref=e84]
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - heading "Texture authority. Industry visionary." [level=5] [ref=e89]
+        - generic [ref=e91]:
+          - 'heading "Dickey is widely recognized for helping to create a new category in beauty: texture-specific hair care. named one of The 50 Most Influential People in the Multicultural Market by Beauty Inc." [level=2] [ref=e92]'
+          - heading "To the New York Times, he's a \"Style Svengali.\" To Ebony, a member of their Power 100." [level=2] [ref=e93]
+          - heading "To the clients who've trusted him for decades, he's simply the only person who ever understood their hair." [level=2] [ref=e94]
+      - generic [ref=e97]:
+        - heading "The story" [level=5] [ref=e101]
+        - generic [ref=e103]:
+          - generic [ref=e106]:
+            - img "A young man posed in front of a window wearing a striped shirt" [ref=e109]
+            - generic [ref=e111]:
+              - heading "The beginning" [level=2] [ref=e113]
+              - paragraph [ref=e115]: Dickey trained at the legendary houses of Oribe, John Frieda & Louis Licari in NYC during the late 80s and early 90s, the most prestigious addresses in the industry. There, he also began his editorial career with the Wall Group from Italian Vogue to Ellen von Unwerth and COVERGIRL Campaigns from the inside. Dickey began to discover how the world saw beauty and its inclusion deficit.
+          - generic [ref=e122]:
+            - heading "The product line" [level=2] [ref=e124]
+            - paragraph [ref=e126]: To prove that texture-specific formulas weren’t a niche, he created a new category that was the majority. Dickey launched the Hair Rules product line in 2007. Nearly two decades later, he scaled it from an Indie favorite to the shelves of Bluemercury, Target, Ulta, and Walgreens. The multi-textural market existed. He built the proof.
+          - generic [ref=e133]:
+            - heading "The book" [level=2] [ref=e135]
+            - paragraph [ref=e137]: In 2003, he wrote Hair Rules! - the first real comprehensive guide to kinky, curly, and wavy hair. Not a style book. A care manual. The “care tag” that the industry had never bothered to create. In its 3rd printing, Hair Rules! became required reading at FIDM in Los Angeles, a credited college course, “Fundamentals of Body & Haircare.”
+          - generic [ref=e144]:
+            - heading "Pro artistry" [level=2] [ref=e146]
+            - paragraph [ref=e148]: Dickey's bold and imaginative styles have graced numerous publications, including Vogue, Vanity Fair, Essence, Glamour, Vibe, and Harper’s Bazaar. Mastering the mystery and artistry of textures, Dickey has created iconic styles for Alicia Keys, Michelle Obama, Kelis, Rihanna, and Sarah Jessica Parker.
+          - generic [ref=e155]:
+            - heading "The Studio" [level=2] [ref=e157]
+            - paragraph [ref=e159]: "In 2009, Hair Rules Studio opened. Built on a heritage of beauty education & community, New York, LA, Atlanta, and virtual for everyone else, it remains the heart of everything: where technique is refined, where clients are understood, and where consulting and Lab work is tested in real time."
+    - generic [ref=e166]:
+      - heading "The expertise" [level=5] [ref=e169]
+      - generic [ref=e170]:
+        - heading "Four decades behind the camera and the chair with the world's most iconic hair." [level=2] [ref=e172]
+        - generic [ref=e173]:
+          - paragraph [ref=e179]: Trusted by many, like Michelle Obama, Alicia Keys, Solange, Sarah Jessica Parker, Rihanna, Kelis, Faye Dunaway, and more.
+          - paragraph [ref=e185]: Author to Hair Rules!, a new guide in haircare, added to the FIDM primary curriculum.
+          - paragraph [ref=e191]: Almost 2 decades scaling a loved indie brand from concept to Ulta, Target, and Walgreens.
+          - paragraph [ref=e197]: On-set stylist for commercial television, music, and editorial production.
+          - paragraph [ref=e203]: Featured on the Today Show, in Vogue, Vanity Fair, New York Times, Oprah, Essence, Allure, and more.
+    - generic [ref=e207]:
+      - generic [ref=e208] [cursor=pointer]:
+        - img "Default image" [ref=e210]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e211] [cursor=pointer]:
+        - img "Default image" [ref=e213]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e214] [cursor=pointer]:
+        - img "Default image" [ref=e216]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e217] [cursor=pointer]:
+        - img "Default image" [ref=e219]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e220] [cursor=pointer]:
+        - img "Default image" [ref=e222]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e223] [cursor=pointer]:
+        - img "Default image" [ref=e225]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e226] [cursor=pointer]:
+        - img "Default image" [ref=e228]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e229] [cursor=pointer]:
+        - img "Default image" [ref=e231]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e232] [cursor=pointer]:
+        - img "Default image" [ref=e234]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e235] [cursor=pointer]:
+        - img "Default image" [ref=e237]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e238] [cursor=pointer]:
+        - img "Default image" [ref=e240]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e241] [cursor=pointer]:
+        - img "Default image" [ref=e243]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e244] [cursor=pointer]:
+        - img "Default image" [ref=e246]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e247] [cursor=pointer]:
+        - img "Default image" [ref=e249]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e250] [cursor=pointer]:
+        - img "Default image" [ref=e252]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e253] [cursor=pointer]:
+        - img "Default image" [ref=e255]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e256] [cursor=pointer]:
+        - img "Default image" [ref=e258]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e259] [cursor=pointer]:
+        - img "Default image" [ref=e261]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e262] [cursor=pointer]:
+        - img "Default image" [ref=e264]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e265] [cursor=pointer]:
+        - img "Default image" [ref=e267]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e268] [cursor=pointer]:
+        - img "Default image" [ref=e270]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e271] [cursor=pointer]:
+        - img "Default image" [ref=e273]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e274] [cursor=pointer]:
+        - img "Default image" [ref=e276]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e277] [cursor=pointer]:
+        - img "Default image" [ref=e279]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e280] [cursor=pointer]:
+        - img "Default image" [ref=e282]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e283] [cursor=pointer]:
+        - img "Default image" [ref=e285]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e286] [cursor=pointer]:
+        - img "Default image" [ref=e288]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e289] [cursor=pointer]:
+        - img "Default image" [ref=e291]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e292] [cursor=pointer]:
+        - img "Default image" [ref=e294]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e295] [cursor=pointer]:
+        - img "Default image" [ref=e297]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e298] [cursor=pointer]:
+        - img "Default image" [ref=e300]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e301] [cursor=pointer]:
+        - img "Default image" [ref=e303]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e304] [cursor=pointer]:
+        - img "Default image" [ref=e306]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e307] [cursor=pointer]:
+        - img "Default image" [ref=e309]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e310] [cursor=pointer]:
+        - img "Default image" [ref=e312]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e313] [cursor=pointer]:
+        - img "Default image" [ref=e315]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e316] [cursor=pointer]:
+        - img "Default image" [ref=e318]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e319] [cursor=pointer]:
+        - img "Default image" [ref=e321]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e322] [cursor=pointer]:
+        - img "Default image" [ref=e324]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e325] [cursor=pointer]:
+        - img "Default image" [ref=e327]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e328] [cursor=pointer]:
+        - img "Default image" [ref=e330]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e331] [cursor=pointer]:
+        - img "Default image" [ref=e333]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e334] [cursor=pointer]:
+        - img "Default image" [ref=e336]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e337] [cursor=pointer]:
+        - img "Default image" [ref=e339]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e340] [cursor=pointer]:
+        - img "Default image" [ref=e342]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e343] [cursor=pointer]:
+        - img "Default image" [ref=e345]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e346] [cursor=pointer]:
+        - img "Default image" [ref=e348]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e349] [cursor=pointer]:
+        - img "Default image" [ref=e351]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e352] [cursor=pointer]:
+        - img "Default image" [ref=e354]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e355] [cursor=pointer]:
+        - img "Default image" [ref=e357]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e358] [cursor=pointer]:
+        - img "Default image" [ref=e360]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e361] [cursor=pointer]:
+        - img "Default image" [ref=e363]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e364] [cursor=pointer]:
+        - img "Default image" [ref=e366]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e367] [cursor=pointer]:
+        - img "Default image" [ref=e369]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e370] [cursor=pointer]:
+        - img "Default image" [ref=e372]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e373] [cursor=pointer]:
+        - img "Default image" [ref=e375]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e376] [cursor=pointer]:
+        - img "Default image" [ref=e378]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e379] [cursor=pointer]:
+        - img "Default image" [ref=e381]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e382] [cursor=pointer]:
+        - img "Default image" [ref=e384]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e385] [cursor=pointer]:
+        - img "Default image" [ref=e387]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e388] [cursor=pointer]:
+        - img "Default image" [ref=e390]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e391] [cursor=pointer]:
+        - img "Default image" [ref=e393]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e394] [cursor=pointer]:
+        - img "Default image" [ref=e396]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e397] [cursor=pointer]:
+        - img "Default image" [ref=e399]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e400] [cursor=pointer]:
+        - img "Default image" [ref=e402]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e403] [cursor=pointer]:
+        - img "Default image" [ref=e405]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e406] [cursor=pointer]:
+        - img "Default image" [ref=e408]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e409] [cursor=pointer]:
+        - img "Default image" [ref=e411]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e412] [cursor=pointer]:
+        - img "Default image" [ref=e414]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e415] [cursor=pointer]:
+        - img "Default image" [ref=e417]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e418] [cursor=pointer]:
+        - img "Default image" [ref=e420]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e421] [cursor=pointer]:
+        - img "Default image" [ref=e423]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e424] [cursor=pointer]:
+        - img "Default image" [ref=e426]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e427] [cursor=pointer]:
+        - img "Default image" [ref=e429]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e430] [cursor=pointer]:
+        - img "Default image" [ref=e432]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e433] [cursor=pointer]:
+        - img "Default image" [ref=e435]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e436] [cursor=pointer]:
+        - img "Default image" [ref=e438]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e439] [cursor=pointer]:
+        - img "Default image" [ref=e441]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e442] [cursor=pointer]:
+        - img "Default image" [ref=e444]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e445] [cursor=pointer]:
+        - img "Default image" [ref=e447]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e448] [cursor=pointer]:
+        - img "Default image" [ref=e450]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e451] [cursor=pointer]:
+        - img "Default image" [ref=e453]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e454] [cursor=pointer]:
+        - img "Default image" [ref=e456]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e457] [cursor=pointer]:
+        - img "Default image" [ref=e459]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e460] [cursor=pointer]:
+        - img "Default image" [ref=e462]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e463] [cursor=pointer]:
+        - img "Default image" [ref=e465]
+        - generic:
+          - generic: Allure magazine cover with a blond woman
+          - generic:
+            - img
+      - generic [ref=e466] [cursor=pointer]:
+        - img "Default image" [ref=e468]
+        - generic:
+          - generic: Allure magazine cover with a blonde woman
+          - generic:
+            - img
+      - generic [ref=e469] [cursor=pointer]:
+        - img "Default image" [ref=e471]
+        - generic:
+          - generic: More magazine with Michelle Obama
+          - generic:
+            - img
+      - generic [ref=e472] [cursor=pointer]:
+        - img "Default image" [ref=e474]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e475] [cursor=pointer]:
+        - img "Default image" [ref=e477]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e478] [cursor=pointer]:
+        - img "Default image" [ref=e480]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e481] [cursor=pointer]:
+        - img "Default image" [ref=e483]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e484] [cursor=pointer]:
+        - img "Default image" [ref=e486]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e487] [cursor=pointer]:
+        - img "Default image" [ref=e489]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e490] [cursor=pointer]:
+        - img "Default image" [ref=e492]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e493] [cursor=pointer]:
+        - img "Default image" [ref=e495]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e496] [cursor=pointer]:
+        - img "Default image" [ref=e498]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e499] [cursor=pointer]:
+        - img "Default image" [ref=e501]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e502] [cursor=pointer]:
+        - img "Default image" [ref=e504]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e505] [cursor=pointer]:
+        - img "Default image" [ref=e507]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e508] [cursor=pointer]:
+        - img "Default image" [ref=e510]
+        - generic:
+          - generic:
+            - img
+      - generic [ref=e511] [cursor=pointer]:
+        - img "Default image" [ref=e513]
+        - generic:
+          - generic:
+            - img
+    - contentinfo [ref=e516]:
+      - generic [ref=e518]:
+        - generic [ref=e519]:
+          - link "Got hair questions? Button" [ref=e520] [cursor=pointer]:
+            - /url: ./askdickey
+            - generic [ref=e522]:
+              - heading "Got hair questions?" [level=5] [ref=e524]
+              - generic "Button" [ref=e525]:
+                - heading "Submit a question" [level=5] [ref=e528]
+                - img [ref=e532]
+          - generic [ref=e536]:
+            - heading "Ready to get started?" [level=5] [ref=e538]
+            - link "Button" [ref=e540] [cursor=pointer]:
+              - /url: https://www.vagaro.com/hairrules/services
+              - generic [ref=e541]:
+                - heading "Book at the Studio" [level=5] [ref=e543]
+                - heading "Book at the Studio" [level=5] [ref=e545]
+              - img [ref=e549]
+            - link "Button" [ref=e552] [cursor=pointer]:
+              - /url: ./consulting-inquiry
+              - generic [ref=e553]:
+                - heading "Start a brand conversation" [level=5] [ref=e555]
+                - heading "Start a brand conversation" [level=5] [ref=e557]
+              - img [ref=e561]
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - heading "Navigate" [level=5] [ref=e566]
+            - generic [ref=e567]:
+              - link "Link Button" [ref=e569] [cursor=pointer]:
+                - /url: ./studio
+                - heading "Studio" [level=2] [ref=e571]
+                - heading "Studio" [level=2] [ref=e573]
+              - link "Link Button" [ref=e575] [cursor=pointer]:
+                - /url: ./consulting
+                - heading "Consulting" [level=2] [ref=e577]
+                - heading "Consulting" [level=2] [ref=e579]
+              - link "Link Button" [ref=e581] [cursor=pointer]:
+                - /url: ./proartistry
+                - heading "Pro Artistry" [level=2] [ref=e583]
+                - heading "Pro Artistry" [level=2] [ref=e585]
+              - link "Link Button" [ref=e587] [cursor=pointer]:
+                - /url: ./about
+                - heading "About" [level=2] [ref=e589]
+                - heading "About" [level=2] [ref=e591]
+              - link "Link Button" [ref=e593] [cursor=pointer]:
+                - /url: ./insights
+                - heading "Insights" [level=2] [ref=e595]
+                - heading "Insights" [level=2] [ref=e597]
+              - link "Link Button" [ref=e599] [cursor=pointer]:
+                - /url: ./contact
+                - heading "Contact" [level=2] [ref=e601]
+                - heading "Contact" [level=2] [ref=e603]
+          - generic [ref=e604]:
+            - heading "Follow us" [level=5] [ref=e606]
+            - generic [ref=e607]:
+              - link "Link Button" [ref=e609] [cursor=pointer]:
+                - /url: https://www.instagram.com/hairrules
+                - heading "Instagram" [level=2] [ref=e611]
+                - heading "Instagram" [level=2] [ref=e613]
+              - link "Link Button" [ref=e615] [cursor=pointer]:
+                - /url: https://youtube.com/hairrules?reload=9
+                - heading "Youtube" [level=2] [ref=e617]
+                - heading "Youtube" [level=2] [ref=e619]
+              - link "Link Button" [ref=e621] [cursor=pointer]:
+                - /url: https://www.pinterest.com/hairrules/
+                - heading "Pinterest" [level=2] [ref=e623]
+                - heading "Pinterest" [level=2] [ref=e625]
+              - link "Link Button" [ref=e627] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@hairrules_
+                - heading "TikTok" [level=2] [ref=e629]
+                - heading "TikTok" [level=2] [ref=e631]
+              - link "Link Button" [ref=e633] [cursor=pointer]:
+                - /url: https://www.facebook.com/hairrules
+                - heading "Facebook" [level=2] [ref=e635]
+                - heading "Facebook" [level=2] [ref=e637]
+      - generic [ref=e638]:
+        - generic [ref=e640]:
+          - text: © 2026
+          - link "Hair Rules" [ref=e641] [cursor=pointer]:
+            - /url: https://slidecreative.co
+          - text: . All rights reserved.
+        - link "Web by" [ref=e642] [cursor=pointer]:
+          - /url: https://slidecreative.co
+          - paragraph [ref=e644]: Web by

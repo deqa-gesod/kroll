@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e3]:
+      - link "12930 Ventura Blvd, Suite 216 | Studio City, CA" [ref=e5] [cursor=pointer]:
+        - /url: https://goo.gl/maps/4j87ZgzYCmgXUhzu8
+    - generic [ref=e6]:
+      - link "Visit the Capella Salonhome page":
+        - /url: /
+        - img [ref=e7] [cursor=pointer]
+      - navigation [ref=e21]:
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /about
+        - link "Services & Hours" [ref=e23] [cursor=pointer]:
+          - /url: /salon-services
+        - link "Curl Prep Instructions" [ref=e24] [cursor=pointer]:
+          - /url: /curl-prep-instructions
+        - link "Press & Media" [ref=e25] [cursor=pointer]:
+          - /url: /press-media
+        - link "The Curl Doctor" [ref=e26] [cursor=pointer]:
+          - /url: http://www.shaiamiel.com
+        - link "Policies" [ref=e27] [cursor=pointer]:
+          - /url: /policies
+        - link "Contact" [ref=e28] [cursor=pointer]:
+          - /url: /appointments
+      - link "Menu" [ref=e29] [cursor=pointer]:
+        - /url: "#menu"
+        - generic [ref=e30]: Menu
+      - link "818-784-4247" [ref=e31] [cursor=pointer]:
+        - /url: tel:818-784-4247
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - heading "Haircuts & Style" [level=4] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e38]: Haircut
+        - paragraph [ref=e40]: $100+
+      - generic [ref=e41]:
+        - paragraph [ref=e43]: Curl by Curl Cut
+        - paragraph [ref=e45]: $250
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - paragraph [ref=e48]: Express Curl by Curl Cut
+          - text: Dry curl by curl cut without the wash and style. Repeat clients only.
+        - paragraph [ref=e50]: $195
+      - generic [ref=e51]:
+        - paragraph [ref=e53]: Curl Cut With Shai
+        - paragraph [ref=e55]: $350
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - paragraph [ref=e58]: Express Curl by Curl Cut With Shai
+          - text: Dry curl by curl cut without the wash and style. Repeat clients only.
+        - paragraph [ref=e60]: $290
+      - generic [ref=e61]:
+        - paragraph [ref=e63]: Updo
+        - paragraph [ref=e65]: $125+
+      - generic [ref=e66]:
+        - paragraph [ref=e68]: Detangle, cleanse, hydration treatment and curl set
+        - paragraph [ref=e70]: $100/hour
+    - generic [ref=e72]:
+      - heading "Color" [level=4] [ref=e73]
+      - generic [ref=e74]:
+        - paragraph [ref=e76]: Color
+        - paragraph [ref=e78]: $150+
+      - generic [ref=e79]:
+        - paragraph [ref=e81]: Highlights
+        - paragraph [ref=e83]: $175+
+      - generic [ref=e84]:
+        - paragraph [ref=e86]: Bayalage
+        - paragraph [ref=e88]: $300+
+      - generic [ref=e89]:
+        - paragraph [ref=e91]: Corrective
+        - paragraph [ref=e93]: Consultation Required
+      - paragraph [ref=e94]: All services are at starting prices and may be subject to change. Price varies depending on hair density & length
+    - generic [ref=e96]:
+      - heading "Esthetician & Beauty Services" [level=4] [ref=e97]
+      - generic [ref=e98]:
+        - paragraph [ref=e100]:
+          - link "Beauty by Shani" [ref=e101] [cursor=pointer]:
+            - /url: https://beautybyshani.com/
+        - paragraph [ref=e103]:
+          - link "Services" [ref=e104] [cursor=pointer]:
+            - /url: https://beautybyshani.com/
+  - generic [ref=e105]:
+    - generic [ref=e106]:
+      - heading "Menu" [level=4] [ref=e107]
+      - list [ref=e108]:
+        - listitem [ref=e109]:
+          - link "About" [ref=e110] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e111]:
+          - link "Services" [ref=e112] [cursor=pointer]:
+            - /url: /salon-services
+        - listitem [ref=e113]:
+          - link "Curl Prep Instructions" [ref=e114] [cursor=pointer]:
+            - /url: /curl-prep-instructions
+      - paragraph
+    - generic [ref=e115]:
+      - heading [level=4]
+      - list [ref=e116]:
+        - listitem [ref=e117]:
+          - link "Press & Media" [ref=e118] [cursor=pointer]:
+            - /url: /press-media
+        - listitem [ref=e119]:
+          - link "The Curl Doctor" [ref=e120] [cursor=pointer]:
+            - /url: http://shaiamiel.com/
+        - listitem [ref=e121]:
+          - link "Policies" [ref=e122] [cursor=pointer]:
+            - /url: /policies
+        - listitem [ref=e123]:
+          - link "Contact" [ref=e124] [cursor=pointer]:
+            - /url: /appointments
+      - paragraph
+    - generic [ref=e125]:
+      - heading "Information" [level=4] [ref=e126]
+      - list [ref=e127]:
+        - listitem [ref=e128]:
+          - link "Privacy Policy" [ref=e129] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=e130]:
+          - link "Terms of Use" [ref=e131] [cursor=pointer]:
+            - /url: /terms-of-use
+      - paragraph
+    - generic [ref=e132]:
+      - heading "Social" [level=4] [ref=e133]
+      - generic "Follow us on social media" [ref=e134]:
+        - link "Instagram" [ref=e135] [cursor=pointer]:
+          - /url: https://www.instagram.com/capellasalon/
+          - img [ref=e137]
+        - link "Facebook" [ref=e140] [cursor=pointer]:
+          - /url: https://www.facebook.com/CapellaSalonLA/
+          - img [ref=e142]
+        - link "twitter" [ref=e145] [cursor=pointer]:
+          - /url: https://www.twitter.com/capellasalon/
+          - img [ref=e147]
+        - link "YouTube" [ref=e149] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/CapellaSalon
+          - img [ref=e151]
+        - link "Pinterest" [ref=e156] [cursor=pointer]:
+          - /url: https://pinterest.com/shaiamiel/
+          - img [ref=e158]
+  - paragraph [ref=e164]:
+    - text: © 2026
+    - link "Capella Salon" [ref=e165] [cursor=pointer]:
+      - /url: /
+    - text: . All Rights Reserved. Site by
+    - link "Sixty Five Design" [ref=e166] [cursor=pointer]:
+      - /url: http://www.sixtyfivedesign.com

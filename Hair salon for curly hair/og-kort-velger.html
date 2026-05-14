@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jackson & Coil · OG-kort velger</title>
+<style>
+  :root {
+    --bg: #f5f1ea;
+    --bg-deep: #ece6db;
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --ink-muted: #8a857c;
+    --line: #d8d0c2;
+    --accent: #1a1a1a;
+    --card: #ffffff;
+    --imsg: #f2f1f6;
+    --imsg-card: #ffffff;
+    --imsg-text: #1c1c1e;
+    --imsg-muted: #8e8e93;
+    --imsg-border: #e5e5ea;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 56px 32px 200px;
+  }
+  .eyebrow {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-family: "Fraunces", "EB Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(40px, 5.5vw, 72px);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    max-width: 18ch;
+  }
+  .lede {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 56px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 36px;
+  }
+
+  /* The card mock itself */
+  .pick {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pick-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .pick-tone {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .pick-id {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--bg-deep);
+    padding: 4px 8px;
+    border-radius: 999px;
+  }
+
+  /* iMessage-style link preview */
+  .imsg {
+    background: var(--imsg);
+    padding: 18px 14px 22px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+  }
+  .imsg-card {
+    background: var(--imsg-card);
+    border: 1px solid var(--imsg-border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .imsg-image {
+    width: 100%;
+    aspect-ratio: 600 / 315;
+    object-fit: cover;
+    display: block;
+    background: var(--bg-deep);
+  }
+  .imsg-body {
+    padding: 10px 14px 14px;
+  }
+  .imsg-domain {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--imsg-muted);
+    text-transform: lowercase;
+    margin: 0 0 4px;
+  }
+  .imsg-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--imsg-text);
+    margin: 0 0 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .imsg-desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--imsg-muted);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .pick-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 4px;
+  }
+  .pick-meta-row {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
+  }
+  .pick-meta-row b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .pick-btn {
+    margin-top: 6px;
+    background: var(--ink);
+    color: var(--bg);
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 120ms ease, background 120ms ease;
+  }
+  .pick-btn:hover { transform: translateY(-1px); }
+  .pick.selected .pick-btn {
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .pick.selected .imsg {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+    border-radius: 22px;
+  }
+  .pick.selected .pick-id {
+    background: var(--ink);
+    color: var(--bg);
+  }
+
+  /* Toolbar */
+  .toolbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 50;
+    border-top: 1px solid var(--ink);
+  }
+  .toolbar-state {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .toolbar-state b { color: #f5d28e; font-weight: 600; }
+  .toolbar-actions { display: flex; gap: 10px; }
+  .toolbar-btn {
+    background: var(--bg);
+    color: var(--ink);
+    border: 1px solid var(--bg);
+    border-radius: 999px;
+    padding: 11px 18px;
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .toolbar-btn.ghost {
+    background: transparent;
+    color: var(--bg);
+  }
+  .toolbar-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+
+  /* JSON preview drawer */
+  .drawer {
+    position: fixed;
+    left: 24px;
+    right: 24px;
+    bottom: 84px;
+    background: #111;
+    color: #eee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    z-index: 49;
+    display: none;
+    white-space: pre-wrap;
+    box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+  }
+  .drawer.open { display: block; }
+
+  /* Heading row */
+  .head-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  .head-meta {
+    font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+  .head-meta a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+
+  /* Section legend */
+  .legend {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 70ch;
+  }
+  .legend b { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Jackson &amp; Coil · OG-velger</p>
+  <div class="head-row">
+    <div>
+      <h1>Velg hvordan lenken ser ut i meldinger.</h1>
+      <p class="lede">Når noen sender jacksonandcoil.no i iMessage, Slack eller Facebook, er dette kortet det første noen ser. Bla gjennom åtte tone-varianter under, klikk "Velg dette kortet", og kopier JSON-en i fotmenyen. Bildet er en levende preview, ikke en gjengivelse.</p>
+    </div>
+    <div class="head-meta">
+      Bilde &middot; 600 &times; 315 ratio<br>
+      Tittel &middot; max 70 tegn<br>
+      Description &middot; max 200 tegn
+    </div>
+  </div>
+
+  <div class="grid" id="grid"><!-- cards rendered here --></div>
+
+  <div class="legend">
+    <p><b>Hva er Open Graph?</b> &nbsp;Tre meta-tagger i <code>&lt;head&gt;</code>: <code>og:title</code>, <code>og:description</code>, <code>og:image</code>. iMessage, Slack, Discord, Facebook, LinkedIn, X, Signal og WhatsApp leser alle disse, så det samme kortet vises overalt.</p>
+    <p><b>Variant 1</b> er satt som default i Next-prototypene allerede (editorial, hero-amara). Bytter du valg her, oppdater <code>openGraph</code> i <code>app/layout.tsx</code> i begge prosjekt.</p>
+  </div>
+</div>
+
+<div class="drawer" id="drawer"></div>
+
+<div class="toolbar">
+  <div class="toolbar-state" id="state">Ingen variant valgt &middot; klikk et kort</div>
+  <div class="toolbar-actions">
+    <button class="toolbar-btn ghost" id="preview-btn" disabled>Vis JSON</button>
+    <button class="toolbar-btn" id="copy-btn" disabled>Kopier valg JSON</button>
+  </div>
+</div>
+
+<script>
+  const cards = [
+    {
+      id: "v1",
+      tone: "Editorial",
+      ogTitle: "Jackson & Coil · Curl Specialist Salon, Oslo",
+      ogDescription: "Every curl pattern, one chair. Dry consultation, real prices, no widget redirect.",
+      ogImage: "website2/public/images/hero-amara-chair.jpg",
+      ogImagePath: "/images/hero-amara-chair.jpg",
+    },
+    {
+      id: "v2",
+      tone: "Direkte (norsk)",
+      ogTitle: "Krøll-spesialist i Grünerløkka",
+      ogDescription: "Type 2A til 4C. Klipp, farge og krøll-kunnskap. Booking på to minutter.",
+      ogImage: "website2/public/images/founder-vanessa-working.jpg",
+      ogImagePath: "/images/founder-vanessa-working.jpg",
+    },
+    {
+      id: "v3",
+      tone: "Mystery",
+      ogTitle: "Vi har snakket med håret ditt før vi tar i det.",
+      ogDescription: "Jackson & Coil. Den eneste krøll-spesialiserte salongen i Oslo.",
+      ogImage: "website2/public/images/visit-salon-interior.jpg",
+      ogImagePath: "/images/visit-salon-interior.jpg",
+    },
+    {
+      id: "v4",
+      tone: "Brand-statement",
+      ogTitle: "Every curl. One place.",
+      ogDescription: "Oslo's first salon built around the full curl spectrum. Type 2A through 4C.",
+      ogImage: "website2/public/images/hero-daniel-fade-coils.jpg",
+      ogImagePath: "/images/hero-daniel-fade-coils.jpg",
+    },
+    {
+      id: "v5",
+      tone: "Action",
+      ogTitle: "Book krøll-konsultasjon · 750 NOK",
+      ogDescription: "Inkluderer dry consultation. Type 2A til 4C. Grünerløkka, Oslo.",
+      ogImage: "website2/public/images/portfolio-type4-after.jpg",
+      ogImagePath: "/images/portfolio-type4-after.jpg",
+    },
+    {
+      id: "v6",
+      tone: "Mens-fokus",
+      ogTitle: "Fade, taper, coil definition · same chair.",
+      ogDescription: "Sculpt Cut fra Adé Okonkwo. Type 4 mens-grooming på Tøyen-nivå.",
+      ogImage: "website2/public/images/portfolio-sculpt-cut.jpg",
+      ogImagePath: "/images/portfolio-sculpt-cut.jpg",
+    },
+    {
+      id: "v7",
+      tone: "Salong",
+      ogTitle: "Jackson & Coil · Grünerløkka, Oslo",
+      ogDescription: "Tørrklipp, krøll-farge og 36 kuraterte krøll-produkter på shelf.",
+      ogImage: "website2/public/images/shop-curl-shelf.jpg",
+      ogImagePath: "/images/shop-curl-shelf.jpg",
+    },
+    {
+      id: "v8",
+      tone: "Founder",
+      ogTitle: "Vanessa Jackson · krøll-spesialist, Oslo",
+      ogDescription: "Trent ved Curl Bar London og Devachan NYC. Nå i Grünerløkka.",
+      ogImage: "website1/public/images/founder-portrait.jpg",
+      ogImagePath: "/images/founder-portrait.jpg",
+    },
+  ];
+
+  const grid = document.getElementById("grid");
+  const stateEl = document.getElementById("state");
+  const copyBtn = document.getElementById("copy-btn");
+  const previewBtn = document.getElementById("preview-btn");
+  const drawer = document.getElementById("drawer");
+  let selected = null;
+
+  function render() {
+    grid.innerHTML = "";
+    for (const c of cards) {
+      const wrap = document.createElement("div");
+      wrap.className = "pick" + (selected === c.id ? " selected" : "");
+      wrap.dataset.id = c.id;
+
+      wrap.innerHTML = `
+        <div class="pick-label">
+          <span class="pick-tone">${c.tone}</span>
+          <span class="pick-id">${c.id.toUpperCase()}</span>
+        </div>
+        <div class="imsg">
+          <div class="imsg-card">
+            <img class="imsg-image" loading="lazy" decoding="async" src="${c.ogImage}" alt="" />
+            <div class="imsg-body">
+              <p class="imsg-domain">jacksonandcoil.no</p>
+              <p class="imsg-title">${escapeHtml(c.ogTitle)}</p>
+              <p class="imsg-desc">${escapeHtml(c.ogDescription)}</p>
+            </div>
+          </div>
+        </div>
+        <div class="pick-meta">
+          <div class="pick-meta-row"><b>image</b> &middot; ${c.ogImagePath}</div>
+          <div class="pick-meta-row"><b>title</b> &middot; ${c.ogTitle.length} tegn</div>
+          <div class="pick-meta-row"><b>desc</b> &middot; ${c.ogDescription.length} tegn</div>
+        </div>
+        <button class="pick-btn" type="button">${selected === c.id ? "Valgt &check;" : "Velg dette OG-kortet"}</button>
+      `;
+
+      wrap.querySelector(".pick-btn").addEventListener("click", () => {
+        selected = c.id;
+        update();
+      });
+
+      grid.appendChild(wrap);
+    }
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (ch) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    })[ch]);
+  }
+
+  function currentChoice() {
+    if (!selected) return null;
+    const c = cards.find((x) => x.id === selected);
+    return {
+      variant: c.id,
+      tone: c.tone,
+      ogTitle: c.ogTitle,
+      ogDescription: c.ogDescription,
+      ogImage: c.ogImagePath,
+      ogUrl: "https://jacksonandcoil.no/",
+      ogType: "website",
+    };
+  }
+
+  function update() {
+    render();
+    if (selected) {
+      const c = cards.find((x) => x.id === selected);
+      stateEl.innerHTML = `Valgt: <b>${c.id.toUpperCase()}</b> &middot; ${c.tone}`;
+      copyBtn.disabled = false;
+      previewBtn.disabled = false;
+      drawer.textContent = JSON.stringify(currentChoice(), null, 2);
+    } else {
+      stateEl.textContent = "Ingen variant valgt · klikk et kort";
+      copyBtn.disabled = true;
+      previewBtn.disabled = true;
+      drawer.classList.remove("open");
+    }
+  }
+
+  copyBtn.addEventListener("click", async () => {
+    const choice = currentChoice();
+    if (!choice) return;
+    const json = JSON.stringify(choice, null, 2);
+    try {
+      await navigator.clipboard.writeText(json);
+      copyBtn.textContent = "Kopiert!";
+      setTimeout(() => (copyBtn.textContent = "Kopier valg JSON"), 1600);
+    } catch (e) {
+      drawer.classList.add("open");
+      copyBtn.textContent = "Clipboard blokkert";
+      setTimeout(() => (copyBtn.textContent = "Kopier valg JSON"), 1600);
+    }
+  });
+
+  previewBtn.addEventListener("click", () => {
+    drawer.classList.toggle("open");
+  });
+
+  render();
+</script>
+</body>
+</html>

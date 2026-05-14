@@ -1,0 +1,195 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - generic [ref=e10]:
+    - navigation "Site" [ref=e12]:
+      - list [ref=e13]:
+        - listitem [ref=e14] [cursor=pointer]:
+          - link "Home" [ref=e15]:
+            - /url: https://www.curlspa.nl
+            - paragraph [ref=e18]: Home
+          - button "More Home pages" [ref=e19]:
+            - img [ref=e20]
+        - listitem [ref=e22] [cursor=pointer]:
+          - link "Price List" [ref=e23]:
+            - /url: https://www.curlspa.nl/krullenkapper
+            - paragraph [ref=e26]: Price List
+        - listitem [ref=e27] [cursor=pointer]:
+          - link "BOOK WITH A CURL SPECIALIST" [ref=e28]:
+            - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+            - paragraph [ref=e31]: BOOK WITH A CURL SPECIALIST
+        - listitem [ref=e32] [cursor=pointer]:
+          - link "Webshop" [ref=e33]:
+            - /url: https://www.curlspa.nl/shop
+            - paragraph [ref=e36]: Webshop
+          - button "More Webshop pages" [ref=e37]:
+            - img [ref=e38]
+        - listitem [ref=e40] [cursor=pointer]:
+          - link "Blog" [ref=e41]:
+            - /url: https://www.curlspa.nl/blog
+            - paragraph [ref=e44]: Blog
+        - listitem [ref=e45] [cursor=pointer]:
+          - link "About" [ref=e46]:
+            - /url: https://www.curlspa.nl/about
+            - paragraph [ref=e49]: About
+        - listitem [ref=e50] [cursor=pointer]:
+          - link "FAQ" [ref=e51]:
+            - /url: https://www.curlspa.nl/faq
+            - paragraph [ref=e54]: FAQ
+        - listitem [ref=e55] [cursor=pointer]:
+          - link "Contact" [ref=e56]:
+            - /url: https://www.curlspa.nl/contact
+            - paragraph [ref=e59]: Contact
+    - button [ref=e63] [cursor=pointer]:
+      - img [ref=e65]
+    - banner [ref=e69]:
+      - generic [ref=e75]:
+        - generic:
+          - generic:
+            - list "Social Bar" [ref=e77]:
+              - listitem [ref=e78]:
+                - link "Whatsapp" [ref=e79] [cursor=pointer]:
+                  - /url: tel:+31(0)613346640
+                  - img "Whatsapp" [ref=e80]
+              - listitem [ref=e81]:
+                - link "Youtube" [ref=e82] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@CurlSpa
+                  - img "Youtube" [ref=e83]
+              - listitem [ref=e84]:
+                - link "Instagram" [ref=e85] [cursor=pointer]:
+                  - /url: http://www.instagram.com/curl_spa_salon_
+                  - img "Instagram" [ref=e86]
+            - heading "Curl Spa Salon" [level=3] [ref=e87]:
+              - link "Curl Spa Salon" [ref=e89] [cursor=pointer]:
+                - /url: https://www.curlspa.nl
+            - paragraph [ref=e90]:
+              - link "Hair Salon & Webshop" [ref=e91] [cursor=pointer]:
+                - /url: https://www.curlspa.nl
+            - link "Book Now" [ref=e93] [cursor=pointer]:
+              - /url: https://www.fresha.com/book-now/curl-spa-salon-p1pm70jw/all-offer?share=true&pId=2693546
+              - generic [ref=e94]: Book Now
+            - button "Log In" [ref=e96] [cursor=pointer]:
+              - img [ref=e100]
+              - generic [ref=e103]: Log In
+    - main [ref=e105]:
+      - article [ref=e120]:
+        - navigation [ref=e122]
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - button "Eden Peppermint Tea Tree Leave in Conditioner Milk Enlarge" [ref=e131]:
+              - generic [ref=e140]:
+                - img "Eden Peppermint Tea Tree Leave in Conditioner Milk" [ref=e143]
+                - button "Enlarge" [ref=e144]:
+                  - img [ref=e147]
+            - paragraph [ref=e155]: Eden Bodyworks Peppermint Tea Tree Leave In Milk, an invigorating, moisture that increases the elasticity of the hair. Tea tree and pepperment naturally activatet the circulatory system of the scalp and refreshes and refreshes the scalp. Removes all traces of dirt and oil buildup. Specially formulated to relieve dryness and itchy scalp, enriched with pure botanical peppermint.
+          - generic [ref=e156]:
+            - heading "Eden Peppermint Tea Tree Leave in Conditioner Milk" [level=1] [ref=e158]
+            - generic [ref=e163]:
+              - text: €11.75
+              - generic [ref=e164]: Price
+            - generic [ref=e165]:
+              - group "Quantity" [ref=e171]:
+                - generic [ref=e172]: Quantity*
+                - generic [ref=e173]:
+                  - button "Decrement" [disabled] [ref=e174]:
+                    - img [ref=e175]
+                  - spinbutton "Quantity" [ref=e179]: "1"
+                  - button "Increment" [ref=e180] [cursor=pointer]:
+                    - img [ref=e181]
+              - button "Add to Cart" [ref=e185] [cursor=pointer]:
+                - generic [ref=e186]: Add to Cart
+            - generic [ref=e188]:
+              - generic:
+                - list
+            - list [ref=e191]:
+              - listitem [ref=e193]:
+                - link "Share on WhatsApp" [ref=e197] [cursor=pointer]:
+                  - /url: https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.curlspa.nl%2Fproduct-page%2Feden-peppermint-tea-tree-leave-in-conditioner-milk
+                  - img [ref=e200]
+    - contentinfo [ref=e203]:
+      - generic [ref=e207]:
+        - generic:
+          - generic:
+            - generic [ref=e213]:
+              - generic:
+                - generic:
+                  - navigation "Site" [ref=e217]:
+                    - list [ref=e218]:
+                      - listitem [ref=e219]:
+                        - link "Home" [ref=e222] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl
+                      - listitem [ref=e223]:
+                        - link "Price List" [ref=e226] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/krullenkapper
+                      - listitem [ref=e227]:
+                        - link "BOOK WITH A CURL SPECIALIST" [ref=e230] [cursor=pointer]:
+                          - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+                      - listitem [ref=e231]:
+                        - link "Webshop" [ref=e234] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/shop
+                      - listitem [ref=e235]:
+                        - link "Blog" [ref=e238] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/blog
+                      - listitem [ref=e239]:
+                        - link "About" [ref=e242] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/about
+                      - listitem [ref=e243]:
+                        - link "FAQ" [ref=e246] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/faq
+                      - listitem [ref=e247]:
+                        - link "Contact" [ref=e250] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/contact
+                  - generic:
+                    - paragraph [ref=e251]:
+                      - link "FAQ" [ref=e253] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/faq
+                    - paragraph [ref=e254]:
+                      - link "Shipping & Returns" [ref=e256] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/terms-conditions
+                    - paragraph [ref=e257]:
+                      - link "Store Policy" [ref=e259] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/copy-of-terms-conditions
+                    - paragraph [ref=e260]:
+                      - link "Wholesale" [ref=e264] [cursor=pointer]:
+                        - /url: http://curlspa.faire.com
+                    - paragraph [ref=e265]:
+                      - link "whatsapp +31(0)613346640" [ref=e266] [cursor=pointer]:
+                        - /url: tel:+31(0)613346640
+                        - generic [ref=e268]: whatsapp +31(0)613346640
+                  - region "Slideshow" [ref=e271]:
+                    - generic [ref=e277]:
+                      - generic:
+                        - generic:
+                          - paragraph [ref=e278]:
+                            - generic [ref=e284]: Subscribe to our mailing list
+                          - textbox "Name" [ref=e287]
+                          - textbox "Email Address" [ref=e290]
+                          - button "Subscribe Now" [ref=e292] [cursor=pointer]:
+                            - generic [ref=e293]: Subscribe Now
+                  - list "Social Bar" [ref=e295]:
+                    - listitem [ref=e296]:
+                      - link "Facebook" [ref=e297] [cursor=pointer]:
+                        - /url: https://www.facebook.com/curlspasalon
+                        - img "Facebook" [ref=e298]
+                    - listitem [ref=e299]:
+                      - link "Instagram" [ref=e300] [cursor=pointer]:
+                        - /url: https://www.instagram.com/curl_spa_salon_
+                        - img "Instagram" [ref=e301]
+            - list "Social Bar" [ref=e303]:
+              - listitem [ref=e304]:
+                - link "Youtube" [ref=e305] [cursor=pointer]:
+                  - /url: http://www.youtube.com/@CurlSpa
+                  - img "Youtube" [ref=e306]
+              - listitem [ref=e307]:
+                - link "Instagram" [ref=e308] [cursor=pointer]:
+                  - /url: http://www.instagram.com/curl_spa_salon_
+                  - img "Instagram" [ref=e309]
+            - heading "BECOME A CURL SPECIALIST" [level=2] [ref=e310]:
+              - link "BECOME A CURL SPECIALIST" [ref=e311] [cursor=pointer]:
+                - /url: https://www.curl-academy.com/
+                - generic [ref=e315]: BECOME A CURL SPECIALIST
+            - paragraph [ref=e325]:
+              - generic [ref=e327]:
+                - text: AMSTERDAM TWEEDE HUGO DE GROOT STRAAT 24H
+                - text: THE HAGUE - BADHUISSTRAAT 207 SCHEVENINGEN
+                - text: Patent 2026 by Curl Spa Salons B.V
+  - region "bottom of page"

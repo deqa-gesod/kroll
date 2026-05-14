@@ -1,0 +1,195 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: Bespoke in salon education now available.
+      - link "Click here for details!" [ref=e5] [cursor=pointer]:
+        - /url: https://hareandbone.co.uk/education/
+    - generic [ref=e6]:
+      - generic:
+        - generic:
+          - link "logo":
+            - /url: https://hareandbone.co.uk
+            - img "logo" [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - list:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /about-hare-and-bone/
+          - listitem [ref=e13]:
+            - link "Salons" [ref=e14] [cursor=pointer]:
+              - /url: /location/
+          - listitem [ref=e15]:
+            - link "Services" [ref=e16] [cursor=pointer]:
+              - /url: /service-overview/
+          - listitem [ref=e17]:
+            - link "News & Inspiration" [ref=e18] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/news-inspiration/
+          - listitem [ref=e19]:
+            - link "Education" [ref=e20] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/education/
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/contact/
+          - listitem [ref=e23]:
+            - link "Book Online" [ref=e24] [cursor=pointer]:
+              - /url: https://book.getslick.com/#/group/62/
+  - heading "FITZROVIA LONDON" [level=1] [ref=e27]
+  - generic [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - link "Salon Spy 5/5":
+          - /url: https://www.salonspy.co.uk/in/greater-london/fitzrovia/hare-and-bone/
+          - img "Salon Spy 5/5" [ref=e34] [cursor=pointer]
+        - heading "FITZROVIA" [level=2] [ref=e35]
+        - paragraph [ref=e36]: HARE & BONE is nestled within the stylish streets of FITZROVIA, W1’s newly & fashionably dubbed NOHO neighborhood. Exuding contemporary cool and rooted in British Heritage, this perfect balance allows for an unrivalled salon experience. An understated but stunning facade with beautiful HARE & BONE branding complements the vibe of the surrounding architecture while the stripped back, chic interior welcomes you warmly.
+        - paragraph [ref=e37]: The highly qualified and passionate team curated by Sam Burnett for their unparalleled skills, genuine service and creative vision will assist you personally, tending to every need in order to help you feel at home, comfortable and at ease in their talented hands. Our salon is an escape from the day to day where you can relax and indulge in our laidback oasis of calm whether you opt for a fashion forward transformation or your favourite cut and colour, the HARE & BONE team will be on hand to help.
+        - heading "FITZROVIA OPENING HOURS" [level=2] [ref=e38]
+        - table [ref=e40]:
+          - rowgroup [ref=e41]:
+            - row "Monday CLOSED" [ref=e42]:
+              - cell "Monday" [ref=e43]
+              - cell "CLOSED" [ref=e44]
+            - row "Tuesday 10am – 7pm" [ref=e45]:
+              - cell "Tuesday" [ref=e46]
+              - cell "10am – 7pm" [ref=e47]
+            - row "Wednesday 10am – 8pm" [ref=e48]:
+              - cell "Wednesday" [ref=e49]
+              - cell "10am – 8pm" [ref=e50]
+            - row "Thursday 10am – 8pm" [ref=e51]:
+              - cell "Thursday" [ref=e52]
+              - cell "10am – 8pm" [ref=e53]
+            - row "Friday 9am – 6pm" [ref=e54]:
+              - cell "Friday" [ref=e55]
+              - cell "9am – 6pm" [ref=e56]
+            - row "Saturday 9am – 6pm" [ref=e57]:
+              - cell "Saturday" [ref=e58]
+              - cell "9am – 6pm" [ref=e59]
+            - row "Sunday CLOSED" [ref=e60]:
+              - cell "Sunday" [ref=e61]
+              - cell "CLOSED" [ref=e62]
+        - heading "Location Map" [level=2] [ref=e63]
+        - iframe [ref=e65]:
+          
+      - generic [ref=e67]:
+        - link "hb-meet-the-team" [ref=e69] [cursor=pointer]:
+          - /url: http://hareandbone.co.uk/meet-the-team/
+          - img "hb-meet-the-team" [ref=e70]
+        - link "news-and-inspiration" [ref=e72] [cursor=pointer]:
+          - /url: http://hareandbone.co.uk/news-inspiration/
+          - img "news-and-inspiration" [ref=e73]
+    - link "Book Now" [ref=e74] [cursor=pointer]:
+      - /url: https://book.getslick.com/#/group/62/
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - paragraph [ref=e78]: Sign up to our newsletter
+          - paragraph [ref=e79]: Get exclusive salon offers, news, updates and more!
+        - generic [ref=e82]:
+          - generic:
+            - textbox [ref=e84]
+            - textbox "yourname@email.com" [ref=e86]
+            - button "SIGN-UP" [ref=e88] [cursor=pointer]
+      - generic [ref=e89]:
+        - link "instagram logo" [ref=e90] [cursor=pointer]:
+          - /url: http://instagram.com/hareandbone
+          - img "instagram logo" [ref=e91]
+        - link "youtube logo" [ref=e92] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCymYtcmfk9c5zZgYJTxI9DQ/feed
+          - img "youtube logo" [ref=e93]
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e97]:
+          - heading "HARE & BONE" [level=3] [ref=e98]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Home" [ref=e102] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/
+            - listitem [ref=e103]:
+              - link "About Us" [ref=e104] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/about-hare-and-bone/
+            - listitem [ref=e105]:
+              - link "Sam Burnett" [ref=e106] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/sam-burnett/
+            - listitem [ref=e107]:
+              - link "Meet the Team" [ref=e108] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/meet-the-team/
+            - listitem [ref=e109]:
+              - link "Awards & Media" [ref=e110] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/awards-media/
+        - generic [ref=e112]:
+          - heading "OUR SERVICES" [level=3] [ref=e113]
+          - list [ref=e115]:
+            - listitem [ref=e116]:
+              - link "Cutting" [ref=e117] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/cutting/
+            - listitem [ref=e118]:
+              - link "Colouring" [ref=e119] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/colouring/
+            - listitem [ref=e120]:
+              - link "Finishing" [ref=e121] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/finishing/
+            - listitem [ref=e122]:
+              - link "Treatments" [ref=e123] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/treatments/
+            - listitem [ref=e124]:
+              - link "Our Prices – Fitzrovia" [ref=e125] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/our-prices-fitzrovia/
+        - generic [ref=e127]:
+          - heading "GET TO KNOW US" [level=3] [ref=e128]
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Latest News" [ref=e132] [cursor=pointer]:
+                - /url: http://hareandbone.co.uk/news-inspiration/
+            - listitem [ref=e133]:
+              - link "Inspiration" [ref=e134] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/inspiration/
+            - listitem [ref=e135]:
+              - link "Gallery" [ref=e136] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/gallery/
+            - listitem [ref=e137]:
+              - link "Hare Miles" [ref=e138] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/?page_id=132
+        - generic [ref=e140]:
+          - heading "CUSTOMER SERVICE" [level=3] [ref=e141]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "How To Find Us" [ref=e145] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e146]:
+              - link "Media Enquiries" [ref=e147] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e148]:
+              - link "Good to know" [ref=e149] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/informationfaqs/
+            - listitem [ref=e150]:
+              - link "Careers" [ref=e151] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/careers/
+            - listitem [ref=e152]:
+              - link "Opening Hours" [ref=e153] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+        - generic [ref=e155]:
+          - heading "CONTACT US" [level=3] [ref=e156]
+          - generic [ref=e157]:
+            - text: HARE & BONE - FITZROVIA
+            - text: +44 (0) 20 7401 2413
+            - link "hello@hareandbone.co.uk" [ref=e158] [cursor=pointer]:
+              - /url: mailto:hello@hareandbone.co.uk
+            - text: HARE & BONE - ESHER
+            - text: +44 (0) 1737 924800
+            - link "esher@hareandbone.co.uk" [ref=e159] [cursor=pointer]:
+              - /url: mailto:esher@hareandbone.co.uk
+      - paragraph [ref=e162]:
+        - text: © HARE & BONE 2026. All Rights Reserved.
+        - link "Disclaimer" [ref=e163] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/disclaimer/
+        - text: "|"
+        - link "Terms and Conditions" [ref=e164] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/terms-and-conditions/
+        - text: "|"
+        - link "Privacy Policy" [ref=e165] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/privacy-policy/
+  - text: Show more Enabled Enabled Enabled Enabled Enabled
+  - status [ref=e166]

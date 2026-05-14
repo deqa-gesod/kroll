@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e3]:
+      - link "12930 Ventura Blvd, Suite 216 | Studio City, CA" [ref=e5] [cursor=pointer]:
+        - /url: https://goo.gl/maps/4j87ZgzYCmgXUhzu8
+    - generic [ref=e6]:
+      - link "Visit the Capella Salonhome page":
+        - /url: /
+        - img [ref=e7] [cursor=pointer]
+      - navigation [ref=e21]:
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /about
+        - link "Services & Hours" [ref=e23] [cursor=pointer]:
+          - /url: /salon-services
+        - link "Curl Prep Instructions" [ref=e24] [cursor=pointer]:
+          - /url: /curl-prep-instructions
+        - link "Press & Media" [ref=e25] [cursor=pointer]:
+          - /url: /press-media
+        - link "The Curl Doctor" [ref=e26] [cursor=pointer]:
+          - /url: http://www.shaiamiel.com
+        - link "Policies" [ref=e27] [cursor=pointer]:
+          - /url: /policies
+        - link "Contact" [ref=e28] [cursor=pointer]:
+          - /url: /appointments
+      - link "Menu" [ref=e29] [cursor=pointer]:
+        - /url: "#menu"
+        - generic [ref=e30]: Menu
+      - link "818-784-4247" [ref=e31] [cursor=pointer]:
+        - /url: tel:818-784-4247
+  - main [ref=e32]:
+    - generic [ref=e36]:
+      - heading "Curl Prep Instructions" [level=2] [ref=e37]
+      - paragraph [ref=e38]: Please arrive to your appointment with your hair freshly washed, tangle free and dry. It is very important that you follow the prep instructions in order to receive the best possible service. If you don't follow the instructions, you will have to reschedule your appointment and forfeit your deposit. We need to see your hair in it's natural form, as curly as possible. No hats, clips, headbands, ponytails, buns, twists, braids or anything that will alter your curl pattern. Avoid using oils or any product that feels greasy to the touch. For best results, avoid straightening your curls!
+      - link [ref=e39] [cursor=pointer]:
+        - /url: https://shareasale.com/r.cfm?b=1131977&u=2341878&m=72573&urllink=&afftrack=
+        - img [ref=e40]
+      - link "Make an Appointment →" [ref=e42] [cursor=pointer]:
+        - /url: /appointments
+  - generic [ref=e43]:
+    - generic [ref=e44]:
+      - heading "Menu" [level=4] [ref=e45]
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - link "About" [ref=e48] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e49]:
+          - link "Services" [ref=e50] [cursor=pointer]:
+            - /url: /salon-services
+        - listitem [ref=e51]:
+          - link "Curl Prep Instructions" [ref=e52] [cursor=pointer]:
+            - /url: /curl-prep-instructions
+      - paragraph
+    - generic [ref=e53]:
+      - heading [level=4]
+      - list [ref=e54]:
+        - listitem [ref=e55]:
+          - link "Press & Media" [ref=e56] [cursor=pointer]:
+            - /url: /press-media
+        - listitem [ref=e57]:
+          - link "The Curl Doctor" [ref=e58] [cursor=pointer]:
+            - /url: http://shaiamiel.com/
+        - listitem [ref=e59]:
+          - link "Policies" [ref=e60] [cursor=pointer]:
+            - /url: /policies
+        - listitem [ref=e61]:
+          - link "Contact" [ref=e62] [cursor=pointer]:
+            - /url: /appointments
+      - paragraph
+    - generic [ref=e63]:
+      - heading "Information" [level=4] [ref=e64]
+      - list [ref=e65]:
+        - listitem [ref=e66]:
+          - link "Privacy Policy" [ref=e67] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=e68]:
+          - link "Terms of Use" [ref=e69] [cursor=pointer]:
+            - /url: /terms-of-use
+      - paragraph
+    - generic [ref=e70]:
+      - heading "Social" [level=4] [ref=e71]
+      - generic "Follow us on social media" [ref=e72]:
+        - link "Instagram" [ref=e73] [cursor=pointer]:
+          - /url: https://www.instagram.com/capellasalon/
+          - img [ref=e75]
+        - link "Facebook" [ref=e78] [cursor=pointer]:
+          - /url: https://www.facebook.com/CapellaSalonLA/
+          - img [ref=e80]
+        - link "twitter" [ref=e83] [cursor=pointer]:
+          - /url: https://www.twitter.com/capellasalon/
+          - img [ref=e85]
+        - link "YouTube" [ref=e87] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/CapellaSalon
+          - img [ref=e89]
+        - link "Pinterest" [ref=e94] [cursor=pointer]:
+          - /url: https://pinterest.com/shaiamiel/
+          - img [ref=e96]
+  - paragraph [ref=e102]:
+    - text: © 2026
+    - link "Capella Salon" [ref=e103] [cursor=pointer]:
+      - /url: /
+    - text: . All Rights Reserved. Site by
+    - link "Sixty Five Design" [ref=e104] [cursor=pointer]:
+      - /url: http://www.sixtyfivedesign.com

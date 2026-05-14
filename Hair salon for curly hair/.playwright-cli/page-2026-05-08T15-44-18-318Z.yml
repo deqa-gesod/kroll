@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]: Press Option+1 for screen-reader mode, Option+0 to cancel
+  - button "Use Website In a Screen-Reader Mode" [ref=e3]
+  - link "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window" [ref=e4] [cursor=pointer]:
+    - /url: https://accessibe.com/blog/knowledgebase/screen-reader-guide
+  - generic:
+    - generic:
+      - region "Skip Links":
+        - generic:
+          - link "Skip to Content":
+            - /url: "#acsbContent"
+            - text: Skip to Content
+            - generic:
+              - generic: ↵
+              - text: ENTER
+  - dialog [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - text: Simplify Text
+    - button [ref=e9] [cursor=pointer]:
+      - img [ref=e10]
+  - 'button "Open accessiBe: accessibility options, statement and help" [ref=e13] [cursor=pointer]':
+    - generic:
+      - img [ref=e14]
+      - img
+      - img
+  - generic [ref=e18]:
+    - navigation [ref=e20]:
+      - generic [ref=e21]:
+        - link "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e23] [cursor=pointer]:
+          - /url: ./
+          - img "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e25]
+        - generic [ref=e26]:
+          - link "Link Button" [ref=e28] [cursor=pointer]:
+            - /url: ./studio
+            - heading "Studio" [level=5] [ref=e30]
+            - heading "Studio" [level=5] [ref=e32]
+          - link "Link Button" [ref=e34] [cursor=pointer]:
+            - /url: ./consulting
+            - heading "Consulting" [level=5] [ref=e36]
+            - heading "Consulting" [level=5] [ref=e38]
+          - link "Link Button" [ref=e40] [cursor=pointer]:
+            - /url: ./proartistry
+            - heading "Pro Artistry" [level=5] [ref=e42]
+            - heading "Pro Artistry" [level=5] [ref=e44]
+          - link "Link Button" [ref=e46] [cursor=pointer]:
+            - /url: ./about
+            - heading "About" [level=5] [ref=e48]
+            - heading "About" [level=5] [ref=e50]
+          - link "Link Button" [ref=e52] [cursor=pointer]:
+            - /url: ./insights
+            - heading "Insights" [level=5] [ref=e54]
+            - heading "Insights" [level=5] [ref=e56]
+    - img "A man focusing on styling a woman's hair into an afro style" [ref=e61]
+    - generic [ref=e63]:
+      - heading "C o n s u l t i n g" [level=2] [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: C
+          - generic [ref=e69]: o
+          - generic [ref=e70]: "n"
+          - generic [ref=e71]: s
+          - generic [ref=e72]: u
+          - generic [ref=e73]: l
+          - generic [ref=e74]: t
+          - generic [ref=e75]: i
+          - generic [ref=e76]: "n"
+          - generic [ref=e77]: g
+      - generic [ref=e79]:
+        - heading "The market is the majority." [level=2] [ref=e80]
+        - heading "Most brands approach texture as an edge case. Dickey approaches it as the standard." [level=2] [ref=e81]
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - heading "The expertise" [level=5] [ref=e87]
+        - generic [ref=e89]:
+          - heading "The beauty industry was built on a binary- straight hair and everything else- that the modern consumer has long since abandoned. Brands that fail to innovate for the full textural spectrum are leaving the fastest-growing market segment on the table." [level=2] [ref=e90]
+          - heading "Anthony Dickey provides the roadmap. He translates the intimate, technical language of the salon chair into the strategic, scalable language of the boardroom." [level=2] [ref=e91]
+      - region "Video player" [ref=e94]:
+        - generic "Video" [ref=e95]
+        - button "Play video" [ref=e97] [cursor=pointer]:
+          - img
+        - generic [ref=e98]:
+          - button "Play video" [ref=e100] [cursor=pointer]:
+            - img [ref=e101]
+          - button "Unmute" [pressed] [ref=e105] [cursor=pointer]:
+            - img [ref=e106]
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - heading "The services" [level=5] [ref=e113]
+        - 'heading "The Dickey advantage: 40 years of data" [level=2] [ref=e116]'
+      - generic [ref=e117]:
+        - generic [ref=e120]:
+          - img "Man styling woman's hair" [ref=e122]
+          - generic [ref=e123]:
+            - heading "Product Innovation & R&D" [level=2] [ref=e125]
+            - paragraph [ref=e127]:
+              - strong [ref=e128]: Logic over Labels.
+              - text: Formulation guidance rooted in how hair actually behaves, not how it is categorized by marketing. Dickey advises on the full spectrum, from gap analysis in existing portfolios to innovation pipeline development.
+        - generic [ref=e132]:
+          - img "A man styling a woman's hair" [ref=e134]
+          - generic [ref=e135]:
+            - heading "Institutional Education" [level=2] [ref=e137]
+            - paragraph [ref=e139]:
+              - strong [ref=e140]: Closing the Expertise Gap.
+              - text: The author of the industry’s first textural curriculum helps organizations standardize their internal knowledge. We provide the "care tag" for your entire organization.
+        - generic [ref=e144]:
+          - img "Man pointing to his eyes while styling a woman's hair" [ref=e146]
+          - generic [ref=e147]:
+            - heading "Creative Direction" [level=2] [ref=e149]
+            - paragraph [ref=e151]:
+              - strong [ref=e152]: Precision is the Prerequisite for Beauty.
+              - text: High-concept editorial vision for campaigns that require technical accuracy. Dickey ensures that texture is never an afterthought on set, but a masterfully executed centerpiece.
+        - generic [ref=e156]:
+          - img "Man styling woman's hair" [ref=e158]
+          - generic [ref=e159]:
+            - heading "Brand Strategy & Cultural Intelligence" [level=2] [ref=e161]
+            - paragraph [ref=e163]:
+              - strong [ref=e164]: Resonance over Representation.
+              - text: Representation is the minimum; resonance is the goal. Dickey helps brands speak to the multi-textural consumer with an authority that builds long-term loyalty.
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - heading "The philosophy" [level=5] [ref=e172]
+        - heading "\"When you solve for the most complex textures, you create a superior experience for everyone.\"" [level=2] [ref=e175]
+      - generic [ref=e179]:
+        - 'heading "Dickey''s consulting work is rooted in one belief: \"inclusive\" shouldn''t be a buzzword. It should be a functional, profitable reality. By applying the Logic of Texture, we help brands move beyond niche thinking and into a future where every consumer is served with excellence." [level=4] [ref=e181]'
+        - generic:
+          - generic:
+            - heading [level=5]
+          - generic:
+            - heading [level=5]
+    - generic [ref=e184]:
+      - heading "Start a strategy conversation" [level=5] [ref=e187]
+      - generic [ref=e188]:
+        - heading "High-level advisory for the next era of beauty." [level=2] [ref=e190]
+        - generic [ref=e193]:
+          - heading "Dickey works with a select group of brands ready to do things differently. If your brand is ready to lead, this is the conversation to start." [level=4] [ref=e195]
+          - generic:
+            - generic:
+              - heading [level=5]
+            - generic:
+              - heading [level=5]
+        - generic [ref=e196]:
+          - link "Button" [ref=e199] [cursor=pointer]:
+            - /url: ./consulting-inquiry
+            - generic [ref=e200]:
+              - heading "Book a Conversation" [level=5] [ref=e202]
+              - heading "Book a Conversation" [level=5] [ref=e204]
+            - img [ref=e208]
+          - link "Button" [ref=e212] [cursor=pointer]:
+            - /url: ./about
+            - generic [ref=e213]:
+              - heading "Learn more about Dickey" [level=5] [ref=e215]
+              - heading "Learn more about Dickey" [level=5] [ref=e217]
+            - img [ref=e221]
+    - contentinfo [ref=e225]:
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - link "Got hair questions? Button" [ref=e229] [cursor=pointer]:
+            - /url: ./askdickey
+            - generic [ref=e231]:
+              - heading "Got hair questions?" [level=5] [ref=e233]
+              - generic "Button" [ref=e234]:
+                - heading "Submit a question" [level=5] [ref=e237]
+                - img [ref=e241]
+          - generic [ref=e245]:
+            - heading "Ready to get started?" [level=5] [ref=e247]
+            - link "Button" [ref=e249] [cursor=pointer]:
+              - /url: https://www.vagaro.com/hairrules/services
+              - generic [ref=e250]:
+                - heading "Book at the Studio" [level=5] [ref=e252]
+                - heading "Book at the Studio" [level=5] [ref=e254]
+              - img [ref=e258]
+            - link "Button" [ref=e261] [cursor=pointer]:
+              - /url: ./consulting-inquiry
+              - generic [ref=e262]:
+                - heading "Start a brand conversation" [level=5] [ref=e264]
+                - heading "Start a brand conversation" [level=5] [ref=e266]
+              - img [ref=e270]
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - heading "Navigate" [level=5] [ref=e275]
+            - generic [ref=e276]:
+              - link "Link Button" [ref=e278] [cursor=pointer]:
+                - /url: ./studio
+                - heading "Studio" [level=2] [ref=e280]
+                - heading "Studio" [level=2] [ref=e282]
+              - link "Link Button" [ref=e284] [cursor=pointer]:
+                - /url: ./consulting
+                - heading "Consulting" [level=2] [ref=e286]
+                - heading "Consulting" [level=2] [ref=e288]
+              - link "Link Button" [ref=e290] [cursor=pointer]:
+                - /url: ./proartistry
+                - heading "Pro Artistry" [level=2] [ref=e292]
+                - heading "Pro Artistry" [level=2] [ref=e294]
+              - link "Link Button" [ref=e296] [cursor=pointer]:
+                - /url: ./about
+                - heading "About" [level=2] [ref=e298]
+                - heading "About" [level=2] [ref=e300]
+              - link "Link Button" [ref=e302] [cursor=pointer]:
+                - /url: ./insights
+                - heading "Insights" [level=2] [ref=e304]
+                - heading "Insights" [level=2] [ref=e306]
+              - link "Link Button" [ref=e308] [cursor=pointer]:
+                - /url: ./contact
+                - heading "Contact" [level=2] [ref=e310]
+                - heading "Contact" [level=2] [ref=e312]
+          - generic [ref=e313]:
+            - heading "Follow us" [level=5] [ref=e315]
+            - generic [ref=e316]:
+              - link "Link Button" [ref=e318] [cursor=pointer]:
+                - /url: https://www.instagram.com/hairrules
+                - heading "Instagram" [level=2] [ref=e320]
+                - heading "Instagram" [level=2] [ref=e322]
+              - link "Link Button" [ref=e324] [cursor=pointer]:
+                - /url: https://youtube.com/hairrules?reload=9
+                - heading "Youtube" [level=2] [ref=e326]
+                - heading "Youtube" [level=2] [ref=e328]
+              - link "Link Button" [ref=e330] [cursor=pointer]:
+                - /url: https://www.pinterest.com/hairrules/
+                - heading "Pinterest" [level=2] [ref=e332]
+                - heading "Pinterest" [level=2] [ref=e334]
+              - link "Link Button" [ref=e336] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@hairrules_
+                - heading "TikTok" [level=2] [ref=e338]
+                - heading "TikTok" [level=2] [ref=e340]
+              - link "Link Button" [ref=e342] [cursor=pointer]:
+                - /url: https://www.facebook.com/hairrules
+                - heading "Facebook" [level=2] [ref=e344]
+                - heading "Facebook" [level=2] [ref=e346]
+      - generic [ref=e347]:
+        - generic [ref=e349]:
+          - text: © 2026
+          - link "Hair Rules" [ref=e350] [cursor=pointer]:
+            - /url: https://slidecreative.co
+          - text: . All rights reserved.
+        - link "Web by" [ref=e351] [cursor=pointer]:
+          - /url: https://slidecreative.co
+          - paragraph [ref=e353]: Web by

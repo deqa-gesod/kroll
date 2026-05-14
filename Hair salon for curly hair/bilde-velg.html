@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Velg portfolio-bilder (1 til 70)</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; background: #faf7f2; color: #1a1612; margin: 0; padding: 24px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { color: #6f655c; margin: 0 0 24px; max-width: 760px; line-height: 1.5; }
+  .legend { background: white; padding: 16px; border-radius: 8px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .legend code { background: #f3eee5; padding: 2px 6px; border-radius: 4px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .card { position: relative; cursor: pointer; border: 3px solid transparent; border-radius: 8px; overflow: hidden; transition: transform .15s; background: white; }
+  .card:hover { transform: scale(1.02); }
+  .card.selected { border-color: #b5532a; box-shadow: 0 0 0 2px #b5532a; }
+  .card img { width: 100%; height: 280px; object-fit: cover; display: block; }
+  .num { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .selected .num { background: #b5532a; }
+  #picked { position: fixed; bottom: 16px; right: 16px; background: #1a1612; color: white; padding: 14px 20px; border-radius: 8px; font-size: 14px; max-width: 380px; box-shadow: 0 4px 20px rgba(0,0,0,.3); z-index: 10; }
+  #picked .list { font-family: 'JetBrains Mono', monospace; margin-top: 6px; word-break: break-word; }
+  #picked button { margin-top: 8px; background: #b5532a; color: white; border: 0; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>Velg portfolio-bilder (1 til 70)</h1>
+<p>Klikk på bildene du vil ha med på nettsiden. Jeg trenger 12 til 13 bilder fordelt på krølletype-kategoriene. Når du er ferdig, kopier listen nederst til høyre og lim den inn i chatten.</p>
+
+<div class="legend">
+  <strong>Kategorier nettsiden trenger (1 bilde per linje, eller 2 om du har flere favoritter):</strong><br>
+  Type 2A, Type 2B/2C, Type 3A, Type 3B, Type 3C, Type 4A, Type 4B, Type 4C, Menn (fade + krøller), Menn (locs/dreads), Farge-jobb 1, Farge-jobb 2.
+</div>
+
+<div class="grid" id="grid">
+<div class=card><img src="images/portfolio/01.png" loading=lazy><div class=num>01.png</div></div>
+<div class=card><img src="images/portfolio/02.png" loading=lazy><div class=num>02.png</div></div>
+<div class=card><img src="images/portfolio/03.png" loading=lazy><div class=num>03.png</div></div>
+<div class=card><img src="images/portfolio/04.png" loading=lazy><div class=num>04.png</div></div>
+<div class=card><img src="images/portfolio/05.png" loading=lazy><div class=num>05.png</div></div>
+<div class=card><img src="images/portfolio/06.png" loading=lazy><div class=num>06.png</div></div>
+<div class=card><img src="images/portfolio/07.png" loading=lazy><div class=num>07.png</div></div>
+<div class=card><img src="images/portfolio/08.png" loading=lazy><div class=num>08.png</div></div>
+<div class=card><img src="images/portfolio/09.png" loading=lazy><div class=num>09.png</div></div>
+<div class=card><img src="images/portfolio/10.png" loading=lazy><div class=num>10.png</div></div>
+<div class=card><img src="images/portfolio/11.png" loading=lazy><div class=num>11.png</div></div>
+<div class=card><img src="images/portfolio/12.png" loading=lazy><div class=num>12.png</div></div>
+<div class=card><img src="images/portfolio/13.png" loading=lazy><div class=num>13.png</div></div>
+<div class=card><img src="images/portfolio/14.png" loading=lazy><div class=num>14.png</div></div>
+<div class=card><img src="images/portfolio/15.png" loading=lazy><div class=num>15.png</div></div>
+<div class=card><img src="images/portfolio/16.png" loading=lazy><div class=num>16.png</div></div>
+<div class=card><img src="images/portfolio/17.png" loading=lazy><div class=num>17.png</div></div>
+<div class=card><img src="images/portfolio/18.png" loading=lazy><div class=num>18.png</div></div>
+<div class=card><img src="images/portfolio/19.png" loading=lazy><div class=num>19.png</div></div>
+<div class=card><img src="images/portfolio/20.png" loading=lazy><div class=num>20.png</div></div>
+<div class=card><img src="images/portfolio/21.png" loading=lazy><div class=num>21.png</div></div>
+<div class=card><img src="images/portfolio/22.png" loading=lazy><div class=num>22.png</div></div>
+<div class=card><img src="images/portfolio/23.png" loading=lazy><div class=num>23.png</div></div>
+<div class=card><img src="images/portfolio/24.png" loading=lazy><div class=num>24.png</div></div>
+<div class=card><img src="images/portfolio/25.png" loading=lazy><div class=num>25.png</div></div>
+<div class=card><img src="images/portfolio/26.png" loading=lazy><div class=num>26.png</div></div>
+<div class=card><img src="images/portfolio/27.png" loading=lazy><div class=num>27.png</div></div>
+<div class=card><img src="images/portfolio/28.png" loading=lazy><div class=num>28.png</div></div>
+<div class=card><img src="images/portfolio/29.png" loading=lazy><div class=num>29.png</div></div>
+<div class=card><img src="images/portfolio/30.png" loading=lazy><div class=num>30.png</div></div>
+<div class=card><img src="images/portfolio/31.png" loading=lazy><div class=num>31.png</div></div>
+<div class=card><img src="images/portfolio/32.png" loading=lazy><div class=num>32.png</div></div>
+<div class=card><img src="images/portfolio/33.png" loading=lazy><div class=num>33.png</div></div>
+<div class=card><img src="images/portfolio/34.png" loading=lazy><div class=num>34.png</div></div>
+<div class=card><img src="images/portfolio/35.png" loading=lazy><div class=num>35.png</div></div>
+<div class=card><img src="images/portfolio/36.png" loading=lazy><div class=num>36.png</div></div>
+<div class=card><img src="images/portfolio/37.png" loading=lazy><div class=num>37.png</div></div>
+<div class=card><img src="images/portfolio/38.png" loading=lazy><div class=num>38.png</div></div>
+<div class=card><img src="images/portfolio/39.png" loading=lazy><div class=num>39.png</div></div>
+<div class=card><img src="images/portfolio/40.png" loading=lazy><div class=num>40.png</div></div>
+<div class=card><img src="images/portfolio/41.png" loading=lazy><div class=num>41.png</div></div>
+<div class=card><img src="images/portfolio/42.png" loading=lazy><div class=num>42.png</div></div>
+<div class=card><img src="images/portfolio/43.png" loading=lazy><div class=num>43.png</div></div>
+<div class=card><img src="images/portfolio/44.png" loading=lazy><div class=num>44.png</div></div>
+<div class=card><img src="images/portfolio/45.png" loading=lazy><div class=num>45.png</div></div>
+<div class=card><img src="images/portfolio/46.png" loading=lazy><div class=num>46.png</div></div>
+<div class=card><img src="images/portfolio/47.png" loading=lazy><div class=num>47.png</div></div>
+<div class=card><img src="images/portfolio/48.png" loading=lazy><div class=num>48.png</div></div>
+<div class=card><img src="images/portfolio/49.png" loading=lazy><div class=num>49.png</div></div>
+<div class=card><img src="images/portfolio/50.png" loading=lazy><div class=num>50.png</div></div>
+<div class=card><img src="images/portfolio/51.png" loading=lazy><div class=num>51.png</div></div>
+<div class=card><img src="images/portfolio/52.png" loading=lazy><div class=num>52.png</div></div>
+<div class=card><img src="images/portfolio/53.png" loading=lazy><div class=num>53.png</div></div>
+<div class=card><img src="images/portfolio/54.png" loading=lazy><div class=num>54.png</div></div>
+<div class=card><img src="images/portfolio/55.png" loading=lazy><div class=num>55.png</div></div>
+<div class=card><img src="images/portfolio/56.png" loading=lazy><div class=num>56.png</div></div>
+<div class=card><img src="images/portfolio/57.png" loading=lazy><div class=num>57.png</div></div>
+<div class=card><img src="images/portfolio/58.png" loading=lazy><div class=num>58.png</div></div>
+<div class=card><img src="images/portfolio/59.png" loading=lazy><div class=num>59.png</div></div>
+<div class=card><img src="images/portfolio/60.png" loading=lazy><div class=num>60.png</div></div>
+<div class=card><img src="images/portfolio/61.png" loading=lazy><div class=num>61.png</div></div>
+<div class=card><img src="images/portfolio/62.png" loading=lazy><div class=num>62.png</div></div>
+<div class=card><img src="images/portfolio/63.png" loading=lazy><div class=num>63.png</div></div>
+<div class=card><img src="images/portfolio/64.png" loading=lazy><div class=num>64.png</div></div>
+<div class=card><img src="images/portfolio/65.png" loading=lazy><div class=num>65.png</div></div>
+<div class=card><img src="images/portfolio/66.png" loading=lazy><div class=num>66.png</div></div>
+<div class=card><img src="images/portfolio/67.png" loading=lazy><div class=num>67.png</div></div>
+<div class=card><img src="images/portfolio/68.png" loading=lazy><div class=num>68.png</div></div>
+<div class=card><img src="images/portfolio/69.png" loading=lazy><div class=num>69.png</div></div>
+<div class=card><img src="images/portfolio/70.png" loading=lazy><div class=num>70.png</div></div>
+
+</div>
+
+<div id="picked">
+  <strong>Valgte bilder: <span id="count">0</span></strong>
+  <div class="list" id="list">(ingen)</div>
+  <button onclick="copyList()">Kopier liste</button>
+</div>
+
+<script>
+  const picked = new Set();
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      const num = card.querySelector('.num').textContent;
+      if (picked.has(num)) { picked.delete(num); card.classList.remove('selected'); }
+      else { picked.add(num); card.classList.add('selected'); }
+      update();
+    });
+  });
+  function update() {
+    document.getElementById('count').textContent = picked.size;
+    const arr = [...picked].sort();
+    document.getElementById('list').textContent = arr.length ? arr.join(', ') : '(ingen)';
+  }
+  function copyList() {
+    const txt = [...picked].sort().join(', ');
+    navigator.clipboard.writeText(txt).then(() => alert('Kopiert: ' + txt));
+  }
+</script>
+</body>
+</html>

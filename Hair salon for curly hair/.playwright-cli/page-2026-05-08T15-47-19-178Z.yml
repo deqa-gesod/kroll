@@ -1,0 +1,442 @@
+- generic [ref=e1]:
+  - generic [ref=e3] [cursor=pointer]:
+    - img [ref=e5]
+    - generic:
+      - img
+  - generic [ref=e11]:
+    - region "top of page"
+    - button "Skip to Main Content"
+    - generic [ref=e18]:
+      - navigation "Site" [ref=e20]:
+        - list [ref=e21]:
+          - listitem [ref=e22] [cursor=pointer]:
+            - link "Home" [ref=e23]:
+              - /url: https://www.curlspa.nl
+              - paragraph [ref=e26]: Home
+            - button "More Home pages" [ref=e27]:
+              - img [ref=e28]
+          - listitem [ref=e30] [cursor=pointer]:
+            - link "Price List" [ref=e31]:
+              - /url: https://www.curlspa.nl/krullenkapper
+              - paragraph [ref=e34]: Price List
+          - listitem [ref=e35] [cursor=pointer]:
+            - link "BOOK WITH A CURL SPECIALIST" [ref=e36]:
+              - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+              - paragraph [ref=e39]: BOOK WITH A CURL SPECIALIST
+          - listitem [ref=e40] [cursor=pointer]:
+            - link "Webshop" [ref=e41]:
+              - /url: https://www.curlspa.nl/shop
+              - paragraph [ref=e44]: Webshop
+            - button "More Webshop pages" [ref=e45]:
+              - img [ref=e46]
+          - listitem [ref=e48] [cursor=pointer]:
+            - link "Blog" [ref=e49]:
+              - /url: https://www.curlspa.nl/blog
+              - paragraph [ref=e52]: Blog
+          - listitem [ref=e53] [cursor=pointer]:
+            - link "About" [ref=e54]:
+              - /url: https://www.curlspa.nl/about
+              - paragraph [ref=e57]: About
+          - listitem [ref=e58] [cursor=pointer]:
+            - link "FAQ" [ref=e59]:
+              - /url: https://www.curlspa.nl/faq
+              - paragraph [ref=e62]: FAQ
+          - listitem [ref=e63] [cursor=pointer]:
+            - link "Contact" [ref=e64]:
+              - /url: https://www.curlspa.nl/contact
+              - paragraph [ref=e67]: Contact
+      - button "Cart with 0 items" [ref=e71] [cursor=pointer]:
+        - img [ref=e73]:
+          - generic [ref=e74]: "0"
+      - banner [ref=e78]:
+        - generic [ref=e84]:
+          - generic:
+            - generic:
+              - list "Social Bar" [ref=e86]:
+                - listitem [ref=e87]:
+                  - link "Whatsapp" [ref=e88] [cursor=pointer]:
+                    - /url: tel:+31(0)613346640
+                    - img "Whatsapp" [ref=e89]
+                - listitem [ref=e90]:
+                  - link "Youtube" [ref=e91] [cursor=pointer]:
+                    - /url: https://www.youtube.com/@CurlSpa
+                    - img "Youtube" [ref=e92]
+                - listitem [ref=e93]:
+                  - link "Instagram" [ref=e94] [cursor=pointer]:
+                    - /url: http://www.instagram.com/curl_spa_salon_
+                    - img "Instagram" [ref=e95]
+              - heading "Curl Spa Salon" [level=3] [ref=e96]:
+                - link "Curl Spa Salon" [ref=e98] [cursor=pointer]:
+                  - /url: https://www.curlspa.nl
+              - paragraph [ref=e99]:
+                - link "Hair Salon & Webshop" [ref=e100] [cursor=pointer]:
+                  - /url: https://www.curlspa.nl
+              - link "Book Now" [ref=e102] [cursor=pointer]:
+                - /url: https://www.fresha.com/book-now/curl-spa-salon-p1pm70jw/all-offer?share=true&pId=2693546
+                - generic [ref=e103]: Book Now
+              - button "Log In" [ref=e105] [cursor=pointer]:
+                - img [ref=e109]
+                - generic [ref=e112]: Log In
+              - 'button "Language Selector: English" [ref=e114]':
+                - generic [ref=e116] [cursor=pointer]:
+                  - generic [ref=e117]: EN
+                  - img [ref=e119]
+      - main [ref=e121]:
+        - generic [ref=e137]:
+          - generic [ref=e139]:
+            - navigation "Blog" [ref=e140]:
+              - list [ref=e141] [cursor=pointer]:
+                - listitem [ref=e142]:
+                  - link "All Posts" [ref=e143]:
+                    - /url: https://www.curlspa.nl/blog
+                - listitem [ref=e144]:
+                  - link "Getting Started" [ref=e145]:
+                    - /url: https://www.curlspa.nl/blog/categories/getting-started
+                - listitem [ref=e146]:
+                  - link "Your Community" [ref=e147]:
+                    - /url: https://www.curlspa.nl/blog/categories/your-community
+                - listitem [ref=e148]:
+                  - link "Lifestyle" [ref=e149]:
+                    - /url: https://www.curlspa.nl/blog/categories/lifestyle
+                - listitem [ref=e150]:
+                  - link "Wellbeing" [ref=e151]:
+                    - /url: https://www.curlspa.nl/blog/categories/wellbeing
+                - listitem [ref=e152]:
+                  - link "Spas" [ref=e153]:
+                    - /url: https://www.curlspa.nl/blog/categories/_spas
+                - listitem [ref=e154]:
+                  - link "fashion" [ref=e155]:
+                    - /url: https://www.curlspa.nl/blog/categories/fashion
+                - listitem [ref=e156]:
+                  - button "More" [ref=e158]:
+                    - text: More
+                    - img [ref=e159]
+            - button "Search" [ref=e164]:
+              - img [ref=e165] [cursor=pointer]
+          - region "Blog feed" [ref=e175]:
+            - generic [ref=e177]:
+              - generic [ref=e180] [cursor=pointer]:
+                - 'img "The Art of Hair: A Conversation with Lea Muses Where Fashion Meets Fine Art" [ref=e182]'
+                - generic [ref=e187]:
+                  - generic [ref=e188]:
+                    - 'link "The Art of Hair: A Conversation with Lea Muses Where Fashion Meets Fine Art" [ref=e190]':
+                      - /url: https://www.curlspa.nl/post/the-art-of-hair-a-conversation-with-lea-muses-where-fashion-meets-fine-art
+                      - 'heading "The Art of Hair: A Conversation with Lea Muses Where Fashion Meets Fine Art" [level=2] [ref=e193]'
+                    - generic [ref=e194]:
+                      - generic [ref=e196]:
+                        - link "Raquel" [ref=e197]:
+                          - /url: https://www.curlspa.nl/profile/c6e16e80-2d03-4e84-805d-241ec59f4d9c/profile
+                          - generic "Raquel" [ref=e198]
+                        - generic [ref=e199]:
+                          - generic [ref=e200]: Nov 3, 2024
+                          - generic [ref=e203]: 3 min read
+                      - button "More actions" [ref=e206]:
+                        - img [ref=e208]
+                  - generic [ref=e213]:
+                    - generic [ref=e217]:
+                      - img "0 comments" [ref=e218]
+                      - generic [ref=e220]: "0"
+                    - button "Like post" [ref=e223]:
+                      - generic [ref=e224]: 1 like. Post not marked as liked
+                      - generic [ref=e225]:
+                        - generic [ref=e226]: "1"
+                        - img [ref=e232]
+              - generic [ref=e236] [cursor=pointer]:
+                - img "Curl Wash day.. a Love Letter" [ref=e238]
+                - generic [ref=e243]:
+                  - generic [ref=e244]:
+                    - link "Curl Wash day.. a Love Letter" [ref=e246]:
+                      - /url: https://www.curlspa.nl/post/wash-day-a-love-letter
+                      - heading "Curl Wash day.. a Love Letter" [level=2] [ref=e249]
+                    - generic [ref=e250]:
+                      - generic [ref=e252]:
+                        - link "Curl Spa" [ref=e253]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e254]
+                        - generic [ref=e255]:
+                          - generic [ref=e256]: Sep 25, 2024
+                          - generic [ref=e259]: 2 min read
+                      - button "More actions" [ref=e262]:
+                        - img [ref=e264]
+                  - generic [ref=e269]:
+                    - generic [ref=e273]:
+                      - img "0 comments" [ref=e274]
+                      - generic [ref=e276]: "0"
+                    - button "Like post" [ref=e279]:
+                      - generic [ref=e280]: 1 like. Post not marked as liked
+                      - generic [ref=e281]:
+                        - generic [ref=e282]: "1"
+                        - img [ref=e288]
+              - generic [ref=e292] [cursor=pointer]:
+                - img "Mens Curly Hair & Nightlife and Culture" [ref=e294]
+                - generic [ref=e299]:
+                  - generic [ref=e300]:
+                    - link "Mens Curly Hair & Nightlife and Culture" [ref=e302]:
+                      - /url: https://www.curlspa.nl/post/mens-curly-hair-nightlife-and-culture
+                      - heading "Mens Curly Hair & Nightlife and Culture" [level=2] [ref=e305]
+                    - generic [ref=e306]:
+                      - generic [ref=e308]:
+                        - link "Curl Spa" [ref=e309]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e310]
+                        - generic [ref=e311]:
+                          - generic [ref=e312]: Sep 24, 2024
+                          - generic [ref=e315]: 2 min read
+                      - button "More actions" [ref=e318]:
+                        - img [ref=e320]
+                  - generic [ref=e325]:
+                    - generic [ref=e329]:
+                      - img "1 comment" [ref=e330]
+                      - generic [ref=e332]: "1"
+                    - button "Like post" [ref=e335]:
+                      - generic [ref=e336]: 2 likes. Post not marked as liked
+                      - generic [ref=e337]:
+                        - generic [ref=e338]: "2"
+                        - img [ref=e344]
+              - generic [ref=e348] [cursor=pointer]:
+                - img "Fall Fashion Looks. How do you dress for the turn of seasons?" [ref=e350]
+                - generic [ref=e355]:
+                  - generic [ref=e356]:
+                    - link "Fall Fashion Looks. How do you dress for the turn of seasons?" [ref=e358]:
+                      - /url: https://www.curlspa.nl/post/turn-of-the-season-fall-fashion-looks
+                      - heading "Fall Fashion Looks. How do you dress for the turn of seasons?" [level=2] [ref=e361]
+                    - generic [ref=e362]:
+                      - generic [ref=e364]:
+                        - link "Curl Spa" [ref=e365]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e366]
+                        - generic [ref=e367]:
+                          - generic [ref=e368]: Sep 22, 2024
+                          - generic [ref=e371]: 2 min read
+                      - button "More actions" [ref=e374]:
+                        - img [ref=e376]
+                  - generic [ref=e381]:
+                    - generic [ref=e385]:
+                      - img "0 comments" [ref=e386]
+                      - generic [ref=e388]: "0"
+                    - button "Like post" [ref=e391]:
+                      - generic [ref=e392]: 3 likes. Post not marked as liked
+                      - generic [ref=e393]:
+                        - generic [ref=e394]: "3"
+                        - img [ref=e400]
+              - generic [ref=e404] [cursor=pointer]:
+                - img "Vacation Hacks Type 3 Curly Hair" [ref=e406]
+                - generic [ref=e411]:
+                  - generic [ref=e412]:
+                    - link "Vacation Hacks Type 3 Curly Hair" [ref=e414]:
+                      - /url: https://www.curlspa.nl/post/vacation-hacks-type-3-curly-hair
+                      - heading "Vacation Hacks Type 3 Curly Hair" [level=2] [ref=e417]
+                    - generic [ref=e418]:
+                      - generic [ref=e420]:
+                        - link "Curl Spa" [ref=e421]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e422]
+                        - generic [ref=e423]:
+                          - generic [ref=e424]: Jul 20, 2024
+                          - generic [ref=e427]: 1 min read
+                      - button "More actions" [ref=e430]:
+                        - img [ref=e432]
+                  - generic [ref=e437]:
+                    - generic [ref=e441]:
+                      - img "0 comments" [ref=e442]
+                      - generic [ref=e444]: "0"
+                    - button "Like post" [ref=e447]:
+                      - generic [ref=e448]: 4 likes. Post not marked as liked
+                      - generic [ref=e449]:
+                        - generic [ref=e450]: "4"
+                        - img [ref=e456]
+              - generic [ref=e460] [cursor=pointer]:
+                - 'img "Mix and Match: Don’t be afraid to combine these colors." [ref=e462]'
+                - generic [ref=e467]:
+                  - generic [ref=e468]:
+                    - 'link "Mix and Match: Don’t be afraid to combine these colors." [ref=e470]':
+                      - /url: https://www.curlspa.nl/post/spring-2024-is-ushering-in-a-new-palette-that-promises-to-refresh-our-wardrobes-with-soft-soothing
+                      - 'heading "Mix and Match: Don’t be afraid to combine these colors." [level=2] [ref=e473]'
+                    - generic [ref=e474]:
+                      - generic [ref=e476]:
+                        - link "Curl Spa" [ref=e477]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e478]
+                        - generic [ref=e479]:
+                          - generic [ref=e480]: Apr 23, 2024
+                          - generic [ref=e483]: 3 min read
+                      - button "More actions" [ref=e486]:
+                        - img [ref=e488]
+                  - generic [ref=e493]:
+                    - generic [ref=e497]:
+                      - img "1 comment" [ref=e498]
+                      - generic [ref=e500]: "1"
+                    - button "Like post" [ref=e503]:
+                      - generic [ref=e504]: 3 likes. Post not marked as liked
+                      - generic [ref=e505]:
+                        - generic [ref=e506]: "3"
+                        - img [ref=e512]
+              - generic [ref=e516] [cursor=pointer]:
+                - 'img "Navigating Love: From Finding Your Prince to Building Lasting Connection" [ref=e518]'
+                - generic [ref=e523]:
+                  - generic [ref=e524]:
+                    - 'link "Navigating Love: From Finding Your Prince to Building Lasting Connection" [ref=e526]':
+                      - /url: https://www.curlspa.nl/post/navigating-love-from-finding-your-prince-to-building-lasting-connection
+                      - 'heading "Navigating Love: From Finding Your Prince to Building Lasting Connection" [level=2] [ref=e529]'
+                    - generic [ref=e530]:
+                      - generic [ref=e532]:
+                        - link "Dionne Maria Hallegraeff" [ref=e533]:
+                          - /url: https://www.curlspa.nl/profile/b3c1b8f3-d5f2-45b7-a8bc-e9e51c43ae6b/profile
+                          - generic "Dionne Maria Hallegraeff" [ref=e534]
+                        - generic [ref=e535]:
+                          - generic [ref=e536]: Feb 23, 2024
+                          - generic [ref=e539]: 3 min read
+                      - button "More actions" [ref=e542]:
+                        - img [ref=e544]
+                  - generic [ref=e549]:
+                    - generic [ref=e553]:
+                      - img "0 comments" [ref=e554]
+                      - generic [ref=e556]: "0"
+                    - button "Like post" [ref=e559]:
+                      - generic [ref=e560]: 3 likes. Post not marked as liked
+                      - generic [ref=e561]:
+                        - generic [ref=e562]: "3"
+                        - img [ref=e568]
+              - generic [ref=e572] [cursor=pointer]:
+                - img "What should I use for my Curl type?" [ref=e574]
+                - generic [ref=e579]:
+                  - generic [ref=e580]:
+                    - link "What should I use for my Curl type?" [ref=e582]:
+                      - /url: https://www.curlspa.nl/post/what-should-i-use-for-my-curl-type
+                      - heading "What should I use for my Curl type?" [level=2] [ref=e585]
+                    - generic [ref=e586]:
+                      - generic [ref=e588]:
+                        - link "Curl Spa" [ref=e589]:
+                          - /url: https://www.curlspa.nl/profile/a7cd73ea-9aec-45e7-9fa9-1832ba3cb535/profile
+                          - generic "Curl Spa" [ref=e590]
+                        - generic [ref=e591]:
+                          - generic [ref=e592]: Feb 22, 2024
+                          - generic [ref=e595]: 1 min read
+                      - button "More actions" [ref=e598]:
+                        - img [ref=e600]
+                  - generic [ref=e605]:
+                    - generic [ref=e609]:
+                      - img "0 comments" [ref=e610]
+                      - generic [ref=e612]: "0"
+                    - button "Like post" [ref=e615]:
+                      - generic [ref=e616]: 2 likes. Post not marked as liked
+                      - generic [ref=e617]:
+                        - generic [ref=e618]: "2"
+                        - img [ref=e624]
+              - generic [ref=e628] [cursor=pointer]:
+                - 'img "Skin Allergies: Glitter, Lanolin, Wool & Eczema." [ref=e630]'
+                - generic [ref=e635]:
+                  - generic [ref=e636]:
+                    - 'link "Skin Allergies: Glitter, Lanolin, Wool & Eczema." [ref=e638]':
+                      - /url: https://www.curlspa.nl/post/skin-allergies-glitter-lanolin-wool-eczema
+                      - 'heading "Skin Allergies: Glitter, Lanolin, Wool & Eczema." [level=2] [ref=e641]'
+                    - generic [ref=e642]:
+                      - generic [ref=e644]:
+                        - link "Lea" [ref=e645]:
+                          - /url: https://www.curlspa.nl/profile/50f829f5-dc81-4922-a636-88d69421020e/profile
+                          - generic "Lea" [ref=e646]
+                        - generic [ref=e647]:
+                          - generic [ref=e648]: Feb 18, 2024
+                          - generic [ref=e651]: 6 min read
+                      - button "More actions" [ref=e654]:
+                        - img [ref=e656]
+                  - generic [ref=e661]:
+                    - generic [ref=e665]:
+                      - img "0 comments" [ref=e666]
+                      - generic [ref=e668]: "0"
+                    - button "Like post" [ref=e671]:
+                      - generic [ref=e672]: 3 likes. Post not marked as liked
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: "3"
+                        - img [ref=e680]
+      - button [active] [ref=e691] [cursor=pointer]:
+        - img [ref=e692]
+        - generic [ref=e694]: Chat with AI
+      - contentinfo [ref=e695]:
+        - generic [ref=e699]:
+          - generic:
+            - generic:
+              - generic [ref=e705]:
+                - generic:
+                  - generic:
+                    - navigation "Site" [ref=e709]:
+                      - list [ref=e710]:
+                        - listitem [ref=e711]:
+                          - link "Home" [ref=e714] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl
+                        - listitem [ref=e715]:
+                          - link "Price List" [ref=e718] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/krullenkapper
+                        - listitem [ref=e719]:
+                          - link "BOOK WITH A CURL SPECIALIST" [ref=e722] [cursor=pointer]:
+                            - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+                        - listitem [ref=e723]:
+                          - link "Webshop" [ref=e726] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/shop
+                        - listitem [ref=e727]:
+                          - link "Blog" [ref=e730] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/blog
+                        - listitem [ref=e731]:
+                          - link "About" [ref=e734] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/about
+                        - listitem [ref=e735]:
+                          - link "FAQ" [ref=e738] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/faq
+                        - listitem [ref=e739]:
+                          - link "Contact" [ref=e742] [cursor=pointer]:
+                            - /url: https://www.curlspa.nl/contact
+                    - generic:
+                      - paragraph [ref=e743]:
+                        - link "FAQ" [ref=e745] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/faq
+                      - paragraph [ref=e746]:
+                        - link "Shipping & Returns" [ref=e748] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/terms-conditions
+                      - paragraph [ref=e749]:
+                        - link "Store Policy" [ref=e751] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/copy-of-terms-conditions
+                      - paragraph [ref=e752]:
+                        - link "Wholesale" [ref=e756] [cursor=pointer]:
+                          - /url: http://curlspa.faire.com
+                      - paragraph [ref=e757]:
+                        - link "whatsapp +31(0)613346640" [ref=e758] [cursor=pointer]:
+                          - /url: tel:+31(0)613346640
+                          - generic [ref=e760]: whatsapp +31(0)613346640
+                    - region "Slideshow" [ref=e763]:
+                      - generic [ref=e769]:
+                        - generic:
+                          - generic:
+                            - paragraph [ref=e770]:
+                              - generic [ref=e776]: Subscribe to our mailing list
+                            - textbox "Name" [ref=e779]
+                            - textbox "Email Address" [ref=e782]
+                            - button "Subscribe Now" [ref=e784] [cursor=pointer]:
+                              - generic [ref=e785]: Subscribe Now
+                    - list "Social Bar" [ref=e787]:
+                      - listitem [ref=e788]:
+                        - link "Facebook" [ref=e789] [cursor=pointer]:
+                          - /url: https://www.facebook.com/curlspasalon
+                          - img "Facebook" [ref=e790]
+                      - listitem [ref=e791]:
+                        - link "Instagram" [ref=e792] [cursor=pointer]:
+                          - /url: https://www.instagram.com/curl_spa_salon_
+                          - img "Instagram" [ref=e793]
+              - list "Social Bar" [ref=e795]:
+                - listitem [ref=e796]:
+                  - link "Youtube" [ref=e797] [cursor=pointer]:
+                    - /url: http://www.youtube.com/@CurlSpa
+                    - img "Youtube" [ref=e798]
+                - listitem [ref=e799]:
+                  - link "Instagram" [ref=e800] [cursor=pointer]:
+                    - /url: http://www.instagram.com/curl_spa_salon_
+                    - img "Instagram" [ref=e801]
+              - heading "BECOME A CURL SPECIALIST" [level=2] [ref=e802]:
+                - link "BECOME A CURL SPECIALIST" [ref=e803] [cursor=pointer]:
+                  - /url: https://www.curl-academy.com/
+                  - generic [ref=e807]: BECOME A CURL SPECIALIST
+              - paragraph [ref=e817]:
+                - generic [ref=e819]:
+                  - text: AMSTERDAM TWEEDE HUGO DE GROOT STRAAT 24H
+                  - text: THE HAGUE - BADHUISSTRAAT 207 SCHEVENINGEN
+                  - text: Patent 2026 by Curl Spa Salons B.V
+    - region "bottom of page"

@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e3]:
+      - link "12930 Ventura Blvd, Suite 216 | Studio City, CA" [ref=e5] [cursor=pointer]:
+        - /url: https://goo.gl/maps/4j87ZgzYCmgXUhzu8
+    - generic:
+      - link "Visit the Capella Salonhome page":
+        - /url: /
+        - img [ref=e6] [cursor=pointer]
+      - navigation [ref=e20]:
+        - link "About" [ref=e21] [cursor=pointer]:
+          - /url: /about
+        - link "Services & Hours" [ref=e22] [cursor=pointer]:
+          - /url: /salon-services
+        - link "Curl Prep Instructions" [ref=e23] [cursor=pointer]:
+          - /url: /curl-prep-instructions
+        - link "Press & Media" [ref=e24] [cursor=pointer]:
+          - /url: /press-media
+        - link "The Curl Doctor" [ref=e25] [cursor=pointer]:
+          - /url: http://www.shaiamiel.com
+        - link "Policies" [ref=e26] [cursor=pointer]:
+          - /url: /policies
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: /appointments
+      - link "Menu" [ref=e28] [cursor=pointer]:
+        - /url: "#menu"
+        - generic [ref=e29]: Menu
+      - link "818-784-4247" [ref=e30] [cursor=pointer]:
+        - /url: tel:818-784-4247
+  - main [ref=e31]
+  - generic [ref=e36]:
+    - paragraph [ref=e37]:
+      - link "real money casinos" [ref=e38] [cursor=pointer]:
+        - /url: http://www.capellasalon.com/real-money-casinos/
+    - paragraph [ref=e39]:
+      - link "anonymous casino" [ref=e40] [cursor=pointer]:
+        - /url: http://www.capellasalon.com/anonymous-casino/
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - heading "Menu" [level=4] [ref=e43]
+      - list [ref=e44]:
+        - listitem [ref=e45]:
+          - link "About" [ref=e46] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e47]:
+          - link "Services" [ref=e48] [cursor=pointer]:
+            - /url: /salon-services
+        - listitem [ref=e49]:
+          - link "Curl Prep Instructions" [ref=e50] [cursor=pointer]:
+            - /url: /curl-prep-instructions
+      - paragraph
+    - generic [ref=e51]:
+      - heading [level=4]
+      - list [ref=e52]:
+        - listitem [ref=e53]:
+          - link "Press & Media" [ref=e54] [cursor=pointer]:
+            - /url: /press-media
+        - listitem [ref=e55]:
+          - link "The Curl Doctor" [ref=e56] [cursor=pointer]:
+            - /url: http://shaiamiel.com/
+        - listitem [ref=e57]:
+          - link "Policies" [ref=e58] [cursor=pointer]:
+            - /url: /policies
+        - listitem [ref=e59]:
+          - link "Contact" [ref=e60] [cursor=pointer]:
+            - /url: /appointments
+      - paragraph
+    - generic [ref=e61]:
+      - heading "Information" [level=4] [ref=e62]
+      - list [ref=e63]:
+        - listitem [ref=e64]:
+          - link "Privacy Policy" [ref=e65] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=e66]:
+          - link "Terms of Use" [ref=e67] [cursor=pointer]:
+            - /url: /terms-of-use
+      - paragraph
+    - generic [ref=e68]:
+      - heading "Social" [level=4] [ref=e69]
+      - generic "Follow us on social media" [ref=e70]:
+        - link "Instagram" [ref=e71] [cursor=pointer]:
+          - /url: https://www.instagram.com/capellasalon/
+          - img [ref=e73]
+        - link "Facebook" [ref=e76] [cursor=pointer]:
+          - /url: https://www.facebook.com/CapellaSalonLA/
+          - img [ref=e78]
+        - link "twitter" [ref=e81] [cursor=pointer]:
+          - /url: https://www.twitter.com/capellasalon/
+          - img [ref=e83]
+        - link "YouTube" [ref=e85] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/CapellaSalon
+          - img [ref=e87]
+        - link "Pinterest" [ref=e92] [cursor=pointer]:
+          - /url: https://pinterest.com/shaiamiel/
+          - img [ref=e94]
+  - paragraph [ref=e100]:
+    - text: © 2026
+    - link "Capella Salon" [ref=e101] [cursor=pointer]:
+      - /url: /
+    - text: . All Rights Reserved. Site by
+    - link "Sixty Five Design" [ref=e102] [cursor=pointer]:
+      - /url: http://www.sixtyfivedesign.com

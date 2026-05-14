@@ -1,0 +1,16 @@
+- generic [ref=e14]:
+  - banner [ref=e16]:
+    - generic [ref=e21]:
+      - generic [ref=e22]: Powered by
+      - img "Slick logo" [ref=e23]
+    - generic [ref=e24]: Welcome to Hare & Bone
+  - generic [ref=e25]: "Choose a location to book:"
+  - generic [ref=e28]:
+    - link "HARE & BONE ESHER Arrow to salon location" [ref=e29] [cursor=pointer]:
+      - /url: https://tinyurl.com/27h5womo
+      - generic [ref=e31]: HARE & BONE ESHER
+      - img "Arrow to salon location" [ref=e33]
+    - link "HARE & BONE FITZROVIA Arrow to salon location" [active] [ref=e34] [cursor=pointer]:
+      - /url: https://tinyurl.com/28w6fy4y
+      - generic [ref=e36]: HARE & BONE FITZROVIA
+      - img "Arrow to salon location" [ref=e38]

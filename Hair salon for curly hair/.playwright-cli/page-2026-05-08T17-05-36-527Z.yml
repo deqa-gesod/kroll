@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e6]
+    - navigation [ref=e11]:
+      - link "Cuts & services" [ref=e12] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e13] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e14] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e15] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e16] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e17] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e18] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e19] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e20] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e21]:
+        - button "EN" [ref=e22]
+        - generic [ref=e23]: /
+        - button "NO" [ref=e24]
+  - main [ref=e25]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Booking
+        - heading "Two minutes from here to chair." [level=1] [ref=e31]
+      - generic [ref=e33]:
+        - paragraph [ref=e35]:
+          - text: Step 5
+          - generic [ref=e36]: /5
+        - generic [ref=e37]:
+          - 'button "Step 1: Service" [ref=e38] [cursor=pointer]'
+          - 'button "Step 2: Stylist" [ref=e39] [cursor=pointer]'
+          - 'button "Step 3: Date & time" [ref=e40] [cursor=pointer]'
+          - 'button "Step 4: About you" [ref=e41] [cursor=pointer]'
+          - 'button "Step 5: Confirm" [disabled] [ref=e42]'
+      - generic [ref=e43]:
+        - button "Back" [ref=e44]:
+          - generic [ref=e45]: ←
+          - text: Back
+        - paragraph [ref=e206]: The Jackson Cut · Vanessa · 2026-05-08 · 10:00
+      - generic [ref=e409]:
+        - generic [ref=e410]:
+          - paragraph [ref=e411]: 05 — Confirm
+          - heading "Last look." [level=2] [ref=e412]
+        - generic [ref=e413]:
+          - paragraph [ref=e414]: Your booking
+          - generic [ref=e415]:
+            - generic [ref=e416]:
+              - term [ref=e417]: Service
+              - definition [ref=e418]:
+                - text: The Jackson Cut
+                - generic [ref=e419]: 75 min — 750 NOK
+            - generic [ref=e420]:
+              - term [ref=e421]: Stylist
+              - definition [ref=e422]:
+                - text: Vanessa Jackson
+                - generic [ref=e423]: Type 2A — 4C, color
+            - generic [ref=e424]:
+              - term [ref=e425]: When
+              - definition [ref=e426]:
+                - generic [ref=e427]: Fri 8 May
+                - generic [ref=e428]: 10:00
+            - generic [ref=e429]:
+              - term [ref=e430]: About you
+              - definition [ref=e431]:
+                - list [ref=e432]:
+                  - listitem [ref=e433]: "Curl pattern: 4A"
+                  - listitem [ref=e434]: "Porosity: normal"
+                  - listitem [ref=e435]: "Nervous about: Last salon left me with one side shorter than the other and I cried in the car."
+        - generic [ref=e436]:
+          - paragraph [ref=e437]: Your details
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - generic [ref=e440]: Name
+              - textbox "Name" [ref=e441]
+            - generic [ref=e442]:
+              - generic [ref=e443]: Email
+              - textbox "Email" [ref=e444]
+          - generic [ref=e446]:
+            - generic [ref=e447]: Phone (Norwegian)
+            - textbox "Phone (Norwegian) We use this for the SMS reminder 24 hours before." [ref=e448]:
+              - /placeholder: +47 412 34 567
+            - generic [ref=e449]: We use this for the SMS reminder 24 hours before.
+          - generic [ref=e450]:
+            - paragraph [ref=e451]: By confirming you accept our cancellation terms — change or cancel up to 24h before, no charge.
+            - button "Confirm booking" [ref=e452]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - link "Jackson & Coil." [ref=e137] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e138]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - heading "Visit" [level=3] [ref=e141]
+          - paragraph [ref=e142]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e143]:
+          - heading "Hours" [level=3] [ref=e144]
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - generic [ref=e147]: Tuesday
+              - generic [ref=e148]: 10:00 — 19:00
+            - listitem [ref=e149]:
+              - generic [ref=e150]: Wednesday
+              - generic [ref=e151]: 10:00 — 19:00
+            - listitem [ref=e152]:
+              - generic [ref=e153]: Thursday
+              - generic [ref=e154]: 10:00 — 20:00
+            - listitem [ref=e155]:
+              - generic [ref=e156]: Friday
+              - generic [ref=e157]: 10:00 — 19:00
+            - listitem [ref=e158]:
+              - generic [ref=e159]: Saturday
+              - generic [ref=e160]: 10:00 — 17:00
+            - listitem [ref=e161]:
+              - generic [ref=e162]: Sunday & Monday
+              - generic [ref=e163]: Closed
+        - generic [ref=e164]:
+          - heading "Contact" [level=3] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "hei@jacksonandcoil.no" [ref=e168] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e169]: +47 22 00 00 00
+            - listitem [ref=e170]:
+              - link "@jacksonandcoil" [ref=e171] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e172]:
+          - heading "Pages" [level=3] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Cuts & services" [ref=e176] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e177]:
+              - link "The method" [ref=e178] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e179]:
+              - link "The team" [ref=e180] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e181]:
+              - link "Portfolio" [ref=e182] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e183]:
+              - link "Shop" [ref=e184] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e185]:
+              - link "Journal" [ref=e186] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e187]:
+              - link "Visit" [ref=e188] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e189]:
+              - link "About" [ref=e190] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e191]:
+              - link "Book" [ref=e192] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e193]:
+        - generic [ref=e194]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e195]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e201] [cursor=pointer]:
+    - img [ref=e202]
+  - alert [ref=e205]

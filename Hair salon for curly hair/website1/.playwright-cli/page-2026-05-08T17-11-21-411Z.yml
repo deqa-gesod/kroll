@@ -1,0 +1,388 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Jackson & Coil — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e6]:
+        - link "Cuts & services" [ref=e7] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e8] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e9] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e10] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e11] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e12] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e13] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "Switch to English" [pressed] [ref=e17]: EN
+          - generic [ref=e18]: /
+          - button "Bytt til norsk" [ref=e19]: "NO"
+        - link "Book" [ref=e20] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: Shop
+        - heading "Hard-to-find brands, finally in Oslo." [level=1] [ref=e27]
+        - paragraph [ref=e28]: "A curated edit, not a wall. Bread, Pattern, Adwoa, Bouclème, Mielle, plus the tools that ship from the UK in three weeks if you order them yourself: real silk durags, twist sponges, beard picks for coily beards."
+        - paragraph [ref=e29]: Modest markup. We want people to actually buy, not maximise margin per bottle.
+      - img "Curl products and tools on cream surface" [ref=e31]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Filter by curl type
+          - radiogroup "Filter by curl type" [ref=e37]:
+            - radio "All" [ref=e38]
+            - radio "2A" [ref=e39]
+            - radio "2B" [ref=e40]
+            - radio "2C" [ref=e41]
+            - radio "3A" [ref=e42]
+            - radio "3B" [ref=e43]
+            - radio "3C" [ref=e44]
+            - radio "4A" [checked] [active] [ref=e45]
+            - radio "4B" [ref=e46]
+            - radio "4C" [ref=e47]
+            - radio "Men's cuts" [ref=e48]
+            - radio "Color" [ref=e49]
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Filter by brand
+          - radiogroup "Filter by brand" [ref=e52]:
+            - radio "All brands" [checked] [ref=e53]
+            - radio "Bread Beauty Supply" [ref=e54]
+            - radio "Pattern Beauty" [ref=e55]
+            - radio "Adwoa Beauty" [ref=e56]
+            - radio "Innersense" [ref=e57]
+            - radio "Bouclème" [ref=e58]
+            - radio "Curlsmith" [ref=e59]
+            - radio "Cantu" [ref=e60]
+            - radio "Mielle Organics" [ref=e61]
+            - radio "Camille Rose" [ref=e62]
+            - radio "Shea Moisture" [ref=e63]
+            - radio "As I Am" [ref=e64]
+            - radio "Design Essentials" [ref=e65]
+            - radio "House (tools)" [ref=e66]
+        - paragraph [ref=e67]: 15 products
+      - generic [ref=e68]:
+        - article [ref=e85]:
+          - img "Leave-in conditioner" [ref=e87]
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: Bread Beauty Supply
+            - heading "Hair Mask" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Weekly slip-and-soak conditioner for stretched, dry curls.
+            - generic [ref=e92]:
+              - generic [ref=e93]: 3B
+              - generic [ref=e94]: 3C
+              - generic [ref=e95]: 4A
+              - generic [ref=e96]: 4B
+            - generic [ref=e97]:
+              - generic [ref=e98]: 380 kr
+              - button "Add to bag" [ref=e99]
+        - article [ref=e115]:
+          - generic [ref=e116]:
+            - img "Leave-in conditioner" [ref=e117]
+            - generic [ref=e118]: Rec. Vanessa
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: Pattern Beauty
+            - heading "Heavy Conditioner" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Slip-heavy conditioner for tight coils. Detangles in the shower.
+            - generic [ref=e123]:
+              - generic [ref=e124]: 4A
+              - generic [ref=e125]: 4B
+              - generic [ref=e126]: 4C
+            - generic [ref=e127]:
+              - generic [ref=e128]: 290 kr
+              - button "Add to bag" [ref=e129]
+        - article [ref=e130]:
+          - img "Leave-in conditioner" [ref=e132]
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: Pattern Beauty
+            - heading "Leave-in Conditioner" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Creamy leave-in. Layer under a styler for definition without crunch.
+            - generic [ref=e137]:
+              - generic [ref=e138]: 3C
+              - generic [ref=e139]: 4A
+              - generic [ref=e140]: 4B
+              - generic [ref=e141]: 4C
+            - generic [ref=e142]:
+              - generic [ref=e143]: 310 kr
+              - button "Add to bag" [ref=e144]
+        - article [ref=e145]:
+          - generic [ref=e146]:
+            - img "Leave-in conditioner" [ref=e147]
+            - generic [ref=e148]: Rec. Mira
+          - generic [ref=e149]:
+            - paragraph [ref=e150]: Adwoa Beauty
+            - heading "Baomint Deep Conditioner" [level=3] [ref=e151]
+            - paragraph [ref=e152]: Baobab and mint deep treatment. Cooling, slip-rich, weekly.
+            - generic [ref=e153]:
+              - generic [ref=e154]: 3B
+              - generic [ref=e155]: 3C
+              - generic [ref=e156]: 4A
+              - generic [ref=e157]: 4B
+              - generic [ref=e158]: 4C
+            - generic [ref=e159]:
+              - generic [ref=e160]: 410 kr
+              - button "Add to bag" [ref=e161]
+        - article [ref=e162]:
+          - img "Leave-in conditioner" [ref=e164]
+          - generic [ref=e165]:
+            - paragraph [ref=e166]: Adwoa Beauty
+            - heading "Baomint Styler" [level=3] [ref=e167]
+            - paragraph [ref=e168]: Curl-defining cream. Soft hold, no white cast on dark hair.
+            - generic [ref=e169]:
+              - generic [ref=e170]: 3B
+              - generic [ref=e171]: 3C
+              - generic [ref=e172]: 4A
+              - generic [ref=e173]: 4B
+            - generic [ref=e174]:
+              - generic [ref=e175]: 365 kr
+              - button "Add to bag" [ref=e176]
+        - article [ref=e221]:
+          - img "Leave-in conditioner" [ref=e223]
+          - generic [ref=e224]:
+            - paragraph [ref=e225]: Cantu
+            - heading "Leave-in Repair Cream" [level=3] [ref=e226]
+            - paragraph [ref=e227]: The drugstore staple. Shea butter base, layer-friendly, good price.
+            - generic [ref=e228]:
+              - generic [ref=e229]: 3B
+              - generic [ref=e230]: 3C
+              - generic [ref=e231]: 4A
+              - generic [ref=e232]: 4B
+              - generic [ref=e233]: 4C
+            - generic [ref=e234]:
+              - generic [ref=e235]: 95 kr
+              - button "Add to bag" [ref=e236]
+        - article [ref=e237]:
+          - generic [ref=e238]:
+            - img "Leave-in conditioner" [ref=e239]
+            - generic [ref=e240]: Rec. Vanessa
+          - generic [ref=e241]:
+            - paragraph [ref=e242]: Mielle Organics
+            - heading "Rosemary Mint Scalp & Hair Strengthening Oil" [level=3] [ref=e243]
+            - paragraph [ref=e244]: Castor base, rosemary and mint. Massage into the scalp twice a week.
+            - generic [ref=e245]:
+              - generic [ref=e246]: 3A
+              - generic [ref=e247]: 3B
+              - generic [ref=e248]: 3C
+              - generic [ref=e249]: 4A
+              - generic [ref=e250]: 4B
+              - generic [ref=e251]: 4C
+            - generic [ref=e252]:
+              - generic [ref=e253]: 220 kr
+              - button "Add to bag" [ref=e254]
+        - article [ref=e255]:
+          - img "Leave-in conditioner" [ref=e257]
+          - generic [ref=e258]:
+            - paragraph [ref=e259]: Camille Rose
+            - heading "Honey Hydrate Leave-in" [level=3] [ref=e260]
+            - paragraph [ref=e261]: Honey, mango, rice. Sweet on the nose, slip-rich for thick textures.
+            - generic [ref=e262]:
+              - generic [ref=e263]: 3C
+              - generic [ref=e264]: 4A
+              - generic [ref=e265]: 4B
+            - generic [ref=e266]:
+              - generic [ref=e267]: 275 kr
+              - button "Add to bag" [ref=e268]
+        - article [ref=e269]:
+          - generic [ref=e270]:
+            - img "Leave-in conditioner" [ref=e271]
+            - generic [ref=e272]: Rec. Adé
+          - generic [ref=e273]:
+            - paragraph [ref=e274]: Shea Moisture
+            - heading "Beard Wash & Conditioner" [level=3] [ref=e275]
+            - paragraph [ref=e276]: Two-in-one for coily beards. Maracuja oil, shea butter.
+            - generic [ref=e277]:
+              - generic [ref=e278]: 4A
+              - generic [ref=e279]: 4B
+              - generic [ref=e280]: 4C
+              - generic [ref=e281]: Men's
+            - generic [ref=e282]:
+              - generic [ref=e283]: 195 kr
+              - button "Add to bag" [ref=e284]
+        - article [ref=e285]:
+          - generic [ref=e286]:
+            - img "Twist / curl sponge" [ref=e287]
+            - generic [ref=e288]: Rec. Adé
+          - generic [ref=e289]:
+            - paragraph [ref=e290]: House
+            - heading "Twist Sponge" [level=3] [ref=e291]
+            - paragraph [ref=e292]: Double-sided sponge for defining short coils. Daniel's specific ask.
+            - generic [ref=e293]:
+              - generic [ref=e294]: 4A
+              - generic [ref=e295]: 4B
+              - generic [ref=e296]: 4C
+              - generic [ref=e297]: Men's
+            - generic [ref=e298]:
+              - generic [ref=e299]: 180 kr
+              - button "Add to bag" [ref=e300]
+        - article [ref=e301]:
+          - img "Silk durag" [ref=e303]
+          - generic [ref=e304]:
+            - paragraph [ref=e305]: House
+            - heading "Silk Durag — Deep Teal" [level=3] [ref=e306]
+            - paragraph [ref=e307]: Real mulberry silk, not polyester. Long tails, double-stitched seams.
+            - generic [ref=e308]:
+              - generic [ref=e309]: 3C
+              - generic [ref=e310]: 4A
+              - generic [ref=e311]: 4B
+              - generic [ref=e312]: 4C
+              - generic [ref=e313]: Men's
+            - generic [ref=e314]:
+              - generic [ref=e315]: 240 kr
+              - button "Add to bag" [ref=e316]
+        - article [ref=e317]:
+          - img "Twist / curl sponge" [ref=e319]
+          - generic [ref=e320]:
+            - paragraph [ref=e321]: House
+            - heading "Microfiber Curl Tee" [level=3] [ref=e322]
+            - paragraph [ref=e323]: For plopping. Absorbs without roughing up the cuticle.
+            - generic [ref=e324]:
+              - generic [ref=e325]: 2C
+              - generic [ref=e326]: 3A
+              - generic [ref=e327]: 3B
+              - generic [ref=e328]: 3C
+              - generic [ref=e329]: 4A
+              - generic [ref=e330]: 4B
+            - generic [ref=e331]:
+              - generic [ref=e332]: 295 kr
+              - button "Add to bag" [ref=e333]
+        - article [ref=e334]:
+          - img "Twist / curl sponge" [ref=e336]
+          - generic [ref=e337]:
+            - paragraph [ref=e338]: House
+            - heading "Universal Diffuser" [level=3] [ref=e339]
+            - paragraph [ref=e340]: Fits standard hairdryers. Long fingers for root volume on tighter coils.
+            - generic [ref=e341]:
+              - generic [ref=e342]: 3A
+              - generic [ref=e343]: 3B
+              - generic [ref=e344]: 3C
+              - generic [ref=e345]: 4A
+            - generic [ref=e346]:
+              - generic [ref=e347]: 380 kr
+              - button "Add to bag" [ref=e348]
+        - article [ref=e365]:
+          - img "Twist / curl sponge" [ref=e367]
+          - generic [ref=e368]:
+            - paragraph [ref=e369]: House
+            - heading "Wide-tooth Comb" [level=3] [ref=e370]
+            - paragraph [ref=e371]: Seamless cellulose acetate, no snag points. Detangle with conditioner.
+            - generic [ref=e372]:
+              - generic [ref=e373]: 2A
+              - generic [ref=e374]: 2B
+              - generic [ref=e375]: 2C
+              - generic [ref=e376]: 3A
+              - generic [ref=e377]: 3B
+              - generic [ref=e378]: 3C
+              - generic [ref=e379]: 4A
+              - generic [ref=e380]: 4B
+              - generic [ref=e381]: 4C
+            - generic [ref=e382]:
+              - generic [ref=e383]: 95 kr
+              - button "Add to bag" [ref=e384]
+        - article [ref=e385]:
+          - generic [ref=e386]:
+            - img "Twist / curl sponge" [ref=e387]
+            - generic [ref=e388]: Rec. Adé
+          - generic [ref=e389]:
+            - paragraph [ref=e390]: House
+            - heading "Beard Pick + Beard Oil Set" [level=3] [ref=e391]
+            - paragraph [ref=e392]: Solid wood pick and 30ml jojoba-argan beard oil. For coily beards.
+            - generic [ref=e393]:
+              - generic [ref=e394]: 4A
+              - generic [ref=e395]: 4B
+              - generic [ref=e396]: 4C
+              - generic [ref=e397]: Men's
+            - generic [ref=e398]:
+              - generic [ref=e399]: 290 kr
+              - button "Add to bag" [ref=e400]
+  - contentinfo [ref=e401]:
+    - generic [ref=e402]:
+      - generic [ref=e403]:
+        - link "Jackson & Coil." [ref=e404] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e405]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e406]:
+        - generic [ref=e407]:
+          - heading "Visit" [level=3] [ref=e408]
+          - paragraph [ref=e409]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e410]:
+          - heading "Hours" [level=3] [ref=e411]
+          - list [ref=e412]:
+            - listitem [ref=e413]:
+              - generic [ref=e414]: Tuesday
+              - generic [ref=e415]: 10:00 — 19:00
+            - listitem [ref=e416]:
+              - generic [ref=e417]: Wednesday
+              - generic [ref=e418]: 10:00 — 19:00
+            - listitem [ref=e419]:
+              - generic [ref=e420]: Thursday
+              - generic [ref=e421]: 10:00 — 20:00
+            - listitem [ref=e422]:
+              - generic [ref=e423]: Friday
+              - generic [ref=e424]: 10:00 — 19:00
+            - listitem [ref=e425]:
+              - generic [ref=e426]: Saturday
+              - generic [ref=e427]: 10:00 — 17:00
+            - listitem [ref=e428]:
+              - generic [ref=e429]: Sunday & Monday
+              - generic [ref=e430]: Closed
+        - generic [ref=e431]:
+          - heading "Contact" [level=3] [ref=e432]
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - link "hei@jacksonandcoil.no" [ref=e435] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e436]: +47 22 00 00 00
+            - listitem [ref=e437]:
+              - link "@jacksonandcoil" [ref=e438] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e439]:
+          - heading "Pages" [level=3] [ref=e440]
+          - list [ref=e441]:
+            - listitem [ref=e442]:
+              - link "Cuts & services" [ref=e443] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e444]:
+              - link "The method" [ref=e445] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e446]:
+              - link "The team" [ref=e447] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e448]:
+              - link "Portfolio" [ref=e449] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e450]:
+              - link "Shop" [ref=e451] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e452]:
+              - link "Journal" [ref=e453] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e454]:
+              - link "Visit" [ref=e455] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e456]:
+              - link "About" [ref=e457] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e458]:
+              - link "Book" [ref=e459] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e460]:
+        - generic [ref=e461]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e462]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e468] [cursor=pointer]:
+    - img [ref=e469]
+  - alert [ref=e472]

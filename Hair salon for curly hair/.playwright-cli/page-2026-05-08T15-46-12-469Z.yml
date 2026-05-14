@@ -1,0 +1,352 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e3]:
+      - link "12930 Ventura Blvd, Suite 216 | Studio City, CA" [ref=e5] [cursor=pointer]:
+        - /url: https://goo.gl/maps/4j87ZgzYCmgXUhzu8
+    - generic [ref=e6]:
+      - link "Visit the Capella Salonhome page":
+        - /url: /
+        - img [ref=e7] [cursor=pointer]
+      - navigation [ref=e21]:
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /about
+        - link "Services & Hours" [ref=e23] [cursor=pointer]:
+          - /url: /salon-services
+        - link "Curl Prep Instructions" [ref=e24] [cursor=pointer]:
+          - /url: /curl-prep-instructions
+        - link "Press & Media" [ref=e25] [cursor=pointer]:
+          - /url: /press-media
+        - link "The Curl Doctor" [ref=e26] [cursor=pointer]:
+          - /url: http://www.shaiamiel.com
+        - link "Policies" [ref=e27] [cursor=pointer]:
+          - /url: /policies
+        - link "Contact" [ref=e28] [cursor=pointer]:
+          - /url: /appointments
+      - link "Menu" [ref=e29] [cursor=pointer]:
+        - /url: "#menu"
+        - generic [ref=e30]: Menu
+      - link "818-784-4247" [ref=e31] [cursor=pointer]:
+        - /url: tel:818-784-4247
+  - main [ref=e32]:
+    - heading "Press and Media" [level=1] [ref=e36]
+    - generic [ref=e38]:
+      - heading "Since its creation in 1995, Capella Salon has been featured in numerous press and media outlets." [level=1] [ref=e40]
+      - generic [ref=e41]: Capella Salon and Shai Amiel has been featured in numerous digital and print publications. From InStyle Magazine, Essence, People Magazine, and Teen Vogue to Naturally Curly, Snapchat features with VOGUE and more, select a link below to read a press / media article!
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: "Select a press or media to enlarge:"
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - link [ref=e48] [cursor=pointer]:
+            - /url: documents/StyleMagazine2016-CapellaSalon.pdf
+            - img [ref=e49]
+          - paragraph [ref=e50]: October 2016
+        - generic [ref=e51]:
+          - link [ref=e53] [cursor=pointer]:
+            - /url: http://www.oprah.com/omagazine/hair-mistakes-that-make-you-look-older-aging-hair-styles/all
+            - img [ref=e54]
+          - paragraph [ref=e55]: January 2018
+        - generic [ref=e56]:
+          - link [ref=e58] [cursor=pointer]:
+            - /url: documents/oprah-shai-amiel.pdf
+            - img [ref=e59]
+          - paragraph [ref=e60]: January 2018
+        - generic [ref=e61]:
+          - link [ref=e63] [cursor=pointer]:
+            - /url: https://www.usmagazine.com/stylish/news/tamera-mowry-housley-hair-curly-cut-picture-2014141/
+            - img [ref=e64]
+          - paragraph [ref=e65]: January 2014
+        - generic [ref=e66]:
+          - link [ref=e68] [cursor=pointer]:
+            - /url: http://people.com/style/tamera-mowry-housley-cuts-her-hair-rocks-her-curls/
+            - img [ref=e69]
+          - paragraph [ref=e70]: January 2014
+        - generic [ref=e71]:
+          - link [ref=e73] [cursor=pointer]:
+            - /url: documents/cosmo.pdf
+            - img [ref=e74]
+          - paragraph [ref=e75]: May 2013
+        - generic [ref=e76]:
+          - link [ref=e78] [cursor=pointer]:
+            - /url: https://www.essence.com/galleries/tameras-new-curly-cut/
+            - img [ref=e79]
+          - paragraph [ref=e80]: January 2014
+        - generic [ref=e81]:
+          - link [ref=e83] [cursor=pointer]:
+            - /url: documents/essence-magazine-may-2014.pdf
+            - img [ref=e84]
+          - paragraph [ref=e85]: May 2014
+        - generic [ref=e86]:
+          - link [ref=e88] [cursor=pointer]:
+            - /url: https://www.teenvogue.com/gallery/perfect-curly-haircut?slide=1
+            - img [ref=e89]
+          - paragraph [ref=e90]: April 2015
+        - generic [ref=e91]:
+          - link [ref=e93] [cursor=pointer]:
+            - /url: http://people.com/style/tia-and-tamera-mowry-both-have-changed-up-their-hairstyles/
+            - img [ref=e94]
+          - paragraph [ref=e95]: November 2014
+        - generic [ref=e96]:
+          - link [ref=e98] [cursor=pointer]:
+            - /url: http://thereal.com/videos/0_fgtui449
+            - img [ref=e99]
+          - paragraph [ref=e100]: November 2015
+        - generic [ref=e101]:
+          - link [ref=e103] [cursor=pointer]:
+            - /url: http://www.refinery29.com/curly-essence/11
+            - img [ref=e104]
+          - paragraph [ref=e105]: June 2014
+        - generic [ref=e106]:
+          - link [ref=e108] [cursor=pointer]:
+            - /url: http://www.refinery29.com/los-angeles-hairstyle-trends#slide-1
+            - img [ref=e109]
+          - paragraph [ref=e110]: January 2017
+        - generic [ref=e111]:
+          - link [ref=e113] [cursor=pointer]:
+            - /url: http://www.totalbeauty.com/content/slideshows/best-hair-salons-los-angeles-170215/page8
+            - img [ref=e114]
+          - paragraph [ref=e115]: September 2017
+        - generic [ref=e116]:
+          - link [ref=e118] [cursor=pointer]:
+            - /url: http://www.refinery29.com/2016/09/121786/fall-hairstyles-la-salons-trends#slide-8
+            - img [ref=e119]
+          - paragraph [ref=e120]: September 2016
+        - generic [ref=e121]:
+          - link [ref=e123] [cursor=pointer]:
+            - /url: https://www.naturallycurly.com/curlreading/curl-salons/18-best-haircuts-for-curly-hair-bi
+            - img [ref=e124]
+          - paragraph [ref=e125]: August 2016
+        - generic [ref=e126]:
+          - link [ref=e128] [cursor=pointer]:
+            - /url: http://www.refinery29.uk/2016/06/115400/summer-haircuts#slide-5
+            - img [ref=e129]
+          - paragraph [ref=e130]: July 2016
+        - generic [ref=e131]:
+          - link [ref=e133] [cursor=pointer]:
+            - /url: http://www.refinery29.com/los-angeles-hair-salon-guide#slide-11
+            - img [ref=e134]
+          - paragraph [ref=e135]: July 2016
+        - generic [ref=e136]:
+          - link [ref=e138] [cursor=pointer]:
+            - /url: http://www.refinery29.com/best-natural-hair-salons-america#slide-14
+            - img [ref=e139]
+          - paragraph [ref=e140]: July 2016
+        - generic [ref=e141]:
+          - link [ref=e143] [cursor=pointer]:
+            - /url: http://www.refinery29.com/los-angeles-hairstyle-trends#slide-1
+            - img [ref=e144]
+          - paragraph [ref=e145]: February 2018
+        - generic [ref=e146]:
+          - link [ref=e148] [cursor=pointer]:
+            - /url: http://www.refinery29.com/2016/09/123099/la-fall-hair-color-trends-photos#slide-3
+            - img [ref=e149]
+          - paragraph [ref=e150]: October 2015
+        - generic [ref=e151]:
+          - link [ref=e153] [cursor=pointer]:
+            - /url: https://la.racked.com/maps/natural-hair-salons
+            - img [ref=e154]
+          - paragraph [ref=e155]: September 2015
+        - generic [ref=e156]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: http://losangeles.cbslocal.com/top-lists/best-hair-salons-in-los-angeles/
+            - img [ref=e159]
+          - paragraph [ref=e160]: August 2014
+        - generic [ref=e161]:
+          - link [ref=e163] [cursor=pointer]:
+            - /url: https://www.naturallycurly.com/curlreading/home/shai-amiel-curlboss-tag
+            - img [ref=e164]
+          - paragraph [ref=e165]: April 2015
+        - generic [ref=e166]:
+          - link [ref=e168] [cursor=pointer]:
+            - /url: http://coveteur.com/2015/05/06/style-natural-hair/
+            - img [ref=e169]
+          - paragraph [ref=e170]: April 2015
+        - generic [ref=e171]:
+          - link [ref=e173] [cursor=pointer]:
+            - /url: https://www.seventeen.com/beauty/celeb-beauty/news/a30089/zendaya-shows-off-her-gorgeous-natural-hair/?src=TrueAnth_SEVENTEEN_TW&utm_campaign=trueanthem&utm_content=552e937b04d3015449000001&utm_medium=trueanthem&utm_source=twitter
+            - img [ref=e174]
+          - paragraph [ref=e175]: April 2015
+        - generic [ref=e176]:
+          - link [ref=e178] [cursor=pointer]:
+            - /url: documents/curls-night-out.pdf
+            - img [ref=e179]
+          - paragraph [ref=e180]: December 2010
+        - generic [ref=e181]:
+          - link [ref=e183] [cursor=pointer]:
+            - /url: https://www.naturallycurly.com/curlreading/kinky-hair-type-4a/tamera-mowry-housley-big-chopped-her-stylist-shares-a-word-of-big-chop-advice
+            - img [ref=e184]
+          - paragraph [ref=e185]: January 2014
+        - generic [ref=e186]:
+          - link [ref=e188] [cursor=pointer]:
+            - /url: http://www.curlynikki.com/2014/01/tamera-mowry-housley-big-chopped-her.html
+            - img [ref=e189]
+          - paragraph [ref=e190]: January 2013
+        - generic [ref=e191]:
+          - link [ref=e193] [cursor=pointer]:
+            - /url: documents/capella-salon-patch-magazine.pdf
+            - img [ref=e194]
+          - paragraph [ref=e195]: March 2011
+        - generic [ref=e196]:
+          - link [ref=e198] [cursor=pointer]:
+            - /url: https://www.modernsalon.com/article/9465/how-to-beautiful-natural-looking-ombre
+            - img [ref=e199]
+          - paragraph [ref=e200]: December 2012
+        - generic [ref=e201]:
+          - link [ref=e203] [cursor=pointer]:
+            - /url: documents/monsters-critics-feb-2010.pdf
+            - img [ref=e204]
+          - paragraph [ref=e205]: January 2014
+        - generic [ref=e206]:
+          - link [ref=e208] [cursor=pointer]:
+            - /url: documents/readers-choice.pdf
+            - img [ref=e209]
+          - paragraph [ref=e210]: "2013"
+        - generic [ref=e211]:
+          - link [ref=e213] [cursor=pointer]:
+            - /url: https://la.racked.com/2008/8/6/7839291/rackage-capella-salon-on-ventu
+            - img [ref=e214]
+          - paragraph [ref=e215]: August 2008
+        - generic [ref=e216]:
+          - link [ref=e218] [cursor=pointer]:
+            - /url: https://www.snapchat.com/discover/Vogue/7977279213
+            - img [ref=e219]
+          - paragraph [ref=e220]: June 2017
+        - generic [ref=e221]:
+          - link [ref=e223] [cursor=pointer]:
+            - /url: documents/starting-over.pdf
+            - img [ref=e224]
+          - paragraph [ref=e225]: "2013"
+        - generic [ref=e226]:
+          - link [ref=e228] [cursor=pointer]:
+            - /url: documents/in-touch-magazine.pdf
+            - img [ref=e229]
+          - paragraph [ref=e230]: March 2005
+        - generic [ref=e231]:
+          - link [ref=e233] [cursor=pointer]:
+            - /url: https://www.imdb.com/title/tt0993188/
+            - img [ref=e234]
+          - paragraph [ref=e235]: "2006"
+        - generic [ref=e236]:
+          - link [ref=e238] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=NSDynwIG5s4&feature=youtu.be11
+            - img [ref=e239]
+          - paragraph [ref=e240]: "2006"
+        - generic [ref=e241]:
+          - link [ref=e243] [cursor=pointer]:
+            - /url: documents/studio-city-lifestyle.pdf
+            - img [ref=e244]
+          - paragraph [ref=e245]: December 2013
+        - generic [ref=e246]:
+          - link [ref=e248] [cursor=pointer]:
+            - /url: documents/curl-stylist.pdf
+            - img [ref=e249]
+          - paragraph [ref=e250]: December 2013
+        - generic [ref=e251]:
+          - link [ref=e253] [cursor=pointer]:
+            - /url: documents/studio-city-patch-1.pdf
+            - img [ref=e254]
+          - paragraph [ref=e255]: December 2010
+        - generic [ref=e256]:
+          - link [ref=e258] [cursor=pointer]:
+            - /url: documents/pocketlintarticle.pdf
+            - img [ref=e259]
+          - paragraph [ref=e260]: December 2010
+        - generic [ref=e261]:
+          - link [ref=e263] [cursor=pointer]:
+            - /url: documents/valley-magazine.pdf
+            - img [ref=e264]
+          - paragraph [ref=e265]: "2009"
+        - generic [ref=e266]:
+          - link [ref=e268] [cursor=pointer]:
+            - /url: https://la.racked.com/2008/8/6/7839291/rackage-capella-salon-on-ventu
+            - img [ref=e269]
+          - paragraph [ref=e270]: August 2008
+        - generic [ref=e271]:
+          - link [ref=e273] [cursor=pointer]:
+            - /url: documents/naturallycurly-2007.pdf
+            - img [ref=e274]
+          - paragraph [ref=e275]: August 2008
+        - generic [ref=e276]:
+          - link [ref=e278] [cursor=pointer]:
+            - /url: documents/latimesplq.pdf
+            - img [ref=e279]
+          - paragraph [ref=e280]: September 2007
+        - generic [ref=e281]:
+          - link [ref=e283] [cursor=pointer]:
+            - /url: documents/health-magazine.pdf
+            - img [ref=e284]
+          - paragraph [ref=e285]: July / August 2007
+        - generic [ref=e286]:
+          - link [ref=e288] [cursor=pointer]:
+            - /url: documents/annanicole.pdf
+            - img [ref=e289]
+          - paragraph [ref=e290]: August 2008
+    - generic [ref=e293]:
+      - heading "Make An Appointment!" [level=3] [ref=e294]
+      - paragraph [ref=e295]: Schedule an appointment with Capella Salon today with our hair stylists or skin care experts!
+      - link "Call (818) 784-4247" [ref=e296] [cursor=pointer]:
+        - /url: /pages/consultation
+  - generic [ref=e297]:
+    - generic [ref=e298]:
+      - heading "Menu" [level=4] [ref=e299]
+      - list [ref=e300]:
+        - listitem [ref=e301]:
+          - link "About" [ref=e302] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e303]:
+          - link "Services" [ref=e304] [cursor=pointer]:
+            - /url: /salon-services
+        - listitem [ref=e305]:
+          - link "Curl Prep Instructions" [ref=e306] [cursor=pointer]:
+            - /url: /curl-prep-instructions
+      - paragraph
+    - generic [ref=e307]:
+      - heading [level=4]
+      - list [ref=e308]:
+        - listitem [ref=e309]:
+          - link "Press & Media" [ref=e310] [cursor=pointer]:
+            - /url: /press-media
+        - listitem [ref=e311]:
+          - link "The Curl Doctor" [ref=e312] [cursor=pointer]:
+            - /url: http://shaiamiel.com/
+        - listitem [ref=e313]:
+          - link "Policies" [ref=e314] [cursor=pointer]:
+            - /url: /policies
+        - listitem [ref=e315]:
+          - link "Contact" [ref=e316] [cursor=pointer]:
+            - /url: /appointments
+      - paragraph
+    - generic [ref=e317]:
+      - heading "Information" [level=4] [ref=e318]
+      - list [ref=e319]:
+        - listitem [ref=e320]:
+          - link "Privacy Policy" [ref=e321] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=e322]:
+          - link "Terms of Use" [ref=e323] [cursor=pointer]:
+            - /url: /terms-of-use
+      - paragraph
+    - generic [ref=e324]:
+      - heading "Social" [level=4] [ref=e325]
+      - generic "Follow us on social media" [ref=e326]:
+        - link "Instagram" [ref=e327] [cursor=pointer]:
+          - /url: https://www.instagram.com/capellasalon/
+          - img [ref=e329]
+        - link "Facebook" [ref=e332] [cursor=pointer]:
+          - /url: https://www.facebook.com/CapellaSalonLA/
+          - img [ref=e334]
+        - link "twitter" [ref=e337] [cursor=pointer]:
+          - /url: https://www.twitter.com/capellasalon/
+          - img [ref=e339]
+        - link "YouTube" [ref=e341] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/CapellaSalon
+          - img [ref=e343]
+        - link "Pinterest" [ref=e348] [cursor=pointer]:
+          - /url: https://pinterest.com/shaiamiel/
+          - img [ref=e350]
+  - paragraph [ref=e356]:
+    - text: © 2026
+    - link "Capella Salon" [ref=e357] [cursor=pointer]:
+      - /url: /
+    - text: . All Rights Reserved. Site by
+    - link "Sixty Five Design" [ref=e358] [cursor=pointer]:
+      - /url: http://www.sixtyfivedesign.com

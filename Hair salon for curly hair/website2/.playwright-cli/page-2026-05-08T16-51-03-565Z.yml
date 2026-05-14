@@ -1,0 +1,183 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Hopp til innhold" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: J&C
+          - generic [ref=e8]: Jackson & Coil
+        - button "Åpne meny" [ref=e9]:
+          - img [ref=e10]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - paragraph [ref=e14]: Booking
+        - heading "Book på mobilen på to minutter." [level=1] [ref=e15]
+        - paragraph [ref=e16]: Mock-ledighet, ekte interaksjonsmodell. Ingen tredjeparts-widget. Krølltype-intak er med og kan hoppes over.
+      - generic [ref=e19]:
+        - complementary [ref=e20]:
+          - paragraph [ref=e21]: Tilbake
+          - heading "Daniel, book samme klipp igjen" [level=2] [ref=e22]
+          - paragraph [ref=e23]: Sculpt Cut med Vanessa. Siste besøk 14. mars. Neste ledige tirsdag 18:30.
+          - button "Book samme klipp igjen" [ref=e24]:
+            - text: Book samme klipp igjen
+            - img [ref=e25]
+          - generic [ref=e27]:
+            - paragraph [ref=e28]: Oppsummering
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - term [ref=e31]: Tjeneste
+                - definition [ref=e32]: Første besøk
+              - generic [ref=e33]:
+                - term [ref=e34]: Stylist
+                - definition [ref=e35]: Ingen preferanse
+              - generic [ref=e36]:
+                - term [ref=e37]: Tid
+                - definition [ref=e38]: Tir 18:30
+        - generic [ref=e39]:
+          - list "Booking steps" [ref=e40]:
+            - listitem [ref=e41]:
+              - button "01 Tjeneste" [ref=e42]:
+                - generic [ref=e43]: "01"
+                - text: Tjeneste
+            - listitem [ref=e44]:
+              - button "02 Stylist" [ref=e45]:
+                - generic [ref=e46]: "02"
+                - text: Stylist
+            - listitem [ref=e47]:
+              - button "03 Tid" [ref=e48]:
+                - generic [ref=e49]: "03"
+                - text: Tid
+            - listitem [ref=e50]:
+              - button "04 Krøll-intak" [ref=e51]:
+                - generic [ref=e52]: "04"
+                - text: Krøll-intak
+            - listitem [ref=e53]:
+              - button "05 Bekreft" [ref=e54]:
+                - generic [ref=e55]: "05"
+                - text: Bekreft
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - heading "Velg tjeneste" [level=2] [ref=e62]
+            - generic [ref=e63]:
+              - button "Første besøk Konsultasjon + Jackson Cut + finish + førstegangs-rabatt på retail. Kjerne 90 min 750 NOK" [ref=e64]:
+                - generic [ref=e65]:
+                  - generic [ref=e66]:
+                    - heading "Første besøk" [level=3] [ref=e67]
+                    - paragraph [ref=e68]: Konsultasjon + Jackson Cut + finish + førstegangs-rabatt på retail.
+                  - generic [ref=e69]: Kjerne
+                - generic [ref=e70]:
+                  - generic [ref=e71]: 90 min
+                  - generic [ref=e72]: /
+                  - generic [ref=e73]: 750 NOK
+              - button "The Jackson Cut Tørr, krøll-for-krøll-klipp for Type 2-4 hår. Kjerne 75 min 750 NOK" [ref=e74]:
+                - generic [ref=e75]:
+                  - generic [ref=e76]:
+                    - heading "The Jackson Cut" [level=3] [ref=e77]
+                    - paragraph [ref=e78]: Tørr, krøll-for-krøll-klipp for Type 2-4 hår.
+                  - generic [ref=e79]: Kjerne
+                - generic [ref=e80]:
+                  - generic [ref=e81]: 75 min
+                  - generic [ref=e82]: /
+                  - generic [ref=e83]: 750 NOK
+              - button "The Sculpt Cut Fade, lineup og tørr coil-forming i samme stol. Kjerne 60 min 850 NOK" [ref=e84]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - heading "The Sculpt Cut" [level=3] [ref=e87]
+                    - paragraph [ref=e88]: Fade, lineup og tørr coil-forming i samme stol.
+                  - generic [ref=e89]: Kjerne
+                - generic [ref=e90]:
+                  - generic [ref=e91]: 60 min
+                  - generic [ref=e92]: /
+                  - generic [ref=e93]: 850 NOK
+              - button "Sculpt Cut + Beard Taper, coil definition, skjeggform og edge. 75 min 950 NOK" [ref=e94]:
+                - generic [ref=e96]:
+                  - heading "Sculpt Cut + Beard" [level=3] [ref=e97]
+                  - paragraph [ref=e98]: Taper, coil definition, skjeggform og edge.
+                - generic [ref=e99]:
+                  - generic [ref=e100]: 75 min
+                  - generic [ref=e101]: /
+                  - generic [ref=e102]: 950 NOK
+              - button "Farge, curl-safe Konsultasjon kreves før kjemisk behandling. 120+ min 1,200-2,200 NOK" [ref=e103]:
+                - generic [ref=e105]:
+                  - heading "Farge, curl-safe" [level=3] [ref=e106]
+                  - paragraph [ref=e107]: Konsultasjon kreves før kjemisk behandling.
+                - generic [ref=e108]:
+                  - generic [ref=e109]: 120+ min
+                  - generic [ref=e110]: /
+                  - generic [ref=e111]: 1,200-2,200 NOK
+              - button "Deep Treatment Olaplex, protein eller fuktreset som tillegg. 30 min 350 NOK" [ref=e112]:
+                - generic [ref=e114]:
+                  - heading "Deep Treatment" [level=3] [ref=e115]
+                  - paragraph [ref=e116]: Olaplex, protein eller fuktreset som tillegg.
+                - generic [ref=e117]:
+                  - generic [ref=e118]: 30 min
+                  - generic [ref=e119]: /
+                  - generic [ref=e120]: 350 NOK
+              - button "Gratis 15 min konsultasjon Tørr vurdering, ingen forpliktelse, ikke press. 15 min 0 NOK" [ref=e121]:
+                - generic [ref=e123]:
+                  - heading "Gratis 15 min konsultasjon" [level=3] [ref=e124]
+                  - paragraph [ref=e125]: Tørr vurdering, ingen forpliktelse, ikke press.
+                - generic [ref=e126]:
+                  - generic [ref=e127]: 15 min
+                  - generic [ref=e128]: /
+                  - generic [ref=e129]: 0 NOK
+              - button "Barneklipp Under 12, tørr form og rolig finish. 30 min 350 NOK" [ref=e130]:
+                - generic [ref=e132]:
+                  - heading "Barneklipp" [level=3] [ref=e133]
+                  - paragraph [ref=e134]: Under 12, tørr form og rolig finish.
+                - generic [ref=e135]:
+                  - generic [ref=e136]: 30 min
+                  - generic [ref=e137]: /
+                  - generic [ref=e138]: 350 NOK
+          - generic [ref=e139]:
+            - button "Tilbake" [disabled] [ref=e140]
+            - button "Neste" [ref=e142]:
+              - text: Neste
+              - img [ref=e143]
+    - contentinfo [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - paragraph [ref=e148]: Grünerløkka, Oslo
+          - heading "Tørr konsultasjon først. Så klippen." [level=2] [ref=e149]
+          - paragraph [ref=e150]: En krøllspesialist for hele spekteret, med prisene på siden og booking som blir inne i merkevaren.
+          - generic [ref=e151]:
+            - link "Book time" [ref=e152] [cursor=pointer]:
+              - /url: /booking
+            - link "Besøk salongen" [ref=e153] [cursor=pointer]:
+              - /url: /visit
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - heading "Naviger" [level=3] [ref=e156]
+            - generic [ref=e157]:
+              - link "Klipp" [ref=e158] [cursor=pointer]:
+                - /url: /cuts-and-services
+              - link "Team" [ref=e159] [cursor=pointer]:
+                - /url: /the-team
+              - link "Portfolio" [ref=e160] [cursor=pointer]:
+                - /url: /portfolio
+              - link "Metoden" [ref=e161] [cursor=pointer]:
+                - /url: /the-method
+              - link "Butikk" [ref=e162] [cursor=pointer]:
+                - /url: /shop
+              - link "Journal" [ref=e163] [cursor=pointer]:
+                - /url: /journal
+              - link "Besøk" [ref=e164] [cursor=pointer]:
+                - /url: /visit
+          - generic [ref=e165]:
+            - heading "Detaljer" [level=3] [ref=e166]
+            - generic [ref=e167]:
+              - paragraph [ref=e168]:
+                - text: Markveien 58
+                - text: Grünerløkka, Oslo
+              - paragraph [ref=e169]:
+                - text: Tue-Fri 10-20
+                - text: Sat 10-17
+              - link "+47 22 55 01 44" [ref=e170] [cursor=pointer]:
+                - /url: tel:+4722550144
+              - link "Instagram only" [ref=e171] [cursor=pointer]:
+                - /url: https://instagram.com
+      - generic [ref=e172]: © 2026 Jackson & Coil. Prototype website2.
+  - alert [ref=e173]

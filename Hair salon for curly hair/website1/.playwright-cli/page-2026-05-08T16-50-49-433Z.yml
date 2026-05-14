@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e6]
+    - navigation [ref=e11]:
+      - link "Cuts & services" [ref=e12] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e13] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e14] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e15] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e16] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e17] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e18] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e19] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e20] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e21]:
+        - button "EN" [ref=e22]
+        - generic [ref=e23]: /
+        - button "NO" [ref=e24]
+  - main [ref=e25]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Booking
+        - heading "Two minutes from here to chair." [level=1] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e33]: Resuming where you left off.
+        - button "Start over" [ref=e34]
+      - generic [ref=e36]:
+        - paragraph [ref=e38]:
+          - text: Step 2
+          - generic [ref=e39]: /5
+        - generic [ref=e40]:
+          - 'button "Step 1: Service" [ref=e41] [cursor=pointer]'
+          - 'button "Step 2: Stylist" [disabled] [ref=e42]'
+          - 'button "Step 3: Date & time" [disabled] [ref=e43]'
+          - 'button "Step 4: About you" [disabled] [ref=e44]'
+          - 'button "Step 5: Confirm" [disabled] [ref=e45]'
+      - generic [ref=e46]:
+        - button "Back" [ref=e47]:
+          - generic [ref=e48]: ←
+          - text: Back
+        - paragraph [ref=e209]: The Jackson Cut
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: 02 — Stylist
+          - heading "Pick a stylist, or let us pair you." [level=2] [ref=e214]
+          - paragraph [ref=e215]: Every stylist trained for textured hair specifically. No preference is never a downgrade.
+        - button "No preference We'll pair you with the best fit for your hair, no penalty in availability. Recommended" [ref=e216]:
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - heading "No preference" [level=3] [ref=e219]
+              - paragraph [ref=e220]: We'll pair you with the best fit for your hair, no penalty in availability.
+            - paragraph [ref=e221]: Recommended
+        - generic [ref=e222]:
+          - paragraph [ref=e223]: Filter
+          - generic [ref=e224]:
+            - button "All" [ref=e225]
+            - button "Type 4 specialist" [ref=e226]
+            - button "Men's fade + coils" [ref=e227]
+            - button "Color" [ref=e228]
+            - button "Wavy / loose curls" [ref=e229]
+            - button "Locs" [ref=e230]
+        - generic [ref=e231]:
+          - button "Vanessa Jackson Founder & senior stylist Type 2A — 4C, color Trained at Curl Bar London under Michelle Sultan, 2014. Devachan NYC, 2018. A season with Anthony Dickey at Hair Rules." [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: V
+              - generic [ref=e235]:
+                - heading "Vanessa Jackson" [level=3] [ref=e236]
+                - paragraph [ref=e237]: Founder & senior stylist
+                - paragraph [ref=e238]: Type 2A — 4C, color
+                - paragraph [ref=e239]: Trained at Curl Bar London under Michelle Sultan, 2014. Devachan NYC, 2018. A season with Anthony Dickey at Hair Rules.
+          - button "Nia Berhane Senior stylist Type 3 spirals & ringlets Norwegian-Eritrean. Two years assisting at Hare & Bone, London. Curly Hair Artistry programme, 2022." [ref=e240]:
+            - generic [ref=e241]:
+              - generic [ref=e242]: "N"
+              - generic [ref=e243]:
+                - heading "Nia Berhane" [level=3] [ref=e244]
+                - paragraph [ref=e245]: Senior stylist
+                - paragraph [ref=e246]: Type 3 spirals & ringlets
+                - paragraph [ref=e247]: Norwegian-Eritrean. Two years assisting at Hare & Bone, London. Curly Hair Artistry programme, 2022.
+          - button "Adé Okonkwo Barber-stylist — men's specialist Men's fade + coils, beard Trained at Hawthorne, NYC. Nine years inside the Tøyen barber tradition before that. The hands behind the Sculpt Cut." [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: A
+              - generic [ref=e251]:
+                - heading "Adé Okonkwo" [level=3] [ref=e252]
+                - paragraph [ref=e253]: Barber-stylist — men's specialist
+                - paragraph [ref=e254]: Men's fade + coils, beard
+                - paragraph [ref=e255]: Trained at Hawthorne, NYC. Nine years inside the Tøyen barber tradition before that. The hands behind the Sculpt Cut.
+          - button "Mira Dahir Senior stylist — locs and protective styles Type 4, locs, protective styles Somali-Norwegian. Ran her own chair in Tøyen for six years. Trichology certificate, 2023." [ref=e256]:
+            - generic [ref=e257]:
+              - generic [ref=e258]: M
+              - generic [ref=e259]:
+                - heading "Mira Dahir" [level=3] [ref=e260]
+                - paragraph [ref=e261]: Senior stylist — locs and protective styles
+                - paragraph [ref=e262]: Type 4, locs, protective styles
+                - paragraph [ref=e263]: Somali-Norwegian. Ran her own chair in Tøyen for six years. Trichology certificate, 2023.
+          - button "Inés Lindberg Stylist Type 2 & looser Type 3 Norwegian. Trained at Bouclème, London. Curly Hair Artistry advanced, 2023." [ref=e264]:
+            - generic [ref=e265]:
+              - generic [ref=e266]: I
+              - generic [ref=e267]:
+                - heading "Inés Lindberg" [level=3] [ref=e268]
+                - paragraph [ref=e269]: Stylist
+                - paragraph [ref=e270]: Type 2 & looser Type 3
+                - paragraph [ref=e271]: Norwegian. Trained at Bouclème, London. Curly Hair Artistry advanced, 2023.
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - link "Jackson & Coil." [ref=e140] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e141]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - heading "Visit" [level=3] [ref=e144]
+          - paragraph [ref=e145]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e146]:
+          - heading "Hours" [level=3] [ref=e147]
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - generic [ref=e150]: Tuesday
+              - generic [ref=e151]: 10:00 — 19:00
+            - listitem [ref=e152]:
+              - generic [ref=e153]: Wednesday
+              - generic [ref=e154]: 10:00 — 19:00
+            - listitem [ref=e155]:
+              - generic [ref=e156]: Thursday
+              - generic [ref=e157]: 10:00 — 20:00
+            - listitem [ref=e158]:
+              - generic [ref=e159]: Friday
+              - generic [ref=e160]: 10:00 — 19:00
+            - listitem [ref=e161]:
+              - generic [ref=e162]: Saturday
+              - generic [ref=e163]: 10:00 — 17:00
+            - listitem [ref=e164]:
+              - generic [ref=e165]: Sunday & Monday
+              - generic [ref=e166]: Closed
+        - generic [ref=e167]:
+          - heading "Contact" [level=3] [ref=e168]
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "hei@jacksonandcoil.no" [ref=e171] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e172]: +47 22 00 00 00
+            - listitem [ref=e173]:
+              - link "@jacksonandcoil" [ref=e174] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e175]:
+          - heading "Pages" [level=3] [ref=e176]
+          - list [ref=e177]:
+            - listitem [ref=e178]:
+              - link "Cuts & services" [ref=e179] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e180]:
+              - link "The method" [ref=e181] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e182]:
+              - link "The team" [ref=e183] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e184]:
+              - link "Portfolio" [ref=e185] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e186]:
+              - link "Shop" [ref=e187] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e188]:
+              - link "Journal" [ref=e189] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e190]:
+              - link "Visit" [ref=e191] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e192]:
+              - link "About" [ref=e193] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e194]:
+              - link "Book" [ref=e195] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e196]:
+        - generic [ref=e197]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e198]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e204] [cursor=pointer]:
+    - img [ref=e205]
+  - alert [ref=e208]

@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img "linear gradient"
+    - img "linear gradient"
+    - generic:
+      - img "spotlight external gradient shape"
+    - generic [ref=e5]:
+      - generic [ref=e9]: Choose an option
+      - generic [ref=e14]:
+        - heading "Choose an option" [level=1] [ref=e19]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - link "Curl Spa Salon Amsterdam - Tweede Hugo de Grootstraat 24, 24, Amsterdam West, Amsterdam, Noord-Holland" [ref=e23] [cursor=pointer]:
+              - /url: /en-GB/a/curl-spa-salon-amsterdam-amsterdam-tweede-hugo-de-grootstraat-24-gslpvtha?pId=2693546
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img "Curl Spa Salon Amsterdam - Tweede Hugo de Grootstraat 24, 24, Amsterdam West, Amsterdam, Noord-Holland"
+            - generic [ref=e24]:
+              - paragraph [ref=e25]: Curl Spa Salon Amsterdam
+              - paragraph [ref=e26]: Amsterdam West, Amsterdam
+          - generic [ref=e27]:
+            - paragraph [ref=e28]: Book
+            - generic [ref=e29]:
+              - generic [ref=e30] [cursor=pointer]:
+                - link [ref=e31]:
+                  - /url: /en-GB/a/curl-spa-salon-amsterdam-amsterdam-tweede-hugo-de-grootstraat-24-gslpvtha/booking?allOffer=true&menu=true&entryPoint=all_offer_book_individual_appointment&pId=2693546
+                - generic [ref=e35]:
+                  - paragraph [ref=e36]: Book an appointment
+                  - paragraph [ref=e37]: Schedule services for yourself
+              - generic [ref=e38] [cursor=pointer]:
+                - link [ref=e39]:
+                  - /url: /en-GB/a/curl-spa-salon-amsterdam-amsterdam-tweede-hugo-de-grootstraat-24-gslpvtha/booking?allOffer=true&groupBooking=true&menu=true&entryPoint=all_offer_book_group_appointment&pId=2693546
+                - generic [ref=e43]:
+                  - paragraph [ref=e44]: Group appointment
+                  - paragraph [ref=e45]: For yourself and others
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: Buy
+            - generic [ref=e49] [cursor=pointer]:
+              - link [ref=e50]:
+                - /url: /en-GB/a/curl-spa-salon-amsterdam-amsterdam-tweede-hugo-de-grootstraat-24-gslpvtha/gift-cards?menu=true
+              - generic [ref=e54]:
+                - paragraph [ref=e55]: Gift Cards
+                - paragraph [ref=e56]: Treat yourself or a friend to future visits
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - paragraph [ref=e61]: Curl Spa Salon securely accepts online bookings with
+            - link "Fresha" [ref=e62] [cursor=pointer]:
+              - /url: /en-GB?pId=2693546
+              - img "Fresha"
+  - alert [ref=e63]

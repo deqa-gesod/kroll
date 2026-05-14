@@ -1,0 +1,12 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - link "The domain curlup.com is for sale. To purchase, call Afternic.com at +1 781-373-6847 or 855-201-2286. Click here for more details." [ref=e9] [cursor=pointer]:
+      - /url: http://www.afternic.com/forsale/curlup.com?utm_source=TDFS&utm_medium=parkedpages&utm_campaign=TDFS_Affiliate_namefind_renoir&traffic_type=TDFS&traffic_id=Namefind
+    - generic [ref=e11]: CURLUP.COM
+  - generic [ref=e13]:
+    - img [ref=e15]
+    - img [ref=e32]
+  - generic [ref=e48]:
+    - generic [ref=e49]: Copyright © CURLUP.COM. All rights reserved.
+    - link "Privacy Policy" [ref=e51] [cursor=pointer]:
+      - /url: "#!"

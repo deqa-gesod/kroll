@@ -1,0 +1,213 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: Bespoke in salon education now available.
+      - link "Click here for details!" [ref=e5] [cursor=pointer]:
+        - /url: https://hareandbone.co.uk/education/
+    - generic [ref=e6]:
+      - generic:
+        - generic:
+          - link "logo":
+            - /url: https://hareandbone.co.uk
+            - img "logo" [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - list:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /about-hare-and-bone/
+          - listitem [ref=e13]:
+            - link "Salons" [ref=e14] [cursor=pointer]:
+              - /url: /location/
+          - listitem [ref=e15]:
+            - link "Services" [ref=e16] [cursor=pointer]:
+              - /url: /service-overview/
+          - listitem [ref=e17]:
+            - link "News & Inspiration" [ref=e18] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/news-inspiration/
+          - listitem [ref=e19]:
+            - link "Education" [ref=e20] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/education/
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/contact/
+          - listitem [ref=e23]:
+            - link "Book Online" [ref=e24] [cursor=pointer]:
+              - /url: https://book.getslick.com/#/group/62/
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - img [ref=e31]
+      - heading [level=2] [ref=e34]: We celebrate individuality & Self Expression
+    - generic [ref=e35]:
+      - img [ref=e37]
+      - generic [ref=e39]:
+        - heading "Bold Vision" [level=2] [ref=e203]
+        - paragraph [ref=e41]: HARE & BONE is an instinctive hair salon that offers the very best technically executed wearable hair with creative and Artistic flair.
+    - generic [ref=e42]:
+      - img [ref=e44]
+      - generic [ref=e46]:
+        - heading [level=2] [ref=e204]: WE LOVE COLOUR
+        - paragraph [ref=e48]: Our technicians are highly skilled and artistic colourists who will offer advice whilst working with you to create outstanding results.
+    - generic [ref=e49]:
+      - img [ref=e51]
+      - heading [level=2] [ref=e54]: We celebrate individuality & Self Expression
+    - generic [ref=e55]:
+      - img [ref=e57]
+      - generic [ref=e59]:
+        - heading [level=2] [ref=e60]: Bold Vision
+        - paragraph [ref=e61]: HARE & BONE is an instinctive hair salon that offers the very best technically executed wearable hair with creative and Artistic flair.
+    - generic [ref=e62]:
+      - img [ref=e64]
+      - generic [ref=e66]:
+        - heading [level=2] [ref=e67]: WE LOVE COLOUR
+        - paragraph [ref=e68]: Our technicians are highly skilled and artistic colourists who will offer advice whilst working with you to create outstanding results.
+    - generic [ref=e69]:
+      - img [ref=e71]
+      - heading [level=2] [ref=e74]: We celebrate individuality & Self Expression
+  - generic [ref=e75]:
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - link "portrait of a female model" [ref=e80] [cursor=pointer]:
+            - /url: /service-overview/
+            - img "portrait of a female model" [ref=e81]
+          - paragraph [ref=e82]: Cutting, Colouring, Finishing and Treatments. Find out more.
+          - link "Services" [ref=e83] [cursor=pointer]:
+            - /url: /service-overview/
+        - generic [ref=e84]:
+          - link "portrait of a female model" [ref=e85] [cursor=pointer]:
+            - /url: /contact/
+            - img "portrait of a female model" [ref=e86]
+          - paragraph [ref=e87]: Get in touch with one of our salons
+          - generic [ref=e88]:
+            - link "Esher" [ref=e89] [cursor=pointer]:
+              - /url: /locations/esher
+            - link "Fitzrovia" [ref=e90] [cursor=pointer]:
+              - /url: /locations/london
+        - generic [ref=e91]:
+          - link "portrait of a female model" [ref=e92] [cursor=pointer]:
+            - /url: https://book.getslick.com/#/group/62/
+            - img "portrait of a female model" [ref=e93]
+          - paragraph [ref=e94]: Book your appointment online or over the phone.
+          - link "Book Online" [ref=e95] [cursor=pointer]:
+            - /url: https://book.getslick.com/#/group/62/
+      - link "Book Now" [ref=e96] [cursor=pointer]:
+        - /url: https://book.getslick.com/#/group/62/
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - paragraph [ref=e100]: Sign up to our newsletter
+            - paragraph [ref=e101]: Get exclusive salon offers, news, updates and more!
+          - generic [ref=e104]:
+            - generic:
+              - textbox [ref=e106]
+              - textbox "yourname@email.com" [ref=e108]
+              - button "SIGN-UP" [ref=e110] [cursor=pointer]
+        - generic [ref=e111]:
+          - link "instagram logo" [ref=e112] [cursor=pointer]:
+            - /url: http://instagram.com/hareandbone
+            - img "instagram logo" [ref=e113]
+          - link "youtube logo" [ref=e114] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCymYtcmfk9c5zZgYJTxI9DQ/feed
+            - img "youtube logo" [ref=e115]
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e119]:
+            - heading "HARE & BONE" [level=3] [ref=e120]
+            - list [ref=e122]:
+              - listitem [ref=e123]:
+                - link "Home" [ref=e124] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/
+              - listitem [ref=e125]:
+                - link "About Us" [ref=e126] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/about-hare-and-bone/
+              - listitem [ref=e127]:
+                - link "Sam Burnett" [ref=e128] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/sam-burnett/
+              - listitem [ref=e129]:
+                - link "Meet the Team" [ref=e130] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/meet-the-team/
+              - listitem [ref=e131]:
+                - link "Awards & Media" [ref=e132] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/awards-media/
+          - generic [ref=e134]:
+            - heading "OUR SERVICES" [level=3] [ref=e135]
+            - list [ref=e137]:
+              - listitem [ref=e138]:
+                - link "Cutting" [ref=e139] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/cutting/
+              - listitem [ref=e140]:
+                - link "Colouring" [ref=e141] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/colouring/
+              - listitem [ref=e142]:
+                - link "Finishing" [ref=e143] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/finishing/
+              - listitem [ref=e144]:
+                - link "Treatments" [ref=e145] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/treatments/
+              - listitem [ref=e146]:
+                - link "Our Prices – Fitzrovia" [ref=e147] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/our-prices-fitzrovia/
+          - generic [ref=e149]:
+            - heading "GET TO KNOW US" [level=3] [ref=e150]
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - link "Latest News" [ref=e154] [cursor=pointer]:
+                  - /url: http://hareandbone.co.uk/news-inspiration/
+              - listitem [ref=e155]:
+                - link "Inspiration" [ref=e156] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/category/inspiration/
+              - listitem [ref=e157]:
+                - link "Gallery" [ref=e158] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/category/gallery/
+              - listitem [ref=e159]:
+                - link "Hare Miles" [ref=e160] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/?page_id=132
+          - generic [ref=e162]:
+            - heading "CUSTOMER SERVICE" [level=3] [ref=e163]
+            - list [ref=e165]:
+              - listitem [ref=e166]:
+                - link "How To Find Us" [ref=e167] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/contact/
+              - listitem [ref=e168]:
+                - link "Media Enquiries" [ref=e169] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/contact/
+              - listitem [ref=e170]:
+                - link "Good to know" [ref=e171] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/informationfaqs/
+              - listitem [ref=e172]:
+                - link "Careers" [ref=e173] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/careers/
+              - listitem [ref=e174]:
+                - link "Opening Hours" [ref=e175] [cursor=pointer]:
+                  - /url: https://hareandbone.co.uk/contact/
+          - generic [ref=e177]:
+            - heading "CONTACT US" [level=3] [ref=e178]
+            - generic [ref=e179]:
+              - text: HARE & BONE - FITZROVIA
+              - text: +44 (0) 20 7401 2413
+              - link "hello@hareandbone.co.uk" [ref=e180] [cursor=pointer]:
+                - /url: mailto:hello@hareandbone.co.uk
+              - text: HARE & BONE - ESHER
+              - text: +44 (0) 1737 924800
+              - link "esher@hareandbone.co.uk" [ref=e181] [cursor=pointer]:
+                - /url: mailto:esher@hareandbone.co.uk
+        - paragraph [ref=e184]:
+          - text: © HARE & BONE 2026. All Rights Reserved.
+          - link "Disclaimer" [ref=e185] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/disclaimer/
+          - text: "|"
+          - link "Terms and Conditions" [ref=e186] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/terms-and-conditions/
+          - text: "|"
+          - link "Privacy Policy" [ref=e187] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/privacy-policy/
+    - generic [ref=e190]:
+      - generic [ref=e191]: We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies. However, you may visit "Cookie Settings" to provide a controlled consent.
+      - generic [ref=e192]:
+        - button "Cookie Settings" [ref=e193] [cursor=pointer]
+        - button "Accept All" [ref=e194] [cursor=pointer]
+    - text: Show more Disabled Disabled Disabled Disabled Disabled
+  - status [ref=e195]

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Bilde-velger v3 — Website 2 (Iman, Hero, Portfolio-utvidelse)</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; background: #faf7f2; color: #1a1612; margin: 0; padding: 24px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  .intro { color: #6f655c; max-width: 720px; line-height: 1.5; margin: 0 0 24px; }
+  .intro code { background: #f3eee5; padding: 2px 6px; border-radius: 4px; }
+
+  .slot-group { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .slot-group h2 { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: #b5532a; margin: 0 0 16px; font-weight: 700; }
+  .slot-row { display: grid; grid-template-columns: 200px 1fr auto; gap: 16px; align-items: center; padding: 12px; border-radius: 8px; transition: background .15s; }
+  .slot-row + .slot-row { margin-top: 8px; border-top: 1px solid #f3eee5; padding-top: 16px; }
+  .slot-row.changed { background: #fff3e0; }
+
+  .thumb { width: 200px; height: 240px; background: #f3eee5; overflow: hidden; border-radius: 6px; cursor: pointer; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb.placeholder { display: flex; align-items: center; justify-content: center; color: #6f655c; font-size: 12px; padding: 12px; text-align: center; }
+
+  .slot-info h3 { font-size: 16px; margin: 0 0 4px; }
+  .slot-info .desc { color: #6f655c; font-size: 13px; margin: 0 0 8px; max-width: 480px; line-height: 1.4; }
+  .slot-info .current { font-family: ui-monospace, monospace; font-size: 11px; color: #6f655c; background: #f3eee5; padding: 4px 8px; border-radius: 4px; display: inline-block; }
+
+  .change-btn { padding: 10px 18px; background: #1a1612; color: white; border: 0; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .change-btn:hover { background: #b5532a; }
+  .reset-btn { display: block; margin-top: 8px; padding: 4px 10px; background: transparent; color: #6f655c; border: 1px solid #e0d8cc; border-radius: 4px; cursor: pointer; font-size: 11px; }
+
+  .modal { display: none; position: fixed; inset: 0; background: rgba(26,22,18,.75); z-index: 100; padding: 24px; overflow: auto; }
+  .modal.open { display: block; }
+  .modal-inner { max-width: 1200px; margin: 0 auto; background: white; border-radius: 12px; padding: 24px; }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .modal-header h3 { margin: 0; font-size: 20px; }
+  .modal-close { background: transparent; border: 0; cursor: pointer; font-size: 24px; color: #6f655c; }
+  .picker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+  .pick-card { position: relative; cursor: pointer; border: 3px solid transparent; border-radius: 6px; overflow: hidden; background: #f3eee5; transition: transform .15s; }
+  .pick-card:hover { transform: scale(1.03); }
+  .pick-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .pick-card .num { position: absolute; top: 6px; left: 6px; background: rgba(0,0,0,.7); color: white; padding: 3px 7px; border-radius: 3px; font-size: 12px; font-weight: 600; font-family: ui-monospace, monospace; }
+
+  #toolbar { position: fixed; bottom: 16px; right: 16px; background: #1a1612; color: white; padding: 16px 20px; border-radius: 8px; max-width: 380px; box-shadow: 0 4px 20px rgba(0,0,0,.3); z-index: 10; font-size: 13px; }
+  #toolbar .count { font-weight: 700; }
+  #toolbar pre { background: rgba(255,255,255,.08); padding: 8px; border-radius: 4px; font-size: 11px; margin-top: 8px; max-height: 200px; overflow: auto; }
+  #toolbar button { margin-top: 8px; padding: 8px 14px; background: #b5532a; color: white; border: 0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; }
+  #toolbar button:hover { background: #8e3f1f; }
+</style>
+</head>
+<body>
+
+<h1>Bilde-velger v3 — Website 2 (kun slots som trenger valg)</h1>
+<p class="intro">
+Velg bilder for de 8 slottene under. <strong>Iman + Hero1 + Hero2 må byttes</strong> (nåværende bilde er problem). <strong>Portfolio 4-8 er nye slots</strong> (utvider w2 portfolio fra 3 til 8). Klikk "Bytt bilde" på en slot, velg fra de 70 portfolio-bildene + <code>vanessa.png</code> + <code>salon-interior.png</code>, og klikk "Kopier mapping JSON" nederst når du er ferdig.
+</p>
+
+<div class="slot-group">
+  <h2>Hero på website 2 (2 bilder, split-layout)</h2>
+  <div id="slot-heroAmara" class="slot-row" data-slot="heroAmara">
+    <div class="thumb" data-slot-thumb><img src="website2/public/images/hero-amara-chair.jpg" alt=""></div>
+    <div class="slot-info">
+      <h3>Hero 1 (stort bilde, hovedfokus)</h3>
+      <p class="desc">Kvinne med krøller, lit warm. Nåværende = 59.png (denim-kvinne, samme som w1 hero). Du må bytte til en annen kvinne fra de 70.</p>
+      <span class="current" data-slot-current>nå: hero-amara-chair.jpg (= portfolio/59.png)</span>
+    </div>
+    <button class="change-btn" data-pick>Bytt bilde</button>
+  </div>
+  <div id="slot-heroDaniel" class="slot-row" data-slot="heroDaniel">
+    <div class="thumb" data-slot-thumb><img src="website2/public/images/hero-daniel-fade-coils.jpg" alt=""></div>
+    <div class="slot-info">
+      <h3>Hero 2 (mindre bilde, mann)</h3>
+      <p class="desc">Mann med fade + krøller. Nåværende = 53.png (samme som w1 hero). Du må bytte til en annen mann fra de 70.</p>
+      <span class="current" data-slot-current>nå: hero-daniel-fade-coils.jpg (= portfolio/53.png)</span>
+    </div>
+    <button class="change-btn" data-pick>Bytt bilde</button>
+  </div>
+</div>
+
+<div class="slot-group">
+  <h2>Stylist Iman på website 2</h2>
+  <div id="slot-stylistIman" class="slot-row" data-slot="stylistIman">
+    <div class="thumb" data-slot-thumb><img src="website2/public/images/team-stylist-portrait.jpg" alt=""></div>
+    <div class="slot-info">
+      <h3>Iman — color, porosity, shape reset</h3>
+      <p class="desc">Kvinne stylist. Nåværende = vanessa.png (duplikat med founder). Du må bytte til en annen kvinne, ikke Vanessa.</p>
+      <span class="current" data-slot-current>nå: team-stylist-portrait.jpg (= vanessa.png — feil!)</span>
+    </div>
+    <button class="change-btn" data-pick>Bytt bilde</button>
+  </div>
+</div>
+
+<div class="slot-group">
+  <h2>Portfolio-utvidelse (4 nye slots på website 2 — fra 4 til 8)</h2>
+  <p class="intro" style="margin-bottom:12px;">Website 2 har 4 portfolio-slots i dag (Type 4, Type 3, Sculpt Cut, Method). Utvid med 4 nye for å komme til 8. Velg en kategori og et bilde for hver.</p>
+  <div id="slot-portfolio5" class="slot-row" data-slot="portfolio5">
+    <div class="thumb placeholder" data-slot-thumb>Ingen bilde valgt enda</div>
+    <div class="slot-info">
+      <h3>Portfolio 5 (ny)</h3>
+      <p class="desc">Velg en kategori og bilde. F.eks. 4B coils, 3C corkscrew, Color, 2B/2C wavy.</p>
+      <span class="current" data-slot-current>nå: (tomt)</span>
+    </div>
+    <button class="change-btn" data-pick>Velg bilde</button>
+  </div>
+  <div id="slot-portfolio6" class="slot-row" data-slot="portfolio6">
+    <div class="thumb placeholder" data-slot-thumb>Ingen bilde valgt enda</div>
+    <div class="slot-info">
+      <h3>Portfolio 6 (ny)</h3>
+      <p class="desc">Velg en kategori og bilde.</p>
+      <span class="current" data-slot-current>nå: (tomt)</span>
+    </div>
+    <button class="change-btn" data-pick>Velg bilde</button>
+  </div>
+  <div id="slot-portfolio7" class="slot-row" data-slot="portfolio7">
+    <div class="thumb placeholder" data-slot-thumb>Ingen bilde valgt enda</div>
+    <div class="slot-info">
+      <h3>Portfolio 7 (ny)</h3>
+      <p class="desc">Velg en kategori og bilde.</p>
+      <span class="current" data-slot-current>nå: (tomt)</span>
+    </div>
+    <button class="change-btn" data-pick>Velg bilde</button>
+  </div>
+  <div id="slot-portfolio8" class="slot-row" data-slot="portfolio8">
+    <div class="thumb placeholder" data-slot-thumb>Ingen bilde valgt enda</div>
+    <div class="slot-info">
+      <h3>Portfolio 8 (ny)</h3>
+      <p class="desc">Velg en kategori og bilde.</p>
+      <span class="current" data-slot-current>nå: (tomt)</span>
+    </div>
+    <button class="change-btn" data-pick>Velg bilde</button>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-inner">
+    <div class="modal-header">
+      <h3 id="modal-title">Velg bilde</h3>
+      <button class="modal-close" id="modal-close">×</button>
+    </div>
+    <div class="picker-grid" id="picker-grid">
+      <div class="pick-card" data-master="vanessa.png"><img src="images/vanessa.png" loading="lazy" alt=""><div class="num">vanessa</div></div>
+      <div class="pick-card" data-master="salon-interior.png"><img src="images/salon-interior.png" loading="lazy" alt=""><div class="num">salon</div></div>
+    </div>
+  </div>
+</div>
+
+<div id="toolbar">
+  <div>Valgte bytter: <span class="count" id="count">0</span> / 7</div>
+  <pre id="json">{}</pre>
+  <button onclick="copyJson()">Kopier mapping JSON</button>
+</div>
+
+<script>
+// Build picker grid items
+const grid = document.getElementById('picker-grid');
+for (let i = 1; i <= 70; i++) {
+  const num = String(i).padStart(2, '0');
+  const div = document.createElement('div');
+  div.className = 'pick-card';
+  div.dataset.master = `portfolio/${num}.png`;
+  div.innerHTML = `<img src="images/portfolio/${num}.png" loading="lazy" alt=""><div class="num">${num}</div>`;
+  grid.appendChild(div);
+}
+
+const mapping = {};
+let activeSlot = null;
+
+document.querySelectorAll('[data-pick]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const row = btn.closest('.slot-row');
+    activeSlot = row.dataset.slot;
+    document.getElementById('modal-title').textContent = `Velg bilde for: ${activeSlot}`;
+    document.getElementById('modal').classList.add('open');
+  });
+});
+
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal').addEventListener('click', (e) => {
+  if (e.target.id === 'modal') closeModal();
+});
+
+grid.addEventListener('click', (e) => {
+  const card = e.target.closest('.pick-card');
+  if (!card || !activeSlot) return;
+  const master = card.dataset.master;
+  mapping[activeSlot] = master;
+  const row = document.getElementById('slot-' + activeSlot);
+  row.classList.add('changed');
+  const thumb = row.querySelector('[data-slot-thumb]');
+  thumb.classList.remove('placeholder');
+  thumb.innerHTML = `<img src="images/${master}" alt="">`;
+  row.querySelector('[data-slot-current]').textContent = `valgt: ${master}`;
+  updateToolbar();
+  closeModal();
+});
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  activeSlot = null;
+}
+
+function updateToolbar() {
+  document.getElementById('count').textContent = Object.keys(mapping).length;
+  document.getElementById('json').textContent = JSON.stringify(mapping, null, 2);
+}
+
+function copyJson() {
+  const txt = JSON.stringify(mapping, null, 2);
+  navigator.clipboard.writeText(txt).then(() => alert('Kopiert! Lim inn i Claude-chatten.'), () => {
+    prompt('Kopier manuelt:', txt);
+  });
+}
+</script>
+</body>
+</html>

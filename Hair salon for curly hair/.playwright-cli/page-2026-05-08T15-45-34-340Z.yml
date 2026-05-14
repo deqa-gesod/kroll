@@ -1,0 +1,675 @@
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - link "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e8] [cursor=pointer]:
+        - /url: ./
+        - img "\"Hair Rules\" logo, a wordmark that says \"hair rules\"" [ref=e10]
+      - generic [ref=e11]:
+        - link "Link Button" [ref=e13] [cursor=pointer]:
+          - /url: ./studio
+          - heading "Studio" [level=5] [ref=e15]
+          - heading "Studio" [level=5] [ref=e17]
+        - link "Link Button" [ref=e19] [cursor=pointer]:
+          - /url: ./consulting
+          - heading "Consulting" [level=5] [ref=e21]
+          - heading "Consulting" [level=5] [ref=e23]
+        - link "Link Button" [ref=e25] [cursor=pointer]:
+          - /url: ./proartistry
+          - heading "Pro Artistry" [level=5] [ref=e27]
+          - heading "Pro Artistry" [level=5] [ref=e29]
+        - link "Link Button" [ref=e31] [cursor=pointer]:
+          - /url: ./about
+          - heading "About" [level=5] [ref=e33]
+          - heading "About" [level=5] [ref=e35]
+        - link "Link Button" [ref=e37] [cursor=pointer]:
+          - /url: ./insights
+          - heading "Insights" [level=5] [ref=e39]
+          - heading "Insights" [level=5] [ref=e41]
+  - img "Four women sitting in salon chairs" [ref=e46]
+  - generic [ref=e48]:
+    - heading "S t u d i o" [level=2] [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: S
+        - generic [ref=e54]: t
+        - generic [ref=e55]: u
+        - generic [ref=e56]: d
+        - generic [ref=e57]: i
+        - generic [ref=e58]: o
+    - generic [ref=e60]:
+      - heading "Where texture is the standard." [level=2] [ref=e61]
+      - heading "New York | Los Angeles | Atlanta" [level=2] [ref=e62]
+  - generic [ref=e64]:
+    - paragraph [ref=e66]: "Photo by: Ellen von Unwerth"
+    - generic [ref=e67]:
+      - heading "The locations" [level=5] [ref=e71]: The locations
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - heading "Flagship" [level=5] [ref=e79]
+          - heading "New York City" [level=2] [ref=e81]
+        - link "Button" [ref=e84] [cursor=pointer]:
+          - /url: https://www.vagaro.com/hairrules/services
+          - generic [ref=e87]:
+            - heading "Book in NYC" [level=5] [ref=e89]
+            - img [ref=e93]
+        - generic [ref=e96]:
+          - paragraph [ref=e97]:
+            - link "The birthplace of hair rules" [ref=e98] [cursor=pointer]:
+              - /url: mailto:salon@hairrules.com
+              - text: The birthplace of hair rules
+            - generic [ref=e99]:
+              - text: 828 9th Avenue, 3RD FL NY, NY 10019
+              - text: A historic two-floor walk-up — no elevator.
+          - paragraph [ref=e100]
+          - paragraph [ref=e101]: By appointment and online booking only
+        - generic [ref=e104]:
+          - generic [ref=e107] [cursor=pointer]:
+            - img [ref=e110]
+            - heading "Studio hours" [level=5] [ref=e114]
+          - generic [ref=e118] [cursor=pointer]:
+            - img [ref=e121]
+            - 'heading "Directions: By Subway" [level=5] [ref=e125]'
+          - generic [ref=e129] [cursor=pointer]:
+            - img [ref=e132]
+            - 'heading "Directions: Parking" [level=5] [ref=e136]'
+          - link "Studio policies" [ref=e139] [cursor=pointer]:
+            - /url: ./policies
+            - generic [ref=e140]:
+              - img [ref=e143]
+              - heading "Studio policies" [level=5] [ref=e147]
+      - generic [ref=e148]:
+        - img "Peaches on a tree with a golden glow" [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - heading "Satellite" [level=5] [ref=e156]: Satellite
+            - heading "Atlanta" [level=2] [ref=e158]
+          - generic [ref=e159]:
+            - paragraph [ref=e160]: "Currently located at: Purple Door Salon, 321 Edgewood Ave SE"
+            - paragraph [ref=e161]: By appointment only
+          - generic [ref=e162]:
+            - generic [ref=e166] [cursor=pointer]:
+              - img [ref=e169]
+              - heading "Request an ALT booking" [level=5] [ref=e173]
+            - link "Studio policies" [ref=e179] [cursor=pointer]:
+              - /url: ./policies
+              - generic [ref=e180]:
+                - img [ref=e183]
+                - heading "Studio policies" [level=5] [ref=e187]
+          - paragraph [ref=e189]
+      - generic [ref=e190]:
+        - img "Palm trees" [ref=e194]
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - heading "Satellite" [level=5] [ref=e198]: Satellite
+            - heading "Los Angeles" [level=2] [ref=e200]
+          - generic [ref=e201]:
+            - paragraph [ref=e202]: "Currently located at: Dustin Burrows Studio, 1101 S Robertson Blvd #201"
+            - paragraph [ref=e203]: By appointment only
+          - generic [ref=e204]:
+            - generic [ref=e208] [cursor=pointer]:
+              - img [ref=e211]
+              - heading "Request an LA booking" [level=5] [ref=e215]
+            - link "Studio policies" [ref=e221] [cursor=pointer]:
+              - /url: ./policies
+              - generic [ref=e222]:
+                - img [ref=e225]
+                - heading "Studio policies" [level=5] [ref=e229]
+          - paragraph [ref=e231]
+      - generic [ref=e232]:
+        - img "A man smiling in a black shirt" [ref=e236]
+        - generic [ref=e237]:
+          - heading "Virtual session" [level=2] [ref=e240]: Virtual session
+          - paragraph [ref=e242]: Sign up for a one-on-one digital experience with Dickey & Team.
+          - link "Button" [ref=e245] [cursor=pointer]:
+            - /url: https://www.vagaro.com/hairrules/services
+            - generic [ref=e246]:
+              - heading "Book a virtual session" [level=5] [ref=e248]
+              - heading "Book a virtual session" [level=5] [ref=e250]
+            - img [ref=e254]
+          - paragraph [ref=e257]
+  - generic [ref=e260]:
+    - generic [ref=e261]:
+      - heading "The approach" [level=5] [ref=e264]
+      - 'heading "The framework is built on the same sophistication that transformed skincare: pH balance, moisture retention, botanical integrity. Your hair follows a specific set of rules based on where it sits on the texture spectrum — kinky, curly, wavy, straight — and once you understand those rules, everything changes." [level=4] [ref=e267]'
+    - generic [ref=e269]:
+      - generic [ref=e271]:
+        - img "A drawing of a curly haired woman, inscribed \"your texture, your type\"" [ref=e273]
+        - generic [ref=e274]:
+          - heading "The Logic" [level=3] [ref=e276]
+          - paragraph [ref=e279]: At Hair Rules, we address your natural hair texture’s unique characteristics. Our goal is to help you love your hair, embrace its versatility, and wear it however you choose through healthy, responsible methods.
+      - generic [ref=e282]:
+        - img "Drawing of a woman inscribed \"knowledge is power\"" [ref=e284]
+        - generic [ref=e285]:
+          - heading "The Care Tag" [level=3] [ref=e287]
+          - paragraph [ref=e290]: You aren't just paying for a service. You're paying for the manual. Every client leaves with the specific knowledge to care for their hair beyond the studio.
+      - generic [ref=e293]:
+        - img "Drawing of a woman inscribed \"your god given glory\"" [ref=e295]
+        - generic [ref=e296]:
+          - heading "The Autonomy" [level=3] [ref=e298]
+          - paragraph [ref=e301]: Our goal is for you to leave feeling confident and equipped to love your hair exactly as it grows.
+      - link "Button" [ref=e305] [cursor=pointer]:
+        - /url: ./insights
+        - generic [ref=e306]:
+          - heading "See Dickey's hair insights" [level=5] [ref=e308]
+          - heading "See Dickey's hair insights" [level=5] [ref=e310]
+        - img [ref=e314]
+      - link "Button" [ref=e318] [cursor=pointer]:
+        - /url: ./texture
+        - generic [ref=e319]:
+          - heading "Learn the texture spectrum" [level=5] [ref=e321]
+          - heading "Learn the texture spectrum" [level=5] [ref=e323]
+        - img [ref=e327]
+      - link "Button" [ref=e331] [cursor=pointer]:
+        - /url: ./about
+        - generic [ref=e332]:
+          - heading "Meet Dickey" [level=5] [ref=e334]
+          - heading "Meet Dickey" [level=5] [ref=e336]
+        - img [ref=e340]
+  - generic [ref=e343]:
+    - heading "The standard" [level=2] [ref=e345]
+    - generic [ref=e346]:
+      - list [ref=e349]:
+        - listitem [ref=e350]:
+          - generic [ref=e352]:
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - img [ref=e357]
+                - paragraph [ref=e361]: "5"
+              - paragraph [ref=e363]: “Jedi Master of natural hair care. Of course it was fabulous.”
+            - generic [ref=e368]:
+              - paragraph [ref=e370]: C.E.
+              - paragraph [ref=e374]: Verified Hair Rules Client
+        - listitem [ref=e375]:
+          - generic [ref=e377]:
+            - generic [ref=e378]:
+              - generic [ref=e379]:
+                - img [ref=e382]
+                - paragraph [ref=e386]: "5"
+              - paragraph [ref=e388]: “Curly hair whisperer. Educational and transformational - wish I came sooner.”
+            - generic [ref=e393]:
+              - paragraph [ref=e395]: Amy S.
+              - paragraph [ref=e399]: Verified Hair Rules Client
+        - listitem [ref=e400]:
+          - generic [ref=e402]:
+            - generic [ref=e403]:
+              - generic [ref=e404]:
+                - img [ref=e407]
+                - paragraph [ref=e411]: "5"
+              - paragraph [ref=e413]: “Always professional, always a vibe - I leave extra fly every time.”
+            - generic [ref=e418]:
+              - paragraph [ref=e420]: Toni B.
+              - paragraph [ref=e424]: Verified Hair Rules Client
+        - listitem [ref=e425]:
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - generic [ref=e429]:
+                - img [ref=e432]
+                - paragraph [ref=e436]: "5"
+              - paragraph [ref=e438]: “10 years in - every visit is top tier and my hair stays cute and healthy.”
+            - generic [ref=e443]:
+              - paragraph [ref=e445]: KD C.
+              - paragraph [ref=e449]: Verified Hair Rules Client
+        - listitem [ref=e450]:
+          - generic [ref=e452]:
+            - generic [ref=e453]:
+              - generic [ref=e454]:
+                - img [ref=e457]
+                - paragraph [ref=e461]: "5"
+              - paragraph [ref=e463]: “Kind, informative, learned a ton fast - got so many compliments after.”
+            - generic [ref=e468]:
+              - paragraph [ref=e470]: KD C.
+              - paragraph [ref=e474]: Verified Hair Rules Client
+        - listitem [ref=e475]:
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - generic [ref=e479]:
+                - img [ref=e482]
+                - paragraph [ref=e486]: "5"
+              - paragraph [ref=e488]: “That consult changed my hair journey - I’m following his plan now.”
+            - generic [ref=e493]:
+              - paragraph [ref=e495]: Monique N.
+              - paragraph [ref=e499]: Verified Hair Rules Client
+        - listitem [ref=e500]:
+          - generic [ref=e502]:
+            - generic [ref=e503]:
+              - generic [ref=e504]:
+                - img [ref=e507]
+                - paragraph [ref=e511]: "5"
+              - paragraph [ref=e513]: “Top notch staff - quick, efficient, no dread, always leaves me happy.”
+            - generic [ref=e518]:
+              - paragraph [ref=e520]: Tara J.
+              - paragraph [ref=e524]: Verified Hair Rules Client
+        - listitem [ref=e525]:
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - generic [ref=e529]:
+                - img [ref=e532]
+                - paragraph [ref=e536]: "5"
+              - paragraph [ref=e538]: “Jedi Master of natural hair care. Of course it was fabulous.”
+            - generic [ref=e543]:
+              - paragraph [ref=e545]: C.E.
+              - paragraph [ref=e549]: Verified Hair Rules Client
+        - listitem [ref=e550]:
+          - generic [ref=e552]:
+            - generic [ref=e553]:
+              - generic [ref=e554]:
+                - img [ref=e557]
+                - paragraph [ref=e561]: "5"
+              - paragraph [ref=e563]: “Curly hair whisperer. Educational and transformational - wish I came sooner.”
+            - generic [ref=e568]:
+              - paragraph [ref=e570]: Amy S.
+              - paragraph [ref=e574]: Verified Hair Rules Client
+        - listitem [ref=e575]:
+          - generic [ref=e577]:
+            - generic [ref=e578]:
+              - generic [ref=e579]:
+                - img [ref=e582]
+                - paragraph [ref=e586]: "5"
+              - paragraph [ref=e588]: “Always professional, always a vibe - I leave extra fly every time.”
+            - generic [ref=e593]:
+              - paragraph [ref=e595]: Toni B.
+              - paragraph [ref=e599]: Verified Hair Rules Client
+        - listitem [ref=e600]:
+          - generic [ref=e602]:
+            - generic [ref=e603]:
+              - generic [ref=e604]:
+                - img [ref=e607]
+                - paragraph [ref=e611]: "5"
+              - paragraph [ref=e613]: “10 years in - every visit is top tier and my hair stays cute and healthy.”
+            - generic [ref=e618]:
+              - paragraph [ref=e620]: KD C.
+              - paragraph [ref=e624]: Verified Hair Rules Client
+        - listitem [ref=e625]:
+          - generic [ref=e627]:
+            - generic [ref=e628]:
+              - generic [ref=e629]:
+                - img [ref=e632]
+                - paragraph [ref=e636]: "5"
+              - paragraph [ref=e638]: “Kind, informative, learned a ton fast - got so many compliments after.”
+            - generic [ref=e643]:
+              - paragraph [ref=e645]: KD C.
+              - paragraph [ref=e649]: Verified Hair Rules Client
+        - listitem [ref=e650]:
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - generic [ref=e654]:
+                - img [ref=e657]
+                - paragraph [ref=e661]: "5"
+              - paragraph [ref=e663]: “That consult changed my hair journey - I’m following his plan now.”
+            - generic [ref=e668]:
+              - paragraph [ref=e670]: Monique N.
+              - paragraph [ref=e674]: Verified Hair Rules Client
+        - listitem [ref=e675]:
+          - generic [ref=e677]:
+            - generic [ref=e678]:
+              - generic [ref=e679]:
+                - img [ref=e682]
+                - paragraph [ref=e686]: "5"
+              - paragraph [ref=e688]: “Top notch staff - quick, efficient, no dread, always leaves me happy.”
+            - generic [ref=e693]:
+              - paragraph [ref=e695]: Tara J.
+              - paragraph [ref=e699]: Verified Hair Rules Client
+        - listitem [ref=e700]:
+          - generic [ref=e702]:
+            - generic [ref=e703]:
+              - generic [ref=e704]:
+                - img [ref=e707]
+                - paragraph [ref=e711]: "5"
+              - paragraph [ref=e713]: “Jedi Master of natural hair care. Of course it was fabulous.”
+            - generic [ref=e718]:
+              - paragraph [ref=e720]: C.E.
+              - paragraph [ref=e724]: Verified Hair Rules Client
+        - listitem [ref=e725]:
+          - generic [ref=e727]:
+            - generic [ref=e728]:
+              - generic [ref=e729]:
+                - img [ref=e732]
+                - paragraph [ref=e736]: "5"
+              - paragraph [ref=e738]: “Curly hair whisperer. Educational and transformational - wish I came sooner.”
+            - generic [ref=e743]:
+              - paragraph [ref=e745]: Amy S.
+              - paragraph [ref=e749]: Verified Hair Rules Client
+        - listitem [ref=e750]:
+          - generic [ref=e752]:
+            - generic [ref=e753]:
+              - generic [ref=e754]:
+                - img [ref=e757]
+                - paragraph [ref=e761]: "5"
+              - paragraph [ref=e763]: “Always professional, always a vibe - I leave extra fly every time.”
+            - generic [ref=e768]:
+              - paragraph [ref=e770]: Toni B.
+              - paragraph [ref=e774]: Verified Hair Rules Client
+        - listitem [ref=e775]:
+          - generic [ref=e777]:
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - img [ref=e782]
+                - paragraph [ref=e786]: "5"
+              - paragraph [ref=e788]: “10 years in - every visit is top tier and my hair stays cute and healthy.”
+            - generic [ref=e793]:
+              - paragraph [ref=e795]: KD C.
+              - paragraph [ref=e799]: Verified Hair Rules Client
+        - listitem [ref=e800]:
+          - generic [ref=e802]:
+            - generic [ref=e803]:
+              - generic [ref=e804]:
+                - img [ref=e807]
+                - paragraph [ref=e811]: "5"
+              - paragraph [ref=e813]: “Kind, informative, learned a ton fast - got so many compliments after.”
+            - generic [ref=e818]:
+              - paragraph [ref=e820]: KD C.
+              - paragraph [ref=e824]: Verified Hair Rules Client
+        - listitem [ref=e825]:
+          - generic [ref=e827]:
+            - generic [ref=e828]:
+              - generic [ref=e829]:
+                - img [ref=e832]
+                - paragraph [ref=e836]: "5"
+              - paragraph [ref=e838]: “That consult changed my hair journey - I’m following his plan now.”
+            - generic [ref=e843]:
+              - paragraph [ref=e845]: Monique N.
+              - paragraph [ref=e849]: Verified Hair Rules Client
+        - listitem [ref=e850]:
+          - generic [ref=e852]:
+            - generic [ref=e853]:
+              - generic [ref=e854]:
+                - img [ref=e857]
+                - paragraph [ref=e861]: "5"
+              - paragraph [ref=e863]: “Top notch staff - quick, efficient, no dread, always leaves me happy.”
+            - generic [ref=e868]:
+              - paragraph [ref=e870]: Tara J.
+              - paragraph [ref=e874]: Verified Hair Rules Client
+      - list [ref=e877]:
+        - listitem [ref=e878]:
+          - generic [ref=e880]:
+            - generic [ref=e881]:
+              - generic [ref=e882]:
+                - img [ref=e885]
+                - paragraph [ref=e889]: "5"
+              - paragraph [ref=e891]: “Fab curls, great guidance, lovely staff - I’m definitely returning.”
+            - generic [ref=e896]:
+              - paragraph [ref=e898]: M.C.
+              - paragraph [ref=e902]: Verified Hair Rules Client
+        - listitem [ref=e903]:
+          - generic [ref=e905]:
+            - generic [ref=e906]:
+              - generic [ref=e907]:
+                - img [ref=e910]
+                - paragraph [ref=e914]: "5"
+              - paragraph [ref=e916]: “Texture guru + seamless scheduling. No waiting, healthiest hair ever.”
+            - generic [ref=e921]:
+              - paragraph [ref=e923]: Valerie D.
+              - paragraph [ref=e927]: Verified Hair Rules Client
+        - listitem [ref=e928]:
+          - generic [ref=e930]:
+            - generic [ref=e931]:
+              - generic [ref=e932]:
+                - img [ref=e935]
+                - paragraph [ref=e939]: "5"
+              - paragraph [ref=e941]: “Precise cut for short curls - staff is pro and I’ll be back.”
+            - generic [ref=e946]:
+              - paragraph [ref=e948]: Bleu S.
+              - paragraph [ref=e952]: Verified Hair Rules Client
+        - listitem [ref=e953]:
+          - generic [ref=e955]:
+            - generic [ref=e956]:
+              - generic [ref=e957]:
+                - img [ref=e960]
+                - paragraph [ref=e964]: "5"
+              - paragraph [ref=e966]: “Years of great visits - professional, friendly, products make hair healthier.”
+            - generic [ref=e971]:
+              - paragraph [ref=e973]: Bleu S.
+              - paragraph [ref=e977]: Verified Hair Rules Client
+        - listitem [ref=e978]:
+          - generic [ref=e980]:
+            - generic [ref=e981]:
+              - generic [ref=e982]:
+                - img [ref=e985]
+                - paragraph [ref=e989]: "5"
+              - paragraph [ref=e991]: “Dickey can do it all - cut, blowout, curls. Fast, fun, flawless.”
+            - generic [ref=e996]:
+              - paragraph [ref=e998]: Wendi W.
+              - paragraph [ref=e1002]: Verified Hair Rules Client
+        - listitem [ref=e1003]:
+          - generic [ref=e1005]:
+            - generic [ref=e1006]:
+              - generic [ref=e1007]:
+                - img [ref=e1010]
+                - paragraph [ref=e1014]: "5"
+              - paragraph [ref=e1016]: “Welcoming team - Dickey sees the vision immediately and executes fast.”
+            - generic [ref=e1021]:
+              - paragraph [ref=e1023]: Lauralee B.
+              - paragraph [ref=e1027]: Verified Hair Rules Client
+        - listitem [ref=e1028]:
+          - generic [ref=e1030]:
+            - generic [ref=e1031]:
+              - generic [ref=e1032]:
+                - img [ref=e1035]
+                - paragraph [ref=e1039]: "5"
+              - paragraph [ref=e1041]: “Exceeded expectations - relaxing, meticulous, and left with a stunning look.”
+            - generic [ref=e1046]:
+              - paragraph [ref=e1048]: Tania S.
+              - paragraph [ref=e1052]: Verified Hair Rules Client
+        - listitem [ref=e1053]:
+          - generic [ref=e1055]:
+            - generic [ref=e1056]:
+              - generic [ref=e1057]:
+                - img [ref=e1060]
+                - paragraph [ref=e1064]: "5"
+              - paragraph [ref=e1066]: “Fab curls, great guidance, lovely staff - I’m definitely returning.”
+            - generic [ref=e1071]:
+              - paragraph [ref=e1073]: M.C.
+              - paragraph [ref=e1077]: Verified Hair Rules Client
+        - listitem [ref=e1078]:
+          - generic [ref=e1080]:
+            - generic [ref=e1081]:
+              - generic [ref=e1082]:
+                - img [ref=e1085]
+                - paragraph [ref=e1089]: "5"
+              - paragraph [ref=e1091]: “Texture guru + seamless scheduling. No waiting, healthiest hair ever.”
+            - generic [ref=e1096]:
+              - paragraph [ref=e1098]: Valerie D.
+              - paragraph [ref=e1102]: Verified Hair Rules Client
+        - listitem [ref=e1103]:
+          - generic [ref=e1105]:
+            - generic [ref=e1106]:
+              - generic [ref=e1107]:
+                - img [ref=e1110]
+                - paragraph [ref=e1114]: "5"
+              - paragraph [ref=e1116]: “Precise cut for short curls - staff is pro and I’ll be back.”
+            - generic [ref=e1121]:
+              - paragraph [ref=e1123]: Bleu S.
+              - paragraph [ref=e1127]: Verified Hair Rules Client
+        - listitem [ref=e1128]:
+          - generic [ref=e1130]:
+            - generic [ref=e1131]:
+              - generic [ref=e1132]:
+                - img [ref=e1135]
+                - paragraph [ref=e1139]: "5"
+              - paragraph [ref=e1141]: “Years of great visits - professional, friendly, products make hair healthier.”
+            - generic [ref=e1146]:
+              - paragraph [ref=e1148]: Bleu S.
+              - paragraph [ref=e1152]: Verified Hair Rules Client
+        - listitem [ref=e1153]:
+          - generic [ref=e1155]:
+            - generic [ref=e1156]:
+              - generic [ref=e1157]:
+                - img [ref=e1160]
+                - paragraph [ref=e1164]: "5"
+              - paragraph [ref=e1166]: “Dickey can do it all - cut, blowout, curls. Fast, fun, flawless.”
+            - generic [ref=e1171]:
+              - paragraph [ref=e1173]: Wendi W.
+              - paragraph [ref=e1177]: Verified Hair Rules Client
+        - listitem [ref=e1178]:
+          - generic [ref=e1180]:
+            - generic [ref=e1181]:
+              - generic [ref=e1182]:
+                - img [ref=e1185]
+                - paragraph [ref=e1189]: "5"
+              - paragraph [ref=e1191]: “Welcoming team - Dickey sees the vision immediately and executes fast.”
+            - generic [ref=e1196]:
+              - paragraph [ref=e1198]: Lauralee B.
+              - paragraph [ref=e1202]: Verified Hair Rules Client
+        - listitem [ref=e1203]:
+          - generic [ref=e1205]:
+            - generic [ref=e1206]:
+              - generic [ref=e1207]:
+                - img [ref=e1210]
+                - paragraph [ref=e1214]: "5"
+              - paragraph [ref=e1216]: “Exceeded expectations - relaxing, meticulous, and left with a stunning look.”
+            - generic [ref=e1221]:
+              - paragraph [ref=e1223]: Tania S.
+              - paragraph [ref=e1227]: Verified Hair Rules Client
+        - listitem [ref=e1228]:
+          - generic [ref=e1230]:
+            - generic [ref=e1231]:
+              - generic [ref=e1232]:
+                - img [ref=e1235]
+                - paragraph [ref=e1239]: "5"
+              - paragraph [ref=e1241]: “Fab curls, great guidance, lovely staff - I’m definitely returning.”
+            - generic [ref=e1246]:
+              - paragraph [ref=e1248]: M.C.
+              - paragraph [ref=e1252]: Verified Hair Rules Client
+        - listitem [ref=e1253]:
+          - generic [ref=e1255]:
+            - generic [ref=e1256]:
+              - generic [ref=e1257]:
+                - img [ref=e1260]
+                - paragraph [ref=e1264]: "5"
+              - paragraph [ref=e1266]: “Texture guru + seamless scheduling. No waiting, healthiest hair ever.”
+            - generic [ref=e1271]:
+              - paragraph [ref=e1273]: Valerie D.
+              - paragraph [ref=e1277]: Verified Hair Rules Client
+        - listitem [ref=e1278]:
+          - generic [ref=e1280]:
+            - generic [ref=e1281]:
+              - generic [ref=e1282]:
+                - img [ref=e1285]
+                - paragraph [ref=e1289]: "5"
+              - paragraph [ref=e1291]: “Precise cut for short curls - staff is pro and I’ll be back.”
+            - generic [ref=e1296]:
+              - paragraph [ref=e1298]: Bleu S.
+              - paragraph [ref=e1302]: Verified Hair Rules Client
+        - listitem [ref=e1303]:
+          - generic [ref=e1305]:
+            - generic [ref=e1306]:
+              - generic [ref=e1307]:
+                - img [ref=e1310]
+                - paragraph [ref=e1314]: "5"
+              - paragraph [ref=e1316]: “Years of great visits - professional, friendly, products make hair healthier.”
+            - generic [ref=e1321]:
+              - paragraph [ref=e1323]: Bleu S.
+              - paragraph [ref=e1327]: Verified Hair Rules Client
+        - listitem [ref=e1328]:
+          - generic [ref=e1330]:
+            - generic [ref=e1331]:
+              - generic [ref=e1332]:
+                - img [ref=e1335]
+                - paragraph [ref=e1339]: "5"
+              - paragraph [ref=e1341]: “Dickey can do it all - cut, blowout, curls. Fast, fun, flawless.”
+            - generic [ref=e1346]:
+              - paragraph [ref=e1348]: Wendi W.
+              - paragraph [ref=e1352]: Verified Hair Rules Client
+        - listitem [ref=e1353]:
+          - generic [ref=e1355]:
+            - generic [ref=e1356]:
+              - generic [ref=e1357]:
+                - img [ref=e1360]
+                - paragraph [ref=e1364]: "5"
+              - paragraph [ref=e1366]: “Welcoming team - Dickey sees the vision immediately and executes fast.”
+            - generic [ref=e1371]:
+              - paragraph [ref=e1373]: Lauralee B.
+              - paragraph [ref=e1377]: Verified Hair Rules Client
+        - listitem [ref=e1378]:
+          - generic [ref=e1380]:
+            - generic [ref=e1381]:
+              - generic [ref=e1382]:
+                - img [ref=e1385]
+                - paragraph [ref=e1389]: "5"
+              - paragraph [ref=e1391]: “Exceeded expectations - relaxing, meticulous, and left with a stunning look.”
+            - generic [ref=e1396]:
+              - paragraph [ref=e1398]: Tania S.
+              - paragraph [ref=e1402]: Verified Hair Rules Client
+  - contentinfo [ref=e1405]:
+    - generic [ref=e1407]:
+      - generic [ref=e1408]:
+        - link "Got hair questions? Button" [ref=e1409] [cursor=pointer]:
+          - /url: ./askdickey
+          - generic [ref=e1411]:
+            - heading "Got hair questions?" [level=5] [ref=e1413]
+            - generic "Button" [ref=e1414]:
+              - heading "Submit a question" [level=5] [ref=e1417]
+              - img [ref=e1421]
+        - generic [ref=e1425]:
+          - heading "Ready to get started?" [level=5] [ref=e1427]
+          - link "Button" [ref=e1429] [cursor=pointer]:
+            - /url: https://www.vagaro.com/hairrules/services
+            - generic [ref=e1430]:
+              - heading "Book at the Studio" [level=5] [ref=e1432]
+              - heading "Book at the Studio" [level=5] [ref=e1434]
+            - img [ref=e1438]
+          - link "Button" [ref=e1441] [cursor=pointer]:
+            - /url: ./consulting-inquiry
+            - generic [ref=e1442]:
+              - heading "Start a brand conversation" [level=5] [ref=e1444]
+              - heading "Start a brand conversation" [level=5] [ref=e1446]
+            - img [ref=e1450]
+      - generic [ref=e1452]:
+        - generic [ref=e1453]:
+          - heading "Navigate" [level=5] [ref=e1455]
+          - generic [ref=e1456]:
+            - link "Link Button" [ref=e1458] [cursor=pointer]:
+              - /url: ./studio
+              - heading "Studio" [level=2] [ref=e1460]
+              - heading "Studio" [level=2] [ref=e1462]
+            - link "Link Button" [ref=e1464] [cursor=pointer]:
+              - /url: ./consulting
+              - heading "Consulting" [level=2] [ref=e1466]
+              - heading "Consulting" [level=2] [ref=e1468]
+            - link "Link Button" [ref=e1470] [cursor=pointer]:
+              - /url: ./proartistry
+              - heading "Pro Artistry" [level=2] [ref=e1472]
+              - heading "Pro Artistry" [level=2] [ref=e1474]
+            - link "Link Button" [ref=e1476] [cursor=pointer]:
+              - /url: ./about
+              - heading "About" [level=2] [ref=e1478]
+              - heading "About" [level=2] [ref=e1480]
+            - link "Link Button" [ref=e1482] [cursor=pointer]:
+              - /url: ./insights
+              - heading "Insights" [level=2] [ref=e1484]
+              - heading "Insights" [level=2] [ref=e1486]
+            - link "Link Button" [ref=e1488] [cursor=pointer]:
+              - /url: ./contact
+              - heading "Contact" [level=2] [ref=e1490]
+              - heading "Contact" [level=2] [ref=e1492]
+        - generic [ref=e1493]:
+          - heading "Follow us" [level=5] [ref=e1495]
+          - generic [ref=e1496]:
+            - link "Link Button" [ref=e1498] [cursor=pointer]:
+              - /url: https://www.instagram.com/hairrules
+              - heading "Instagram" [level=2] [ref=e1500]
+              - heading "Instagram" [level=2] [ref=e1502]
+            - link "Link Button" [ref=e1504] [cursor=pointer]:
+              - /url: https://youtube.com/hairrules?reload=9
+              - heading "Youtube" [level=2] [ref=e1506]
+              - heading "Youtube" [level=2] [ref=e1508]
+            - link "Link Button" [ref=e1510] [cursor=pointer]:
+              - /url: https://www.pinterest.com/hairrules/
+              - heading "Pinterest" [level=2] [ref=e1512]
+              - heading "Pinterest" [level=2] [ref=e1514]
+            - link "Link Button" [ref=e1516] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@hairrules_
+              - heading "TikTok" [level=2] [ref=e1518]
+              - heading "TikTok" [level=2] [ref=e1520]
+            - link "Link Button" [ref=e1522] [cursor=pointer]:
+              - /url: https://www.facebook.com/hairrules
+              - heading "Facebook" [level=2] [ref=e1524]
+              - heading "Facebook" [level=2] [ref=e1526]
+    - generic [ref=e1527]:
+      - generic [ref=e1529]:
+        - text: © 2026
+        - link "Hair Rules" [ref=e1530] [cursor=pointer]:
+          - /url: https://slidecreative.co
+        - text: . All rights reserved.
+      - link "Web by" [ref=e1531] [cursor=pointer]:
+        - /url: https://slidecreative.co
+        - paragraph [ref=e1533]: Web by

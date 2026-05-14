@@ -1,0 +1,250 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Cuts & services" [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [active] [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [pressed] [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e418]:
+      - paragraph [ref=e419]: Visit — Markveien 35, Grünerløkka
+      - generic [ref=e420]:
+        - heading "Markveien 35. Two trams away." [level=1] [ref=e421]:
+          - text: Markveien 35.
+          - text: Two trams away.
+        - paragraph [ref=e422]: Everything you need before your appointment, on one page. The address, the hours, what to do with your hair the day before, where to get a coffee while you wait.
+    - generic [ref=e425]:
+      - generic [ref=e426]:
+        - heading "Address" [level=2] [ref=e427]
+        - paragraph [ref=e428]:
+          - text: Markveien 35
+          - text: 0554 Oslo
+        - paragraph [ref=e429]: Grünerløkka, Oslo
+      - generic [ref=e430]:
+        - heading "Hours" [level=2] [ref=e431]
+        - list [ref=e432]:
+          - listitem [ref=e433]:
+            - generic [ref=e434]: Tuesday
+            - generic [ref=e435]: 10:00 — 19:00
+          - listitem [ref=e436]:
+            - generic [ref=e437]: Wednesday
+            - generic [ref=e438]: 10:00 — 19:00
+          - listitem [ref=e439]:
+            - generic [ref=e440]: Thursday
+            - generic [ref=e441]: 10:00 — 20:00
+          - listitem [ref=e442]:
+            - generic [ref=e443]: Friday
+            - generic [ref=e444]: 10:00 — 19:00
+          - listitem [ref=e445]:
+            - generic [ref=e446]: Saturday
+            - generic [ref=e447]: 10:00 — 17:00
+          - listitem [ref=e448]:
+            - generic [ref=e449]: Sunday & Monday
+            - generic [ref=e450]: Closed
+      - generic [ref=e451]:
+        - heading "Contact" [level=2] [ref=e452]
+        - list [ref=e453]:
+          - listitem [ref=e454]:
+            - link "hei@jacksonandcoil.no" [ref=e455] [cursor=pointer]:
+              - /url: mailto:hei@jacksonandcoil.no
+          - listitem [ref=e456]: +47 22 00 00 00
+          - listitem [ref=e457]:
+            - link "@jacksonandcoil" [ref=e458] [cursor=pointer]:
+              - /url: https://instagram.com/jacksonandcoil
+    - generic [ref=e461]:
+      - generic [ref=e462]:
+        - generic [ref=e512]:
+          - generic [ref=e513]: Map — coming soon
+          - paragraph [ref=e514]: Markveien 35
+          - paragraph [ref=e515]: Between Olaf Ryes plass and Schous plass
+          - generic [ref=e516]:
+            - generic [ref=e517]: 59.9230° N
+            - generic [ref=e518]: 10.7600° E
+        - generic [ref=e519]: Grünerløkka / Oslo
+      - generic [ref=e520]:
+        - generic [ref=e521]:
+          - paragraph [ref=e522]: Getting here
+          - paragraph [ref=e523]: "Trams 11, 12, 13 stop two minutes away at Olaf Ryes plass. Closest metro: Grünerløkka."
+        - generic [ref=e524]:
+          - paragraph [ref=e525]: Parking
+          - paragraph [ref=e526]: Street parking on Markveien is metered weekdays until 17:00. The Olaf Ryes plass underground garage is two minutes south. Most of our clients come by tram or bike — it's faster.
+        - generic [ref=e527]:
+          - paragraph [ref=e528]: Cycling
+          - paragraph [ref=e529]: Bike racks directly outside the door. Oslo Bysykkel station at Olaf Ryes plass.
+    - generic [ref=e532]:
+      - generic [ref=e533]:
+        - img "Salon exterior on Grünerløkka street" [ref=e534]
+        - generic [ref=e535]: Outside
+      - generic [ref=e536]:
+        - img "Salon interior with cream walls and terracotta accents" [ref=e537]
+        - generic [ref=e538]: Inside
+    - generic [ref=e540]:
+      - generic [ref=e541]:
+        - paragraph [ref=e542]: First visit
+        - heading "What to do with your hair before you come." [level=2] [ref=e543]
+        - paragraph [ref=e544]: We cut dry, on the natural pattern. That means the hair you arrive with is the hair we cut — so the prep is half the appointment. Read this once. It saves us both an hour.
+      - generic [ref=e545]:
+        - generic [ref=e546]:
+          - text: "01"
+          - heading "Arrive with dry hair." [level=3] [ref=e547]
+          - paragraph [ref=e548]: Completely dry, completely detangled, in its natural state. We need to see the curl pattern doing what it does on a normal day — not what it does ten minutes after a shower.
+        - generic [ref=e549]:
+          - text: "02"
+          - heading "No hats, clips, braids — 24 hours before." [level=3] [ref=e550]
+          - paragraph [ref=e551]: Anything that compresses or splits the hair gives us a false read. If it's raining, hood up but loose. If you slept in a bonnet, that's fine — just take it off before you arrive, not after you sit down.
+        - generic [ref=e552]:
+          - text: "03"
+          - heading "Wash the day before, not the morning of." [level=3] [ref=e553]
+          - paragraph [ref=e554]: Day-two hair shows us the actual pattern better than freshly-washed hair. If you usually use a leave-in or curl cream, use the one you always use — we want to see your hair on its normal routine, not a special occasion.
+        - generic [ref=e555]:
+          - text: "04"
+          - heading "Allow 60 to 90 minutes." [level=3] [ref=e556]
+          - paragraph [ref=e557]: Wear something comfortable. We work standing, you sit; appointments often run a touch over while we finish properly rather than rush the last ten percent. The first visit includes the free 15-minute consultation built in.
+        - generic [ref=e558]:
+          - text: "05"
+          - heading "Bring product references." [level=3] [ref=e559]
+          - paragraph [ref=e560]: If you have go-to brands you actually love — Bread, Pattern, Bouclème, whatever — tell us, or bring the bottle. Half the consultation is matching the cut to the routine you already keep.
+        - generic [ref=e561]:
+          - text: "06"
+          - heading "Tell us what you're scared of." [level=3] [ref=e562]
+          - paragraph [ref=e563]: Most people show up with something. "Last time someone took off too much." "My hair always looks flat at the back." "I'm not sure if you cut my pattern." Say it before we start. It changes the whole appointment.
+    - generic [ref=e566]:
+      - generic [ref=e567]:
+        - paragraph [ref=e568]: Day-of
+        - heading "If you're early, here's where to go." [level=2] [ref=e569]
+        - paragraph [ref=e570]: Grünerløkka has more good coffee per square metre than anywhere in Oslo. We've kept this list short and biased.
+      - list [ref=e572]:
+        - listitem [ref=e573]:
+          - generic [ref=e574]:
+            - paragraph [ref=e575]: Tim Wendelboe
+            - paragraph [ref=e576]: Coffee — 3 minutes east
+          - paragraph [ref=e577]: If your appointment is at 11, get a flat white at 10:30 and read on the bench outside. The bar inside is loud at peak hours.
+        - listitem [ref=e578]:
+          - generic [ref=e579]:
+            - paragraph [ref=e580]: Talormade
+            - paragraph [ref=e581]: Ice cream — 2 minutes south
+          - paragraph [ref=e582]: After, not before. The brown butter is the answer. They open at 12:00.
+        - listitem [ref=e583]:
+          - generic [ref=e584]:
+            - paragraph [ref=e585]: Nedre Foss Gård
+            - paragraph [ref=e586]: Lunch — 6 minutes north along Akerselva
+          - paragraph [ref=e587]: If you've made a half-day of it. River-side, slow service in a good way.
+        - listitem [ref=e588]:
+          - generic [ref=e589]:
+            - paragraph [ref=e590]: Olaf Ryes plass
+            - paragraph [ref=e591]: The square — 2 minutes south
+          - paragraph [ref=e592]: Bench, tree, people-watching, free. The honest answer for most clients.
+    - generic [ref=e595]:
+      - heading "See you on Markveien." [level=2] [ref=e596]:
+        - text: See you on
+        - text: Markveien.
+      - generic [ref=e597]:
+        - paragraph [ref=e598]: Real availability — not request-and-we'll-get-back-to-you. Weekday evenings included. SMS reminder 24 hours before.
+        - generic [ref=e599]:
+          - link "Book a chair" [ref=e600] [cursor=pointer]:
+            - /url: /booking
+          - link "Free 15-min consultation" [ref=e601] [cursor=pointer]:
+            - /url: /booking?service=consultation
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - link "Jackson & Coil." [ref=e349] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e350]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - heading "Visit" [level=3] [ref=e353]
+          - paragraph [ref=e354]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e355]:
+          - heading "Hours" [level=3] [ref=e356]
+          - list [ref=e357]:
+            - listitem [ref=e358]:
+              - generic [ref=e359]: Tuesday
+              - generic [ref=e360]: 10:00 — 19:00
+            - listitem [ref=e361]:
+              - generic [ref=e362]: Wednesday
+              - generic [ref=e363]: 10:00 — 19:00
+            - listitem [ref=e364]:
+              - generic [ref=e365]: Thursday
+              - generic [ref=e366]: 10:00 — 20:00
+            - listitem [ref=e367]:
+              - generic [ref=e368]: Friday
+              - generic [ref=e369]: 10:00 — 19:00
+            - listitem [ref=e370]:
+              - generic [ref=e371]: Saturday
+              - generic [ref=e372]: 10:00 — 17:00
+            - listitem [ref=e373]:
+              - generic [ref=e374]: Sunday & Monday
+              - generic [ref=e375]: Closed
+        - generic [ref=e376]:
+          - heading "Contact" [level=3] [ref=e377]
+          - list [ref=e378]:
+            - listitem [ref=e379]:
+              - link "hei@jacksonandcoil.no" [ref=e380] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e381]: +47 22 00 00 00
+            - listitem [ref=e382]:
+              - link "@jacksonandcoil" [ref=e383] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e384]:
+          - heading "Pages" [level=3] [ref=e385]
+          - list [ref=e386]:
+            - listitem [ref=e387]:
+              - link "Cuts & services" [ref=e388] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e389]:
+              - link "The method" [ref=e390] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e391]:
+              - link "The team" [ref=e392] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e393]:
+              - link "Portfolio" [ref=e394] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e395]:
+              - link "Shop" [ref=e396] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e397]:
+              - link "Journal" [ref=e398] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e399]:
+              - link "Visit" [ref=e400] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e401]:
+              - link "About" [ref=e402] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e403]:
+              - link "Book" [ref=e404] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e405]:
+        - generic [ref=e406]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e407]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e413] [cursor=pointer]:
+    - img [ref=e414]
+  - alert [ref=e602]

@@ -1,0 +1,317 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - text: Bespoke in salon education now available.
+      - link "Click here for details!" [ref=e5] [cursor=pointer]:
+        - /url: https://hareandbone.co.uk/education/
+    - generic [ref=e6]:
+      - generic:
+        - generic:
+          - link "logo":
+            - /url: https://hareandbone.co.uk
+            - img "logo" [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - list:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/
+          - listitem [ref=e11]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: /about-hare-and-bone/
+          - listitem [ref=e13]:
+            - link "Salons" [ref=e14] [cursor=pointer]:
+              - /url: /location/
+          - listitem [ref=e15]:
+            - link "Services" [ref=e16] [cursor=pointer]:
+              - /url: /service-overview/
+          - listitem [ref=e17]:
+            - link "News & Inspiration" [ref=e18] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/news-inspiration/
+          - listitem [ref=e19]:
+            - link "Education" [ref=e20] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/education/
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: https://hareandbone.co.uk/contact/
+          - listitem [ref=e23]:
+            - link "Book Online" [ref=e24] [cursor=pointer]:
+              - /url: https://book.getslick.com/#/group/62/
+  - heading "Meet the Team" [level=1] [ref=e27]
+  - generic [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "Meet the Team" [level=2] [ref=e34]
+        - paragraph [ref=e35]: Each of our dedicated stylists has been handpicked based upon a combination of exceptional skill levels, having a true passion for creating fabulous hair, outstanding creative flair and a commitment to delighting their clients.
+        - paragraph [ref=e36]: If you’d like to find out more about any of our stylists, simply click on a profile below. Alternatively, pick up the phone and chat to our Front of House Team who will tell you everything you need to know in order to choose the right stylist for you.
+        - heading "HARE & BONE FITZROVIA – STYLISTS" [level=2] [ref=e37]
+        - generic [ref=e38]:
+          - link "SAM BURNETT" [ref=e39] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/sam-burnett/
+            - img "SAM BURNETT" [ref=e40]
+          - paragraph [ref=e41]:
+            - text: Sam Burnett
+            - text: Creative Director & Co-Founder
+        - generic [ref=e42]:
+          - link "Amelia" [ref=e43] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/amelia/
+            - img "Amelia" [ref=e44]
+          - paragraph [ref=e45]:
+            - text: Amelia
+            - text: Artistic Director
+            - text: Cut & Colour
+        - generic [ref=e46]:
+          - link "Jade Master Stylist" [ref=e47] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/jade/
+            - img "Jade Master Stylist" [ref=e48]
+          - paragraph [ref=e49]:
+            - text: Jade
+            - text: Director
+            - text: Cut & Colour
+        - generic [ref=e50]:
+          - link "Amy" [ref=e51] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/amy/
+            - img "Amy" [ref=e52]
+          - paragraph [ref=e53]:
+            - text: Amy
+            - text: Director
+            - text: Cut & Colour
+        - generic [ref=e54]:
+          - link "Ernie-220x220px" [ref=e55] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/ernie/
+            - img "Ernie-220x220px" [ref=e56]
+          - paragraph [ref=e57]:
+            - text: Ernie
+            - text: Director
+            - text: Cut & Colour
+        - generic [ref=e58]:
+          - link "Sophia" [ref=e59] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/sophia/
+            - img "Sophia" [ref=e60]
+          - paragraph [ref=e61]:
+            - text: Sophia
+            - text: Senior Stylist
+            - text: Cut & Colour
+        - generic [ref=e62]:
+          - link "Shannon" [ref=e63] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/shannon/
+            - img "Shannon" [ref=e64]
+          - paragraph [ref=e65]:
+            - text: Shannon
+            - text: Salon Stylist
+            - text: Cut & Colour
+        - generic [ref=e66]:
+          - generic "Emilie" [ref=e67]:
+            - img "Emilie" [ref=e68]
+          - paragraph [ref=e69]:
+            - text: Emilie
+            - text: Independent Stylist
+        - heading "HARE & BONE ESHER – STYLISTS" [level=2] [ref=e70]
+        - generic [ref=e71]:
+          - link "bur" [ref=e72] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/sam-burnett/
+            - img "bur" [ref=e73]
+          - paragraph [ref=e74]:
+            - text: Sam Burnett
+            - text: Creative Director & Co-Founder
+        - generic [ref=e75]:
+          - link "Mary" [ref=e76] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/mary/
+          - paragraph [ref=e77]:
+            - text: Mary
+            - text: Independent Stylist
+            - text: Cut & Colour
+        - generic [ref=e78]:
+          - link "Jordana" [ref=e79] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/jordana/
+          - paragraph [ref=e80]:
+            - text: Jordana
+            - text: Master Stylist
+            - text: Cut & Colour
+        - generic [ref=e81]:
+          - link "Saria" [ref=e82] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/saria-2/
+            - img "Saria" [ref=e83]
+          - paragraph [ref=e84]:
+            - text: Saria
+            - text: Senior Stylist
+            - text: Cut & Colour
+        - generic [ref=e85]:
+          - link "Emily" [ref=e86] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/emily/
+            - img "Emily" [ref=e87]
+          - paragraph [ref=e88]:
+            - text: Emily
+            - text: Salon Stylist
+            - text: Cut & Colour
+        - generic [ref=e89]:
+          - link "Reece" [ref=e90] [cursor=pointer]:
+            - /url: "#"
+            - img "Reece" [ref=e91]
+          - paragraph [ref=e92]:
+            - text: Reece
+            - text: Salon Stylist
+            - text: Cut & Colour
+        - generic [ref=e93]:
+          - link "Leonie" [ref=e94] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/lauren-ruvolo/
+            - img "Leonie" [ref=e95]
+          - paragraph [ref=e96]:
+            - text: Lauren
+            - text: Independent Stylist
+        - heading "HARE & BONE DIRECTORS" [level=2] [ref=e97]
+        - generic [ref=e98]:
+          - link "bur" [ref=e99] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/sam-burnett/
+            - img "bur" [ref=e100]
+          - paragraph [ref=e101]:
+            - text: Sam Burnett
+            - text: Creative Director & Co-Founder
+        - generic [ref=e102]:
+          - link "Rachel" [ref=e103] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/meet-the-team/rachel/
+            - img [ref=e104]
+          - paragraph [ref=e105]:
+            - text: Rachel
+            - text: Operations Manager
+        - paragraph [ref=e106]
+        - paragraph [ref=e107]
+        - paragraph [ref=e108]
+        - paragraph [ref=e109]
+        - paragraph [ref=e110]
+        - paragraph [ref=e111]
+        - paragraph [ref=e112]
+        - paragraph [ref=e113]
+        - paragraph [ref=e114]: Independent Stylists are freelance hairdressers working at HARE & BONE. You will still receive the same high levels of excellence and our warm salon welcome.
+      - generic [ref=e116]:
+        - link "book-an-appointment-v2" [ref=e118] [cursor=pointer]:
+          - /url: https://book.getslick.com/#/group/62/
+          - img "book-an-appointment-v2" [ref=e119]
+        - generic [ref=e120]:
+          - heading "How to find us" [level=3] [ref=e121]
+          - link "how-to-find-us" [ref=e122] [cursor=pointer]:
+            - /url: https://hareandbone.co.uk/contact/
+            - img "how-to-find-us" [ref=e123]
+          - paragraph [ref=e124]:
+            - strong [ref=e125]: HARE & BONE – FITZROVIA
+            - text: 69 Great Titchfield Street
+            - text: London W1W 7PU
+          - paragraph [ref=e126]:
+            - strong [ref=e127]: HARE & BONE – ESHER
+            - text: 7 High Street
+            - text: Esher Surrey KT10 9RL
+        - link "book-an-appointment-v2" [ref=e129] [cursor=pointer]:
+          - /url: https://book.getslick.com/#/group/62/
+          - img "book-an-appointment-v2" [ref=e130]
+    - link "Book Now" [ref=e131] [cursor=pointer]:
+      - /url: https://book.getslick.com/#/group/62/
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - paragraph [ref=e135]: Sign up to our newsletter
+          - paragraph [ref=e136]: Get exclusive salon offers, news, updates and more!
+        - generic [ref=e139]:
+          - generic:
+            - textbox [ref=e141]
+            - textbox "yourname@email.com" [ref=e143]
+            - button "SIGN-UP" [ref=e145] [cursor=pointer]
+      - generic [ref=e146]:
+        - link "instagram logo" [ref=e147] [cursor=pointer]:
+          - /url: http://instagram.com/hareandbone
+          - img "instagram logo" [ref=e148]
+        - link "youtube logo" [ref=e149] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCymYtcmfk9c5zZgYJTxI9DQ/feed
+          - img "youtube logo" [ref=e150]
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e154]:
+          - heading "HARE & BONE" [level=3] [ref=e155]
+          - list [ref=e157]:
+            - listitem [ref=e158]:
+              - link "Home" [ref=e159] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/
+            - listitem [ref=e160]:
+              - link "About Us" [ref=e161] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/about-hare-and-bone/
+            - listitem [ref=e162]:
+              - link "Sam Burnett" [ref=e163] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/sam-burnett/
+            - listitem [ref=e164]:
+              - link "Meet the Team" [ref=e165] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/meet-the-team/
+            - listitem [ref=e166]:
+              - link "Awards & Media" [ref=e167] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/awards-media/
+        - generic [ref=e169]:
+          - heading "OUR SERVICES" [level=3] [ref=e170]
+          - list [ref=e172]:
+            - listitem [ref=e173]:
+              - link "Cutting" [ref=e174] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/cutting/
+            - listitem [ref=e175]:
+              - link "Colouring" [ref=e176] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/colouring/
+            - listitem [ref=e177]:
+              - link "Finishing" [ref=e178] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/finishing/
+            - listitem [ref=e179]:
+              - link "Treatments" [ref=e180] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/treatments/
+            - listitem [ref=e181]:
+              - link "Our Prices – Fitzrovia" [ref=e182] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/our-prices-fitzrovia/
+        - generic [ref=e184]:
+          - heading "GET TO KNOW US" [level=3] [ref=e185]
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - link "Latest News" [ref=e189] [cursor=pointer]:
+                - /url: http://hareandbone.co.uk/news-inspiration/
+            - listitem [ref=e190]:
+              - link "Inspiration" [ref=e191] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/inspiration/
+            - listitem [ref=e192]:
+              - link "Gallery" [ref=e193] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/category/gallery/
+            - listitem [ref=e194]:
+              - link "Hare Miles" [ref=e195] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/?page_id=132
+        - generic [ref=e197]:
+          - heading "CUSTOMER SERVICE" [level=3] [ref=e198]
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "How To Find Us" [ref=e202] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e203]:
+              - link "Media Enquiries" [ref=e204] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+            - listitem [ref=e205]:
+              - link "Good to know" [ref=e206] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/informationfaqs/
+            - listitem [ref=e207]:
+              - link "Careers" [ref=e208] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/careers/
+            - listitem [ref=e209]:
+              - link "Opening Hours" [ref=e210] [cursor=pointer]:
+                - /url: https://hareandbone.co.uk/contact/
+        - generic [ref=e212]:
+          - heading "CONTACT US" [level=3] [ref=e213]
+          - generic [ref=e214]:
+            - text: HARE & BONE - FITZROVIA
+            - text: +44 (0) 20 7401 2413
+            - link "hello@hareandbone.co.uk" [ref=e215] [cursor=pointer]:
+              - /url: mailto:hello@hareandbone.co.uk
+            - text: HARE & BONE - ESHER
+            - text: +44 (0) 1737 924800
+            - link "esher@hareandbone.co.uk" [ref=e216] [cursor=pointer]:
+              - /url: mailto:esher@hareandbone.co.uk
+      - paragraph [ref=e219]:
+        - text: © HARE & BONE 2026. All Rights Reserved.
+        - link "Disclaimer" [ref=e220] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/disclaimer/
+        - text: "|"
+        - link "Terms and Conditions" [ref=e221] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/terms-and-conditions/
+        - text: "|"
+        - link "Privacy Policy" [ref=e222] [cursor=pointer]:
+          - /url: https://hareandbone.co.uk/privacy-policy/
+  - text: Show more Enabled Enabled Enabled Enabled Enabled
+  - status [ref=e223]

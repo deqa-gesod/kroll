@@ -1,0 +1,233 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Cuts & services" [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [pressed] [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - paragraph [ref=e23]: The team — Jackson & Coil
+      - generic [ref=e24]:
+        - heading "Five people. One curl spectrum." [level=1] [ref=e25]:
+          - text: Five people.
+          - text: One curl spectrum.
+        - generic [ref=e26]:
+          - paragraph [ref=e27]: Every stylist here trained somewhere real. Every stylist here cuts the full curl spectrum. But each one has a chair they own — a pattern, a technique, a register they go deeper on than anyone else in the room.
+          - paragraph [ref=e28]: Pick the stylist by their work — not by who's free Tuesday at four. (Though we make that easy too.)
+    - generic [ref=e31]:
+      - article [ref=e32]:
+        - generic [ref=e33]:
+          - img "Founder Vanessa Jackson, portrait against cream backdrop" [ref=e34]
+          - generic [ref=e36]: 01 / 05
+        - blockquote [ref=e37]: “Every curl pattern is the same job done with knowledge. The hair tells you the shape — you just have to know how to look.”
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Vanessa Jackson" [level=3] [ref=e40]
+            - paragraph [ref=e41]: Founder & senior stylist
+          - generic [ref=e42]:
+            - term [ref=e43]: Trained
+            - definition [ref=e44]: Trained at Curl Bar London under Michelle Sultan, 2014. Devachan NYC, 2018. A season with Anthony Dickey at Hair Rules.
+            - term [ref=e45]: Specialty
+            - definition [ref=e46]: Type 2A through 4C. Dry-cutting, curl-safe color, and the education side of every appointment.
+          - generic [ref=e47]:
+            - link "Book with Vanessa" [ref=e48] [cursor=pointer]:
+              - /url: /booking?stylist=vanessa-jackson
+            - link "@vanessajackson.cuts" [ref=e49] [cursor=pointer]:
+              - /url: https://instagram.com/vanessajackson.cuts
+      - article [ref=e50]:
+        - generic [ref=e51]:
+          - img "Stylist portrait — Type 3b curls" [ref=e52]
+          - generic [ref=e54]: 02 / 05
+        - blockquote [ref=e55]: “I listen to the curl before I touch it. Most of what goes wrong in a chair happens before the scissors are even open.”
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "Nia Berhane" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Senior stylist
+          - generic [ref=e60]:
+            - term [ref=e61]: Trained
+            - definition [ref=e62]: Norwegian-Eritrean. Two years assisting at Hare & Bone, London. Curly Hair Artistry programme, 2022.
+            - term [ref=e63]: Specialty
+            - definition [ref=e64]: Type 3 spiral and ringlet patterns. Definition without crunch. Day-three hair you still recognise.
+          - generic [ref=e65]:
+            - link "Book with Nia" [ref=e66] [cursor=pointer]:
+              - /url: /booking?stylist=nia-berhane
+            - link "@nia.cuts.curls" [ref=e67] [cursor=pointer]:
+              - /url: https://instagram.com/nia.cuts.curls
+      - article [ref=e68]:
+        - generic [ref=e69]:
+          - img "Stylist portrait — Black male barber-stylist with taper and coils" [ref=e70]
+          - generic [ref=e72]: 03 / 05
+        - blockquote [ref=e73]: “A fade is architecture. The taper is the line, the coil is the volume — get the geometry right and the rest takes care of itself.”
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - heading "Adé Okonkwo" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Barber-stylist — men's specialist
+          - generic [ref=e78]:
+            - term [ref=e79]: Trained
+            - definition [ref=e80]: Trained at Hawthorne, NYC. Nine years inside the Tøyen barber tradition before that. The hands behind the Sculpt Cut.
+            - term [ref=e81]: Specialty
+            - definition [ref=e82]: The Sculpt Cut. Fades, tapers, lineups, and dry coil shaping in the same chair. Beard work shaped to the jaw.
+          - generic [ref=e83]:
+            - link "Book with Adé" [ref=e84] [cursor=pointer]:
+              - /url: /booking?stylist=ade-okonkwo
+            - link "@ade.sculpts" [ref=e85] [cursor=pointer]:
+              - /url: https://instagram.com/ade.sculpts
+      - article [ref=e86]:
+        - generic [ref=e87]:
+          - img "Stylist portrait — Somali-Norwegian stylist with locs" [ref=e88]
+          - generic [ref=e90]: 04 / 05
+        - blockquote [ref=e91]: “Healthy hair starts at the scalp. We can talk about shape and definition all day, but if the foundation isn't right, none of it lasts.”
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - heading "Mira Dahir" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Senior stylist — locs and protective styles
+          - generic [ref=e96]:
+            - term [ref=e97]: Trained
+            - definition [ref=e98]: Somali-Norwegian. Ran her own chair in Tøyen for six years. Trichology certificate, 2023.
+            - term [ref=e99]: Specialty
+            - definition [ref=e100]: Type 4. Loc maintenance, retwists, protective styles, scalp health. Long appointments done properly, not rushed.
+          - generic [ref=e101]:
+            - link "Book with Mira" [ref=e102] [cursor=pointer]:
+              - /url: /booking?stylist=mira-dahir
+            - link "@mira.locs.oslo" [ref=e103] [cursor=pointer]:
+              - /url: https://instagram.com/mira.locs.oslo
+      - article [ref=e104]:
+        - generic [ref=e105]:
+          - img "Stylist portrait — Type 3a curl specialist" [ref=e106]
+          - generic [ref=e108]: 05 / 05
+        - blockquote [ref=e109]: “I was the wavy girl who got told her hair was frizzy for twenty years. Half my job is unlearning what someone else taught the client about their own head.”
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - heading "Inés Lindberg" [level=3] [ref=e112]
+            - paragraph [ref=e113]: Stylist
+          - generic [ref=e114]:
+            - term [ref=e115]: Trained
+            - definition [ref=e116]: Norwegian. Trained at Bouclème, London. Curly Hair Artistry advanced, 2023.
+            - term [ref=e117]: Specialty
+            - definition [ref=e118]: Type 2 and looser Type 3. Wave-friendly cuts, face-framing layers, the first-time-curly-method client.
+          - generic [ref=e119]:
+            - link "Book with Inés" [ref=e120] [cursor=pointer]:
+              - /url: /booking?stylist=ines-lindberg
+            - link "@ines.bolger" [ref=e121] [cursor=pointer]:
+              - /url: https://instagram.com/ines.bolger
+    - generic [ref=e124]:
+      - heading "What every chair here shares." [level=2] [ref=e125]
+      - generic [ref=e126]:
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - generic [ref=e129]: "01"
+            - generic [ref=e130]: We cut your hair dry, on its natural pattern. Always. Wet-cutting hides the shape — we'd rather see it.
+          - listitem [ref=e131]:
+            - generic [ref=e132]: "02"
+            - generic [ref=e133]: First visit always includes a free 15-minute dry consultation. No upsell, no pressure, no surprises on the bill.
+          - listitem [ref=e134]:
+            - generic [ref=e135]: "03"
+            - generic [ref=e136]: Every appointment ends with a short education. You leave knowing what was done and why — and how to do it at home.
+        - generic [ref=e137]:
+          - link "Book a chair" [ref=e138] [cursor=pointer]:
+            - /url: /booking
+          - link "Read the method" [ref=e139] [cursor=pointer]:
+            - /url: /the-method
+  - contentinfo [ref=e140]:
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - link "Jackson & Coil." [ref=e143] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e144]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Visit" [level=3] [ref=e147]
+          - paragraph [ref=e148]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e149]:
+          - heading "Hours" [level=3] [ref=e150]
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - generic [ref=e153]: Tuesday
+              - generic [ref=e154]: 10:00 — 19:00
+            - listitem [ref=e155]:
+              - generic [ref=e156]: Wednesday
+              - generic [ref=e157]: 10:00 — 19:00
+            - listitem [ref=e158]:
+              - generic [ref=e159]: Thursday
+              - generic [ref=e160]: 10:00 — 20:00
+            - listitem [ref=e161]:
+              - generic [ref=e162]: Friday
+              - generic [ref=e163]: 10:00 — 19:00
+            - listitem [ref=e164]:
+              - generic [ref=e165]: Saturday
+              - generic [ref=e166]: 10:00 — 17:00
+            - listitem [ref=e167]:
+              - generic [ref=e168]: Sunday & Monday
+              - generic [ref=e169]: Closed
+        - generic [ref=e170]:
+          - heading "Contact" [level=3] [ref=e171]
+          - list [ref=e172]:
+            - listitem [ref=e173]:
+              - link "hei@jacksonandcoil.no" [ref=e174] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e175]: +47 22 00 00 00
+            - listitem [ref=e176]:
+              - link "@jacksonandcoil" [ref=e177] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e178]:
+          - heading "Pages" [level=3] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "Cuts & services" [ref=e182] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e183]:
+              - link "The method" [ref=e184] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e185]:
+              - link "The team" [ref=e186] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e187]:
+              - link "Portfolio" [ref=e188] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e189]:
+              - link "Shop" [ref=e190] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e191]:
+              - link "Journal" [ref=e192] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e193]:
+              - link "Visit" [ref=e194] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e195]:
+              - link "About" [ref=e196] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e197]:
+              - link "Book" [ref=e198] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e199]:
+        - generic [ref=e200]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e201]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e207] [cursor=pointer]:
+    - img [ref=e208]

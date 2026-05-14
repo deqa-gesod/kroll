@@ -1,0 +1,319 @@
+- generic [ref=e1]:
+  - dialog "Cookie Consent Banner" [ref=e2]:
+    - button "Close this dialog" [active] [ref=e3] [cursor=pointer]:
+      - img "Close this dialog" [ref=e4]
+    - generic [ref=e5]:
+      - generic [ref=e6]: We use cookies to help our website function. By clicking Accept, we'll also use cookies to measure & improve the site, personalize content & ads, and interact with social media. We'll share information with our social media, advertising & analytics partners. If you don't want these cookies, click Decline. You can also read our You may change your settings at any time or accept the default settings. You may close this banner to continue with only essential cookies.
+      - link "Privacy Policy" [ref=e7] [cursor=pointer]:
+        - /url: https://www.vagaro.com/pro/privacy
+    - generic [ref=e8]:
+      - button "Manage Preferences" [ref=e9] [cursor=pointer]
+      - button "Accept All" [ref=e10] [cursor=pointer]
+      - button "Reject Non-Essential" [ref=e11] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]: 
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - combobox [ref=e23] [cursor=pointer]: San Francisco, CA, United States
+        - textbox [ref=e24]:
+          - /placeholder: Business Name or Location
+          - text: San Francisco, CA, United States
+      - generic [ref=e25]:
+        - generic [ref=e26]: 
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - combobox [ref=e31] [cursor=pointer]
+        - textbox [ref=e32]:
+          - /placeholder: Search Services and Classes
+      - generic [ref=e34]:
+        - generic [ref=e35]: 
+        - button "Choose Date And Time" [ref=e36] [cursor=pointer]: May 8 at 5:45 PM
+      - button "Search" [ref=e37] [cursor=pointer]
+    - text: 
+  - text: 
+  - text: 
+  - navigation [ref=e38]:
+    - generic [ref=e39]:
+      - link "Vagaro" [ref=e41] [cursor=pointer]:
+        - /url: /
+        - img "Vagaro" [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]: 
+        - generic [ref=e45]:
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - combobox [ref=e50]: San Francisco, CA, United States
+          - textbox [ref=e51]:
+            - /placeholder: San Francisco, CA, United States
+            - text: San Francisco, CA, United States
+    - generic [ref=e52]:
+      - link "For Business" [ref=e53] [cursor=pointer]:
+        - /url: https://www.vagaro.com/pro
+      - link "Daily Deals" [ref=e54] [cursor=pointer]:
+        - /url: https://www.vagaro.com/deals/san-francisco--ca
+      - link "Professionals" [ref=e55] [cursor=pointer]:
+        - /url: https://www.vagaro.com/professionals/san-francisco--ca
+      - link "Gallery" [ref=e56] [cursor=pointer]:
+        - /url: https://www.vagaro.com/photos/san-francisco--ca
+      - link "Login" [ref=e57] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - text: 
+  - generic [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic "hair rules studio NYC Logo"
+        - generic [ref=e65]:
+          - banner "hair rules studio NYC" [ref=e66]
+          - generic [ref=e67]:
+            - heading "New York NY" [level=5] [ref=e68]: New York, NY
+            - link "Share Combo box Button" [ref=e70] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - generic [ref=e71]: 
+              - generic [ref=e72]: Share
+          - link "Book Now Dropdown" [ref=e74] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e75]: Book Now
+      - generic [ref=e76]:
+        - tablist [ref=e78]:
+          - tab "About" [selected] [ref=e79] [cursor=pointer]
+          - tab "Staff" [ref=e80] [cursor=pointer]
+          - tab "Services" [ref=e81] [cursor=pointer]
+          - tab "Gift Cards" [ref=e82] [cursor=pointer]
+        - link "cart having 0" [ref=e85] [cursor=pointer]:
+          - /url: javascript:void(0);
+          - generic "cart having" [ref=e86]: 
+          - generic [ref=e87]: "0"
+    - generic [ref=e162]:
+      - contentinfo [ref=e163]:
+        - generic [ref=e164]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - heading "For businesses" [level=4] [ref=e168]
+              - generic [ref=e169]:
+                - link [ref=e170] [cursor=pointer]:
+                  - /url: https://apps.apple.com/app/apple-store/id346778559?pt=317944&ct=Vagaro-Pro-App-Page&mt=8
+                  - img [ref=e171]
+                - link [ref=e178] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.semaphore.login
+                  - img [ref=e179]
+            - generic [ref=e188]:
+              - heading "For customers" [level=4] [ref=e189]
+              - generic [ref=e190]:
+                - link [ref=e191] [cursor=pointer]:
+                  - /url: https://itunes.apple.com/us/app/vagaro/id536110000?mt=8
+                  - img [ref=e192]
+                - link [ref=e199] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.vagaro&hl=en
+                  - img [ref=e200]
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - heading "Find Businesses" [level=3] [ref=e212]
+              - list [ref=e213]:
+                - listitem [ref=e214]:
+                  - link "Salon" [ref=e215] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/hair/san-francisco--ca
+                - listitem [ref=e216]:
+                  - link "Spa" [ref=e217] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/spa/san-francisco--ca
+                - listitem [ref=e218]:
+                  - link "Medical Spa" [ref=e219] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/med-spa/san-francisco--ca
+                - listitem [ref=e220]:
+                  - link "Barber" [ref=e221] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/listings/barber/san-francisco--ca
+                - listitem [ref=e222]:
+                  - link "Daily Deals" [ref=e223] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/deals/san-francisco--ca
+            - generic [ref=e224]:
+              - heading "Business Software" [level=3] [ref=e225]
+              - list [ref=e226]:
+                - listitem [ref=e227]:
+                  - link "Booth Renter" [ref=e228] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/booth-renter
+                - listitem [ref=e229]:
+                  - link "Salon" [ref=e230] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/salon-software
+                - listitem [ref=e231]:
+                  - link "Spa" [ref=e232] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/spa-software
+                - listitem [ref=e233]:
+                  - link "Medical Spa" [ref=e234] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/medical-spa-software
+                - listitem [ref=e235]:
+                  - link "Barber" [ref=e236] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/barber-software
+                - listitem [ref=e237]:
+                  - link "Tanning" [ref=e238] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/tanning-salon-software
+                - listitem [ref=e239]:
+                  - link "Nail" [ref=e240] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/nail-salon-software
+                - listitem [ref=e241]:
+                  - link "Pilates" [ref=e242] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pilates-software
+                - listitem [ref=e243]:
+                  - link "Mental Health" [ref=e244] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/mental-health-software
+            - generic [ref=e245]:
+              - heading "Business Features" [level=3] [ref=e246]
+              - list [ref=e247]:
+                - listitem [ref=e248]:
+                  - link "Online Booking" [ref=e249] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/online-booking
+                - listitem [ref=e250]:
+                  - link "Calendar" [ref=e251] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/calendar
+                - listitem [ref=e252]:
+                  - link "Pay Later" [ref=e253] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pay-later
+                - listitem [ref=e254]:
+                  - link "MySite" [ref=e255] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/booking-website-builder
+                - listitem [ref=e256]:
+                  - link "Forms" [ref=e257] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/forms
+                - listitem [ref=e258]:
+                  - link "Reports" [ref=e259] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/reports
+                - listitem [ref=e260]:
+                  - link "Vagaro Capital" [ref=e261] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/vagaro-capital
+                - listitem [ref=e262]:
+                  - link "Branded App" [ref=e263] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/branded-app
+            - generic [ref=e264]:
+              - heading "Business Products" [level=3] [ref=e265]
+              - list [ref=e266]:
+                - listitem [ref=e267]:
+                  - link "PayPro" [ref=e268] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/terminal
+                - listitem [ref=e269]:
+                  - link "PayPro Mini" [ref=e270] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/tablet
+                - listitem [ref=e271]:
+                  - link "PayPro Duo" [ref=e272] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/terminal-dual-screen
+                - listitem [ref=e273]:
+                  - link "Card Reader" [ref=e274] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/credit-card-reader
+                - listitem [ref=e275]:
+                  - link "Pay Swivel Stand" [ref=e276] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/stand
+                - listitem [ref=e277]:
+                  - link "QR Scanner" [ref=e278] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/barcode-scanner
+                - listitem [ref=e279]:
+                  - link "Receipt Printer" [ref=e280] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/thermal-receipt-printer
+                - listitem [ref=e281]:
+                  - link "Cash Drawer" [ref=e282] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/pos-hardware/cash-register
+            - generic [ref=e283]:
+              - heading "Company" [level=3] [ref=e284]
+              - list [ref=e285]:
+                - listitem [ref=e286]:
+                  - link "About Us" [ref=e287] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/about-us
+                - listitem [ref=e288]:
+                  - link "Careers" [ref=e289] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/careers
+                - listitem [ref=e290]:
+                  - link "Contact Us" [ref=e291] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/contact
+                - listitem [ref=e292]:
+                  - link "Vagaro Cares" [ref=e293] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/vagaro-cares
+                - listitem [ref=e294]:
+                  - link "Updates" [ref=e295] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/updates
+                - listitem [ref=e296]:
+                  - link "Partnerships" [ref=e297] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/partners
+                - listitem [ref=e298]:
+                  - link "MySite Updates" [ref=e299] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/mysite-updates
+                - listitem [ref=e300]:
+                  - link "iconic.25" [ref=e301] [cursor=pointer]:
+                    - /url: https://mysite.vagaro.com/iconic25
+            - generic [ref=e302]:
+              - heading "Resources" [level=3] [ref=e303]
+              - list [ref=e304]:
+                - listitem [ref=e305]:
+                  - link "Status" [ref=e306] [cursor=pointer]:
+                    - /url: https://status.vagaro.com/
+                - listitem [ref=e307]:
+                  - link "Support" [ref=e308] [cursor=pointer]:
+                    - /url: https://support.vagaro.com/
+                - listitem [ref=e309]:
+                  - link "Blog" [ref=e310] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/learn
+                - listitem [ref=e311]:
+                  - link "Newsroom" [ref=e312] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/news
+                - listitem [ref=e313]:
+                  - link "Compare Us" [ref=e314] [cursor=pointer]:
+                    - /url: https://www.vagaro.com/pro/compare
+          - generic [ref=e316]:
+            - generic [ref=e319] [cursor=pointer]:
+              - img "US Flag" [ref=e320]
+              - generic [ref=e321]: United States
+              - img [ref=e322]
+            - generic [ref=e324]:
+              - link "Facebook" [ref=e325] [cursor=pointer]:
+                - /url: https://www.facebook.com/vagaropro
+                - img [ref=e326]
+              - link "Twitter" [ref=e328] [cursor=pointer]:
+                - /url: https://x.com/Vagaro
+                - img [ref=e329]
+              - link "Instagram" [ref=e331] [cursor=pointer]:
+                - /url: https://www.instagram.com/vagaropro/
+                - img [ref=e332]
+              - link "Pinterest" [ref=e334] [cursor=pointer]:
+                - /url: https://www.pinterest.com/VagaroPins/
+                - img [ref=e335]
+              - link "Youtube" [ref=e337] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/VagaroSupport
+                - img [ref=e338]
+          - generic [ref=e340]:
+            - 'link "Contact Sales: (925) 718-0971 ext. 1" [ref=e341] [cursor=pointer]':
+              - /url: tel:92571809711
+            - 'link "Contact Support: (925) 464-1932 ext. 2" [ref=e342] [cursor=pointer]':
+              - /url: tel:92546419322
+            - generic [ref=e343]:
+              - link "Privacy Policy" [ref=e344] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/privacy
+              - link "User Agreement" [ref=e345] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/user-agreement
+              - link "Participation Agreement" [ref=e346] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/vagaro-customer-participation-agreement
+              - link "GDPR" [ref=e347] [cursor=pointer]:
+                - /url: https://www.vagaro.com/pro/general-data-protection-regulation
+              - link "Cookie Preferences" [ref=e348] [cursor=pointer]:
+                - /url: javascript:void(0)
+              - link "Your Privacy Choices" [ref=e349] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - img [ref=e351]
+                - text: Your Privacy Choices
+          - generic [ref=e358]:
+            - paragraph [ref=e359]: © 2025 Vagaro, Inc.
+            - paragraph [ref=e360]: Vagaro Merchant Services is a registered ISO of PNC Bank, N.A., Pittsburgh, PA.
+          - generic [ref=e361]:
+            - img "HIPAA" [ref=e362]
+            - img [ref=e363]
+      - generic [ref=e365]:
+        - generic [ref=e366]: For every step.
+        - img [ref=e367]
+  - generic:           
+  - alert
+  - generic [ref=e371]:
+    - generic [ref=e372]:
+      - button [ref=e373] [cursor=pointer]:  
+      - heading "Oops!" [level=4] [ref=e374]
+    - generic [ref=e376]: An Error Has Occurredhttps://api.vagaro.com/US03/api/v2/public/promotion/getallpromotiondetailsbybusinessid
+    - button "OK" [ref=e378] [cursor=pointer]
+  - status [ref=e380]
+  - status [ref=e381]
+  - status [ref=e382]

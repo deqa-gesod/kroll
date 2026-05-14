@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilde-velger v2 (master mapping)</title>
+<style>
+  :root {
+    --cream: #faf7f2;
+    --cream2: #f3eee5;
+    --ink: #1a1612;
+    --muted: #6f655c;
+    --terracotta: #b5532a;
+    --terracotta-soft: #d77a4a;
+    --line: #e3dcd0;
+    --ok: #1f7a4d;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, "Segoe UI", sans-serif; background: var(--cream); color: var(--ink); margin: 0; padding: 24px 20px 140px; line-height: 1.5; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  h2 { font-size: 18px; margin: 28px 0 10px; color: var(--terracotta); border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  p.lead { color: var(--muted); margin: 0 0 16px; max-width: 760px; }
+  .tabs { display: flex; gap: 8px; margin: 16px 0 8px; flex-wrap: wrap; }
+  .tab { background: white; border: 2px solid var(--line); color: var(--ink); padding: 10px 18px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 14px; }
+  .tab.active { background: var(--terracotta); color: white; border-color: var(--terracotta); }
+  .tab .count { opacity: 0.7; font-weight: 400; margin-left: 6px; }
+  .group-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 20px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .slot { background: white; border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; }
+  .slot.changed { border-color: var(--terracotta); box-shadow: 0 0 0 2px rgba(181, 83, 42, 0.15); }
+  .slot .name { font-weight: 700; font-size: 15px; word-break: break-all; }
+  .slot .meta { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+  .tag { background: var(--cream2); color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .tag.changed { background: var(--terracotta); color: white; }
+  .desc { font-size: 12px; color: var(--muted); margin: 4px 0 10px; min-height: 32px; }
+  .thumb { width: 100%; height: 320px; background: var(--cream2); border-radius: 6px; object-fit: cover; cursor: zoom-in; display: block; }
+  .filename { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 11px; color: var(--muted); margin: 8px 0; word-break: break-all; }
+  .filename b { color: var(--ink); font-weight: 600; }
+  .filename.picked b { color: var(--terracotta); }
+  .swap-btn { background: var(--ink); color: white; border: 0; padding: 10px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; margin-top: auto; }
+  .swap-btn:hover { background: var(--terracotta); }
+  .reset-btn { background: transparent; color: var(--muted); border: 0; padding: 4px 8px; cursor: pointer; font-size: 11px; text-decoration: underline; margin-top: 6px; }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(26, 22, 18, 0.85); z-index: 50; display: none; align-items: flex-start; justify-content: center; padding: 24px; overflow-y: auto; }
+  .modal-backdrop.open { display: flex; }
+  .modal { background: var(--cream); border-radius: 12px; max-width: 1100px; width: 100%; padding: 20px; }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .modal-header h3 { margin: 0; font-size: 17px; }
+  .modal-header .sub { color: var(--muted); font-size: 12px; font-family: "JetBrains Mono", monospace; }
+  .modal-close { background: var(--ink); color: white; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  .modal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .opt { position: relative; cursor: pointer; border: 3px solid transparent; border-radius: 6px; overflow: hidden; background: white; }
+  .opt:hover { border-color: var(--terracotta-soft); }
+  .opt.current { border-color: var(--ok); }
+  .opt img { width: 100%; height: 200px; object-fit: cover; display: block; }
+  .opt .label { position: absolute; top: 4px; left: 4px; background: rgba(0,0,0,0.7); color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-family: "JetBrains Mono", monospace; }
+  .opt.current .label { background: var(--ok); }
+
+  .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; display: none; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+  .toolbar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--ink); color: white; padding: 14px 20px; display: flex; gap: 12px; justify-content: space-between; align-items: center; box-shadow: 0 -2px 12px rgba(0,0,0,0.2); flex-wrap: wrap; }
+  .toolbar .stat { font-size: 13px; font-family: "JetBrains Mono", monospace; }
+  .toolbar .stat b { color: var(--terracotta-soft); }
+  .toolbar button { background: var(--terracotta); color: white; border: 0; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .toolbar button:hover { background: var(--terracotta-soft); }
+  .toolbar button.ghost { background: transparent; border: 1px solid white; }
+  .toast { position: fixed; bottom: 90px; right: 20px; background: var(--ok); color: white; padding: 10px 16px; border-radius: 6px; font-size: 13px; opacity: 0; transition: opacity 0.2s; z-index: 200; }
+  .toast.show { opacity: 1; }
+
+  @media (max-width: 600px) {
+    body { padding: 16px 12px 160px; }
+    .thumb { height: 240px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Bilde-velger v2: master mapping</h1>
+<p class="lead">For hver slot på website1 og website2: se naa-bildet, klikk "Bytt bilde" for aa velge en av 72 master-bilder. Kopier mapping-JSON nederst naar du er fornoeyd.</p>
+
+<div class="tabs">
+  <button class="tab active" data-site="website1">Website1<span class="count" id="cnt-w1"></span></button>
+  <button class="tab" data-site="website2">Website2<span class="count" id="cnt-w2"></span></button>
+</div>
+
+<div id="root"></div>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <h3 id="modal-title">Velg master-bilde</h3>
+        <div class="sub" id="modal-sub"></div>
+      </div>
+      <button class="modal-close" id="modal-close">Lukk</button>
+    </div>
+    <div class="modal-grid" id="modal-grid"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox"><img id="lightbox-img" alt=""></div>
+
+<div class="toolbar">
+  <div class="stat">Endret: <b id="changed-count">0</b> av <b id="total-count">0</b> slots</div>
+  <div style="display:flex; gap:8px; flex-wrap:wrap;">
+    <button class="ghost" id="reset-all">Nullstill alt</button>
+    <button id="copy-json">Kopier mapping JSON</button>
+    <button id="show-json">Vis JSON</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// Master image options. 72 total.
+const MASTER_OPTIONS = [
+  { value: "vanessa.png", label: "vanessa", src: "images/vanessa.png" },
+  { value: "salon-interior.png", label: "salon", src: "images/salon-interior.png" },
+];
+for (let i = 1; i <= 70; i++) {
+  const num = String(i).padStart(2, "0");
+  MASTER_OPTIONS.push({
+    value: "portfolio/" + num + ".png",
+    label: num,
+    src: "images/portfolio/" + num + ".png",
+  });
+}
+
+// Slot data parsed from website1/lib/content/images.ts
+const WEBSITE1_SLOTS = [
+  { group: "Hero", name: "heroPrimary", file: "hero-primary.jpg", aspect: "portrait", description: "Editorial portrait of a Black woman in her late 20s with Type 4a/4b natural curls, mid-laugh, looking off-camera." },
+  { group: "Hero", name: "heroAlt1", file: "hero-alt-1.jpg", aspect: "portrait", description: "Black man, early 30s, sharp high-top fade with defined coils on top. Documentary, Oslo street." },
+  { group: "Hero", name: "heroAlt2", file: "hero-alt-2.jpg", aspect: "landscape", description: "Mid-action mid-cut: a Black female stylist cutting another woman's Type 3c curls with scissors." },
+  { group: "Founder", name: "founderPortrait", file: "founder-portrait.jpg", aspect: "portrait", description: "Editorial portrait of Vanessa Jackson, mid-30s, Black British woman with shoulder-length sisterlocks." },
+  { group: "Founder", name: "founderHands", file: "founder-hands.jpg", aspect: "landscape", description: "Close-up of Vanessa's hands working a section of Type 4 hair. Gold rings, documentary." },
+  { group: "Team", name: "team1", file: "team-nia.jpg", aspect: "portrait", description: "Editorial portrait of a mixed-heritage woman with Type 3b spiral curls in a low bun." },
+  { group: "Team", name: "team2", file: "team-ade.jpg", aspect: "portrait", description: "Editorial portrait of a Black man with a sharp barbered taper and short coils on top." },
+  { group: "Team", name: "team3", file: "team-mira.jpg", aspect: "portrait", description: "Editorial portrait of a Somali-Norwegian woman with locs styled half-up." },
+  { group: "Team", name: "team4", file: "team-ines.jpg", aspect: "portrait", description: "Editorial portrait of a white-passing mixed-heritage woman with Type 3a wavy-curly hair." },
+  { group: "Portfolio", name: "portfolio2A", file: "portfolio-2a-1.jpg", aspect: "portrait", description: "Norwegian woman with Type 2A loose waves freshly cut to shoulder length, Oslo street." },
+  { group: "Portfolio", name: "portfolio2B", file: "portfolio-2b-1.jpg", aspect: "portrait", description: "Editorial portrait of a Type 2B/2C wavy-curly woman with mid-length cut, mixed Asian-European." },
+  { group: "Portfolio", name: "portfolio3A", file: "portfolio-3a-1.jpg", aspect: "portrait", description: "Mixed-heritage woman with shoulder-length Type 3A spiral curls, freshly cut for definition." },
+  { group: "Portfolio", name: "portfolio3B", file: "portfolio-3b-1.jpg", aspect: "portrait", description: "Afro-Latina woman with voluminous Type 3B/3C ringlet curls, mid-length, joyful." },
+  { group: "Portfolio", name: "portfolio3C", file: "portfolio-3c-1.jpg", aspect: "portrait", description: "Black woman with freshly cut Type 3C corkscrew curls, day-1 hair, voluminous." },
+  { group: "Portfolio", name: "portfolio4A", file: "portfolio-4a-1.jpg", aspect: "portrait", description: "Black woman with Type 4A coils freshly shaped, defined, voluminous, mid-length." },
+  { group: "Portfolio", name: "portfolio4B", file: "portfolio-4b-1.jpg", aspect: "portrait", description: "Black woman with Type 4B Z-pattern coils sculpted into a tapered afro shape, mid-laugh." },
+  { group: "Portfolio", name: "portfolio4C", file: "portfolio-4c-1.jpg", aspect: "portrait", description: "Dark-skinned Black woman with Type 4C tightly coiled crown freshly shaped, gold hoops." },
+  { group: "Portfolio", name: "portfolioMen1", file: "portfolio-men-fade-coils.jpg", aspect: "portrait", description: "Black man with sharp low-fade and defined Type 4A coils on top, clean lineup." },
+  { group: "Portfolio", name: "portfolioMen2", file: "portfolio-men-locs.jpg", aspect: "portrait", description: "Black man with mid-length sisterlocks freshly maintained." },
+  { group: "Portfolio", name: "portfolioColor1", file: "portfolio-color-1.jpg", aspect: "portrait", description: "Mixed-heritage woman with Type 3B curls with curl-safe deep auburn balayage." },
+  { group: "Portfolio", name: "portfolioColor2", file: "portfolio-color-2.jpg", aspect: "portrait", description: "Black woman with Type 4A coils with subtle copper highlights through the canopy." },
+  { group: "The Method", name: "method1", file: "method-1-assess.jpg", aspect: "landscape", description: "Documentary close-up: hands lifting a section of Type 4 coils to assess curl pattern dry." },
+  { group: "The Method", name: "method2", file: "method-2-cut.jpg", aspect: "landscape", description: "Documentary mid-shot: stylist mid-cut, scissors visible, snipping a single dry curl." },
+  { group: "The Method", name: "method3", file: "method-3-finish.jpg", aspect: "landscape", description: "Documentary close-up: client's finished Type 4 coils with hand running through them." },
+  { group: "Visit", name: "visitExterior", file: "visit-exterior.jpg", aspect: "landscape", description: "Quiet exterior shot of a small salon storefront on Gruenerloekka, cream signage, plants." },
+  { group: "Visit", name: "visitInterior", file: "visit-interior.jpg", aspect: "landscape", description: "Salon interior, no people. Two styling chairs, mirrors, cream walls, terracotta accents." },
+  { group: "Retail", name: "retailHero", file: "retail-hero.jpg", aspect: "landscape", description: "Still-life of curl products on a warm cream surface with terracotta-toned ceramic dish." },
+  { group: "Retail", name: "retail1", file: "retail-1.jpg", aspect: "square", description: "Single-product editorial: leave-in conditioner bottle on warm cream backdrop." },
+  { group: "Retail", name: "retail2", file: "retail-2.jpg", aspect: "square", description: "Single-product editorial: a sponge brush (twist sponge) on warm cream backdrop." },
+  { group: "Retail", name: "retail3", file: "retail-3.jpg", aspect: "square", description: "Single-product editorial: folded silk durag in deep teal on warm cream backdrop." },
+  { group: "Journal", name: "journal1", file: "journal-1.jpg", aspect: "landscape", description: "Hand cradling a small ceramic dish containing scalp oil, dropper visible." },
+  { group: "Journal", name: "journal2", file: "journal-2.jpg", aspect: "landscape", description: "Small group of mixed-heritage women in their 20s-30s in a salon space mid-conversation." },
+  { group: "Journal", name: "journal3", file: "journal-3.jpg", aspect: "landscape", description: "A Black mother gently styling her young daughter's Type 3C curls at a salon station." },
+  { group: "Journal", name: "journal4", file: "journal-4.jpg", aspect: "landscape", description: "Array of three head silhouettes from the back, varied curl types, typology illustration." },
+];
+
+// Slot data parsed from website2/lib/content.ts (images object).
+const WEBSITE2_SLOTS = [
+  { group: "Hero", name: "heroAmara", file: "hero-amara-chair.jpg", aspect: "portrait", description: "Amara, hero rotation lead, in chair. Type 4 curl spectrum lead image." },
+  { group: "Hero", name: "heroDaniel", file: "hero-daniel-fade-coils.jpg", aspect: "portrait", description: "Daniel, hero rotation alt. Sculpt Cut, fade and coils. Also used as Jonas stylist portrait." },
+  { group: "Founder", name: "founder", file: "founder-vanessa-working.jpg", aspect: "portrait", description: "Vanessa working. Used on home founder block and as Vanessa stylist portrait." },
+  { group: "Team", name: "stylist", file: "team-stylist-portrait.jpg", aspect: "portrait", description: "Generic stylist portrait. Used as Iman stylist portrait." },
+  { group: "Portfolio", name: "portfolioType4", file: "portfolio-type4-after.jpg", aspect: "portrait", description: "Day-three 4B shape reset. Portfolio tile Type 4." },
+  { group: "Portfolio", name: "portfolioType3", file: "portfolio-type3a-after.jpg", aspect: "portrait", description: "3A cut with natural volume. Portfolio tile Type 3." },
+  { group: "Portfolio", name: "portfolioSculpt", file: "portfolio-sculpt-cut.jpg", aspect: "portrait", description: "Fade, taper, coil definition. Sculpt Cut portfolio tile." },
+  { group: "The Method", name: "method", file: "method-dry-cut-detail.jpg", aspect: "landscape", description: "Dry cutting detail. Used as Any-stylist portrait and method block." },
+  { group: "Retail", name: "shop", file: "shop-curl-shelf.jpg", aspect: "landscape", description: "Curl product shelf for the shop section." },
+  { group: "Visit", name: "visit", file: "visit-salon-interior.jpg", aspect: "landscape", description: "Salon interior used on the visit page." },
+];
+
+const SITES = {
+  website1: { label: "Website1", slots: WEBSITE1_SLOTS, dir: "website1/public/images/" },
+  website2: { label: "Website2", slots: WEBSITE2_SLOTS, dir: "website2/public/images/" },
+};
+
+// State: mapping[site][slotName] = master file value (e.g. "portfolio/45.png") or undefined.
+const mapping = { website1: {}, website2: {} };
+let activeSite = "website1";
+let activeSlot = null;
+
+const root = document.getElementById("root");
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalSub = document.getElementById("modal-sub");
+const modalGrid = document.getElementById("modal-grid");
+const modalClose = document.getElementById("modal-close");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const toast = document.getElementById("toast");
+
+document.getElementById("cnt-w1").textContent = " (" + WEBSITE1_SLOTS.length + ")";
+document.getElementById("cnt-w2").textContent = " (" + WEBSITE2_SLOTS.length + ")";
+
+function renderSite(site) {
+  activeSite = site;
+  document.querySelectorAll(".tab").forEach((t) => {
+    t.classList.toggle("active", t.dataset.site === site);
+  });
+  const slots = SITES[site].slots;
+  const dir = SITES[site].dir;
+  const groups = {};
+  slots.forEach((s) => {
+    if (!groups[s.group]) groups[s.group] = [];
+    groups[s.group].push(s);
+  });
+  let html = "";
+  Object.keys(groups).forEach((g) => {
+    html += '<h2>' + g + '</h2><div class="grid">';
+    groups[g].forEach((slot) => {
+      const picked = mapping[site][slot.name];
+      const currentSrc = picked
+        ? "images/" + picked
+        : dir + slot.file;
+      const changed = !!picked;
+      const desc = slot.description.length > 100 ? slot.description.slice(0, 100) + "..." : slot.description;
+      html += `
+        <div class="slot ${changed ? "changed" : ""}" data-slot="${slot.name}">
+          <div class="name">${slot.name}</div>
+          <div class="meta">
+            <span class="tag">${slot.aspect}</span>
+            ${changed ? '<span class="tag changed">endret</span>' : ""}
+          </div>
+          <div class="desc">${desc}</div>
+          <img class="thumb" src="${currentSrc}" alt="${slot.name}" loading="lazy" data-zoom="${currentSrc}">
+          <div class="filename ${changed ? "picked" : ""}">
+            Naa: <b>${picked ? picked : slot.file}</b>
+            ${changed ? '<br>Original: ' + slot.file : ""}
+          </div>
+          <button class="swap-btn" data-action="swap" data-slot="${slot.name}">Bytt bilde</button>
+          ${changed ? '<button class="reset-btn" data-action="reset" data-slot="' + slot.name + '">Tilbakestill til original</button>' : ""}
+        </div>
+      `;
+    });
+    html += "</div>";
+  });
+  root.innerHTML = html;
+  updateStats();
+}
+
+function updateStats() {
+  let changed = 0;
+  let total = 0;
+  Object.keys(SITES).forEach((site) => {
+    total += SITES[site].slots.length;
+    changed += Object.keys(mapping[site]).length;
+  });
+  document.getElementById("changed-count").textContent = changed;
+  document.getElementById("total-count").textContent = total;
+}
+
+function openModal(slotName) {
+  activeSlot = slotName;
+  const slot = SITES[activeSite].slots.find((s) => s.name === slotName);
+  const current = mapping[activeSite][slotName];
+  modalTitle.textContent = "Velg master-bilde for: " + slotName;
+  modalSub.textContent = slot.aspect + " | original: " + slot.file + (current ? " | naa: " + current : "");
+  let html = "";
+  MASTER_OPTIONS.forEach((opt) => {
+    const isCurrent = current === opt.value;
+    html += `
+      <div class="opt ${isCurrent ? "current" : ""}" data-value="${opt.value}">
+        <img src="${opt.src}" loading="lazy" alt="${opt.label}">
+        <div class="label">${opt.label}</div>
+      </div>
+    `;
+  });
+  modalGrid.innerHTML = html;
+  modal.classList.add("open");
+}
+
+function closeModal() {
+  modal.classList.remove("open");
+  activeSlot = null;
+}
+
+function pickMaster(value) {
+  if (!activeSlot) return;
+  mapping[activeSite][activeSlot] = value;
+  closeModal();
+  renderSite(activeSite);
+}
+
+function resetSlot(slotName) {
+  delete mapping[activeSite][slotName];
+  renderSite(activeSite);
+}
+
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 1800);
+}
+
+function buildExportJSON() {
+  return JSON.stringify(mapping, null, 2);
+}
+
+// Event delegation.
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.addEventListener("click", () => renderSite(tab.dataset.site));
+});
+
+root.addEventListener("click", (e) => {
+  const action = e.target.dataset && e.target.dataset.action;
+  if (action === "swap") {
+    openModal(e.target.dataset.slot);
+    return;
+  }
+  if (action === "reset") {
+    resetSlot(e.target.dataset.slot);
+    return;
+  }
+  if (e.target.classList && e.target.classList.contains("thumb")) {
+    const src = e.target.dataset.zoom;
+    if (src) {
+      lightboxImg.src = src;
+      lightbox.classList.add("open");
+    }
+  }
+});
+
+modalGrid.addEventListener("click", (e) => {
+  let el = e.target;
+  while (el && el !== modalGrid && !el.classList.contains("opt")) el = el.parentElement;
+  if (el && el.classList && el.classList.contains("opt")) {
+    pickMaster(el.dataset.value);
+  }
+});
+
+modalClose.addEventListener("click", closeModal);
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.classList.remove("open");
+  lightboxImg.src = "";
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+    lightbox.classList.remove("open");
+  }
+});
+
+document.getElementById("copy-json").addEventListener("click", async () => {
+  const json = buildExportJSON();
+  try {
+    await navigator.clipboard.writeText(json);
+    showToast("Mapping JSON kopiert til clipboard");
+  } catch (err) {
+    window.prompt("Kopier denne JSON-en manuelt:", json);
+  }
+});
+
+document.getElementById("show-json").addEventListener("click", () => {
+  window.prompt("Mapping JSON (Cmd+C for aa kopiere):", buildExportJSON());
+});
+
+document.getElementById("reset-all").addEventListener("click", () => {
+  if (confirm("Nullstille alle valg?")) {
+    mapping.website1 = {};
+    mapping.website2 = {};
+    renderSite(activeSite);
+  }
+});
+
+renderSite("website1");
+</script>
+</body>
+</html>

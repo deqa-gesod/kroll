@@ -1,0 +1,8 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - img "linear gradient"
+    - img "linear gradient"
+    - generic:
+      - img "spotlight external gradient shape"
+    - heading "Choose a location" [level=1] [ref=e13]
+  - alert [ref=e101]

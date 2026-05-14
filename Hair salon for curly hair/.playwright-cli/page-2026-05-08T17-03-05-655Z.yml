@@ -1,0 +1,402 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Klipp og tjenester" [ref=e418] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "Metoden" [ref=e419] [cursor=pointer]:
+          - /url: /the-method
+        - link "Teamet" [ref=e420] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portefølje" [ref=e421] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Butikk" [ref=e422] [cursor=pointer]:
+          - /url: /shop
+        - link "Magasin" [ref=e423] [cursor=pointer]:
+          - /url: /journal
+        - link "Besøk" [ref=e424] [cursor=pointer]:
+          - /url: /visit
+        - link "Om" [ref=e425] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [active] [pressed] [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Grünerløkka, Oslo
+        - generic [ref=e25]: Grunnlagt av Vanessa Jackson
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - heading "Alle krøller. Ett sted. Hele spekteret." [level=1] [ref=e426]:
+            - text: Alle krøller.
+            - text: Ett sted.
+            - text: Hele spekteret.
+          - paragraph [ref=e30]: Oslos første salong for hele krøll-spekteret. Fra løse bølger til tette krøller. Hver krølltype får samme omsorg, av stylister som faktisk er utdannet for det.
+          - generic [ref=e31]:
+            - link "Book en stol" [ref=e427] [cursor=pointer]:
+              - /url: /booking
+            - link "Første gang? Gratis 15-minutters konsultasjon" [ref=e428] [cursor=pointer]:
+              - /url: /booking?service=consultation
+          - generic [ref=e34]:
+            - generic [ref=e35]: "Neste ledige: torsdag 16:30"
+            - generic [ref=e37]: Type 2 — 4. Kvinner og menn.
+        - generic [ref=e38]:
+          - img "A Black woman with Type 4 curls laughing, warm cream backdrop" [ref=e39]
+          - generic [ref=e40]:
+            - generic [ref=e41]: Type 4 / klippet tørr
+            - generic [ref=e42]: 01 / 04
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: 01 / 03
+        - heading "Alle krøller. Ett sted." [level=3] [ref=e429]
+        - paragraph [ref=e49]: Fra Type 2 løse bølger til Type 4 krøller — samme stol, samme omsorg, ingen B-liga. Hele spekteret, forstått.
+      - generic [ref=e50]:
+        - generic [ref=e51]: 02 / 03
+        - heading "Tørr konsultasjon på første besøk, gratis." [level=3] [ref=e430]
+        - paragraph [ref=e53]: Femten minutter, tørt hår, på din naturlige krøll. Ingen forpliktelser, ingen mersalg. Vi ser håret ditt før vi tar i det.
+      - generic [ref=e54]:
+        - generic [ref=e55]: 03 / 03
+        - heading "Utdannet for håret ditt, ikke mot det." [level=3] [ref=e431]
+        - paragraph [ref=e57]: Curl Bar London. Devachan NYC. Hair Rules. Stedene som faktisk lærer bort krøllete hår — med papirene i orden.
+    - generic [ref=e60]:
+      - img "Founder Vanessa Jackson, portrait against cream backdrop" [ref=e62]
+      - generic [ref=e63]:
+        - text: Grunnleggeren
+        - heading "Vanessa Jackson. Tottenham, så Devachan, så Oslo." [level=2] [ref=e432]
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Utdannet ved Curl Bar London under Michelle Sultan, deretter et år ved opprinnelige Devachan i New York og en sesong hos Anthony Dickey på Hair Rules.
+          - paragraph [ref=e67]: Sju år med lånte stoler i Oslo-salonger — og en stille kundeliste av kvinner og menn som ellers ville sittet på fly til London eller Stockholm.
+          - paragraph [ref=e68]: «Alle krøller er samme jobb gjort med kunnskap. Kunnskap er noe du henter, ikke noe du venter på.»
+        - link "Les hele historien" [ref=e433] [cursor=pointer]:
+          - /url: /about
+          - text: Les hele historien
+          - generic [ref=e71]: →
+      - img "Close-up of hands working through Type 4 coils" [ref=e73]
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - text: Porteføljen
+          - heading "Ett galleri. Hele spekteret." [level=2] [ref=e434]
+        - paragraph [ref=e80]: Type 2 til Type 4. Kvinner og menn. Farge og klipp. Ingen «løs-krøll»-fane. Ingen herreseksjon.
+      - generic [ref=e81]:
+        - figure "Type 4C / klippet tørr 01" [ref=e435]:
+          - link "Type 4C crown, freshly shaped" [ref=e83] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Type 4C crown, freshly shaped" [ref=e84]
+          - generic [ref=e86]:
+            - generic [ref=e87]: Type 4C / klippet tørr
+            - generic [ref=e88]: "01"
+        - figure "Sculpt cut / fade og krøller 02" [ref=e436]:
+          - link "Black man, low-fade with defined coils on top" [ref=e90] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Black man, low-fade with defined coils on top" [ref=e91]
+          - generic [ref=e93]:
+            - generic [ref=e94]: Sculpt cut / fade og krøller
+            - generic [ref=e95]: "02"
+        - figure "Type 3B ringlekrøller 03" [ref=e437]:
+          - link "Type 3B ringlet curls, finished cut" [ref=e97] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Type 3B ringlet curls, finished cut" [ref=e98]
+          - generic [ref=e100]:
+            - generic [ref=e101]: Type 3B ringlekrøller
+            - generic [ref=e102]: "03"
+        - figure "Type 4A krøller 04" [ref=e438]:
+          - link "Type 4A coils, defined and shaped" [ref=e104] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Type 4A coils, defined and shaped" [ref=e105]
+          - generic [ref=e107]:
+            - generic [ref=e108]: Type 4A krøller
+            - generic [ref=e109]: "04"
+        - figure "Krøll-trygg farge / 3B 05" [ref=e439]:
+          - link "Curl-safe auburn balayage on Type 3B" [ref=e111] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Curl-safe auburn balayage on Type 3B" [ref=e112]
+          - generic [ref=e114]:
+            - generic [ref=e115]: Krøll-trygg farge / 3B
+            - generic [ref=e116]: "05"
+        - figure "Type 2B / midjelang 06" [ref=e440]:
+          - link "Type 2B/2C cut, studio" [ref=e118] [cursor=pointer]:
+            - /url: /portfolio
+            - img "Type 2B/2C cut, studio" [ref=e119]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Type 2B / midjelang
+            - generic [ref=e123]: "06"
+      - link "Se hele porteføljen" [ref=e441] [cursor=pointer]:
+        - /url: /portfolio
+        - text: Se hele porteføljen
+        - generic [ref=e126]: →
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - text: Metoden
+        - heading "The Jackson Cut." [level=2] [ref=e131]
+        - paragraph [ref=e132]: Tørt. Krøll for krøll. På den naturlige krøllen.
+        - paragraph [ref=e133]: "Vi klipper slik de beste krøll-husene klipper: tørt, på krøllen slik den faktisk faller, aldri vått, aldri strukket. Hver klipp avsluttes med at du vet hva som er gjort, og hvorfor."
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - generic [ref=e136]: "01"
+            - generic [ref=e137]: Vurder
+          - listitem [ref=e138]:
+            - generic [ref=e139]: "02"
+            - generic [ref=e140]: Kartlegg
+          - listitem [ref=e141]:
+            - generic [ref=e142]: "03"
+            - generic [ref=e143]: Klipp, tørt, krøll for krøll
+          - listitem [ref=e144]:
+            - generic [ref=e145]: "04"
+            - generic [ref=e146]: Fullfør og lær bort
+        - link "Les metoden i sin helhet" [ref=e442] [cursor=pointer]:
+          - /url: /the-method
+          - text: Les metoden i sin helhet
+          - generic [ref=e149]: →
+      - link "Se 45-sekunders metode-film" [ref=e443] [cursor=pointer]:
+        - /url: /the-method
+        - img "Dry curl-by-curl cutting in progress" [ref=e152]
+        - generic [ref=e155]:
+          - img [ref=e157]
+          - generic [ref=e159]: Se / 45 sek
+        - generic [ref=e160]: Vanessa klipper / Type 4A
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - text: Butikken
+          - heading "Vanskelig-å-finne merker, endelig i Oslo." [level=2] [ref=e444]
+        - paragraph [ref=e167]: Bread, Pattern, Bouclème, Adwoa, Innersense, Mielle. Produktene du i dag bestiller fra Amazon UK — på hylla her, beskjeden markup, ingen flyreise.
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - link "Curl products and tools on cream surface" [ref=e170] [cursor=pointer]:
+            - /url: /shop
+            - img "Curl products and tools on cream surface" [ref=e171]
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - paragraph [ref=e174]: The Edit
+              - paragraph [ref=e175]: Krøll-essensielt, kuratert
+            - generic [ref=e176]: —
+        - generic [ref=e177]:
+          - link "Leave-in conditioner" [ref=e178] [cursor=pointer]:
+            - /url: /shop
+            - img "Leave-in conditioner" [ref=e179]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - paragraph [ref=e182]: Bread Beauty Supply
+              - paragraph [ref=e183]: Hair-Wash leave-in
+            - generic [ref=e184]: 295,—
+        - generic [ref=e185]:
+          - link "Twist / curl sponge" [ref=e186] [cursor=pointer]:
+            - /url: /shop
+            - img "Twist / curl sponge" [ref=e187]
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - paragraph [ref=e190]: Annie
+              - paragraph [ref=e191]: Twist-svamp børste
+            - generic [ref=e192]: 180,—
+        - generic [ref=e193]:
+          - link "Silk durag" [ref=e194] [cursor=pointer]:
+            - /url: /shop
+            - img "Silk durag" [ref=e195]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - paragraph [ref=e198]: Slip
+              - paragraph [ref=e199]: Silke-durag, dyp teal
+            - generic [ref=e200]: 390,—
+      - link "Se hele butikken" [ref=e445] [cursor=pointer]:
+        - /url: /shop
+        - text: Se hele butikken
+        - generic [ref=e203]: →
+    - generic [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - text: Fra stolen
+          - heading "Tre år med kunder fra lånte stoler, med deres egne ord." [level=2] [ref=e446]
+        - generic [ref=e209]:
+          - generic "5 stars" [ref=e210]:
+            - img [ref=e211]
+            - img [ref=e213]
+            - img [ref=e215]
+            - img [ref=e217]
+            - img [ref=e219]
+          - generic [ref=e221]: 4.9 / 5 · Google
+      - generic [ref=e222]:
+        - article [ref=e223]:
+          - generic "5 stars" [ref=e224]:
+            - img [ref=e225]
+            - img [ref=e227]
+            - img [ref=e229]
+            - img [ref=e231]
+            - img [ref=e233]
+          - paragraph [ref=e235]: Første salong i Oslo der jeg ikke måtte forklare håret mitt før noen tok i det. Vanessa klippet tørt, på krøllen, og jeg gikk ut med form jeg bare har sett i London. At jeg nå kan booke dette i min egen by, er en liten oppgradering av livet.
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - paragraph [ref=e238]: Amara O.
+              - paragraph [ref=e239]: Type 4a / Tøyen
+            - generic [ref=e240]: 2 uker siden
+        - article [ref=e241]:
+          - generic "5 stars" [ref=e242]:
+            - img [ref=e243]
+            - img [ref=e245]
+            - img [ref=e247]
+            - img [ref=e249]
+            - img [ref=e251]
+          - paragraph [ref=e253]: Fade er skarp, lineup er ren, og krøllene på toppen er faktisk formet — ikke bare overlatt til seg selv. Én stol, begge ferdigheter, ingen flyreise til Stockholm. Har bookt de fire neste allerede.
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - paragraph [ref=e256]: Daniel B.
+              - paragraph [ref=e257]: Fade + krøller / Grünerløkka
+            - generic [ref=e258]: 1 måned siden
+        - article [ref=e259]:
+          - generic "5 stars" [ref=e260]:
+            - img [ref=e261]
+            - img [ref=e263]
+            - img [ref=e265]
+            - img [ref=e267]
+            - img [ref=e269]
+          - paragraph [ref=e271]: Fem Oslo-salonger sa håret mitt var «krusete». Vanessa kalte det 3a og klippet deretter. Dag-tre-håret har fortsatt fasong — det har aldri skjedd før. Den tørre konsultasjonen alene var verdt turen.
+          - generic [ref=e272]:
+            - generic [ref=e273]:
+              - paragraph [ref=e274]: Sigrid M.
+              - paragraph [ref=e275]: Type 3a / Torshov
+            - generic [ref=e276]: 3 uker siden
+    - generic [ref=e279]:
+      - generic [ref=e280]:
+        - img [ref=e282]
+        - generic [ref=e296]:
+          - generic [ref=e297]: Markveien 35 · Grünerløkka
+          - generic [ref=e298]: 59.92°N · 10.76°E
+        - link "Åpne i Kart" [ref=e447] [cursor=pointer]:
+          - /url: /visit
+          - text: Åpne i Kart
+          - generic [ref=e301]: →
+      - generic [ref=e302]:
+        - generic [ref=e303]: Besøk
+        - heading "To minutter fra Olaf Ryes plass." [level=2] [ref=e448]
+        - generic [ref=e307]: Neste ledige — torsdag 16:30
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - term [ref=e310]: Adresse
+            - definition [ref=e311]:
+              - text: Markveien 35
+              - text: 0554 Oslo
+          - generic [ref=e312]:
+            - term [ref=e313]: Transport
+            - definition [ref=e314]: "Trikk 11, 12 og 13 stopper to minutter unna ved Olaf Ryes plass. Nærmeste T-bane: Grünerløkka."
+          - generic [ref=e315]:
+            - term [ref=e316]: Åpningstider
+            - definition [ref=e317]:
+              - list [ref=e318]:
+                - listitem [ref=e319]:
+                  - generic [ref=e320]: Tirsdag
+                  - generic [ref=e321]: 10:00 — 19:00
+                - listitem [ref=e322]:
+                  - generic [ref=e323]: Onsdag
+                  - generic [ref=e324]: 10:00 — 19:00
+                - listitem [ref=e325]:
+                  - generic [ref=e326]: Torsdag
+                  - generic [ref=e327]: 10:00 — 20:00
+                - listitem [ref=e328]:
+                  - generic [ref=e329]: Fredag
+                  - generic [ref=e330]: 10:00 — 19:00
+                - listitem [ref=e331]:
+                  - generic [ref=e332]: Lørdag
+                  - generic [ref=e333]: 10:00 — 17:00
+                - listitem [ref=e334]:
+                  - generic [ref=e335]: Søn & man
+                  - generic [ref=e336]: Stengt
+          - generic [ref=e337]:
+            - term [ref=e338]: Kontakt
+            - definition [ref=e339]:
+              - paragraph [ref=e340]:
+                - link "hei@jacksonandcoil.no" [ref=e341] [cursor=pointer]:
+                  - /url: mailto:hei@jacksonandcoil.no
+              - paragraph [ref=e342]: +47 22 00 00 00
+        - generic [ref=e343]:
+          - link "Book en stol" [ref=e449] [cursor=pointer]:
+            - /url: /booking
+          - link "Planlegg besøket" [ref=e450] [cursor=pointer]:
+            - /url: /visit
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - link "Jackson & Coil." [ref=e349] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e350]: Alle krøller. Ett sted. Stylister som er utdannet for håret ditt, ikke mot det.
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - heading "Besøk" [level=3] [ref=e451]
+          - paragraph [ref=e354]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norge
+        - generic [ref=e355]:
+          - heading "Åpningstider" [level=3] [ref=e452]
+          - list [ref=e357]:
+            - listitem [ref=e358]:
+              - generic [ref=e359]: Tirsdag
+              - generic [ref=e360]: 10:00 — 19:00
+            - listitem [ref=e361]:
+              - generic [ref=e362]: Onsdag
+              - generic [ref=e363]: 10:00 — 19:00
+            - listitem [ref=e364]:
+              - generic [ref=e365]: Torsdag
+              - generic [ref=e366]: 10:00 — 20:00
+            - listitem [ref=e367]:
+              - generic [ref=e368]: Fredag
+              - generic [ref=e369]: 10:00 — 19:00
+            - listitem [ref=e370]:
+              - generic [ref=e371]: Lørdag
+              - generic [ref=e372]: 10:00 — 17:00
+            - listitem [ref=e373]:
+              - generic [ref=e374]: Søndag og mandag
+              - generic [ref=e375]: Stengt
+        - generic [ref=e376]:
+          - heading "Kontakt" [level=3] [ref=e453]
+          - list [ref=e378]:
+            - listitem [ref=e379]:
+              - link "hei@jacksonandcoil.no" [ref=e380] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e381]: +47 22 00 00 00
+            - listitem [ref=e382]:
+              - link "@jacksonandcoil" [ref=e383] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e384]:
+          - heading "Sider" [level=3] [ref=e454]
+          - list [ref=e386]:
+            - listitem [ref=e387]:
+              - link "Klipp og tjenester" [ref=e455] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e389]:
+              - link "Metoden" [ref=e456] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e391]:
+              - link "Teamet" [ref=e457] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e393]:
+              - link "Portefølje" [ref=e458] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e395]:
+              - link "Butikk" [ref=e459] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e397]:
+              - link "Magasin" [ref=e460] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e399]:
+              - link "Besøk" [ref=e461] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e401]:
+              - link "Om" [ref=e462] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e403]:
+              - link "Book" [ref=e404] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e405]:
+        - generic [ref=e406]: © 2026 Jackson & Coil. Alle rettigheter forbeholdt.
+        - generic [ref=e407]: Krøll-spesialisert frisørsalong. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e413] [cursor=pointer]:
+    - img [ref=e414]
+  - alert [ref=e417]

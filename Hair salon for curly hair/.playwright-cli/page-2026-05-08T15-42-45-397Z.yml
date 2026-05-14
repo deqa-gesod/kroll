@@ -1,0 +1,189 @@
+- generic [ref=e6]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - navigation:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Profile" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Profile
+          - listitem [ref=e15]:
+            - button "Bookings" [ref=e16] [cursor=pointer]:
+              - generic [ref=e19]: Bookings
+          - listitem [ref=e20]:
+            - button "Deposits" [ref=e21] [cursor=pointer]:
+              - generic [ref=e25]: Deposits
+      - banner [ref=e26]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: Powered by
+          - img "Slick logo" [ref=e33]
+        - generic [ref=e43]: Welcome to HARE & BONE FITZROVIA
+    - generic [ref=e34]:
+      - text: Founded in 2016 by Sam Burnett, HARE & BONE is a fashion-forward salon collective driven by creativity, craftsmanship and an instinctive understanding of style. Every cut, colour and finish
+      - button "read more..." [ref=e44] [cursor=pointer]
+    - button "CHANGE LOCATION" [ref=e36] [cursor=pointer]:
+      - generic [ref=e37]: CHANGE LOCATION
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - button "COLOUR dropdown arrow" [active] [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]: COLOUR
+          - img "dropdown arrow" [ref=e51]
+        - generic [ref=e78]:
+          - button "HALF HEAD LIGHTENING 2 hours Half a head of highlights or half a head of balayage adds brightness through the top and front sections, perfect for a softer refresh or maintaining your colour between full appointments. Includes an in-depth consultation to tailor this service to suit you. ...view more £130.00 - £280.00" [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - generic [ref=e82]: HALF HEAD LIGHTENING
+                - generic [ref=e83]: 2 hours
+                - generic [ref=e84]:
+                  - text: Half a head of highlights or half a head of balayage adds brightness through the top and front sections, perfect for a softer refresh or maintaining your colour between full appointments. Includes an in-depth consultation to tailor this service to suit you.
+                  - button "...view more" [ref=e86]
+              - generic [ref=e87]:
+                - generic [ref=e88]: £130.00 - £280.00
+                - button [ref=e89]
+          - button "BLEACH RETOUCH 3 hours Bleach retouch to refresh regrowth and keep your blonde even and bright. Bleach is carefully applied to the roots only for a seamless blend with your existing colour. Includes an in-depth consultation to tailor this service to suit you. ...view more £190.00 - £310.00" [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]: BLEACH RETOUCH
+                - generic [ref=e94]: 3 hours
+                - generic [ref=e95]:
+                  - text: Bleach retouch to refresh regrowth and keep your blonde even and bright. Bleach is carefully applied to the roots only for a seamless blend with your existing colour. Includes an in-depth consultation to tailor this service to suit you.
+                  - button "...view more" [ref=e97]
+              - generic [ref=e98]:
+                - generic [ref=e99]: £190.00 - £310.00
+                - button [ref=e100]
+          - button "FULL COLOUR 2 hours Full head permanent colour applied from roots to ends for an even, all-over look. Perfect for a complete refresh, covering greys, or switching up your look. Includes an in-depth consultation to tailor this service to suit you. ...view more £95.00 - £150.00" [ref=e101] [cursor=pointer]:
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: FULL COLOUR
+                - generic [ref=e105]: 2 hours
+                - generic [ref=e106]:
+                  - text: Full head permanent colour applied from roots to ends for an even, all-over look. Perfect for a complete refresh, covering greys, or switching up your look. Includes an in-depth consultation to tailor this service to suit you.
+                  - button "...view more" [ref=e108]
+              - generic [ref=e109]:
+                - generic [ref=e110]: £95.00 - £150.00
+                - button [ref=e111]
+          - button "FULL HEAD LIGHTENING 2 hours 30 mins Full Head Highlights or full head balayage is the perfect service for a complete, all-over transformation. This treatment involves applying highlights throughout the entire head creating a brighter, more dimensional look. Whether you’re going for a soft, sun-kissed effect or a bold, high-contrast blonde, our stylists will tailor the placement and tone to suit your hair type, skin tone, and personal style. Includes an in-depth consultation to tailor this service to suit you. ...view more £185.00 - £310.00" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: FULL HEAD LIGHTENING
+                - generic [ref=e116]: 2 hours 30 mins
+                - generic [ref=e117]:
+                  - text: Full Head Highlights or full head balayage is the perfect service for a complete, all-over transformation. This treatment involves applying highlights throughout the entire head creating a brighter, more dimensional look. Whether you’re going for a soft, sun-kissed effect or a bold, high-contrast blonde, our stylists will tailor the placement and tone to suit your hair type, skin tone, and personal style. Includes an in-depth consultation to tailor this service to suit you.
+                  - button "...view more" [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]: £185.00 - £310.00
+                - button [ref=e122]
+          - button "QUARTER HEAD 1 hour 45 mins Quarter head of highlights or quarter head of balayage focuses on the top section and hairline for a subtle, face-framing lift. Perfect for a quick refresh or in-between appointments. Includes an in-depth consultation to tailor this service to suit you. ...view more £105.00 - £205.00" [ref=e123] [cursor=pointer]:
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - generic [ref=e126]: QUARTER HEAD
+                - generic [ref=e127]: 1 hour 45 mins
+                - generic [ref=e128]:
+                  - text: Quarter head of highlights or quarter head of balayage focuses on the top section and hairline for a subtle, face-framing lift. Perfect for a quick refresh or in-between appointments. Includes an in-depth consultation to tailor this service to suit you.
+                  - button "...view more" [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]: £105.00 - £205.00
+                - button [ref=e133]
+          - button "GLOSSING 1 hour - 1 hour 45 mins Glossing refreshes your colour, boost shine, and smooths the hair. Perfect for enhancing tone, reducing brassiness, or soft grey coverage. Giving your colour a healthy and glossy finish. Includes an in-depth consultation to tailor this service to you. ...view more £85.00 - £130.00" [ref=e134] [cursor=pointer]:
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - generic [ref=e137]: GLOSSING
+                - generic [ref=e138]: 1 hour - 1 hour 45 mins
+                - generic [ref=e139]:
+                  - text: Glossing refreshes your colour, boost shine, and smooths the hair. Perfect for enhancing tone, reducing brassiness, or soft grey coverage. Giving your colour a healthy and glossy finish. Includes an in-depth consultation to tailor this service to you.
+                  - button "...view more" [ref=e141]
+              - generic [ref=e142]:
+                - generic [ref=e143]: £85.00 - £130.00
+                - button [ref=e144]
+          - button "ROOT RETOUCH 1 hour 45 mins Root retouch is a permanent colour to refresh regrowth and keep your colour looking seamless and even. Perfect for covering greys or maintaining your existing shade between full colour appointments. Includes an in-depth consultation to tailor this service to you. ...view more £75.00 - £130.00" [ref=e145] [cursor=pointer]:
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: ROOT RETOUCH
+                - generic [ref=e149]: 1 hour 45 mins
+                - generic [ref=e150]:
+                  - text: Root retouch is a permanent colour to refresh regrowth and keep your colour looking seamless and even. Perfect for covering greys or maintaining your existing shade between full colour appointments. Includes an in-depth consultation to tailor this service to you.
+                  - button "...view more" [ref=e152]
+              - generic [ref=e153]:
+                - generic [ref=e154]: £75.00 - £130.00
+                - button [ref=e155]
+          - button "FINEST PIGMENTS BOOSTER 30 mins Finest pigments is a gentle ammonia free direct colour. Ideal introduction to colour and enhances the natural hair colour while adding reflects that will gradually fade. Includes an in-depth consultation to tailor this service to you. ...view more £22.00" [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e159]: FINEST PIGMENTS BOOSTER
+                - generic [ref=e160]: 30 mins
+                - generic [ref=e161]:
+                  - text: Finest pigments is a gentle ammonia free direct colour. Ideal introduction to colour and enhances the natural hair colour while adding reflects that will gradually fade. Includes an in-depth consultation to tailor this service to you.
+                  - button "...view more" [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]: £22.00
+                - button [ref=e166]
+          - button "FOCAL FLASH 1 hour 30 mins Focal flash consists of up to 10 foils mainly focusing around the hairline. Perfect for a bright refresh or an in between appointment top up. Includes an in-depth consultation to tailor this service to you. ...view more £55.00 - £105.00" [ref=e167] [cursor=pointer]:
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e170]: FOCAL FLASH
+                - generic [ref=e171]: 1 hour 30 mins
+                - generic [ref=e172]:
+                  - text: Focal flash consists of up to 10 foils mainly focusing around the hairline. Perfect for a bright refresh or an in between appointment top up. Includes an in-depth consultation to tailor this service to you.
+                  - button "...view more" [ref=e174]
+              - generic [ref=e175]:
+                - generic [ref=e176]: £55.00 - £105.00
+                - button [ref=e177]
+          - 'button "BESPOKE TONER 30 mins OPTIONAL ADD ON: Bespoke toner is a two toned service to soften, stretch or deepen the root while also toning the ends of the hair. Includes an in-depth consultation to tailor this service to you. ...view more £55.00 - £75.00" [ref=e178] [cursor=pointer]':
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - generic [ref=e181]: BESPOKE TONER
+                - generic [ref=e182]: 30 mins
+                - generic [ref=e183]:
+                  - text: "OPTIONAL ADD ON: Bespoke toner is a two toned service to soften, stretch or deepen the root while also toning the ends of the hair. Includes an in-depth consultation to tailor this service to you."
+                  - button "...view more" [ref=e185]
+              - generic [ref=e186]:
+                - generic [ref=e187]: £55.00 - £75.00
+                - button [ref=e188]
+          - 'button "ADD ON: HARE CUT AND FINISH 45 mins - 1 hour 15 mins PLEASE SELECT YOUR FINISHING SERVICE: Haircut tailored to your style, face shape, and hair type—whether you’re after a quick trim, a reshape, or a full restyle. Finished with a precision cut and professional blow-dry for a smooth, polished result. Includes an in-depth consultation to tailor this service to you. ...view more £90.00 - £195.00" [ref=e189] [cursor=pointer]':
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - generic [ref=e192]: "ADD ON: HARE CUT AND FINISH"
+                - generic [ref=e193]: 45 mins - 1 hour 15 mins
+                - generic [ref=e194]:
+                  - text: "PLEASE SELECT YOUR FINISHING SERVICE: Haircut tailored to your style, face shape, and hair type—whether you’re after a quick trim, a reshape, or a full restyle. Finished with a precision cut and professional blow-dry for a smooth, polished result. Includes an in-depth consultation to tailor this service to you."
+                  - button "...view more" [ref=e196]
+              - generic [ref=e197]:
+                - generic [ref=e198]: £90.00 - £195.00
+                - button [ref=e199]
+          - 'button "ADD ON: CURL SPECIALIST HARE CUT & FINISH 1 hour 30 mins PLEASE SELECT YOUR FINISHING SERVICE: Curl specialist haircut designed to enhance your natural curl pattern, shape, and movement. Perfect for redefining your curls, removing weight, or refreshing your style while keeping your texture in mind. Finished with a curl-friendly cut and a diffused blow-dry to bring out definition, bounce, and softness. Includes an in-depth consultation tailor this service to you. ...view more £115.00" [ref=e200] [cursor=pointer]':
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - generic [ref=e203]: "ADD ON: CURL SPECIALIST HARE CUT & FINISH"
+                - generic [ref=e204]: 1 hour 30 mins
+                - generic [ref=e205]:
+                  - text: "PLEASE SELECT YOUR FINISHING SERVICE: Curl specialist haircut designed to enhance your natural curl pattern, shape, and movement. Perfect for redefining your curls, removing weight, or refreshing your style while keeping your texture in mind. Finished with a curl-friendly cut and a diffused blow-dry to bring out definition, bounce, and softness. Includes an in-depth consultation tailor this service to you."
+                  - button "...view more" [ref=e207]
+              - generic [ref=e208]:
+                - generic [ref=e209]: £115.00
+                - button [ref=e210]
+          - 'button "ADD ON: BLOW DRY 45 mins PLEASE SELECT YOUR FINISHING SERVICE: Blow-dry service to leave your hair smooth, styled, and full of shine. Whether you prefer sleek and polished or soft and bouncy, we’ll finish your look to suit your style. Includes an in-depth consultation to tailor this service to you. ...view more £50.00 - £100.00" [ref=e211] [cursor=pointer]':
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - generic [ref=e214]: "ADD ON: BLOW DRY"
+                - generic [ref=e215]: 45 mins
+                - generic [ref=e216]:
+                  - text: "PLEASE SELECT YOUR FINISHING SERVICE: Blow-dry service to leave your hair smooth, styled, and full of shine. Whether you prefer sleek and polished or soft and bouncy, we’ll finish your look to suit your style. Includes an in-depth consultation to tailor this service to you."
+                  - button "...view more" [ref=e218]
+              - generic [ref=e219]:
+                - generic [ref=e220]: £50.00 - £100.00
+                - button [ref=e221]
+      - button "COLOUR PACKAGES dropdown arrow" [ref=e53] [cursor=pointer]:
+        - generic [ref=e54]: COLOUR PACKAGES
+        - img "dropdown arrow" [ref=e56]
+      - button "CUTTING & STYLING dropdown arrow" [ref=e58] [cursor=pointer]:
+        - generic [ref=e59]: CUTTING & STYLING
+        - img "dropdown arrow" [ref=e61]
+      - button "KERASILK dropdown arrow" [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: KERASILK
+        - img "dropdown arrow" [ref=e66]
+      - button "GENTS dropdown arrow" [ref=e68] [cursor=pointer]:
+        - generic [ref=e69]: GENTS
+        - img "dropdown arrow" [ref=e71]
+      - button "CONSULTATIONS dropdown arrow" [ref=e73] [cursor=pointer]:
+        - generic [ref=e74]: CONSULTATIONS
+        - img "dropdown arrow" [ref=e76]
+  - button "NEXT" [disabled] [ref=e42]

@@ -1,0 +1,280 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: J&CJackson & Coil
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Cuts" [ref=e8] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "Team" [ref=e9] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e10] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Method" [ref=e11] [cursor=pointer]:
+          - /url: /the-method
+        - link "Shop" [ref=e12] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e13] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e14] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e15] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e16]:
+        - button "Switch language" [ref=e17]: "NO"
+        - link "Book now" [ref=e18] [cursor=pointer]:
+          - /url: /booking
+      - button "Open menu" [ref=e19]:
+        - img [ref=e20]
+    - generic [ref=e22]:
+      - navigation "Mobile navigation" [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+        - link "Cuts" [ref=e25] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "Team" [ref=e26] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e27] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Method" [ref=e28] [cursor=pointer]:
+          - /url: /the-method
+        - link "Shop" [ref=e29] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e30] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e31] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e32] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e33]:
+        - button "Norsk" [ref=e34]
+        - link "Book now" [ref=e35] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e36]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: Founded by Vanessa Jackson
+        - heading "Oslo's first salon built around the curl spectrum." [level=1] [ref=e41]
+        - paragraph [ref=e42]: From loose waves to tight coils, every pattern gets the same care, by stylists who actually trained for it.
+        - generic [ref=e43]:
+          - link "Book now" [ref=e44] [cursor=pointer]:
+            - /url: /booking
+            - text: Book now
+            - img [ref=e45]
+          - link "View services" [ref=e47] [cursor=pointer]:
+            - /url: /cuts-and-services
+        - generic [ref=e48]:
+          - generic [ref=e49]: Free 15-minute dry consultation
+          - generic [ref=e50]: Type 2A-4C
+          - generic [ref=e51]: Prices shown before you book
+      - generic [ref=e52]:
+        - img "Black woman with Type 4 coils laughing in a salon chair during a dry cut" [ref=e53]
+        - img "Black man with fade and defined Type 4 coils in warm documentary light" [ref=e54]
+        - generic [ref=e55]:
+          - paragraph [ref=e56]: Photography rule
+          - paragraph [ref=e57]: "Hero rotation: Amara and Daniel, above the fold, not a separate men's lane."
+    - region "Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups." [ref=e58]:
+      - generic [ref=e59]: Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups.
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: Booking
+        - heading "Booking is part of the haircut." [level=2] [ref=e63]
+        - paragraph [ref=e64]: Choose a service, a stylist, a real slot and your curl pattern without leaving the site. No widget redirect, no callback form.
+        - link "Book now" [ref=e65] [cursor=pointer]:
+          - /url: /booking
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: "01"
+          - heading "First Visit Bundle" [level=3] [ref=e69]
+          - paragraph [ref=e70]: Consultation + Jackson Cut + finish + first-time retail discount.
+          - generic [ref=e71]: 90 min / 750 NOK
+        - generic [ref=e72]:
+          - generic [ref=e73]: "02"
+          - heading "The Jackson Cut" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Dry, curl-by-curl cut for Type 2-4 hair.
+          - generic [ref=e76]: 75 min / 750 NOK
+        - generic [ref=e77]:
+          - generic [ref=e78]: "03"
+          - heading "The Sculpt Cut" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Fade, lineup and dry coil shaping in one chair.
+          - generic [ref=e81]: 60 min / 850 NOK
+    - generic [ref=e82]:
+      - generic:
+        - img "Close detail of dry curl-by-curl cutting on Type 4 hair"
+      - generic [ref=e83]:
+        - paragraph [ref=e84]: Method
+        - heading "The Jackson Cut maps the hair before it cuts." [level=2] [ref=e85]
+        - paragraph [ref=e86]: Assessment, map, dry cut, finish, education. The method is visible because trust should not depend on vibes.
+        - link "Read the method" [ref=e87] [cursor=pointer]:
+          - /url: /the-method
+    - generic [ref=e88]:
+      - generic:
+        - img "Vanessa Jackson working with a client, hands in hair, mid-laugh"
+      - generic [ref=e89]:
+        - paragraph [ref=e90]: Founder
+        - heading "Vanessa, working." [level=2] [ref=e91]
+        - paragraph [ref=e92]: Trained at Curl Bar London and Devachan NYC. The salon is what happens when she stops borrowing chairs in other people's rooms.
+        - link "About" [ref=e93] [cursor=pointer]:
+          - /url: /about
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - paragraph [ref=e96]: Portfolio
+        - heading "Same wall. Full spectrum." [level=2] [ref=e97]
+        - paragraph [ref=e98]: Type 4 is the home base. Type 3 sits in the gallery. Daniel's Sculpt Cut is integrated from day one.
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - img "Day-three 4B shape reset" [ref=e101]
+          - generic [ref=e102]:
+            - paragraph [ref=e103]: Type 4
+            - heading "Day-three 4B shape reset" [level=3] [ref=e104]
+        - generic [ref=e105]:
+          - img "3A cut with natural volume" [ref=e106]
+          - generic [ref=e107]:
+            - paragraph [ref=e108]: Type 3
+            - heading "3A cut with natural volume" [level=3] [ref=e109]
+        - generic [ref=e110]:
+          - img "Fade, taper, coil definition" [ref=e111]
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Sculpt Cut
+            - heading "Fade, taper, coil definition" [level=3] [ref=e114]
+        - generic [ref=e115]:
+          - img "Dry cutting detail" [ref=e116]
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: Method
+            - heading "Dry cutting detail" [level=3] [ref=e119]
+      - link "Portfolio" [ref=e120] [cursor=pointer]:
+        - /url: /portfolio
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: Proof
+        - heading "The standard, stated plainly." [level=2] [ref=e124]
+      - generic [ref=e125]:
+        - generic [ref=e127]:
+          - figure "Verified prototype client" [ref=e128]:
+            - blockquote [ref=e129]: “No one asked if my hair was too much.”
+            - generic [ref=e130]: Verified prototype client
+          - figure "Verified prototype client" [ref=e131]:
+            - blockquote [ref=e132]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e133]: Verified prototype client
+          - figure "Verified prototype client" [ref=e134]:
+            - blockquote [ref=e135]: “The fade and the coils happened in one chair.”
+            - generic [ref=e136]: Verified prototype client
+          - figure "Verified prototype client" [ref=e137]:
+            - blockquote [ref=e138]: “Prices were there before I clicked anything.”
+            - generic [ref=e139]: Verified prototype client
+          - figure "Verified prototype client" [ref=e140]:
+            - blockquote [ref=e141]: “No one asked if my hair was too much.”
+            - generic [ref=e142]: Verified prototype client
+          - figure "Verified prototype client" [ref=e143]:
+            - blockquote [ref=e144]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e145]: Verified prototype client
+          - figure "Verified prototype client" [ref=e146]:
+            - blockquote [ref=e147]: “The fade and the coils happened in one chair.”
+            - generic [ref=e148]: Verified prototype client
+          - figure "Verified prototype client" [ref=e149]:
+            - blockquote [ref=e150]: “Prices were there before I clicked anything.”
+            - generic [ref=e151]: Verified prototype client
+          - figure "Verified prototype client" [ref=e152]:
+            - blockquote [ref=e153]: “No one asked if my hair was too much.”
+            - generic [ref=e154]: Verified prototype client
+          - figure "Verified prototype client" [ref=e155]:
+            - blockquote [ref=e156]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e157]: Verified prototype client
+          - figure "Verified prototype client" [ref=e158]:
+            - blockquote [ref=e159]: “The fade and the coils happened in one chair.”
+            - generic [ref=e160]: Verified prototype client
+          - figure "Verified prototype client" [ref=e161]:
+            - blockquote [ref=e162]: “Prices were there before I clicked anything.”
+            - generic [ref=e163]: Verified prototype client
+        - generic [ref=e165]:
+          - figure "Verified prototype client" [ref=e166]:
+            - blockquote [ref=e167]: “Prices were there before I clicked anything.”
+            - generic [ref=e168]: Verified prototype client
+          - figure "Verified prototype client" [ref=e169]:
+            - blockquote [ref=e170]: “The fade and the coils happened in one chair.”
+            - generic [ref=e171]: Verified prototype client
+          - figure "Verified prototype client" [ref=e172]:
+            - blockquote [ref=e173]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e174]: Verified prototype client
+          - figure "Verified prototype client" [ref=e175]:
+            - blockquote [ref=e176]: “No one asked if my hair was too much.”
+            - generic [ref=e177]: Verified prototype client
+          - figure "Verified prototype client" [ref=e178]:
+            - blockquote [ref=e179]: “Prices were there before I clicked anything.”
+            - generic [ref=e180]: Verified prototype client
+          - figure "Verified prototype client" [ref=e181]:
+            - blockquote [ref=e182]: “The fade and the coils happened in one chair.”
+            - generic [ref=e183]: Verified prototype client
+          - figure "Verified prototype client" [ref=e184]:
+            - blockquote [ref=e185]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e186]: Verified prototype client
+          - figure "Verified prototype client" [ref=e187]:
+            - blockquote [ref=e188]: “No one asked if my hair was too much.”
+            - generic [ref=e189]: Verified prototype client
+          - figure "Verified prototype client" [ref=e190]:
+            - blockquote [ref=e191]: “Prices were there before I clicked anything.”
+            - generic [ref=e192]: Verified prototype client
+          - figure "Verified prototype client" [ref=e193]:
+            - blockquote [ref=e194]: “The fade and the coils happened in one chair.”
+            - generic [ref=e195]: Verified prototype client
+          - figure "Verified prototype client" [ref=e196]:
+            - blockquote [ref=e197]: “I booked on my phone after bedtime and had a time in under two minutes.”
+            - generic [ref=e198]: Verified prototype client
+          - figure "Verified prototype client" [ref=e199]:
+            - blockquote [ref=e200]: “No one asked if my hair was too much.”
+            - generic [ref=e201]: Verified prototype client
+    - generic [ref=e202]:
+      - generic:
+        - img "Lean warm Scandinavian salon interior with terracotta accents"
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: Visit
+        - heading "A warm room, not a performance." [level=2] [ref=e205]
+        - paragraph [ref=e206]: Paper walls, terracotta detail, real daylight, retail that solves the Norway gap.
+        - link "Visit the salon" [ref=e207] [cursor=pointer]:
+          - /url: /visit
+  - contentinfo [ref=e208]:
+    - generic [ref=e209]:
+      - generic [ref=e210]:
+        - paragraph [ref=e211]: Grünerløkka, Oslo
+        - heading "Dry consultation first. Then the cut." [level=2] [ref=e212]
+        - paragraph [ref=e213]: A curl-specialist salon for the full spectrum, with prices on the page and booking that stays inside the brand.
+        - generic [ref=e214]:
+          - link "Book now" [ref=e215] [cursor=pointer]:
+            - /url: /booking
+          - link "Visit the salon" [ref=e216] [cursor=pointer]:
+            - /url: /visit
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - heading "Navigate" [level=3] [ref=e219]
+          - generic [ref=e220]:
+            - link "Cuts" [ref=e221] [cursor=pointer]:
+              - /url: /cuts-and-services
+            - link "Team" [ref=e222] [cursor=pointer]:
+              - /url: /the-team
+            - link "Portfolio" [ref=e223] [cursor=pointer]:
+              - /url: /portfolio
+            - link "Method" [ref=e224] [cursor=pointer]:
+              - /url: /the-method
+            - link "Shop" [ref=e225] [cursor=pointer]:
+              - /url: /shop
+            - link "Journal" [ref=e226] [cursor=pointer]:
+              - /url: /journal
+            - link "Visit" [ref=e227] [cursor=pointer]:
+              - /url: /visit
+        - generic [ref=e228]:
+          - heading "Details" [level=3] [ref=e229]
+          - generic [ref=e230]:
+            - paragraph [ref=e231]:
+              - text: Markveien 58
+              - text: Grünerløkka, Oslo
+            - paragraph [ref=e232]:
+              - text: Tue-Fri 10-20
+              - text: Sat 10-17
+            - link "+47 22 55 01 44" [ref=e233] [cursor=pointer]:
+              - /url: tel:+4722550144
+            - link "Instagram only" [ref=e234] [cursor=pointer]:
+              - /url: https://instagram.com
+    - generic [ref=e235]: © 2026 Jackson & Coil. Prototype website2.

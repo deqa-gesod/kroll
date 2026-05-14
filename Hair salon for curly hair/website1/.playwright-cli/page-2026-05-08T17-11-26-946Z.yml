@@ -1,0 +1,185 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Jackson & Coil — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e6]:
+        - link "Cuts & services" [ref=e7] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [ref=e8] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e9] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e10] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e11] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e12] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e13] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "Switch to English" [pressed] [ref=e17]: EN
+          - generic [ref=e18]: /
+          - button "Bytt til norsk" [ref=e19]: "NO"
+        - link "Book" [ref=e20] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: Shop
+        - heading "Hard-to-find brands, finally in Oslo." [level=1] [ref=e27]
+        - paragraph [ref=e28]: "A curated edit, not a wall. Bread, Pattern, Adwoa, Bouclème, Mielle, plus the tools that ship from the UK in three weeks if you order them yourself: real silk durags, twist sponges, beard picks for coily beards."
+        - paragraph [ref=e29]: Modest markup. We want people to actually buy, not maximise margin per bottle.
+      - img "Curl products and tools on cream surface" [ref=e31]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Filter by curl type
+          - radiogroup "Filter by curl type" [ref=e37]:
+            - radio "All" [ref=e38]
+            - radio "2A" [ref=e39]
+            - radio "2B" [ref=e40]
+            - radio "2C" [ref=e41]
+            - radio "3A" [ref=e42]
+            - radio "3B" [ref=e43]
+            - radio "3C" [ref=e44]
+            - radio "4A" [checked] [ref=e45]
+            - radio "4B" [ref=e46]
+            - radio "4C" [ref=e47]
+            - radio "Men's cuts" [ref=e48]
+            - radio "Color" [ref=e49]
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Filter by brand
+          - radiogroup "Filter by brand" [ref=e52]:
+            - radio "All brands" [ref=e53]
+            - radio "Bread Beauty Supply" [ref=e54]
+            - radio "Pattern Beauty" [checked] [active] [ref=e55]
+            - radio "Adwoa Beauty" [ref=e56]
+            - radio "Innersense" [ref=e57]
+            - radio "Bouclème" [ref=e58]
+            - radio "Curlsmith" [ref=e59]
+            - radio "Cantu" [ref=e60]
+            - radio "Mielle Organics" [ref=e61]
+            - radio "Camille Rose" [ref=e62]
+            - radio "Shea Moisture" [ref=e63]
+            - radio "As I Am" [ref=e64]
+            - radio "Design Essentials" [ref=e65]
+            - radio "House (tools)" [ref=e66]
+        - paragraph [ref=e67]: 2 products
+      - generic [ref=e68]:
+        - article [ref=e115]:
+          - generic [ref=e116]:
+            - img "Leave-in conditioner" [ref=e117]
+            - generic [ref=e118]: Rec. Vanessa
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: Pattern Beauty
+            - heading "Heavy Conditioner" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Slip-heavy conditioner for tight coils. Detangles in the shower.
+            - generic [ref=e123]:
+              - generic [ref=e124]: 4A
+              - generic [ref=e125]: 4B
+              - generic [ref=e126]: 4C
+            - generic [ref=e127]:
+              - generic [ref=e128]: 290 kr
+              - button "Add to bag" [ref=e129]
+        - article [ref=e130]:
+          - img "Leave-in conditioner" [ref=e132]
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: Pattern Beauty
+            - heading "Leave-in Conditioner" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Creamy leave-in. Layer under a styler for definition without crunch.
+            - generic [ref=e137]:
+              - generic [ref=e138]: 3C
+              - generic [ref=e139]: 4A
+              - generic [ref=e140]: 4B
+              - generic [ref=e141]: 4C
+            - generic [ref=e142]:
+              - generic [ref=e143]: 310 kr
+              - button "Add to bag" [ref=e144]
+  - contentinfo [ref=e401]:
+    - generic [ref=e402]:
+      - generic [ref=e403]:
+        - link "Jackson & Coil." [ref=e404] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e405]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e406]:
+        - generic [ref=e407]:
+          - heading "Visit" [level=3] [ref=e408]
+          - paragraph [ref=e409]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e410]:
+          - heading "Hours" [level=3] [ref=e411]
+          - list [ref=e412]:
+            - listitem [ref=e413]:
+              - generic [ref=e414]: Tuesday
+              - generic [ref=e415]: 10:00 — 19:00
+            - listitem [ref=e416]:
+              - generic [ref=e417]: Wednesday
+              - generic [ref=e418]: 10:00 — 19:00
+            - listitem [ref=e419]:
+              - generic [ref=e420]: Thursday
+              - generic [ref=e421]: 10:00 — 20:00
+            - listitem [ref=e422]:
+              - generic [ref=e423]: Friday
+              - generic [ref=e424]: 10:00 — 19:00
+            - listitem [ref=e425]:
+              - generic [ref=e426]: Saturday
+              - generic [ref=e427]: 10:00 — 17:00
+            - listitem [ref=e428]:
+              - generic [ref=e429]: Sunday & Monday
+              - generic [ref=e430]: Closed
+        - generic [ref=e431]:
+          - heading "Contact" [level=3] [ref=e432]
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - link "hei@jacksonandcoil.no" [ref=e435] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e436]: +47 22 00 00 00
+            - listitem [ref=e437]:
+              - link "@jacksonandcoil" [ref=e438] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e439]:
+          - heading "Pages" [level=3] [ref=e440]
+          - list [ref=e441]:
+            - listitem [ref=e442]:
+              - link "Cuts & services" [ref=e443] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e444]:
+              - link "The method" [ref=e445] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e446]:
+              - link "The team" [ref=e447] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e448]:
+              - link "Portfolio" [ref=e449] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e450]:
+              - link "Shop" [ref=e451] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e452]:
+              - link "Journal" [ref=e453] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e454]:
+              - link "Visit" [ref=e455] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e456]:
+              - link "About" [ref=e457] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e458]:
+              - link "Book" [ref=e459] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e460]:
+        - generic [ref=e461]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e462]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e468] [cursor=pointer]:
+    - img [ref=e469]
+  - alert [ref=e472]

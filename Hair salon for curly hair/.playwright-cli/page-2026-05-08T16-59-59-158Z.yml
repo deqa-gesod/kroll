@@ -1,0 +1,312 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - navigation [ref=e5]:
+        - link "Cuts & services" [ref=e6] [cursor=pointer]:
+          - /url: /cuts-and-services
+        - link "The method" [active] [ref=e7] [cursor=pointer]:
+          - /url: /the-method
+        - link "The team" [ref=e8] [cursor=pointer]:
+          - /url: /the-team
+        - link "Portfolio" [ref=e9] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Shop" [ref=e10] [cursor=pointer]:
+          - /url: /shop
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Visit" [ref=e12] [cursor=pointer]:
+          - /url: /visit
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - button "Switch to English" [pressed] [ref=e16]: EN
+          - generic [ref=e17]: /
+          - button "Bytt til norsk" [ref=e18]: "NO"
+        - link "Book" [ref=e19] [cursor=pointer]:
+          - /url: /booking
+  - main [ref=e20]:
+    - generic [ref=e417]:
+      - generic [ref=e419]:
+        - img "Type 4A coils, defined and shaped" [ref=e420]
+        - generic [ref=e424]:
+          - generic [ref=e425]: The Method — Jackson & Coil
+          - generic [ref=e426]: Five steps. One craft.
+        - generic [ref=e428]:
+          - paragraph [ref=e429]: Trained at Curl Bar London. Devachan NYC. Hair Rules.
+          - heading "The Jackson Cut." [level=1] [ref=e430]
+          - paragraph [ref=e431]: A named, owned, dry-cutting method for Type 2 — 4 hair. The cut for women, the Sculpt Cut for men, both descended from the same five steps. This is what we mean by it.
+      - generic [ref=e433]:
+        - generic [ref=e434]:
+          - paragraph [ref=e435]: In one sentence
+          - paragraph [ref=e436]: Every curl pattern is the same job done with knowledge — and knowledge is something you go and get, not something you wait for.
+        - paragraph [ref=e437]: — Vanessa Jackson
+      - generic [ref=e440]:
+        - generic [ref=e441]:
+          - paragraph [ref=e442]: Watch — 45 seconds
+          - heading "Vanessa, mid-cut, in real time." [level=2] [ref=e443]
+          - paragraph [ref=e444]: No voiceover. No music swell. Just the work, dry, on the natural pattern, exactly the way it happens in the chair.
+        - button "Play 45-second method video" [ref=e445] [cursor=pointer]:
+          - img "Dry curl-by-curl cutting in progress" [ref=e446]
+          - img [ref=e451]
+          - generic [ref=e453]:
+            - generic [ref=e454]: Type 4 / dry / curl by curl
+            - generic [ref=e455]: 00:45
+      - generic [ref=e456]:
+        - generic [ref=e458]:
+          - paragraph [ref=e459]: The five steps
+          - heading "Assess. Map. Cut. Finish. Educate." [level=2] [ref=e460]
+        - generic [ref=e461]:
+          - generic [ref=e463]:
+            - generic [ref=e464]: 01 / 05
+            - img "Stylist assessing dry curl pattern" [ref=e466]
+            - generic [ref=e467]:
+              - paragraph [ref=e468]: Step one — Assess
+              - heading "Read the hair before you touch it." [level=3] [ref=e469]
+              - paragraph [ref=e470]: Dry. On the natural pattern. We read curl type, density, porosity, and growth direction before scissors come out — and we write it down. The same hair on a different day will tell a different story; we cut what's actually in front of us, not the photograph from your last appointment.
+              - list [ref=e471]:
+                - listitem [ref=e472]: Curl type
+                - listitem [ref=e473]: Density
+                - listitem [ref=e474]: Porosity
+                - listitem [ref=e475]: Growth direction
+          - generic [ref=e477]:
+            - generic [ref=e478]: 02 / 05
+            - generic [ref=e479]:
+              - paragraph [ref=e480]: Step two — Map
+              - heading "Different rules for different zones." [level=3] [ref=e481]
+              - paragraph [ref=e482]: We mark four zones — canopy, underlayer, nape, temple — and the cut takes a different rule in each. The canopy frames; the underlayer holds the shape; the nape sets the silhouette; the temple is where the lineup lives. The map is what makes the same haircut work on Type 2A and Type 4C.
+              - list [ref=e483]:
+                - listitem [ref=e484]: Canopy
+                - listitem [ref=e485]: Underlayer
+                - listitem [ref=e486]: Nape
+                - listitem [ref=e487]: Temple
+          - generic [ref=e489]:
+            - generic [ref=e490]: 03 / 05
+            - img "Dry curl-by-curl cutting in progress" [ref=e492]
+            - generic [ref=e493]:
+              - paragraph [ref=e494]: Step three — Cut
+              - heading "Curl by curl. Dry. Never under tension." [level=3] [ref=e495]
+              - paragraph [ref=e496]: Each curl is taken individually, on its own pattern, never stretched between fingers, never wet. The shape is built from the springback, not against it. This is the slowest part of the appointment and the part the work depends on.
+              - list [ref=e497]:
+                - listitem [ref=e498]: Dry-cut
+                - listitem [ref=e499]: Curl-by-curl
+                - listitem [ref=e500]: Springback shape
+          - generic [ref=e502]:
+            - generic [ref=e503]: 04 / 05
+            - img "Finished coils after dry cut" [ref=e505]
+            - generic [ref=e506]:
+              - paragraph [ref=e507]: Step four — Finish
+              - heading "Style it the way you'll style it." [level=3] [ref=e508]
+              - paragraph [ref=e509]: Cleanse, condition, leave-in, definition product. Whatever the routine is, it's the one you can buy on your way out and recreate on a Tuesday morning before work. We don't do salon-only finishes that need three products you can't get in Norway.
+              - list [ref=e510]:
+                - listitem [ref=e511]: Low-poo
+                - listitem [ref=e512]: Leave-in
+                - listitem [ref=e513]: Definition
+                - listitem [ref=e514]: Diffuse-or-air
+          - generic [ref=e516]:
+            - generic [ref=e517]: 05 / 05
+            - generic [ref=e518]:
+              - paragraph [ref=e519]: Step five — Educate
+              - heading "You leave knowing what was done." [level=3] [ref=e520]
+              - paragraph [ref=e521]: "Every cut ends the same way: with the stylist showing you what was done, where, and why. Which zone we shaped, what your porosity asked for, what to wash with on Sunday. The chair is half the appointment. The hand-off is the other half."
+              - list [ref=e522]:
+                - listitem [ref=e523]: Walkthrough
+                - listitem [ref=e524]: At-home routine
+                - listitem [ref=e525]: Written notes
+      - generic [ref=e527]:
+        - generic [ref=e528]:
+          - paragraph [ref=e529]: The chart
+          - heading "Andre Walker. Type 2A through 4C." [level=2] [ref=e530]
+        - paragraph [ref=e532]: Andre Walker — Oprah's stylist for twenty-five years — published this typology in 1997. It is not the whole truth (most heads carry two or three patterns at once, and porosity matters as much as type), but it is the shared vocabulary the curl world uses. We read it on day one, in front of the mirror, with you. Then we get to work.
+        - generic [ref=e533]:
+          - figure "Loose wave Subtle S-bend. Fine to medium strand." [ref=e534]:
+            - generic [ref=e535]:
+              - img [ref=e536]
+              - generic [ref=e538]: 2A
+            - generic [ref=e539]:
+              - paragraph [ref=e540]: Loose wave
+              - paragraph [ref=e541]: Subtle S-bend. Fine to medium strand.
+          - figure "Defined wave S-shape, holds shape from mid-length down." [ref=e542]:
+            - generic [ref=e543]:
+              - img [ref=e544]
+              - generic [ref=e546]: 2B
+            - generic [ref=e547]:
+              - paragraph [ref=e548]: Defined wave
+              - paragraph [ref=e549]: S-shape, holds shape from mid-length down.
+          - figure "Wave with curl S-shape tightening into open ringlets." [ref=e550]:
+            - generic [ref=e551]:
+              - img [ref=e552]
+              - generic [ref=e554]: 2C
+            - generic [ref=e555]:
+              - paragraph [ref=e556]: Wave with curl
+              - paragraph [ref=e557]: S-shape tightening into open ringlets.
+          - figure "Loose curl Spiral the size of a chalk stick." [ref=e558]:
+            - generic [ref=e559]:
+              - img [ref=e560]
+              - generic [ref=e562]: 3A
+            - generic [ref=e563]:
+              - paragraph [ref=e564]: Loose curl
+              - paragraph [ref=e565]: Spiral the size of a chalk stick.
+          - figure "Spiral curl Spiral the size of a Sharpie marker." [ref=e566]:
+            - generic [ref=e567]:
+              - img [ref=e568]
+              - generic [ref=e570]: 3B
+            - generic [ref=e571]:
+              - paragraph [ref=e572]: Spiral curl
+              - paragraph [ref=e573]: Spiral the size of a Sharpie marker.
+          - figure "Tight curl Corkscrew, the size of a pencil." [ref=e574]:
+            - generic [ref=e575]:
+              - img [ref=e576]
+              - generic [ref=e578]: 3C
+            - generic [ref=e579]:
+              - paragraph [ref=e580]: Tight curl
+              - paragraph [ref=e581]: Corkscrew, the size of a pencil.
+          - figure "Soft coil Coil the size of a crochet needle. Defined." [ref=e582]:
+            - generic [ref=e583]:
+              - img [ref=e584]
+              - generic [ref=e586]: 4A
+            - generic [ref=e587]:
+              - paragraph [ref=e588]: Soft coil
+              - paragraph [ref=e589]: Coil the size of a crochet needle. Defined.
+          - figure "Z-pattern coil Sharp angles, less defined coil. Holds volume." [ref=e590]:
+            - generic [ref=e591]:
+              - img [ref=e592]
+              - generic [ref=e594]: 4B
+            - generic [ref=e595]:
+              - paragraph [ref=e596]: Z-pattern coil
+              - paragraph [ref=e597]: Sharp angles, less defined coil. Holds volume.
+          - figure "Tight coil Densely packed Z-pattern. The crown of the spectrum." [ref=e598]:
+            - generic [ref=e599]:
+              - img [ref=e600]
+              - generic [ref=e602]: 4C
+            - generic [ref=e603]:
+              - paragraph [ref=e604]: Tight coil
+              - paragraph [ref=e605]: Densely packed Z-pattern. The crown of the spectrum.
+        - generic [ref=e606]:
+          - generic [ref=e607]:
+            - paragraph [ref=e608]: Type 2
+            - paragraph [ref=e609]: Wave. The S-shape. Sigrid's hair. Often misdiagnosed as “straight but frizzy” by stylists who only read it under tension.
+          - generic [ref=e610]:
+            - paragraph [ref=e611]: Type 3
+            - paragraph [ref=e612]: Spiral. Defined ringlets. The DevaCut category. Heaviness at the root and the temple is where most stylists get this one wrong.
+          - generic [ref=e613]:
+            - paragraph [ref=e614]: Type 4
+            - paragraph [ref=e615]: Coil. The Z-pattern. Amara's hair, Daniel's hair. Built for volume and density. The category most Oslo salons quietly turn away — and the one we built for first.
+          - generic [ref=e616]:
+            - paragraph [ref=e617]: Mixed pattern
+            - paragraph [ref=e618]: Most heads. A 3B canopy over a 4A nape, a 2C crown over a 3A side. The Map step exists because of this.
+      - generic [ref=e621]:
+        - paragraph [ref=e622]: Why dry
+        - generic [ref=e623]:
+          - heading "Wet hair is a different shape than your hair." [level=2] [ref=e624]
+          - generic [ref=e625]:
+            - paragraph [ref=e626]: A Type 4 coil cut wet, under tension, comes back at half the length when it dries. A Type 2 wave cut wet, brushed straight, comes back too short on the canopy and unbalanced through the nape. The hair returns to its pattern; the cut should have been built for that pattern in the first place.
+            - paragraph [ref=e627]: Dry-cutting is slower, harder, and the reason most stylists don't offer it. It is also the only way to cut for a curl pattern instead of against one. We learned it at Curl Bar, refined it at Devachan and Hair Rules, and we don't deviate from it.
+      - generic [ref=e629]:
+        - generic [ref=e630]:
+          - paragraph [ref=e631]: For men
+          - heading "Same five steps. Sharper edges." [level=2] [ref=e632]
+        - generic [ref=e634]:
+          - paragraph [ref=e635]: The Sculpt Cut takes the same assessment, the same zone map, the same dry curl-by-curl work on top — and brings clipper precision in for the fade and lineup. One chair. One appointment. The fade and the coils are not two separate skills handed to two separate people. That is the entire point.
+          - list [ref=e636]:
+            - listitem [ref=e637]: Sculpt
+            - listitem [ref=e638]: Taper
+            - listitem [ref=e639]: Definition
+            - listitem [ref=e640]: Line
+            - listitem [ref=e641]: Edge
+      - generic [ref=e644]:
+        - heading "Now book the cut." [level=2] [ref=e645]
+        - generic [ref=e646]:
+          - link "Book the Jackson Cut" [ref=e647] [cursor=pointer]:
+            - /url: /booking?service=the-jackson-cut
+            - generic [ref=e648]: Book the Jackson Cut
+            - generic [ref=e649]: →
+          - link "Book the Sculpt Cut" [ref=e650] [cursor=pointer]:
+            - /url: /booking?service=the-sculpt-cut
+            - generic [ref=e651]: Book the Sculpt Cut
+            - generic [ref=e652]: →
+          - link "Or talk first — free 15-min consult →" [ref=e653] [cursor=pointer]:
+            - /url: /booking?service=consultation
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - link "Jackson & Coil." [ref=e349] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e350]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - heading "Visit" [level=3] [ref=e353]
+          - paragraph [ref=e354]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e355]:
+          - heading "Hours" [level=3] [ref=e356]
+          - list [ref=e357]:
+            - listitem [ref=e358]:
+              - generic [ref=e359]: Tuesday
+              - generic [ref=e360]: 10:00 — 19:00
+            - listitem [ref=e361]:
+              - generic [ref=e362]: Wednesday
+              - generic [ref=e363]: 10:00 — 19:00
+            - listitem [ref=e364]:
+              - generic [ref=e365]: Thursday
+              - generic [ref=e366]: 10:00 — 20:00
+            - listitem [ref=e367]:
+              - generic [ref=e368]: Friday
+              - generic [ref=e369]: 10:00 — 19:00
+            - listitem [ref=e370]:
+              - generic [ref=e371]: Saturday
+              - generic [ref=e372]: 10:00 — 17:00
+            - listitem [ref=e373]:
+              - generic [ref=e374]: Sunday & Monday
+              - generic [ref=e375]: Closed
+        - generic [ref=e376]:
+          - heading "Contact" [level=3] [ref=e377]
+          - list [ref=e378]:
+            - listitem [ref=e379]:
+              - link "hei@jacksonandcoil.no" [ref=e380] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e381]: +47 22 00 00 00
+            - listitem [ref=e382]:
+              - link "@jacksonandcoil" [ref=e383] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e384]:
+          - heading "Pages" [level=3] [ref=e385]
+          - list [ref=e386]:
+            - listitem [ref=e387]:
+              - link "Cuts & services" [ref=e388] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e389]:
+              - link "The method" [ref=e390] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e391]:
+              - link "The team" [ref=e392] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e393]:
+              - link "Portfolio" [ref=e394] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e395]:
+              - link "Shop" [ref=e396] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e397]:
+              - link "Journal" [ref=e398] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e399]:
+              - link "Visit" [ref=e400] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e401]:
+              - link "About" [ref=e402] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e403]:
+              - link "Book" [ref=e404] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e405]:
+        - generic [ref=e406]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e407]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e413] [cursor=pointer]:
+    - img [ref=e414]
+  - alert [ref=e654]

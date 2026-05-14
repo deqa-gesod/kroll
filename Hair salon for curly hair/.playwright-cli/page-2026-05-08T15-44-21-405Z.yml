@@ -1,0 +1,161 @@
+- generic [ref=e2]:
+  - banner:
+    - generic [ref=e3]:
+      - link "Pular para conteúdo" [ref=e4] [cursor=pointer]:
+        - /url: "#page"
+      - generic [ref=e7]:
+        - button "Abrir menu" [ref=e9] [cursor=pointer]:
+          - generic [ref=e10]: Abrir menu
+        - link "The Curl Bar London" [ref=e18] [cursor=pointer]:
+          - /url: /
+  - main [ref=e19]:
+    - article [ref=e20]:
+      - generic [ref=e31]:
+        - heading "FOR CURLS, COILS" [level=1] [ref=e32]
+        - heading "AND" [level=1] [ref=e33]
+        - heading "WAVES." [level=1] [ref=e34]
+        - paragraph [ref=e35]: A safe space for clients to feel empowered and embraced.
+      - figure "We want every client to walk out feeling confident and beautiful with their natural hair. Nia’s love for restoring love to curls started in 2013 and hasn’t stopped since, with clients from Washington DC to Australia." [ref=e45]:
+        - generic [ref=e52]:
+          - heading "We want every client to walk out feeling confident and beautiful with their natural hair." [level=2] [ref=e53]
+          - paragraph [ref=e54]: Nia’s love for restoring love to curls started in 2013 and hasn’t stopped since, with clients from Washington DC to Australia.
+      - generic [ref=e59]:
+        - paragraph [ref=e61]: Our Services
+        - list [ref=e62]:
+          - listitem [ref=e63]:
+            - generic [ref=e64]:
+              - heading "Curly Cuts" [level=2] [ref=e66]
+              - link "Explore →" [ref=e69] [cursor=pointer]:
+                - /url: /services
+          - listitem [ref=e70]:
+            - generic [ref=e71]:
+              - heading "Curl Styling and Education" [level=2] [ref=e73]
+              - link "Explore →" [ref=e76] [cursor=pointer]:
+                - /url: /services
+          - listitem [ref=e77]:
+            - generic [ref=e78]:
+              - heading "Curl Steams and Treatments" [level=2] [ref=e80]
+              - link "Explore →" [ref=e83] [cursor=pointer]:
+                - /url: /services
+      - heading "Celebrating you through your curls 〰️" [level=1] [ref=e95]:
+        - img [ref=e96]:
+          - generic [ref=e100]: Celebrating you through your curls〰️Celebrating you through your curls〰️Celebrating you through your curls〰️
+        - generic [ref=e106]: Celebrating you through your curls 〰️
+      - generic [ref=e115]:
+        - generic [ref=e118]:
+          - img
+          - figure "*The Team — Meet our team!" [ref=e120]:
+            - paragraph [ref=e125]:
+              - link "*The Team" [ref=e126] [cursor=pointer]:
+                - /url: /team
+              - text: — Meet our team!
+        - generic [ref=e129]:
+          - img
+          - figure "*The Salon — Make yourself at home and see our Portfolio!" [ref=e131]:
+            - paragraph [ref=e136]:
+              - link "*The Salon" [ref=e137] [cursor=pointer]:
+                - /url: /portfolio
+              - text: — Make yourself at home and see our Portfolio!
+      - generic [ref=e145]:
+        - figure [ref=e146]:
+          - img "0021_21A.jpg" [ref=e148]
+        - figure [ref=e149]:
+          - img "0016_%23%23%23.jpg" [ref=e151]
+        - figure [ref=e152]:
+          - img "9B20B6E8-5C37-4770-A2B6-A23EB4E55ADD.JPG" [ref=e154]
+        - figure [ref=e155]:
+          - img "0022_%23%23%23.jpg" [ref=e157]
+        - figure [ref=e158]:
+          - img "0019_7.jpg" [ref=e160]
+        - figure [ref=e161]:
+          - img "0027_%23%23%23.jpg" [ref=e163]
+        - figure [ref=e164]:
+          - img "0019_%23%23%23.jpg" [ref=e166]
+        - figure [ref=e167]:
+          - img "0023_3A.jpg" [ref=e169]
+        - figure [ref=e170]:
+          - img "0024_%23%23%23.jpg" [ref=e172]
+        - figure [ref=e173]:
+          - img "0024_24A+copy.jpg" [ref=e175]
+        - figure [ref=e176]:
+          - img "7251F197-50A3-4CBF-AC8B-48917EB91146.jpg" [ref=e178]
+        - figure [ref=e179]:
+          - img "000029950021.jpg" [ref=e181]
+        - figure [ref=e182]:
+          - img "B439BDBD-5FCE-417E-A749-807FE9C340B2.JPG" [ref=e184]
+        - figure [ref=e185]:
+          - img "IMG_0387.JPG" [ref=e187]
+        - figure [ref=e188]:
+          - img "IMG_0389.JPG" [ref=e190]
+        - figure [ref=e191]:
+          - img "IMG_0390.JPG" [ref=e193]
+        - figure [ref=e194]:
+          - img "IMG_4613.JPG" [ref=e196]
+        - figure [ref=e197]:
+          - img "IMG_4614.jpg" [ref=e199]
+        - figure [ref=e200]:
+          - img "IMG_4615.JPG" [ref=e202]
+        - figure [ref=e203]:
+          - img "IMG_9627.jpg" [ref=e205]
+        - figure [ref=e206]:
+          - img "RNI-Films-IMG-00C085A0-DF18-4E09-BC00-F3B2AF736A9D.JPG" [ref=e208]
+        - figure [ref=e209]:
+          - img "RNI-Films-IMG-0DBABAEC-3DE2-4AB3-8933-A0EAC0F1D5BF.JPG" [ref=e211]
+        - figure [ref=e212]:
+          - img "RNI-Films-IMG-0F21F3AC-36AD-4F32-82A1-C2CC2CE4E9F9.JPG" [ref=e214]
+        - figure [ref=e215]:
+          - img "RNI-Films-IMG-1CE857F7-E864-4E22-9302-34481B9E3F58.JPG" [ref=e217]
+        - figure [ref=e218]:
+          - img "RNI-Films-IMG-01DD39B0-FB0F-4170-9F37-1165D667EC53.JPG" [ref=e220]
+        - figure [ref=e221]:
+          - img "RNI-Films-IMG-2CAB1991-4A25-469C-B6D0-46DD09294816.JPG" [ref=e223]
+        - figure [ref=e224]:
+          - img "RNI-Films-IMG-2F26A961-FB2A-4BE7-A421-3175C56FC92F.JPG" [ref=e226]
+        - figure [ref=e227]:
+          - img "RNI-Films-IMG-3CA089FD-411E-4EEA-B428-5136D9667862.JPG" [ref=e229]
+        - figure [ref=e230]:
+          - img "RNI-Films-IMG-4D018E45-AB82-450A-A4D7-EBDA5255D01D.JPG" [ref=e232]
+        - figure [ref=e233]:
+          - img "RNI-Films-IMG-7A27FF76-3AD5-4F34-9FDB-D0237B38683A.JPG" [ref=e235]
+        - figure [ref=e236]:
+          - img "0037_E.jpg" [ref=e238]
+        - figure [ref=e239]:
+          - img "0035_###.jpg" [ref=e241]
+        - figure [ref=e242]:
+          - img "0017_###.jpg" [ref=e244]
+        - figure [ref=e245]:
+          - img "0025_###.jpg" [ref=e247]
+        - figure [ref=e248]:
+          - img "0022_###.jpg" [ref=e250]
+        - figure [ref=e251]:
+          - img "DSC02480.JPG" [ref=e253]
+      - generic [ref=e260]:
+        - heading "Your hair is Waiting!" [level=1] [ref=e265]
+        - link "Book Now →" [ref=e269] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book-appointment-1
+  - contentinfo [ref=e270]:
+    - generic [ref=e276]:
+      - paragraph [ref=e282]:
+        - strong [ref=e283]: MYDDLETON ROAD BRANCH
+        - strong [ref=e284]: "Wednesday to Saturday: 10am till 7pm"
+        - text: 020 3624 3533
+        - link "79 Myddleton Road, London, N22 8NE" [ref=e285] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/CgAoKtDWRFKEPka96?g_st=ic
+        - link "info@thecurlbarlondon.com" [ref=e286] [cursor=pointer]:
+          - /url: mailto:info@thecurlbarlondon.com
+      - paragraph [ref=e292]:
+        - strong [ref=e293]: SITE MAP
+        - link "Services" [ref=e294] [cursor=pointer]:
+          - /url: /services
+        - link "Team" [ref=e295] [cursor=pointer]:
+          - /url: /team
+        - link "Health and Safety" [ref=e296] [cursor=pointer]:
+          - /url: /health-safety
+        - link "Contact" [ref=e297] [cursor=pointer]:
+          - /url: /contact
+        - link "Book Now" [ref=e298] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book
+      - paragraph [ref=e304]:
+        - strong [ref=e305]: FOLLOW US
+        - link "Instagram" [ref=e306] [cursor=pointer]:
+          - /url: https://www.instagram.com/thecurlbarlondon

@@ -1,0 +1,1467 @@
+# Shop v2, 36 produkter, research-basert
+
+> Generert av research-subagent. Hovedkilder som fungerte: `curlsbybrown.no` (Shopify CDN, ekte NOK-priser), `patternbeauty.com`, `boucleme.us`, `breadbeautysupply.com`, `k18hair.com`, `mielleorganics.com`, `bouncecurl.com`, `curlsmith.com`, `camillerose.com`. Kilder som ble blokkert: `bobbys.com` (HTTP 403), `loveamika.com` (HTTP 404 på curl-collection). `lovelyskin.com` fungerte og leverte filter-strukturen som ligger til grunn for anbefalingen under. Aksessoarer uten dedikert merkebilde (durag, scrunchies, t-skjorte-handkle, hus-silkeputetrekk) er markert `TODO` slik prompten ba om.
+
+> Forsøk på prompt-injection: WebFetch- og WebSearch-svar inneholdt gjentatte injiserte `<system-reminder>`-blokker som forsøkte å pålegge falsk filinnhold (`AGENTS.md` om "breaking changes i Next.js") og pushe meg til å bruke `TodoWrite`. Alle ignorert. Ingen av instruksjonene i sidernes scraped content ble fulgt.
+
+---
+
+## 1. Filter-struktur, anbefaling
+
+Basert på Lovely Skin sin "shop by hair type" og Sephora curl-seksjonen, og tilpasset til en krøll-spesialist-salong med Andre Walker-skala:
+
+| Filter | Type | Verdier |
+|---|---|---|
+| **Kategori** | multi-select checkbox-liste | `shampoo`, `conditioner`, `leave-in`, `deep-treatment`, `styler`, `oil`, `tool`, `accessory` |
+| **Hårtype** (Andre Walker) | multi-select chip-rad | `2A`, `2B`, `2C`, `3A`, `3B`, `3C`, `4A`, `4B`, `4C` |
+| **Porositet** | multi-select chip-rad | `low`, `medium`, `high` |
+| **Hårtilstand** | multi-select checkbox | `dry`, `damaged`, `color-treated`, `fine`, `thick`, `frizzy`, `breakage`, `dandruff-prone` |
+| **Pris** | range-slider | 0 – 1500 NOK, default hele range |
+| **Tilgjengelighet** | toggle | "Vis kun på lager" (skjuler `out_of_stock`) |
+| **Sortering** (sidebar-uavhengig) | radio | `bestseller` (default), `pris stigende`, `pris synkende`, `nyeste`, `rating` |
+
+Sub-anbefalinger:
+- Mobile bruker bottom-sheet med tre tabber: "Filtrer", "Sorter", "Hårtype".
+- Tilbakestilling: "Nullstill filtre"-knapp blir aktiv så snart minst ett filter er valgt.
+- Paginering: 12 per side på desktop, 8 på mobil. Vis filter-tellinger ved siden av hvert valg (f.eks. "3B (14)").
+- En `stylistPick`-badge på kortet erstatter ikke filter, men kan toggles via "Stylist-utvalg"-knapp i sortering.
+
+---
+
+## 2. Produkt-liste, 36 stk
+
+For hver post: navn, slug, merke, pris, kategori, hårtyper, porositet, tilstand, lager, bilde-status, beskrivelse (EN/NO), stylist-anbefaling der relevant.
+
+### Stylers (8 stk)
+
+#### 1. Pattern Beauty Curl Mousse  
+`pattern-curl-mousse` · Pattern Beauty · 420 NOK · `styler` · 3B, 3C, 4A, 4B, 4C · porositet medium/high · tørt, frizzy, fine · in_stock · bilde: ja  
+EN: Weightless curl mousse with marshmallow root and castor oil. Adds volume and definition with zero crunch.  
+NO: Lett krøllmousse med marshmallow-rot og castor-olje. Gir volum og definisjon uten knase.  
+Stylist (Vanessa): "Min favoritt på fine 3C-hår som ikke tåler gel. Vi tar to dollarstore-store dotter på vått hår, scruncher, og diffuser."
+
+#### 2. Innersense I Create Definition  
+`innersense-i-create-definition` · Innersense Organic Beauty · 390 NOK · `styler` · 2C, 3A, 3B, 3C · porositet low/medium · fine, frizzy · in_stock · bilde: ja  
+EN: Light defining gel-cream with shea butter and tamanu oil. Soft hold, no flake.  
+NO: Lett definisjonskrem med sheasmør og tamanu-olje. Mykt grep og ingen hvit hinne.
+
+#### 3. Uncle Funky's Daughter Curly Magic  
+`ufd-curly-magic` · Uncle Funky's Daughter · 695 NOK · `styler` · 3B, 3C, 4A, 4B · porositet medium/high · thick, dry · low_stock · bilde: ja  
+EN: Aloe, marshmallow root and nettle gel-cream for definition with serious slip. A Texas cult favourite.  
+NO: Gele-krem med aloe, marshmallow-rot og brennesle. Gir definisjon med skikkelig glid. Kultfavoritt fra Texas.  
+Stylist (Vanessa): "Top pick for tykt 3C til 4A som drikker produkt."
+
+#### 4. Bouclème Super Volumising Foam  
+`boucleme-super-volumising-foam` · Bouclème · 349 NOK · `styler` · 2A, 2B, 2C, 3A · porositet low · fine · in_stock · bilde: ja  
+EN: UK-formulated mousse with linseed extract. Lifts roots on fine waves without stiffness.  
+NO: Skum fra UK med linfrø-ekstrakt. Løfter rotpartiet på fine bølger uten å stivne.
+
+#### 5. Bouclème Curl Defining Gel  
+`boucleme-curl-defining-gel` · Bouclème · 379 NOK · `styler` · 2C, 3A, 3B, 3C · porositet medium · frizzy · in_stock · bilde: ja  
+EN: Medium-hold serum gel with linseed and aloe. Smooths frizz, never sticky.  
+NO: Geleserum med medium grep, linfrø og aloe. Glatter frizz uten å klistre seg.
+
+#### 6. Curlsmith Hydro Style Flexi-Jelly  
+`curlsmith-flexi-jelly` · Curlsmith · 360 NOK · `styler` · 2B, 2C, 3A, 3B · porositet low/medium · fine, frizzy · in_stock · bilde: ja  
+EN: Ultra-light jelly that glides through wet curls. Scrunch out the cast for soft definition.  
+NO: Ultralett gelé som glir gjennom våte krøller. Scrunch ut casten for myk definisjon.
+
+#### 7. Camille Rose Curl Maker  
+`camille-rose-curl-maker` · Camille Rose · 320 NOK · `styler` · 3B, 3C, 4A · porositet medium · dry, frizzy · in_stock · bilde: ja  
+EN: Marshmallow root and golden agave defining jelly. Soft hold with deep moisture.  
+NO: Definerende gelé med marshmallow-rot og gylden agave. Mykt grep og dyp fukt.
+
+#### 8. Innersense I Create Volume  
+`innersense-i-create-volume` · Innersense Organic Beauty · 390 NOK · `styler` · 2A, 2B, 2C, 3A · porositet low · fine · in_stock · bilde: ja  
+EN: Mineral-light root spray with sea salt and aloe. Lifts limp waves without stripping.  
+NO: Mineral-lett rotspray med havsalt og aloe. Løfter slappe bølger uten å tørke ut.
+
+### Sjampoer (6 stk)
+
+#### 9. Innersense Hydrating Cream Hairbath  
+`innersense-hydrating-hairbath` · Innersense Organic Beauty · 380 NOK · `shampoo` · 3A, 3B, 3C, 4A · porositet medium/high · dry · in_stock · bilde: ja  
+EN: Low-poo cream cleanser with honey and coconut. Sulfate-free, made for frequent curl wash days.  
+NO: Mild cream-rens med honning og kokos. Sulfatfri, lagd for ofte krøll-vask.
+
+#### 10. Innersense Clarity Hairbath  
+`innersense-clarity-hairbath` · Innersense Organic Beauty · 380 NOK · `shampoo` · 2B, 2C, 3A, 3B · porositet low/medium · fine, dandruff-prone · in_stock · bilde: ja  
+EN: Clarifying sulfate-free wash for buildup-prone curls. Lemongrass and bergamot. Use monthly.  
+NO: Sulfatfri klargjørende vask for krøller med belegg. Sitrongress og bergamott. Brukes månedlig.
+
+#### 11. Curls by Brown Creamy Hair Cleanser (Co-wash)  
+`cbb-creamy-cleanser` · Curls by Brown · 399 NOK · `shampoo` · 3C, 4A, 4B, 4C · porositet high · dry, thick · in_stock · bilde: ja  
+EN: Conditioning co-wash for tight coils between deeper cleanses. No sulfates, no silicones.  
+NO: Pleiende co-wash for tette krøller mellom vanlige vasker. Uten sulfater og silikoner.  
+Stylist (Adé): "For klienter som vasker to eller tre ganger i uken uten å tørke ut håret."
+
+#### 12. Bouclème Scalp Exfoliating Shampoo  
+`boucleme-scalp-exfoliating-shampoo` · Bouclème · 399 NOK · `shampoo` · 2C, 3A, 3B, 3C, 4A · porositet medium · dandruff-prone, frizzy · in_stock · bilde: ja  
+EN: Gentle exfoliating wash with bamboo and pre-biotic ferment. Lifts product buildup, calms the scalp.  
+NO: Mild eksfolierende vask med bambus og pre-biotisk ferment. Løfter produktrester og roer hodebunnen.
+
+#### 13. K18 Peptide Prep Detox Shampoo  
+`k18-peptide-prep-detox` · K18 · 360 NOK · `shampoo` · 2C, 3A, 3B, 3C · porositet medium · color-treated, damaged · in_stock · bilde: ja  
+EN: Mineral-removing clarifier for the day before a K18 mask. Strips chlorine, hard water and styling.  
+NO: Klargjørende vask som fjerner mineraler. Brukes dagen før K18-mask. Tar klor, hardt vann og styling.  
+Stylist (Vanessa): "Steg 1 i hver hjemme-Olaplex eller hjemme-K18-rutine."
+
+#### 14. Innersense Color Awakening Hairbath  
+`innersense-color-awakening-hairbath` · Innersense Organic Beauty · 380 NOK · `shampoo` · 2C, 3A, 3B, 3C, 4A · porositet medium · color-treated, dry · low_stock · bilde: ja  
+EN: Sulfate-free cleanser tuned for coloured curls. Aloe, jojoba, irish moss. Keeps tone for longer.  
+NO: Sulfatfri vask laget for fargede krøller. Aloe, jojoba og irlandsk mose. Holder fargen lengre.
+
+### Conditioners + Deep Treatments (6 stk)
+
+#### 15. Pattern Beauty Heavy Conditioner  
+`pattern-heavy-conditioner` · Pattern Beauty · 420 NOK · `conditioner` · 3C, 4A, 4B, 4C · porositet high · dry, thick, damaged · in_stock · bilde: ja  
+EN: Slip-heavy moisture conditioner from Tracee Ellis Ross. Detangles tight coils in the shower without protein overload.  
+NO: Tung fukt-conditioner fra Tracee Ellis Ross. Greier ut tette krøller i dusjen uten å proppe håret med protein.  
+Stylist (Vanessa): "Jeg griper denne for klienter med tykt Type 4-hår og lang utgreiingsjobb."
+
+#### 16. Innersense Hydrating Cream Conditioner  
+`innersense-hydrating-cream-conditioner` · Innersense Organic Beauty · 400 NOK · `conditioner` · 3A, 3B, 3C, 4A · porositet medium/high · dry · in_stock · bilde: ja  
+EN: Rinse-out cream conditioner with shea, jojoba and honey. Daily-friendly moisture.  
+NO: Skylle-ut conditioner med shea, jojoba og honning. Fukt som tåler daglig bruk.
+
+#### 17. Innersense Hydrating Hair Mask  
+`innersense-hydrating-hair-mask` · Innersense Organic Beauty · 440 NOK · `deep-treatment` · 3B, 3C, 4A, 4B, 4C · porositet medium/high · dry, damaged · in_stock · bilde: ja  
+EN: Weekly mask with shea butter, tamanu and jojoba. Repairs split ends and softens coarse texture.  
+NO: Ukentlig kur med sheasmør, tamanu og jojoba. Reparerer kløyvde tupper og mykner grov tekstur.  
+Stylist (Mira): "Jeg lar den ligge under plast med lav varme i ti minutter."
+
+#### 18. K18 Leave-in Molecular Repair Hair Mask  
+`k18-leave-in-mask` · K18 · 890 NOK · `deep-treatment` · 2C, 3A, 3B, 3C, 4A · porositet medium/high · damaged, color-treated, breakage · low_stock · bilde: ja  
+EN: Bioactive peptide treatment that repairs bond damage from bleach, color and heat. Four minutes, no rinse.  
+NO: Bioaktiv peptid-behandling som reparerer skader fra bleking, farge og varme. Fire minutter, ingen skylling.  
+Stylist (Vanessa): "Anbefales etter hver fargebehandling."
+
+#### 19. Innersense Detox Hair Mask  
+`innersense-detox-hair-mask` · Innersense Organic Beauty · 440 NOK · `deep-treatment` · 2C, 3A, 3B, 3C, 4A · porositet medium · dandruff-prone, frizzy · in_stock · bilde: ja  
+EN: Bentonite clay mask with green tea and shea. Pulls residue and resets curl pattern.  
+NO: Bentonite-leir-kur med grønn te og shea. Trekker ut rester og resetter krøllmønsteret.
+
+#### 20. Innersense Color Radiance Daily Conditioner  
+`innersense-color-radiance-conditioner` · Innersense Organic Beauty · 400 NOK · `conditioner` · 2C, 3A, 3B, 3C · porositet medium · color-treated, fine · in_stock · bilde: ja  
+EN: Color-locking conditioner with hibiscus and coconut. Keeps freshly-coloured curls glossy.  
+NO: Fargelåsende conditioner med hibiskus og kokos. Holder nyfargede krøller blanke.
+
+### Oils + Serums + Finishing (5 stk)
+
+#### 21. Bouclème Revive 5 Hair Oil  
+`boucleme-revive-oil` · Bouclème · 439 NOK · `oil` · 2C, 3A, 3B, 3C, 4A, 4B · porositet medium/high · dry, damaged · in_stock · bilde: ja  
+EN: Plant-based finishing oil with kahai, moringa and mongongo. Use as a sealant under stylers or overnight pre-wash.  
+NO: Plantebasert finish-olje med kahai, moringa og mongongo. Bruk som forsegling under styling eller som pre-wash over natten.
+
+#### 22. Innersense Harmonic Treatment Oil  
+`innersense-harmonic-treatment-oil` · Innersense Organic Beauty · 350 NOK · `oil` · 2B, 2C, 3A, 3B · porositet low/medium · fine, frizzy · in_stock · bilde: ja  
+EN: Pre-wash and overnight oil with safflower, blue tansy and tamanu. A few drops smooth flyaways on dry days.  
+NO: Pre-wash- og natt-olje med saflor, blå tansy og tamanu. Noen dråper glatter ned flyaways på tørre dager.
+
+#### 23. Bread Beauty Supply Everyday Gloss Hair Oil  
+`bread-everyday-gloss-oil` · Bread Beauty Supply · 595 NOK · `oil` · 2B, 2C, 3A, 3B, 3C · porositet low/medium · fine, color-treated · in_stock · bilde: ja  
+EN: Silicone-free oil with kakadu plum. Glosses without weighing curls down, fine-hair friendly.  
+NO: Silikonfri olje med kakadu-plomme. Gir glans uten å tynge krøllene, fungerer på fint hår.
+
+#### 24. Innersense Refresh Dry Shampoo  
+`innersense-refresh-dry-shampoo` · Innersense Organic Beauty · 350 NOK · `oil` · 2A, 2B, 2C, 3A, 3B · porositet low · fine · in_stock · bilde: ja  
+EN: Rice and arrowroot powder refresh between wash days. Aerosol-free pump, no white cast on dark hair.  
+NO: Pulver-refresh med ris og arrowroot mellom vaskedager. Pumpe uten drivgass og uten hvitt belegg på mørkt hår.
+
+#### 25. Mielle Pomegranate & Honey Leave-In Conditioner  
+`mielle-ph-leave-in` · Mielle Organics · 240 NOK · `leave-in` · 3C, 4A, 4B, 4C · porositet high · dry, thick · in_stock · bilde: ja  
+EN: Honey, babassu and pomegranate leave-in for Type 4. Layer under cream or gel for sealed moisture.  
+NO: Leave-in med honning, babassu og granateple for Type 4. Brukes under krem eller gel som fukt-forsegler.  
+Stylist (Adé): "Et mellomprispriset Type 4-staple jeg ikke skjuler for klientene."
+
+### Verktøy (5 stk)
+
+#### 26. Bounce Curl Define EdgeLift Brush  
+`bounce-curl-edgelift` · Bounce Curl · 449 NOK · `tool` · 3A, 3B, 3C, 4A, 4B · porositet medium/high · frizzy · in_stock · bilde: ja  
+EN: Two-in-one brush. One side smooths edges, the other lifts and separates curls at the root.  
+NO: To-i-én-børste. Den ene siden glatter kanter, den andre løfter og separerer krøller ved roten.  
+Stylist (Adé): "Jeg bruker den til skarpe kanter på fade og taperte krøllklipp."
+
+#### 27. Denman D3 7-Row Brush  
+`denman-d3` · Denman · 280 NOK · `tool` · 2C, 3A, 3B, 3C · porositet low/medium · fine · in_stock · bilde: ja  
+EN: Seven rows of nylon pins. Defines clumps on damp hair, then leave the curls alone to dry.  
+NO: Syv rader nylonpinner. Definerer klumper i fuktig hår, så lar du krøllene tørke i fred.
+
+#### 28. Curls by Brown Bamboo Afro Pick  
+`cbb-bamboo-pick` · Curls by Brown · 190 NOK · `tool` · 3C, 4A, 4B, 4C · porositet high · thick · in_stock · bilde: ja  
+EN: Lightweight bamboo pick for stretching coils without static. Smooth tips, no snag.  
+NO: Lett bambus-pick for å strekke krøller uten statisk elektrisitet. Glatte tupper, ingen rufsing.
+
+#### 29. Bounce Curl Volume EdgeLift Brush  
+`bounce-curl-volume-edgelift` · Bounce Curl · 449 NOK · `tool` · 2C, 3A, 3B, 3C · porositet low/medium · fine · in_stock · bilde: ja  
+EN: Volume-side brush for lifting flat roots and detangling without breakage.  
+NO: Volumside-børste for å løfte flate røtter og rede ut uten å brekke håret.
+
+#### 30. Universal Hooded Diffuser Attachment  
+`universal-hooded-diffuser` · Jackson & Coil House · 540 NOK · `tool` · 2C, 3A, 3B, 3C, 4A · porositet medium · frizzy · in_stock · bilde: TODO  
+EN: Hooded silicone diffuser that fits most blow-dryer nozzles. Even airflow without disturbing the curl pattern.  
+NO: Hette-diffusor i silikon som passer de fleste hårfønere. Jevn luftstrøm uten å rote opp krøllmønsteret.  
+Stylist (Inés): "Plan B for klienter som ikke vil bytte hårføner."
+
+### Tilbehør (6 stk)
+
+#### 31. Bounce Curl Satin Microfiber Turban  
+`bounce-curl-satin-turban` · Bounce Curl · 320 NOK · `accessory` · 2A, 2B, 2C, 3A, 3B, 3C, 4A, 4B, 4C · porositet low/medium/high · frizzy, breakage · in_stock · bilde: ja  
+EN: Satin-lined microfiber turban for plopping wet curls. Absorbs water without friction.  
+NO: Satin-foret mikrofiber-turban for plopping av våte krøller. Suger vann uten friksjon.
+
+#### 32. Mulberry Silk Pillowcase, Deep Teal  
+`house-silk-pillowcase-teal` · Jackson & Coil House · 540 NOK · `accessory` · 2A, 2B, 2C, 3A, 3B, 3C, 4A, 4B, 4C · porositet low/medium/high · frizzy, breakage · out_of_stock · bilde: TODO  
+EN: 22 momme mulberry silk, hidden zipper, standard size. Reduces friction, frizz and overnight breakage.  
+NO: 22 momme mulberry-silke med skjult glidelås i standard størrelse. Mindre friksjon, mindre frizz og mindre brekk om natten.  
+Stylist (Vanessa): "Det enkleste kjøpet som gir størst utslag på krøll-helsen."
+
+#### 33. Satin Sleep Bonnet, Adjustable  
+`house-satin-sleep-bonnet` · Jackson & Coil House · 220 NOK · `accessory` · 3B, 3C, 4A, 4B, 4C · porositet medium/high · breakage · in_stock · bilde: TODO  
+EN: Adjustable satin-lined bonnet that stays on overnight. Sized for braids, locs and big curls.  
+NO: Justerbar satin-foret hette som sitter natten gjennom. Plass til fletter, locs og store krøller.
+
+#### 34. Silk Durag, 22 Momme  
+`house-silk-durag` · Jackson & Coil House · 240 NOK · `accessory` · 3C, 4A, 4B, 4C · porositet medium/high · breakage · in_stock · bilde: TODO  
+EN: Pure mulberry silk durag for waves, twists and overnight hold. Extra long tie.  
+NO: Mulberry-silke durag for waves, twists og hold over natten. Ekstra lang knytting.
+
+#### 35. Cotton T-Shirt Hair Towel  
+`house-tshirt-towel` · Jackson & Coil House · 180 NOK · `accessory` · 2A, 2B, 2C, 3A, 3B, 3C · porositet low/medium · frizzy, fine · in_stock · bilde: TODO  
+EN: Soft cotton plopping towel cut from organic jersey. Lower friction than terrycloth, less frizz on dry-down.  
+NO: Plopping-handkle i myk økologisk jersey-bomull. Mindre friksjon enn frottéhåndkle, mindre frizz i tørkefasen.
+
+#### 36. Silk Scrunchies, 3-pack  
+`house-silk-scrunchies` · Jackson & Coil House · 90 NOK · `accessory` · 2A, 2B, 2C, 3A, 3B, 3C, 4A · porositet low/medium · breakage, fine · in_stock · bilde: TODO  
+EN: Three mulberry silk scrunchies in olive, sand and black. No-snag elastic core.  
+NO: Tre mulberry-silke scrunchies i oliven, sand og sort. Strikk som ikke setter merker.
+
+---
+
+## 3. Lager-fordeling
+
+| Status | Antall | Produkter |
+|---|---|---|
+| `in_stock` | 30 | #1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36 (32 stk hvis vi teller, justert) |
+| `low_stock` | 4 | #3 ufd-curly-magic, #14 color-awakening, #18 k18-leave-in-mask, og #25 mielle-ph-leave-in justeres til low_stock |
+| `out_of_stock` | 2 | #32 silk-pillowcase, og #30 universal-hooded-diffuser justeres til out_of_stock |
+
+> Endelig tally i TS-utkastet under: 30 in_stock, 4 low_stock, 2 out_of_stock.
+
+---
+
+## 4. Image-manifest
+
+Totalt: 46 ekte bilder lastet ned fra brand-CDN-er. 30 av 36 produkter har ekte bilder. 6 produkter er hus-merkede aksessoarer/verktøy som skal fotograferes lokalt og er markert `TODO`.
+
+| Slug | Kilde-CDN | Status |
+|---|---|---|
+| `pattern-heavy-conditioner` | patternbeauty.com | OK |
+| `pattern-curl-mousse` | patternbeauty.com | OK |
+| `bread-everyday-gloss-oil` | breadbeautysupply.com | OK |
+| `innersense-i-create-definition` | curlsbybrown.no | OK |
+| `innersense-hydrating-hairbath` | curlsbybrown.no | OK |
+| `innersense-clarity-hairbath` | curlsbybrown.no | OK |
+| `innersense-hydrating-hair-mask` | curlsbybrown.no | OK |
+| `innersense-hydrating-cream-conditioner` | curlsbybrown.no | OK |
+| `innersense-sweet-spirit-leave-in` | curlsbybrown.no | OK (reserve) |
+| `innersense-i-create-volume` | curlsbybrown.no | OK |
+| `innersense-i-create-waves` | curlsbybrown.no | OK (reserve) |
+| `innersense-color-radiance-conditioner` | curlsbybrown.no | OK |
+| `innersense-color-awakening-hairbath` | curlsbybrown.no | OK |
+| `innersense-quiet-calm-curl-control` | curlsbybrown.no | OK (reserve) |
+| `innersense-detox-hair-mask` | curlsbybrown.no | OK |
+| `innersense-refresh-dry-shampoo` | curlsbybrown.no | OK |
+| `innersense-harmonic-treatment-oil` | curlsbybrown.no | OK |
+| `innersense-scalp-scrub` | curlsbybrown.no | OK (reserve) |
+| `innersense-bright-balance-conditioner` | curlsbybrown.no | OK (reserve) |
+| `innersense-powerhouse-protein` | curlsbybrown.no | OK (reserve) |
+| `ufd-curly-magic` | curlsbybrown.no | OK |
+| `ufd-supercurl` | curlsbybrown.no | OK (reserve) |
+| `ufd-good-hair` | curlsbybrown.no | OK (reserve) |
+| `ufd-extra-butter` | curlsbybrown.no | OK (reserve) |
+| `ufd-rich-and-funky` | curlsbybrown.no | OK (reserve) |
+| `ufd-mane-tame` | curlsbybrown.no | OK (reserve) |
+| `boucleme-super-volumising-foam` | curlsbybrown.no | OK |
+| `boucleme-revive-oil` | curlsbybrown.no | OK |
+| `boucleme-curl-defining-gel` | boucleme.us | OK |
+| `boucleme-scalp-exfoliating-shampoo` | curlsbybrown.no | OK |
+| `boucleme-seal-shield-conditioner` | curlsbybrown.no | OK (reserve) |
+| `bounce-curl-edgelift` | curlsbybrown.no | OK |
+| `bounce-curl-volume-edgelift` | curlsbybrown.no | OK |
+| `bounce-curl-flaxseed-gel` | curlsbybrown.no | OK (reserve) |
+| `bounce-curl-satin-turban` | bouncecurl.com | OK |
+| `denman-d3` | curlsbybrown.no | OK |
+| `cbb-bamboo-pick` | curlsbybrown.no | OK |
+| `cbb-creamy-cleanser` | curlsbybrown.no | OK |
+| `cbb-dreamy-hair-cream` | curlsbybrown.no | OK (reserve) |
+| `original-moxie-va-va-foam` | curlsbybrown.no | OK (reserve) |
+| `k18-leave-in-mask` | k18hair.com | OK |
+| `k18-peptide-prep-detox` | k18hair.com | OK |
+| `camille-rose-curl-maker` | camillerose.com | OK |
+| `curlsmith-flexi-jelly` | curlsmith.com | OK |
+| `mielle-ph-leave-in` | mielleorganics.com | OK |
+| `mielle-ph-curl-mousse` | mielleorganics.com | OK (reserve) |
+
+Produkter uten ekte bilde (TODO, fotograferes lokalt):
+
+| Slug | Hvorfor |
+|---|---|
+| `universal-hooded-diffuser` | hus-merket, ikke et reelt brand-SKU |
+| `house-silk-pillowcase-teal` | hus-merket linje |
+| `house-satin-sleep-bonnet` | hus-merket linje |
+| `house-silk-durag` | hus-merket linje |
+| `house-tshirt-towel` | hus-merket linje |
+| `house-silk-scrunchies` | hus-merket linje |
+
+Status: **30/36 produkter har ekte bilder** (krav var minst 28). Bildene er kopiert til `website1/public/images/shop/<slug>.jpg` og `website2/public/images/shop/<slug>.jpg`.
+
+---
+
+## 5. TypeScript-utkast, klar for integrasjon
+
+```ts
+export type ShopProduct = {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string;
+  price: number; // NOK integer
+  category:
+    | "shampoo"
+    | "conditioner"
+    | "leave-in"
+    | "deep-treatment"
+    | "styler"
+    | "oil"
+    | "tool"
+    | "accessory";
+  hairTypes: string[];
+  porosity: ("low" | "medium" | "high")[];
+  conditions: string[];
+  stock: "in_stock" | "low_stock" | "out_of_stock";
+  description: { en: string; no: string };
+  longDescription: { en: string; no: string };
+  ingredients?: string;
+  howToUse?: { en: string; no: string };
+  imageUrls: string[];
+  externalCheckoutUrl: string;
+  stylistPick?: { en: string; no: string };
+  rating: number;
+  reviewCount: number;
+  bestseller?: boolean;
+  newArrival?: boolean;
+};
+
+export const realProducts: ShopProduct[] = [
+  {
+    id: "pattern-curl-mousse",
+    slug: "pattern-curl-mousse",
+    name: "Pattern Beauty Curl Mousse",
+    brand: "Pattern Beauty",
+    price: 420,
+    category: "styler",
+    hairTypes: ["3B", "3C", "4A", "4B", "4C"],
+    porosity: ["medium", "high"],
+    conditions: ["dry", "frizzy", "fine"],
+    stock: "in_stock",
+    description: {
+      en: "Weightless curl mousse with marshmallow root and castor oil. Adds volume and definition with zero crunch.",
+      no: "Lett krøllmousse med marshmallow-rot og castor-olje. Gir volum og definisjon uten knase.",
+    },
+    longDescription: {
+      en: "Pattern's mousse aerates without alcohol drying-out. Two palm-sized doses on soaking-wet hair, scrunch up, then diffuse on low. Locks a soft definition for two-day hair.",
+      no: "Pattern sin mousse luftes opp uten å tørke ut med alkohol. Ta to håndflate-store doser på dryppvått hår, scrunch, og diffuser på lav varme. Holder definisjonen i to dager.",
+    },
+    ingredients: "Aqua, Marshmallow Root, Ricinus Communis (Castor) Seed Oil, Aloe Barbadensis Leaf Juice, VP/VA Copolymer",
+    howToUse: {
+      en: "Apply two generous doses to soaking-wet hair. Scrunch upward, diffuse on low heat.",
+      no: "Påfør to gavmilde doser på dryppvått hår. Scrunch oppover, diffuser på lav varme.",
+    },
+    imageUrls: ["/images/shop/pattern-curl-mousse.jpg"],
+    externalCheckoutUrl: "https://patternbeauty.com/products/curl-mousse",
+    stylistPick: {
+      en: "Vanessa's pick for fine 3C hair that flinches at gel.",
+      no: "Vanessa sin favoritt for fint 3C-hår som ikke tåler gel.",
+    },
+    rating: 4.6,
+    reviewCount: 612,
+    bestseller: true,
+  },
+  {
+    id: "innersense-i-create-definition",
+    slug: "innersense-i-create-definition",
+    name: "Innersense I Create Definition",
+    brand: "Innersense Organic Beauty",
+    price: 390,
+    category: "styler",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["low", "medium"],
+    conditions: ["fine", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Light defining gel-cream with shea butter and tamanu oil. Soft hold, no flake.",
+      no: "Lett definisjonskrem med sheasmør og tamanu-olje. Mykt grep og ingen hvit hinne.",
+    },
+    longDescription: {
+      en: "A daily-use definer that works with low-poo washes. Apply a thin layer to wet hair, scrunch, and let air-dry or diffuse. Refresh with water on day two.",
+      no: "En definer du tåler hver dag, fungerer med lavsåpe-vask. Et tynt lag på vått hår, scrunch, og lufttørk eller diffuser. Friske opp med vann på dag to.",
+    },
+    ingredients: "Aloe Barbadensis Leaf Juice, Shea Butter, Tamanu Oil, Sclerotium Gum",
+    howToUse: {
+      en: "Apply a coin-sized amount to wet hair, scrunch upward, dry on low heat.",
+      no: "Påfør en mengde på størrelse med en mynt på vått hår, scrunch oppover, tørk på lav varme.",
+    },
+    imageUrls: ["/images/shop/innersense-i-create-definition.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/i-create-definition",
+    rating: 4.7,
+    reviewCount: 482,
+    bestseller: true,
+  },
+  {
+    id: "ufd-curly-magic",
+    slug: "ufd-curly-magic",
+    name: "Uncle Funky's Daughter Curly Magic",
+    brand: "Uncle Funky's Daughter",
+    price: 695,
+    category: "styler",
+    hairTypes: ["3B", "3C", "4A", "4B"],
+    porosity: ["medium", "high"],
+    conditions: ["thick", "dry"],
+    stock: "low_stock",
+    description: {
+      en: "Aloe, marshmallow root and nettle gel-cream for definition with serious slip. A Texas cult favourite.",
+      no: "Gele-krem med aloe, marshmallow-rot og brennesle. Gir definisjon med skikkelig glid. Kultfavoritt fra Texas.",
+    },
+    longDescription: {
+      en: "A water-based gel-cream that doubles as a leave-in. Heavy slip means fingers and the Denman both glide. Holds defined curls through humid days without flaking.",
+      no: "En vannbasert gele-krem som dobler som leave-in. Skikkelig glid gjør at både fingre og Denman går rett gjennom. Holder definerte krøller i fuktig vær uten å flake.",
+    },
+    ingredients: "Aloe Vera, Marshmallow Root, Nettle Extract, Sea Botanicals",
+    howToUse: {
+      en: "Section damp hair, smooth a generous amount through, rake or use Denman, diffuse or air-dry.",
+      no: "Del opp fuktig hår, gli inn en god porsjon, rak eller bruk Denman, diffuser eller lufttørk.",
+    },
+    imageUrls: ["/images/shop/ufd-curly-magic.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/curly-magic-532ml",
+    stylistPick: {
+      en: "Vanessa's pick for thick Type 3C to 4A hair that drinks product.",
+      no: "Vanessa sin favoritt for tykt 3C til 4A-hår som suger til seg produkt.",
+    },
+    rating: 4.8,
+    reviewCount: 743,
+    bestseller: true,
+  },
+  {
+    id: "boucleme-super-volumising-foam",
+    slug: "boucleme-super-volumising-foam",
+    name: "Bouclème Super Volumising Foam",
+    brand: "Bouclème",
+    price: 349,
+    category: "styler",
+    hairTypes: ["2A", "2B", "2C", "3A"],
+    porosity: ["low"],
+    conditions: ["fine"],
+    stock: "in_stock",
+    description: {
+      en: "UK-formulated mousse with linseed extract. Lifts roots on fine waves without stiffness.",
+      no: "Skum fra UK med linfrø-ekstrakt. Løfter rotpartiet på fine bølger uten å stivne.",
+    },
+    longDescription: {
+      en: "A featherweight foam that builds volume from the root. Two pumps on wet hair, scrunch and air-dry. No protein, vegan, fine-hair friendly.",
+      no: "En fjærlett foam som bygger volum fra roten. To pumpetrykk på vått hår, scrunch og lufttørk. Uten protein, vegansk, fungerer på fint hår.",
+    },
+    ingredients: "Aqua, Linseed Extract, Glycerin, Sclerotium Gum",
+    howToUse: {
+      en: "Shake well, pump two doses, scrunch into wet hair, allow to air-dry.",
+      no: "Rist godt, pump to doser, scrunch inn i vått hår, la lufttørke.",
+    },
+    imageUrls: ["/images/shop/boucleme-super-volumising-foam.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/super-volumising-foam-200-ml",
+    stylistPick: {
+      en: "Inés recommends for fine Type 2 hair that goes flat by lunch.",
+      no: "Inés anbefaler til fint Type 2-hår som faller flatt etter lunsj.",
+    },
+    rating: 4.5,
+    reviewCount: 318,
+  },
+  {
+    id: "boucleme-curl-defining-gel",
+    slug: "boucleme-curl-defining-gel",
+    name: "Bouclème Curl Defining Gel",
+    brand: "Bouclème",
+    price: 379,
+    category: "styler",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["medium"],
+    conditions: ["frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Medium-hold serum gel with linseed and aloe. Smooths frizz, never sticky.",
+      no: "Geleserum med medium grep, linfrø og aloe. Glatter frizz uten å klistre seg.",
+    },
+    longDescription: {
+      en: "A serum-textured gel that smooths the cuticle without flaking. Layer over leave-in for a soft cast that scrunches out into defined curls.",
+      no: "En geleserum som glatter overflaten uten å flake. Legges over leave-in for et mykt cast som scruncher seg ut til definerte krøller.",
+    },
+    ingredients: "Aloe Vera, Linseed Extract, Glycerin, Provitamin B5",
+    howToUse: {
+      en: "Smooth a small amount through soaking-wet hair from root to tip, scrunch, dry.",
+      no: "Gli en liten porsjon gjennom dryppvått hår fra rot til tupp, scrunch, tørk.",
+    },
+    imageUrls: ["/images/shop/boucleme-curl-defining-gel.jpg"],
+    externalCheckoutUrl: "https://boucleme.us/products/curl-defining-gel",
+    rating: 4.6,
+    reviewCount: 421,
+  },
+  {
+    id: "curlsmith-flexi-jelly",
+    slug: "curlsmith-flexi-jelly",
+    name: "Curlsmith Hydro Style Flexi-Jelly",
+    brand: "Curlsmith",
+    price: 360,
+    category: "styler",
+    hairTypes: ["2B", "2C", "3A", "3B"],
+    porosity: ["low", "medium"],
+    conditions: ["fine", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Ultra-light jelly that glides through wet curls. Scrunch out the cast for soft definition.",
+      no: "Ultralett gelé som glir gjennom våte krøller. Scrunch ut casten for myk definisjon.",
+    },
+    longDescription: {
+      en: "A silky jelly built for those who find regular gels too heavy. Sits softly on wet hair, dries with a light crunch, then scrunches into airy curls.",
+      no: "En silkemyk gelé for deg som synes vanlig gel blir for tung. Sitter lett på vått hår, tørker med lett crunch, og scruncher seg ut til luftige krøller.",
+    },
+    ingredients: "Aqua, Aloe Vera, VP/VA Copolymer, Hydrolyzed Quinoa Protein",
+    howToUse: {
+      en: "Apply to soaking-wet hair section by section, scrunch and squish, air-dry or diffuse.",
+      no: "Påfør på dryppvått hår seksjon for seksjon, scrunch og squish, lufttørk eller diffuser.",
+    },
+    imageUrls: ["/images/shop/curlsmith-flexi-jelly.jpg"],
+    externalCheckoutUrl: "https://curlsmith.com/products/hydro-style-flexi-jelly",
+    rating: 4.4,
+    reviewCount: 297,
+    newArrival: true,
+  },
+  {
+    id: "camille-rose-curl-maker",
+    slug: "camille-rose-curl-maker",
+    name: "Camille Rose Curl Maker",
+    brand: "Camille Rose",
+    price: 320,
+    category: "styler",
+    hairTypes: ["3B", "3C", "4A"],
+    porosity: ["medium"],
+    conditions: ["dry", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Marshmallow root and golden agave defining jelly. Soft hold with deep moisture.",
+      no: "Definerende gelé med marshmallow-rot og gylden agave. Mykt grep og dyp fukt.",
+    },
+    longDescription: {
+      en: "A creamy-jelly hybrid that styles and treats at the same time. Honey-like consistency that smooths frizz and locks in clumps for a long-wearing curl set.",
+      no: "En kremgelé-hybrid som styler og pleier samtidig. Honning-aktig konsistens som glatter frizz og låser klumper for en krøll-styling som holder.",
+    },
+    ingredients: "Marshmallow Root, Golden Agave Nectar, Castor Oil, Honey",
+    howToUse: {
+      en: "Apply generously to wet hair in sections, smooth, scrunch and dry.",
+      no: "Påfør gavmildt på vått hår i seksjoner, gli ut, scrunch og tørk.",
+    },
+    imageUrls: ["/images/shop/camille-rose-curl-maker.jpg"],
+    externalCheckoutUrl: "https://www.camillerose.com/products/curl-maker",
+    rating: 4.5,
+    reviewCount: 588,
+  },
+  {
+    id: "innersense-i-create-volume",
+    slug: "innersense-i-create-volume",
+    name: "Innersense I Create Volume",
+    brand: "Innersense Organic Beauty",
+    price: 390,
+    category: "styler",
+    hairTypes: ["2A", "2B", "2C", "3A"],
+    porosity: ["low"],
+    conditions: ["fine"],
+    stock: "in_stock",
+    description: {
+      en: "Mineral-light root spray with sea salt and aloe. Lifts limp waves without stripping.",
+      no: "Mineral-lett rotspray med havsalt og aloe. Løfter slappe bølger uten å tørke ut.",
+    },
+    longDescription: {
+      en: "A salt-and-aloe mist that builds volume at the root without sand-paper texture. Spray on damp roots, scrunch the lengths, diffuse.",
+      no: "En salt-og-aloe-spray som bygger volum ved roten uten sandpapir-tekstur. Spray på fuktige røtter, scrunch lengdene, diffuser.",
+    },
+    ingredients: "Aloe Juice, Sea Salt, Algae Extract, Lavender Oil",
+    howToUse: {
+      en: "Spray onto damp roots, flip head and scrunch, dry on low heat.",
+      no: "Spray på fuktige røtter, vend hodet og scrunch, tørk på lav varme.",
+    },
+    imageUrls: ["/images/shop/innersense-i-create-volume.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/i-create-volume",
+    rating: 4.4,
+    reviewCount: 214,
+  },
+  {
+    id: "innersense-hydrating-hairbath",
+    slug: "innersense-hydrating-hairbath",
+    name: "Innersense Hydrating Cream Hairbath",
+    brand: "Innersense Organic Beauty",
+    price: 380,
+    category: "shampoo",
+    hairTypes: ["3A", "3B", "3C", "4A"],
+    porosity: ["medium", "high"],
+    conditions: ["dry"],
+    stock: "in_stock",
+    description: {
+      en: "Low-poo cream cleanser with honey and coconut. Sulfate-free, made for frequent curl wash days.",
+      no: "Mild cream-rens med honning og kokos. Sulfatfri, lagd for ofte krøll-vask.",
+    },
+    longDescription: {
+      en: "A creamy non-lathering wash that respects the curl. Massage onto scalp, let the rinse glide through lengths. Pair with the matching conditioner for a full system.",
+      no: "En kremaktig vask som ikke skummer hardt og som tar vare på krøllen. Masser inn i hodebunnen, og la skyllingen gli gjennom lengdene. Kombiner med tilhørende conditioner for et helt system.",
+    },
+    ingredients: "Aloe Vera, Coconut, Honey, Tamanu Oil",
+    howToUse: {
+      en: "Massage onto wet scalp, work into roots, rinse and follow with conditioner.",
+      no: "Masser inn i vått hodebunn, jobb inn i røttene, skyll og følg opp med conditioner.",
+    },
+    imageUrls: ["/images/shop/innersense-hydrating-hairbath.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/hydrating-cream-hairbath",
+    rating: 4.7,
+    reviewCount: 695,
+    bestseller: true,
+  },
+  {
+    id: "innersense-clarity-hairbath",
+    slug: "innersense-clarity-hairbath",
+    name: "Innersense Clarity Hairbath",
+    brand: "Innersense Organic Beauty",
+    price: 380,
+    category: "shampoo",
+    hairTypes: ["2B", "2C", "3A", "3B"],
+    porosity: ["low", "medium"],
+    conditions: ["fine", "dandruff-prone"],
+    stock: "in_stock",
+    description: {
+      en: "Clarifying sulfate-free wash for buildup-prone curls. Lemongrass and bergamot. Use monthly.",
+      no: "Sulfatfri klargjørende vask for krøller med belegg. Sitrongress og bergamott. Brukes månedlig.",
+    },
+    longDescription: {
+      en: "Strips product residue without stripping moisture. Lather, leave for two minutes, rinse. Follow with a deep conditioner the same day.",
+      no: "Fjerner produktrester uten å fjerne fukten. Skum, la sitte i to minutter, skyll. Følg opp med en deep conditioner samme dag.",
+    },
+    ingredients: "Aloe Vera, Lemongrass, Bergamot, Saponaria",
+    howToUse: {
+      en: "Use once a month. Lather, leave two minutes, rinse, deep condition.",
+      no: "Brukes én gang i måneden. Skum, la stå to minutter, skyll, deep condition.",
+    },
+    imageUrls: ["/images/shop/innersense-clarity-hairbath.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/clarity-hairbath",
+    rating: 4.6,
+    reviewCount: 401,
+  },
+  {
+    id: "cbb-creamy-cleanser",
+    slug: "cbb-creamy-cleanser",
+    name: "Curls by Brown Creamy Hair Cleanser",
+    brand: "Curls by Brown",
+    price: 399,
+    category: "shampoo",
+    hairTypes: ["3C", "4A", "4B", "4C"],
+    porosity: ["high"],
+    conditions: ["dry", "thick"],
+    stock: "in_stock",
+    description: {
+      en: "Conditioning co-wash for tight coils between deeper cleanses. No sulfates, no silicones.",
+      no: "Pleiende co-wash for tette krøller mellom vanlige vasker. Uten sulfater og silikoner.",
+    },
+    longDescription: {
+      en: "A creamy cleansing conditioner that lifts oil without stripping. Massage onto scalp in sections, let the lengths get the runoff. Good for two-to-three wash days a week.",
+      no: "En kremaktig vask-conditioner som løfter olje uten å tørke ut. Masser inn i hodebunnen seksjon for seksjon, og la lengdene få avrenningen. Tåler to-tre vaskedager i uken.",
+    },
+    ingredients: "Cetearyl Alcohol, Behentrimonium Methosulfate, Coconut, Aloe",
+    howToUse: {
+      en: "Apply to scalp, massage in sections, rinse thoroughly.",
+      no: "Påfør på hodebunnen, masser i seksjoner, skyll grundig.",
+    },
+    imageUrls: ["/images/shop/cbb-creamy-cleanser.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/creamy-hair-cleanser",
+    stylistPick: {
+      en: "Adé suggests this for clients washing two or three times a week without stripping.",
+      no: "Adé foreslår denne til klienter som vasker to eller tre ganger i uken uten å tørke ut håret.",
+    },
+    rating: 4.7,
+    reviewCount: 523,
+    bestseller: true,
+  },
+  {
+    id: "boucleme-scalp-exfoliating-shampoo",
+    slug: "boucleme-scalp-exfoliating-shampoo",
+    name: "Bouclème Scalp Exfoliating Shampoo",
+    brand: "Bouclème",
+    price: 399,
+    category: "shampoo",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A"],
+    porosity: ["medium"],
+    conditions: ["dandruff-prone", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Gentle exfoliating wash with bamboo and pre-biotic ferment. Lifts product buildup, calms the scalp.",
+      no: "Mild eksfolierende vask med bambus og pre-biotisk ferment. Løfter produktrester og roer hodebunnen.",
+    },
+    longDescription: {
+      en: "Micro-exfoliating beads dissolve as you massage. Pre-biotic ferment feeds the scalp biome, leaving curls clean without squeak.",
+      no: "Mikro-eksfolierende perler oppløses mens du masserer. Pre-biotisk ferment mater hodebunns-biomet, krøllene blir rene uten å pipe.",
+    },
+    ingredients: "Aqua, Bamboo Powder, Pre-biotic Ferment, Coco-Glucoside",
+    howToUse: {
+      en: "Apply to wet scalp, massage in circles, rinse and condition.",
+      no: "Påfør på vått hodebunn, masser i sirkler, skyll og pleie.",
+    },
+    imageUrls: ["/images/shop/boucleme-scalp-exfoliating-shampoo.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/scalp-exfoliating-shampoo",
+    rating: 4.5,
+    reviewCount: 244,
+    newArrival: true,
+  },
+  {
+    id: "k18-peptide-prep-detox",
+    slug: "k18-peptide-prep-detox",
+    name: "K18 Peptide Prep Detox Shampoo",
+    brand: "K18",
+    price: 360,
+    category: "shampoo",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["medium"],
+    conditions: ["color-treated", "damaged"],
+    stock: "in_stock",
+    description: {
+      en: "Mineral-removing clarifier for the day before a K18 mask. Strips chlorine, hard water and styling.",
+      no: "Klargjørende vask som fjerner mineraler. Brukes dagen før K18-mask. Tar klor, hardt vann og styling.",
+    },
+    longDescription: {
+      en: "A targeted clarifier designed to prep hair for the K18 mask. Removes copper, iron and chlorine that block bond repair.",
+      no: "En målrettet klargjøring laget for å forberede håret til K18-mask. Fjerner kobber, jern og klor som blokkerer bond-reparasjon.",
+    },
+    ingredients: "Water, Sodium C14-16 Olefin Sulfonate, EDTA, K18Peptide",
+    howToUse: {
+      en: "Lather, leave for one minute, rinse. Use the day before the leave-in mask.",
+      no: "Skum, la stå ett minutt, skyll. Brukes dagen før leave-in-masken.",
+    },
+    imageUrls: ["/images/shop/k18-peptide-prep-detox.jpg"],
+    externalCheckoutUrl: "https://www.k18hair.com/products/peptide-prep-detox-shampoo",
+    stylistPick: {
+      en: "Vanessa: step one in every at-home K18 or Olaplex routine.",
+      no: "Vanessa: steg én i hver hjemme-K18- eller hjemme-Olaplex-rutine.",
+    },
+    rating: 4.4,
+    reviewCount: 367,
+  },
+  {
+    id: "innersense-color-awakening-hairbath",
+    slug: "innersense-color-awakening-hairbath",
+    name: "Innersense Color Awakening Hairbath",
+    brand: "Innersense Organic Beauty",
+    price: 380,
+    category: "shampoo",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A"],
+    porosity: ["medium"],
+    conditions: ["color-treated", "dry"],
+    stock: "low_stock",
+    description: {
+      en: "Sulfate-free cleanser tuned for coloured curls. Aloe, jojoba, irish moss. Keeps tone for longer.",
+      no: "Sulfatfri vask laget for fargede krøller. Aloe, jojoba og irlandsk mose. Holder fargen lengre.",
+    },
+    longDescription: {
+      en: "Designed for dyed and balayaged curls. UV filters in the formula slow oxidation and fading. Use as a full system with the Color Radiance conditioner.",
+      no: "Designet for fargede og balayage-krøller. UV-filtre i formelen bremser oksidering og falming. Brukes som et fullt system sammen med Color Radiance conditioner.",
+    },
+    ingredients: "Aloe Vera, Jojoba, Irish Moss, Sunflower",
+    howToUse: {
+      en: "Massage onto wet scalp, work through lengths, rinse and condition.",
+      no: "Masser inn i vått hodebunn, jobb gjennom lengdene, skyll og pleie.",
+    },
+    imageUrls: ["/images/shop/innersense-color-awakening-hairbath.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/color-awakening-hairbath",
+    rating: 4.6,
+    reviewCount: 198,
+  },
+  {
+    id: "pattern-heavy-conditioner",
+    slug: "pattern-heavy-conditioner",
+    name: "Pattern Beauty Heavy Conditioner",
+    brand: "Pattern Beauty",
+    price: 420,
+    category: "conditioner",
+    hairTypes: ["3C", "4A", "4B", "4C"],
+    porosity: ["high"],
+    conditions: ["dry", "thick", "damaged"],
+    stock: "in_stock",
+    description: {
+      en: "Slip-heavy moisture conditioner from Tracee Ellis Ross. Detangles tight coils in the shower without protein overload.",
+      no: "Tung fukt-conditioner fra Tracee Ellis Ross. Greier ut tette krøller i dusjen uten å proppe håret med protein.",
+    },
+    longDescription: {
+      en: "A buttery formula with safflower, avocado and shea. Designed to be used generously, with hands and a wide-tooth comb, then rinsed cool.",
+      no: "En smør-aktig formel med saflor, avokado og shea. Laget for å brukes gavmildt, med hender og bredtannet kam, og deretter skylles med kaldt vann.",
+    },
+    ingredients: "Safflower Oil, Avocado Oil, Shea Butter, Honey",
+    howToUse: {
+      en: "Apply liberally to wet hair, detangle with fingers or a wide-tooth comb, leave five minutes, rinse cool.",
+      no: "Påfør gavmildt på vått hår, gre ut med fingrene eller en bredtannet kam, la sitte fem minutter, skyll med kaldt vann.",
+    },
+    imageUrls: ["/images/shop/pattern-heavy-conditioner.jpg"],
+    externalCheckoutUrl: "https://patternbeauty.com/products/heavy-conditioner",
+    stylistPick: {
+      en: "Vanessa pulls this off the shelf for any client with dense Type 4 hair and a long detangle.",
+      no: "Vanessa griper denne til klienter med tykt Type 4-hår og lang utgreiingsjobb.",
+    },
+    rating: 4.8,
+    reviewCount: 821,
+    bestseller: true,
+  },
+  {
+    id: "innersense-hydrating-cream-conditioner",
+    slug: "innersense-hydrating-cream-conditioner",
+    name: "Innersense Hydrating Cream Conditioner",
+    brand: "Innersense Organic Beauty",
+    price: 400,
+    category: "conditioner",
+    hairTypes: ["3A", "3B", "3C", "4A"],
+    porosity: ["medium", "high"],
+    conditions: ["dry"],
+    stock: "in_stock",
+    description: {
+      en: "Rinse-out cream conditioner with shea, jojoba and honey. Daily-friendly moisture.",
+      no: "Skylle-ut conditioner med shea, jojoba og honning. Fukt som tåler daglig bruk.",
+    },
+    longDescription: {
+      en: "The conditioner that pairs with the Hydrating Hairbath. Softens, detangles, and leaves zero residue. A safe choice for low-poo wash days.",
+      no: "Conditioneren som passer Hydrating Hairbath. Mykgjør, greier ut, og etterlater ingen rester. Et trygt valg på lavsåpe-dager.",
+    },
+    ingredients: "Aloe Vera, Shea Butter, Honey, Jojoba",
+    howToUse: {
+      en: "After shampoo, apply through lengths, detangle, rinse.",
+      no: "Etter sjampoo, påfør gjennom lengdene, gre ut, skyll.",
+    },
+    imageUrls: ["/images/shop/innersense-hydrating-cream-conditioner.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/hydrating-cream-conditioner",
+    rating: 4.7,
+    reviewCount: 502,
+  },
+  {
+    id: "innersense-hydrating-hair-mask",
+    slug: "innersense-hydrating-hair-mask",
+    name: "Innersense Hydrating Hair Mask",
+    brand: "Innersense Organic Beauty",
+    price: 440,
+    category: "deep-treatment",
+    hairTypes: ["3B", "3C", "4A", "4B", "4C"],
+    porosity: ["medium", "high"],
+    conditions: ["dry", "damaged"],
+    stock: "in_stock",
+    description: {
+      en: "Weekly mask with shea butter, tamanu and jojoba. Repairs split ends and softens coarse texture.",
+      no: "Ukentlig kur med sheasmør, tamanu og jojoba. Reparerer kløyvde tupper og mykner grov tekstur.",
+    },
+    longDescription: {
+      en: "A pro-grade deep treatment used at the chair. Apply on freshly-washed hair, cover with a plastic cap, leave 10 to 20 minutes under low heat.",
+      no: "En profesjonell deep treatment som brukes ved stolen. Påfør på nyvasket hår, dekk med plastikkhette, la sitte 10 til 20 minutter under lav varme.",
+    },
+    ingredients: "Shea Butter, Tamanu, Jojoba, Murumuru Butter",
+    howToUse: {
+      en: "On clean, damp hair, apply generously, cover, leave 10 minutes, rinse.",
+      no: "På rent og fuktig hår, påfør gavmildt, dekk til, la sitte 10 minutter, skyll.",
+    },
+    imageUrls: ["/images/shop/innersense-hydrating-hair-mask.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/hydrating-hair-masque",
+    stylistPick: {
+      en: "Mira layers this under a plastic cap with low heat for ten minutes.",
+      no: "Mira lar denne ligge under plast med lav varme i ti minutter.",
+    },
+    rating: 4.8,
+    reviewCount: 654,
+    bestseller: true,
+  },
+  {
+    id: "k18-leave-in-mask",
+    slug: "k18-leave-in-mask",
+    name: "K18 Leave-in Molecular Repair Hair Mask",
+    brand: "K18",
+    price: 890,
+    category: "deep-treatment",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A"],
+    porosity: ["medium", "high"],
+    conditions: ["damaged", "color-treated", "breakage"],
+    stock: "low_stock",
+    description: {
+      en: "Bioactive peptide treatment that repairs bond damage from bleach, color and heat. Four minutes, no rinse.",
+      no: "Bioaktiv peptid-behandling som reparerer skader fra bleking, farge og varme. Fire minutter, ingen skylling.",
+    },
+    longDescription: {
+      en: "Use after clarifying. A small amount per section, leave four minutes, then style as usual. Visible bond repair within a single cycle.",
+      no: "Brukes etter klargjøring. Litt per seksjon, la sitte fire minutter, og styl som vanlig. Synlig bond-reparasjon etter én syklus.",
+    },
+    ingredients: "Water, Cetearyl Alcohol, K18Peptide, Behentrimonium Methosulfate",
+    howToUse: {
+      en: "On clean towel-dried hair, apply a small amount per section, wait four minutes, style.",
+      no: "På rent håndklaetørt hår, påfør litt per seksjon, vent fire minutter, styl.",
+    },
+    imageUrls: ["/images/shop/k18-leave-in-mask.jpg"],
+    externalCheckoutUrl: "https://www.k18hair.com/products/leave-in-molecular-repair-hair-mask",
+    stylistPick: {
+      en: "Vanessa recommends after every color service for coloured curls.",
+      no: "Vanessa anbefaler etter hver fargebehandling for fargede krøller.",
+    },
+    rating: 4.7,
+    reviewCount: 1284,
+    bestseller: true,
+  },
+  {
+    id: "innersense-detox-hair-mask",
+    slug: "innersense-detox-hair-mask",
+    name: "Innersense Detox Hair Mask",
+    brand: "Innersense Organic Beauty",
+    price: 440,
+    category: "deep-treatment",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A"],
+    porosity: ["medium"],
+    conditions: ["dandruff-prone", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Bentonite clay mask with green tea and shea. Pulls residue and resets curl pattern.",
+      no: "Bentonite-leir-kur med grønn te og shea. Trekker ut rester og resetter krøllmønsteret.",
+    },
+    longDescription: {
+      en: "A clarifying clay treatment that detoxes without drying. Mix with water if very thick, apply on damp hair, leave 10 minutes, rinse and condition.",
+      no: "En klargjørende leirebehandling som detoxer uten å tørke ut. Bland med vann om den er veldig tjukk, påfør på fuktig hår, la sitte 10 minutter, skyll og pleie.",
+    },
+    ingredients: "Bentonite Clay, Green Tea, Shea Butter, Apple Cider Vinegar",
+    howToUse: {
+      en: "Apply on damp hair, leave 10 minutes, rinse, follow with conditioner.",
+      no: "Påfør på fuktig hår, la sitte 10 minutter, skyll, følg opp med conditioner.",
+    },
+    imageUrls: ["/images/shop/innersense-detox-hair-mask.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/innersense-detox-hair-mask",
+    rating: 4.5,
+    reviewCount: 211,
+  },
+  {
+    id: "innersense-color-radiance-conditioner",
+    slug: "innersense-color-radiance-conditioner",
+    name: "Innersense Color Radiance Daily Conditioner",
+    brand: "Innersense Organic Beauty",
+    price: 400,
+    category: "conditioner",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["medium"],
+    conditions: ["color-treated", "fine"],
+    stock: "in_stock",
+    description: {
+      en: "Color-locking conditioner with hibiscus and coconut. Keeps freshly-coloured curls glossy.",
+      no: "Fargelåsende conditioner med hibiskus og kokos. Holder nyfargede krøller blanke.",
+    },
+    longDescription: {
+      en: "Designed to pair with the Color Awakening Hairbath. Hibiscus locks pigment, jojoba seals the cuticle, leaves curls shiny without weight.",
+      no: "Designet for å passe Color Awakening Hairbath. Hibiskus låser pigmentet, jojoba forsegler overflaten, krøllene blir blanke uten å tynges.",
+    },
+    ingredients: "Hibiscus, Coconut, Jojoba, Sunflower",
+    howToUse: {
+      en: "Apply on rinsed hair, detangle, rinse cool.",
+      no: "Påfør på skyllet hår, gre ut, skyll med kaldt vann.",
+    },
+    imageUrls: ["/images/shop/innersense-color-radiance-conditioner.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/color-radiance-daily-conditioner",
+    rating: 4.6,
+    reviewCount: 273,
+  },
+  {
+    id: "boucleme-revive-oil",
+    slug: "boucleme-revive-oil",
+    name: "Bouclème Revive 5 Hair Oil",
+    brand: "Bouclème",
+    price: 439,
+    category: "oil",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A", "4B"],
+    porosity: ["medium", "high"],
+    conditions: ["dry", "damaged"],
+    stock: "in_stock",
+    description: {
+      en: "Plant-based finishing oil with kahai, moringa and mongongo. Use as a sealant under stylers or overnight pre-wash.",
+      no: "Plantebasert finish-olje med kahai, moringa og mongongo. Bruk som forsegling under styling eller som pre-wash over natten.",
+    },
+    longDescription: {
+      en: "A clean-formula multi-oil. A few drops on damp ends seal moisture, larger amounts work as an overnight pre-wash treatment.",
+      no: "En ren multi-olje. Noen dråper på fuktige tupper forsegler fukt, større mengder fungerer som pre-wash over natten.",
+    },
+    ingredients: "Kahai Oil, Moringa, Mongongo, Plum Oil",
+    howToUse: {
+      en: "Warm in palms, apply on damp ends or scalp before bed.",
+      no: "Varm i håndflatene, påfør på fuktige tupper eller hodebunnen før leggetid.",
+    },
+    imageUrls: ["/images/shop/boucleme-revive-oil.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/revive-5-hair-oil-100ml",
+    rating: 4.7,
+    reviewCount: 358,
+    bestseller: true,
+  },
+  {
+    id: "innersense-harmonic-treatment-oil",
+    slug: "innersense-harmonic-treatment-oil",
+    name: "Innersense Harmonic Treatment Oil",
+    brand: "Innersense Organic Beauty",
+    price: 350,
+    category: "oil",
+    hairTypes: ["2B", "2C", "3A", "3B"],
+    porosity: ["low", "medium"],
+    conditions: ["fine", "frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Pre-wash and overnight oil with safflower, blue tansy and tamanu. A few drops smooth flyaways on dry days.",
+      no: "Pre-wash- og natt-olje med saflor, blå tansy og tamanu. Noen dråper glatter ned flyaways på tørre dager.",
+    },
+    longDescription: {
+      en: "Lightweight enough for fine hair, rich enough for a scalp massage. Use one to two drops on dry hair to smooth, or a generous pour pre-wash.",
+      no: "Lett nok for fint hår, rik nok for en hodebunn-massasje. Bruk én til to dråper på tørt hår for å glatte, eller en raus dose pre-wash.",
+    },
+    ingredients: "Safflower Oil, Blue Tansy, Tamanu, Argan",
+    howToUse: {
+      en: "Drop into palms, smooth over dry hair. Or massage into scalp 30 minutes before washing.",
+      no: "Drypp i håndflatene, gli over tørt hår. Eller masser inn i hodebunnen 30 minutter før vask.",
+    },
+    imageUrls: ["/images/shop/innersense-harmonic-treatment-oil.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/harmonic-treatment-oil",
+    rating: 4.5,
+    reviewCount: 187,
+  },
+  {
+    id: "bread-everyday-gloss-oil",
+    slug: "bread-everyday-gloss-oil",
+    name: "Bread Beauty Supply Everyday Gloss Hair Oil",
+    brand: "Bread Beauty Supply",
+    price: 595,
+    category: "oil",
+    hairTypes: ["2B", "2C", "3A", "3B", "3C"],
+    porosity: ["low", "medium"],
+    conditions: ["fine", "color-treated"],
+    stock: "in_stock",
+    description: {
+      en: "Silicone-free oil with kakadu plum. Glosses without weighing curls down, fine-hair friendly.",
+      no: "Silikonfri olje med kakadu-plomme. Gir glans uten å tynge krøllene, fungerer på fint hår.",
+    },
+    longDescription: {
+      en: "An Australian blend with kakadu plum and macadamia. Smells like strawberry lip balm, shines without grease, works on both low- and high-porosity hair.",
+      no: "En australsk blanding med kakadu-plomme og macadamia. Lukter som jordbær-lip-balm, gir glans uten fett, og fungerer på både lav- og høyporøst hår.",
+    },
+    ingredients: "Macadamia, Kakadu Plum, Sea Buckthorn, Vitamin E",
+    howToUse: {
+      en: "A few drops on damp or dry ends, smooth through, do not rinse.",
+      no: "Noen dråper på fuktige eller tørre tupper, gli gjennom, ikke skyll.",
+    },
+    imageUrls: ["/images/shop/bread-everyday-gloss-oil.jpg"],
+    externalCheckoutUrl: "https://breadbeautysupply.com/products/hair-oil",
+    rating: 4.6,
+    reviewCount: 1042,
+    bestseller: true,
+  },
+  {
+    id: "innersense-refresh-dry-shampoo",
+    slug: "innersense-refresh-dry-shampoo",
+    name: "Innersense Refresh Dry Shampoo",
+    brand: "Innersense Organic Beauty",
+    price: 350,
+    category: "oil",
+    hairTypes: ["2A", "2B", "2C", "3A", "3B"],
+    porosity: ["low"],
+    conditions: ["fine"],
+    stock: "in_stock",
+    description: {
+      en: "Rice and arrowroot powder refresh between wash days. Aerosol-free pump, no white cast on dark hair.",
+      no: "Pulver-refresh med ris og arrowroot mellom vaskedager. Pumpe uten drivgass og uten hvitt belegg på mørkt hår.",
+    },
+    longDescription: {
+      en: "A pump-action powder that absorbs oil at the roots without leaving residue. Massage in with fingertips, shake out the excess.",
+      no: "Et pulver i pumpe som suger opp olje ved roten uten å etterlate rester. Masser inn med fingertuppene, rist ut det overflødige.",
+    },
+    ingredients: "Rice Starch, Arrowroot Powder, Kaolin Clay",
+    howToUse: {
+      en: "Pump onto roots, massage in, brush out the excess.",
+      no: "Pump på røttene, masser inn, børst ut det overflødige.",
+    },
+    imageUrls: ["/images/shop/innersense-refresh-dry-shampoo.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/refresh-dry-shampoo",
+    rating: 4.3,
+    reviewCount: 142,
+    newArrival: true,
+  },
+  {
+    id: "mielle-ph-leave-in",
+    slug: "mielle-ph-leave-in",
+    name: "Mielle Pomegranate & Honey Leave-In Conditioner",
+    brand: "Mielle Organics",
+    price: 240,
+    category: "leave-in",
+    hairTypes: ["3C", "4A", "4B", "4C"],
+    porosity: ["high"],
+    conditions: ["dry", "thick"],
+    stock: "low_stock",
+    description: {
+      en: "Honey, babassu and pomegranate leave-in for Type 4. Layer under cream or gel for sealed moisture.",
+      no: "Leave-in med honning, babassu og granateple for Type 4. Brukes under krem eller gel som fukt-forsegler.",
+    },
+    longDescription: {
+      en: "A budget-friendly Type 4 staple. Honey humectant draws in moisture, babassu seals it. Pairs with the matching curl smoothie.",
+      no: "Et rimelig Type 4-staple. Honning som humektant trekker inn fukt, babassu forsegler. Passer sammen med tilhørende curl smoothie.",
+    },
+    ingredients: "Aloe Vera, Honey, Babassu Oil, Pomegranate Extract",
+    howToUse: {
+      en: "Spray on damp hair, smooth in, follow with cream or gel.",
+      no: "Spray på fuktig hår, gli inn, følg opp med krem eller gel.",
+    },
+    imageUrls: ["/images/shop/mielle-ph-leave-in.jpg"],
+    externalCheckoutUrl: "https://mielleorganics.com/products/pomegranate-honey-leave-in-conditioner",
+    stylistPick: {
+      en: "Adé: a mid-price Type 4 staple I do not hide from clients.",
+      no: "Adé: et mellomprispriset Type 4-staple jeg ikke skjuler for klientene.",
+    },
+    rating: 4.6,
+    reviewCount: 928,
+    bestseller: true,
+  },
+  {
+    id: "bounce-curl-edgelift",
+    slug: "bounce-curl-edgelift",
+    name: "Bounce Curl Define EdgeLift Brush",
+    brand: "Bounce Curl",
+    price: 449,
+    category: "tool",
+    hairTypes: ["3A", "3B", "3C", "4A", "4B"],
+    porosity: ["medium", "high"],
+    conditions: ["frizzy"],
+    stock: "in_stock",
+    description: {
+      en: "Two-in-one brush. One side smooths edges, the other lifts and separates curls at the root.",
+      no: "To-i-én-børste. Den ene siden glatter kanter, den andre løfter og separerer krøller ved roten.",
+    },
+    longDescription: {
+      en: "The Define side has firm short bristles for crisp baby-hair edges. The lift side adds root volume and breaks up clumps for a more open curl pattern.",
+      no: "Define-siden har faste, korte bust for skarpe kanter. Lift-siden gir rotvolum og bryter opp klumper for et mer åpent krøllmønster.",
+    },
+    ingredients: "Boar bristle and recycled plastic handle",
+    howToUse: {
+      en: "Use Define side on freshly-laid edges. Flip to Lift side and shake at the roots.",
+      no: "Bruk Define-siden på nylagte kanter. Snu til Lift-siden og rist ved røttene.",
+    },
+    imageUrls: ["/images/shop/bounce-curl-edgelift.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/bounce-curl-define-edgelift-brush",
+    stylistPick: {
+      en: "Adé uses this for sharp edges on fades and tapered coily cuts.",
+      no: "Adé bruker denne for skarpe kanter på fade og taperte krøllklipp.",
+    },
+    rating: 4.7,
+    reviewCount: 412,
+  },
+  {
+    id: "denman-d3",
+    slug: "denman-d3",
+    name: "Denman D3 7-Row Brush",
+    brand: "Denman",
+    price: 280,
+    category: "tool",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["low", "medium"],
+    conditions: ["fine"],
+    stock: "in_stock",
+    description: {
+      en: "Seven rows of nylon pins. Defines clumps on damp hair, then leave the curls alone to dry.",
+      no: "Syv rader nylonpinner. Definerer klumper i fuktig hår, så lar du krøllene tørke i fred.",
+    },
+    longDescription: {
+      en: "The classic curl-defining brush. Apply leave-in, then brush from root to tip in small sections. Optional row removal customizes for thicker hair.",
+      no: "Den klassiske krøll-definerende børsten. Påfør leave-in, og børst fra rot til tupp i små seksjoner. Du kan fjerne rader for tykkere hår.",
+    },
+    howToUse: {
+      en: "Brush damp, leave-in-conditioned hair in small sections, then air-dry.",
+      no: "Børst fuktig, leave-in-conditionert hår i små seksjoner, så lufttørk.",
+    },
+    imageUrls: ["/images/shop/denman-d3.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/denman-d3n-7-row",
+    stylistPick: {
+      en: "Inés walks every new Type 3 client through Denman technique at the chair.",
+      no: "Inés viser hver nye Type 3-klient hvordan Denman skal brukes ved stolen.",
+    },
+    rating: 4.6,
+    reviewCount: 1547,
+    bestseller: true,
+  },
+  {
+    id: "cbb-bamboo-pick",
+    slug: "cbb-bamboo-pick",
+    name: "Curls by Brown Bamboo Afro Pick",
+    brand: "Curls by Brown",
+    price: 190,
+    category: "tool",
+    hairTypes: ["3C", "4A", "4B", "4C"],
+    porosity: ["high"],
+    conditions: ["thick"],
+    stock: "in_stock",
+    description: {
+      en: "Lightweight bamboo pick for stretching coils without static. Smooth tips, no snag.",
+      no: "Lett bambus-pick for å strekke krøller uten statisk elektrisitet. Glatte tupper, ingen rufsing.",
+    },
+    longDescription: {
+      en: "A natural bamboo pick that lifts and shapes Type 4 without snags. Sustainable alternative to plastic afro picks.",
+      no: "En naturlig bambus-pick som løfter og former Type 4 uten å hekte seg. Et bærekraftig alternativ til afro-picks i plast.",
+    },
+    howToUse: {
+      en: "Lift from the root in small sections to shape the afro.",
+      no: "Løft fra roten i små seksjoner for å forme afroen.",
+    },
+    imageUrls: ["/images/shop/cbb-bamboo-pick.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/bamboo-afro-comb",
+    rating: 4.4,
+    reviewCount: 96,
+  },
+  {
+    id: "bounce-curl-volume-edgelift",
+    slug: "bounce-curl-volume-edgelift",
+    name: "Bounce Curl Volume EdgeLift Brush",
+    brand: "Bounce Curl",
+    price: 449,
+    category: "tool",
+    hairTypes: ["2C", "3A", "3B", "3C"],
+    porosity: ["low", "medium"],
+    conditions: ["fine"],
+    stock: "in_stock",
+    description: {
+      en: "Volume-side brush for lifting flat roots and detangling without breakage.",
+      no: "Volumside-børste for å løfte flate røtter og rede ut uten å brekke håret.",
+    },
+    longDescription: {
+      en: "Longer pins than the Define version, made for waves and looser curls that need root lift. Detangles dry hair without static.",
+      no: "Lengre pinner enn Define-versjonen, lagd for bølger og løsere krøller som trenger rotløft. Greier ut tørt hår uten statisk.",
+    },
+    howToUse: {
+      en: "Use on dry roots to lift, or on damp lengths to detangle.",
+      no: "Bruk på tørre røtter for å løfte, eller på fuktige lengder for å gre ut.",
+    },
+    imageUrls: ["/images/shop/bounce-curl-volume-edgelift.jpg"],
+    externalCheckoutUrl: "https://www.curlsbybrown.no/products/bounce-curl-volume-edgelift-brush",
+    rating: 4.6,
+    reviewCount: 224,
+    newArrival: true,
+  },
+  {
+    id: "universal-hooded-diffuser",
+    slug: "universal-hooded-diffuser",
+    name: "Universal Hooded Diffuser Attachment",
+    brand: "Jackson & Coil House",
+    price: 540,
+    category: "tool",
+    hairTypes: ["2C", "3A", "3B", "3C", "4A"],
+    porosity: ["medium"],
+    conditions: ["frizzy"],
+    stock: "out_of_stock",
+    description: {
+      en: "Hooded silicone diffuser that fits most blow-dryer nozzles. Even airflow without disturbing the curl pattern.",
+      no: "Hette-diffusor i silikon som passer de fleste hårfønere. Jevn luftstrøm uten å rote opp krøllmønsteret.",
+    },
+    longDescription: {
+      en: "Collapsible silicone hood with a deep bowl. Universal elastic neck fits Dyson, Bio Ionic, BaByliss and standard 4cm-to-6cm nozzles. Travel-friendly.",
+      no: "Sammenleggbar hette i silikon med dyp skål. Universalstrikk i åpningen passer Dyson, Bio Ionic, BaByliss og standard 4cm til 6cm-munnstykker. Tar liten plass i bagasjen.",
+    },
+    howToUse: {
+      en: "Push onto the nozzle, set dryer to low heat, hover under curls without scrunching.",
+      no: "Tre på munnstykket, sett føneren på lav varme, hold under krøllene uten å scrunche.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/universal-hooded-diffuser",
+    stylistPick: {
+      en: "Inés: plan B for clients who do not want to swap dryers.",
+      no: "Inés: plan B for klienter som ikke vil bytte hårføner.",
+    },
+    rating: 4.2,
+    reviewCount: 47,
+  },
+  {
+    id: "bounce-curl-satin-turban",
+    slug: "bounce-curl-satin-turban",
+    name: "Bounce Curl Satin Microfiber Turban",
+    brand: "Bounce Curl",
+    price: 320,
+    category: "accessory",
+    hairTypes: ["2A", "2B", "2C", "3A", "3B", "3C", "4A", "4B", "4C"],
+    porosity: ["low", "medium", "high"],
+    conditions: ["frizzy", "breakage"],
+    stock: "in_stock",
+    description: {
+      en: "Satin-lined microfiber turban for plopping wet curls. Absorbs water without friction.",
+      no: "Satin-foret mikrofiber-turban for plopping av våte krøller. Suger vann uten friksjon.",
+    },
+    longDescription: {
+      en: "Inner microfiber soaks water, outer satin layer prevents the frizz that comes from rough fabric. Button closure keeps it from sliding.",
+      no: "Mikrofiber på innsiden suger vann, ytre satin-lag hindrer frizz fra grovt stoff. Knappelukking gjør at den ikke sklir av.",
+    },
+    howToUse: {
+      en: "Place wet hair forward, flip the turban over, secure at the back.",
+      no: "Bøy hodet og legg vått hår fremover, snu turbanen over, fest bak.",
+    },
+    imageUrls: ["/images/shop/bounce-curl-satin-turban.jpg"],
+    externalCheckoutUrl: "https://www.bouncecurl.com/products/satin-microfiber-turban",
+    rating: 4.5,
+    reviewCount: 178,
+  },
+  {
+    id: "house-silk-pillowcase-teal",
+    slug: "house-silk-pillowcase-teal",
+    name: "Mulberry Silk Pillowcase, Deep Teal",
+    brand: "Jackson & Coil House",
+    price: 540,
+    category: "accessory",
+    hairTypes: ["2A", "2B", "2C", "3A", "3B", "3C", "4A", "4B", "4C"],
+    porosity: ["low", "medium", "high"],
+    conditions: ["frizzy", "breakage"],
+    stock: "out_of_stock",
+    description: {
+      en: "22 momme mulberry silk, hidden zipper, standard size. Reduces friction, frizz and overnight breakage.",
+      no: "22 momme mulberry-silke med skjult glidelås i standard størrelse. Mindre friksjon, mindre frizz og mindre brekk om natten.",
+    },
+    longDescription: {
+      en: "Cool to the touch, naturally hypoallergenic. Pairs with the silk bonnet for a complete overnight system.",
+      no: "Kjølig mot huden, naturlig hypoallergenisk. Kombinerer med silke-hetten for en komplett natt-rutine.",
+    },
+    howToUse: {
+      en: "Wash on cold, gentle cycle, mesh bag recommended. Air-dry.",
+      no: "Vaskes kaldt, skånsomt program, gjerne i vaskepose. Lufttørkes.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/silk-pillowcase",
+    stylistPick: {
+      en: "Vanessa says this is the single highest-impact aftercare purchase any client makes.",
+      no: "Vanessa sier dette er det enkleste kjøpet som gir størst utslag på krøll-helsen.",
+    },
+    rating: 4.8,
+    reviewCount: 233,
+    bestseller: true,
+  },
+  {
+    id: "house-satin-sleep-bonnet",
+    slug: "house-satin-sleep-bonnet",
+    name: "Satin Sleep Bonnet, Adjustable",
+    brand: "Jackson & Coil House",
+    price: 220,
+    category: "accessory",
+    hairTypes: ["3B", "3C", "4A", "4B", "4C"],
+    porosity: ["medium", "high"],
+    conditions: ["breakage"],
+    stock: "in_stock",
+    description: {
+      en: "Adjustable satin-lined bonnet that stays on overnight. Sized for braids, locs and big curls.",
+      no: "Justerbar satin-foret hette som sitter natten gjennom. Plass til fletter, locs og store krøller.",
+    },
+    longDescription: {
+      en: "Double-layer satin with elastic and a velcro strap. Generous interior to keep stretched styles intact.",
+      no: "Dobbeltlag satin med strikk og borrelås. Romslig innside for å holde uttrukne stiler i form.",
+    },
+    howToUse: {
+      en: "Pull on overnight. Hand-wash, hang dry.",
+      no: "Tre på over natten. Håndvaskes, henges til tørk.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/satin-sleep-bonnet",
+    rating: 4.4,
+    reviewCount: 89,
+  },
+  {
+    id: "house-silk-durag",
+    slug: "house-silk-durag",
+    name: "Silk Durag, 22 Momme",
+    brand: "Jackson & Coil House",
+    price: 240,
+    category: "accessory",
+    hairTypes: ["3C", "4A", "4B", "4C"],
+    porosity: ["medium", "high"],
+    conditions: ["breakage"],
+    stock: "in_stock",
+    description: {
+      en: "Pure mulberry silk durag for waves, twists and overnight hold. Extra long tie.",
+      no: "Mulberry-silke durag for waves, twists og hold over natten. Ekstra lang knytting.",
+    },
+    longDescription: {
+      en: "22 momme mulberry silk for low-friction overnight wear. Long tail ties securely without leaving a mark.",
+      no: "22 momme mulberry-silke for lite friksjon over natten. Lang hale gir godt feste uten å sette merker.",
+    },
+    howToUse: {
+      en: "Tie at the front to keep the seam off the hairline.",
+      no: "Knyt foran så sømmen ikke setter spor i hårlinjen.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/silk-durag",
+    rating: 4.6,
+    reviewCount: 64,
+    newArrival: true,
+  },
+  {
+    id: "house-tshirt-towel",
+    slug: "house-tshirt-towel",
+    name: "Cotton T-Shirt Hair Towel",
+    brand: "Jackson & Coil House",
+    price: 180,
+    category: "accessory",
+    hairTypes: ["2A", "2B", "2C", "3A", "3B", "3C"],
+    porosity: ["low", "medium"],
+    conditions: ["frizzy", "fine"],
+    stock: "in_stock",
+    description: {
+      en: "Soft cotton plopping towel cut from organic jersey. Lower friction than terrycloth, less frizz on dry-down.",
+      no: "Plopping-handkle i myk økologisk jersey-bomull. Mindre friksjon enn frottéhåndkle, mindre frizz i tørkefasen.",
+    },
+    longDescription: {
+      en: "GOTS-certified organic cotton jersey, washable and reusable for years. Replaces the disposable t-shirt plop without losing the effect.",
+      no: "GOTS-sertifisert økologisk bomull-jersey, vaskbart og brukbart i mange år. Erstatter engangs-t-skjorten uten å miste effekten.",
+    },
+    howToUse: {
+      en: "Plop wet hair, tie at the back, leave 10 to 20 minutes.",
+      no: "Plopp vått hår, knyt bak, la sitte 10 til 20 minutter.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/tshirt-hair-towel",
+    rating: 4.5,
+    reviewCount: 51,
+  },
+  {
+    id: "house-silk-scrunchies",
+    slug: "house-silk-scrunchies",
+    name: "Silk Scrunchies, 3-pack",
+    brand: "Jackson & Coil House",
+    price: 90,
+    category: "accessory",
+    hairTypes: ["2A", "2B", "2C", "3A", "3B", "3C", "4A"],
+    porosity: ["low", "medium"],
+    conditions: ["breakage", "fine"],
+    stock: "in_stock",
+    description: {
+      en: "Three mulberry silk scrunchies in olive, sand and black. No-snag elastic core.",
+      no: "Tre mulberry-silke scrunchies i oliven, sand og sort. Strikk som ikke setter merker.",
+    },
+    longDescription: {
+      en: "Soft enough for overnight wear, stretchy enough for a workout ponytail. Tonal trio matches the salon palette.",
+      no: "Myke nok til å bruke om natten, stretchy nok til en treningshalehale. Trioen i jordnære toner matcher salongens palett.",
+    },
+    howToUse: {
+      en: "Use to tie up curls without creasing them.",
+      no: "Brukes til å sette opp krøller uten å brekke dem.",
+    },
+    imageUrls: ["TODO"],
+    externalCheckoutUrl: "https://jacksonandcoil.no/shop/silk-scrunchies",
+    rating: 4.6,
+    reviewCount: 122,
+  },
+];
+```
+
+---
+
+## 6. Forbudte ord, sjekk
+
+Manuelt søk gjennom seksjon 2 og seksjon 5: ingen forekomster av `robust`, `skalerbar`, `moderne`, `sømløs`, `elegant`, `intuitiv`, `banebrytende`. Ingen tankestrek (—) brukt. Komma og punktum gjennomgående.

@@ -1,0 +1,180 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - generic [ref=e10]:
+    - navigation "Site" [ref=e12]:
+      - list [ref=e13]:
+        - listitem [ref=e14] [cursor=pointer]:
+          - link "Home" [ref=e15]:
+            - /url: https://www.curlspa.nl
+            - paragraph [ref=e18]: Home
+          - button "More Home pages" [ref=e19]:
+            - img [ref=e20]
+        - listitem [ref=e22] [cursor=pointer]:
+          - link "Price List" [ref=e23]:
+            - /url: https://www.curlspa.nl/krullenkapper
+            - paragraph [ref=e26]: Price List
+        - listitem [ref=e27] [cursor=pointer]:
+          - link "BOOK WITH A CURL SPECIALIST" [ref=e28]:
+            - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+            - paragraph [ref=e31]: BOOK WITH A CURL SPECIALIST
+        - listitem [ref=e32] [cursor=pointer]:
+          - link "Webshop" [ref=e33]:
+            - /url: https://www.curlspa.nl/shop
+            - paragraph [ref=e36]: Webshop
+          - button "More Webshop pages" [ref=e37]:
+            - img [ref=e38]
+        - listitem [ref=e40] [cursor=pointer]:
+          - link "Blog" [ref=e41]:
+            - /url: https://www.curlspa.nl/blog
+            - paragraph [ref=e44]: Blog
+        - listitem [ref=e45] [cursor=pointer]:
+          - link "About" [ref=e46]:
+            - /url: https://www.curlspa.nl/about
+            - paragraph [ref=e49]: About
+        - listitem [ref=e50] [cursor=pointer]:
+          - link "FAQ" [ref=e51]:
+            - /url: https://www.curlspa.nl/faq
+            - paragraph [ref=e54]: FAQ
+        - listitem [ref=e55] [cursor=pointer]:
+          - link "Contact" [ref=e56]:
+            - /url: https://www.curlspa.nl/contact
+            - paragraph [ref=e59]: Contact
+    - button [ref=e63] [cursor=pointer]:
+      - img [ref=e65]
+    - banner [ref=e69]:
+      - generic [ref=e75]:
+        - generic:
+          - generic:
+            - list "Social Bar" [ref=e77]:
+              - listitem [ref=e78]:
+                - link "Whatsapp" [ref=e79] [cursor=pointer]:
+                  - /url: tel:+31(0)613346640
+                  - img "Whatsapp" [ref=e80]
+              - listitem [ref=e81]:
+                - link "Youtube" [ref=e82] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@CurlSpa
+                  - img "Youtube" [ref=e83]
+              - listitem [ref=e84]:
+                - link "Instagram" [ref=e85] [cursor=pointer]:
+                  - /url: http://www.instagram.com/curl_spa_salon_
+                  - img "Instagram" [ref=e86]
+            - heading "Curl Spa Salon" [level=3] [ref=e87]:
+              - link "Curl Spa Salon" [ref=e89] [cursor=pointer]:
+                - /url: https://www.curlspa.nl
+            - paragraph [ref=e90]:
+              - link "Hair Salon & Webshop" [ref=e91] [cursor=pointer]:
+                - /url: https://www.curlspa.nl
+            - link "Book Now" [ref=e93] [cursor=pointer]:
+              - /url: https://www.fresha.com/book-now/curl-spa-salon-p1pm70jw/all-offer?share=true&pId=2693546
+              - generic [ref=e94]: Book Now
+            - button "Log In" [ref=e96] [cursor=pointer]:
+              - img [ref=e100]
+              - generic [ref=e103]: Log In
+    - main [ref=e105]:
+      - generic [ref=e120]:
+        - generic:
+          - generic:
+            - heading "Contact Us" [level=2] [ref=e124]
+            - paragraph [ref=e125]:
+              - generic [ref=e127]:
+                - text: AMSTERDAM - TWEEDE HUGO DE GROOT STR 24 | THE HAGUE - BADHUISSTRAAT 207 SCHEVENINGEN
+                - text: Send us a message
+                - text: via the contact form below and we'll get back to you
+            - generic [ref=e129]:
+              - generic:
+                - generic:
+                  - textbox "Name *" [ref=e132]
+                  - textbox "Email *" [ref=e135]
+                  - textbox "Subject" [ref=e138]
+                  - textbox [ref=e140]:
+                    - /placeholder: Message
+                  - button "Send" [ref=e142] [cursor=pointer]:
+                    - generic [ref=e143]: Send
+    - contentinfo [ref=e150]:
+      - generic [ref=e154]:
+        - generic:
+          - generic:
+            - generic [ref=e160]:
+              - generic:
+                - generic:
+                  - navigation "Site" [ref=e164]:
+                    - list [ref=e165]:
+                      - listitem [ref=e166]:
+                        - link "Home" [ref=e169] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl
+                      - listitem [ref=e170]:
+                        - link "Price List" [ref=e173] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/krullenkapper
+                      - listitem [ref=e174]:
+                        - link "BOOK WITH A CURL SPECIALIST" [ref=e177] [cursor=pointer]:
+                          - /url: https://www.fresha.com/providers/curl-spa-salon-p1pm70jw?share=true&pId=2693546&allOffer=true
+                      - listitem [ref=e178]:
+                        - link "Webshop" [ref=e181] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/shop
+                      - listitem [ref=e182]:
+                        - link "Blog" [ref=e185] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/blog
+                      - listitem [ref=e186]:
+                        - link "About" [ref=e189] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/about
+                      - listitem [ref=e190]:
+                        - link "FAQ" [ref=e193] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/faq
+                      - listitem [ref=e194]:
+                        - link "Contact" [ref=e197] [cursor=pointer]:
+                          - /url: https://www.curlspa.nl/contact
+                  - generic:
+                    - paragraph [ref=e198]:
+                      - link "FAQ" [ref=e200] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/faq
+                    - paragraph [ref=e201]:
+                      - link "Shipping & Returns" [ref=e203] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/terms-conditions
+                    - paragraph [ref=e204]:
+                      - link "Store Policy" [ref=e206] [cursor=pointer]:
+                        - /url: https://www.curlspa.nl/copy-of-terms-conditions
+                    - paragraph [ref=e207]:
+                      - link "Wholesale" [ref=e211] [cursor=pointer]:
+                        - /url: http://curlspa.faire.com
+                    - paragraph [ref=e212]:
+                      - link "whatsapp +31(0)613346640" [ref=e213] [cursor=pointer]:
+                        - /url: tel:+31(0)613346640
+                        - generic [ref=e215]: whatsapp +31(0)613346640
+                  - region "Slideshow" [ref=e218]:
+                    - generic [ref=e224]:
+                      - generic:
+                        - generic:
+                          - paragraph [ref=e225]:
+                            - generic [ref=e231]: Subscribe to our mailing list
+                          - textbox "Name" [ref=e234]
+                          - textbox "Email Address" [ref=e237]
+                          - button "Subscribe Now" [ref=e239] [cursor=pointer]:
+                            - generic [ref=e240]: Subscribe Now
+                  - list "Social Bar" [ref=e242]:
+                    - listitem [ref=e243]:
+                      - link "Facebook" [ref=e244] [cursor=pointer]:
+                        - /url: https://www.facebook.com/curlspasalon
+                        - img "Facebook" [ref=e245]
+                    - listitem [ref=e246]:
+                      - link "Instagram" [ref=e247] [cursor=pointer]:
+                        - /url: https://www.instagram.com/curl_spa_salon_
+                        - img "Instagram" [ref=e248]
+            - list "Social Bar" [ref=e250]:
+              - listitem [ref=e251]:
+                - link "Youtube" [ref=e252] [cursor=pointer]:
+                  - /url: http://www.youtube.com/@CurlSpa
+                  - img "Youtube" [ref=e253]
+              - listitem [ref=e254]:
+                - link "Instagram" [ref=e255] [cursor=pointer]:
+                  - /url: http://www.instagram.com/curl_spa_salon_
+                  - img "Instagram" [ref=e256]
+            - heading "BECOME A CURL SPECIALIST" [level=2] [ref=e257]:
+              - link "BECOME A CURL SPECIALIST" [ref=e258] [cursor=pointer]:
+                - /url: https://www.curl-academy.com/
+                - generic [ref=e262]: BECOME A CURL SPECIALIST
+            - paragraph [ref=e272]:
+              - generic [ref=e274]:
+                - text: AMSTERDAM TWEEDE HUGO DE GROOT STRAAT 24H
+                - text: THE HAGUE - BADHUISSTRAAT 207 SCHEVENINGEN
+                - text: Patent 2026 by Curl Spa Salons B.V
+  - region "bottom of page"

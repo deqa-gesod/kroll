@@ -1,0 +1,209 @@
+- generic [ref=e2]:
+  - banner:
+    - generic [ref=e3]:
+      - link "Pular para conteúdo" [ref=e4] [cursor=pointer]:
+        - /url: "#page"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - navigation [ref=e11]:
+            - link "Services" [ref=e13] [cursor=pointer]:
+              - /url: /services
+            - link "Team" [ref=e15] [cursor=pointer]:
+              - /url: /team
+            - link "Health and safety" [ref=e17] [cursor=pointer]:
+              - /url: /health-safety
+            - link "Book" [ref=e19] [cursor=pointer]:
+              - /url: /book-now
+            - link "Policies" [ref=e21] [cursor=pointer]:
+              - /url: /policies
+            - link "FAQs" [ref=e23] [cursor=pointer]:
+              - /url: /faqs
+          - link "The Curl Bar London" [ref=e26] [cursor=pointer]:
+            - /url: /
+        - link "Book Now" [ref=e29] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book-now
+  - main [ref=e30]:
+    - article [ref=e31]:
+      - heading "meet the curl bar Girls" [level=2] [ref=e44]
+      - region "Carrossel" [ref=e51]:
+        - list [ref=e54]:
+          - listitem:
+            - generic:
+              - generic:
+                - heading "ANDRINA" [level=2]
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Andrina, our calm and cool stylist.
+                  - paragraph: She has been dedicated to making women and men feel good about their hair for 15 year.
+                  - paragraph:
+                    - emphasis: “I’ve always had a passion for natural hair, the healthier the better.”
+                    - text: I believe that a woman’s hair is her crown and she should wear it proudly. I want woman to leave my chair feeling like a brand new woman as their hair is an extension of them.
+                  - paragraph: Be prepared for Andrina to give you and your hair a luxurious and calm experience.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Big hair, layers and big transformations
+              - link "BOOK NOW →" [ref=e55] [cursor=pointer]:
+                - /url: /book-appointment-1
+          - listitem:
+            - generic:
+              - generic:
+                - heading "MIA" [level=2]
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Mia, our chill and cool stylist.
+                  - paragraph: Mia is passionate about empowering her clients to embrace their natural texture.
+                  - paragraph: Mia's journey began with her own hair.
+                  - paragraph:
+                    - emphasis: "\"I once struggled with embracing my natural texture, trying to hide the frizz, but through education and care, I’ve come to embrace, enhance and celebrate my curly hair. My goal is to help my clients feel seen, heard and beautiful just as they are.”"
+                  - paragraph: Mia specializes in lived-in waves and curly hair techniques, shag layering, and precision cuts for volume and movement. She also excels at dimensional colouring to enhance natural texture.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Waves and curly hair, shag layering, adding volume, dimensional colouring.
+                  - paragraph
+              - link "BOOK NOW" [ref=e56] [cursor=pointer]:
+                - /url: /book-appointment
+          - listitem:
+            - generic:
+              - generic:
+                - heading "Nia" [level=2]
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Nia, the stylist who is passionate about empowering her clients to love their hair.
+                  - paragraph: Nia’s passion for curls started the moment after her first big chop. “Learning to love my curls led me to love myself. This salon is an extension of me and my love for natural hair. I am extremely passionate about seeing women leave the salon feeling empowered, heard and beautiful.”
+                  - paragraph: Nia specialises in bespoke curl by curl cuts to create shapes that enhance her clients needs as well as coily hair styling techniques for definition and volume.
+                  - paragraph:
+                    - strong: "LANGUAGES SPOKEN:"
+                    - text: Shona and English
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Coily hair definition, big hair shapes and big chops.
+              - link "BOOK NOW →" [ref=e57] [cursor=pointer]:
+                - /url: /book-appointment
+          - listitem:
+            - generic:
+              - generic:
+                - img "Stylist"
+            - generic:
+              - generic:
+                - heading "NIAH" [level=2]
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Niah, a warm soul from the States who has a passion for all things hair, especially tighter textures.
+                  - paragraph: With a motto of ‘The bigger, the better’, Niah is on a mission to empower her clients to embrace their natural beauty. She is dedicated to educate, and teach her clients about proper hair care and the importance of embracing what God has graced them with.
+                  - paragraph: Niah’s goal is to create a safe space for women to learn and feel beautiful. She specializes in curly cuts and a wide range of diverse styling techniques, honing her skills through training with CutitKinky. With Niah, you'll not only leave with fabulous hair but a newfound confidence in your unique beauty.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Shaping, Cut it Kinky cuts, tight curl setting and two strand twists.
+              - link "BOOK NOW →" [ref=e58] [cursor=pointer]:
+                - /url: /book-appointment-1
+          - listitem:
+            - generic:
+              - generic:
+                - heading "ANDRINA" [level=2]
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Andrina, our calm and cool stylist.
+                  - paragraph: She has been dedicated to making women and men feel good about their hair for 15 year.
+                  - paragraph:
+                    - emphasis: “I’ve always had a passion for natural hair, the healthier the better.”
+                    - text: I believe that a woman’s hair is her crown and she should wear it proudly. I want woman to leave my chair feeling like a brand new woman as their hair is an extension of them.
+                  - paragraph: Be prepared for Andrina to give you and your hair a luxurious and calm experience.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Big hair, layers and big transformations
+              - link "BOOK NOW →" [ref=e108] [cursor=pointer]:
+                - /url: /book-appointment-1
+          - listitem:
+            - generic:
+              - generic:
+                - heading [level=2]: MIA
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Mia, our chill and cool stylist.
+                  - paragraph: Mia is passionate about empowering her clients to embrace their natural texture.
+                  - paragraph: Mia's journey began with her own hair.
+                  - paragraph:
+                    - emphasis: "\"I once struggled with embracing my natural texture, trying to hide the frizz, but through education and care, I’ve come to embrace, enhance and celebrate my curly hair. My goal is to help my clients feel seen, heard and beautiful just as they are.”"
+                  - paragraph: Mia specializes in lived-in waves and curly hair techniques, shag layering, and precision cuts for volume and movement. She also excels at dimensional colouring to enhance natural texture.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Waves and curly hair, shag layering, adding volume, dimensional colouring.
+                  - paragraph
+              - link [ref=e109] [cursor=pointer]:
+                - /url: /book-appointment
+                - text: BOOK NOW
+          - listitem:
+            - generic:
+              - generic:
+                - heading [level=2]: Nia
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Nia, the stylist who is passionate about empowering her clients to love their hair.
+                  - paragraph: Nia’s passion for curls started the moment after her first big chop. “Learning to love my curls led me to love myself. This salon is an extension of me and my love for natural hair. I am extremely passionate about seeing women leave the salon feeling empowered, heard and beautiful.”
+                  - paragraph: Nia specialises in bespoke curl by curl cuts to create shapes that enhance her clients needs as well as coily hair styling techniques for definition and volume.
+                  - paragraph:
+                    - strong: "LANGUAGES SPOKEN:"
+                    - text: Shona and English
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Coily hair definition, big hair shapes and big chops.
+              - link [ref=e110] [cursor=pointer]:
+                - /url: /book-appointment
+                - text: BOOK NOW →
+          - listitem:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - heading [level=2]: NIAH
+                - generic:
+                  - paragraph:
+                    - emphasis: Stylist
+                  - paragraph: Meet Niah, a warm soul from the States who has a passion for all things hair, especially tighter textures.
+                  - paragraph: With a motto of ‘The bigger, the better’, Niah is on a mission to empower her clients to embrace their natural beauty. She is dedicated to educate, and teach her clients about proper hair care and the importance of embracing what God has graced them with.
+                  - paragraph: Niah’s goal is to create a safe space for women to learn and feel beautiful. She specializes in curly cuts and a wide range of diverse styling techniques, honing her skills through training with CutitKinky. With Niah, you'll not only leave with fabulous hair but a newfound confidence in your unique beauty.
+                  - paragraph:
+                    - strong: "BEST FOR:"
+                    - text: Shaping, Cut it Kinky cuts, tight curl setting and two strand twists.
+              - link [ref=e111] [cursor=pointer]:
+                - /url: /book-appointment-1
+                - text: BOOK NOW →
+        - button "Anterior" [ref=e63] [cursor=pointer]:
+          - img [ref=e65]
+        - button "Próximo" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - generic: Item 1 of 8
+  - contentinfo [ref=e71]:
+    - generic [ref=e77]:
+      - paragraph [ref=e83]:
+        - strong [ref=e84]: MYDDLETON ROAD BRANCH
+        - strong [ref=e85]: "Wednesday to Saturday: 10am till 7pm"
+        - text: 020 3624 3533
+        - link "79 Myddleton Road, London, N22 8NE" [ref=e86] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/CgAoKtDWRFKEPka96?g_st=ic
+        - link "info@thecurlbarlondon.com" [ref=e87] [cursor=pointer]:
+          - /url: mailto:info@thecurlbarlondon.com
+      - paragraph [ref=e93]:
+        - strong [ref=e94]: SITE MAP
+        - link "Services" [ref=e95] [cursor=pointer]:
+          - /url: /services
+        - link "Team" [ref=e96] [cursor=pointer]:
+          - /url: /team
+        - link "Health and Safety" [ref=e97] [cursor=pointer]:
+          - /url: /health-safety
+        - link "Contact" [ref=e98] [cursor=pointer]:
+          - /url: /contact
+        - link "Book Now" [ref=e99] [cursor=pointer]:
+          - /url: https://www.thecurlbarlondon.com/book
+      - paragraph [ref=e105]:
+        - strong [ref=e106]: FOLLOW US
+        - link "Instagram" [ref=e107] [cursor=pointer]:
+          - /url: https://www.instagram.com/thecurlbarlondon

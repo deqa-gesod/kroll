@@ -1,0 +1,9 @@
+- generic [ref=e5]:
+  - paragraph [ref=e7]:
+    - text: We use cookies (and other similar technologies) to collect data to improve your experience on our site. By using our website, you’re agreeing to the collection of data as described in our
+    - link "Website Data Collection Policy" [ref=e8] [cursor=pointer]:
+      - /url: https://www.getslick.com/privacy-policy
+    - text: .
+  - generic [ref=e9]:
+    - button "Essential cookies only" [ref=e10] [cursor=pointer]
+    - button "Accept all cookies" [ref=e11] [cursor=pointer]

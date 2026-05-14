@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curly Salon Oslo — Portfolio Review</title>
+<style>
+  :root {
+    --bg: #f5f1ec;
+    --bg-2: #ebe5dc;
+    --ink: #1a1715;
+    --muted: #6b6157;
+    --accent: #b8825a;
+    --line: rgba(26, 23, 21, 0.08);
+    --shadow: 0 6px 24px rgba(26, 23, 21, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  header {
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  header .eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+  header h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0 auto;
+    max-width: 56ch;
+    font-size: 0.95rem;
+  }
+  header .stats {
+    margin-top: 1.5rem;
+    display: inline-flex;
+    gap: 2rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  header .stats b { color: var(--ink); font-weight: 600; }
+
+  section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  section h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 0.25rem;
+  }
+  section .sub {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .seeds {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .seeds .card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .seeds .card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    background: var(--bg-2);
+  }
+  .seeds .card .meta {
+    padding: 1rem 1.25rem;
+  }
+  .seeds .card .meta h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .seeds .card .meta p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+  .tile {
+    position: relative;
+    aspect-ratio: 3/4;
+    background: var(--bg-2);
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .tile:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  .tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .tile.missing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border: 1px dashed rgba(26, 23, 21, 0.2);
+    background: transparent;
+  }
+  .tile .placeholder {
+    color: var(--muted);
+    font-size: 0.85rem;
+    opacity: 0.55;
+    letter-spacing: 0.2em;
+  }
+  .tile .num {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: rgba(26, 23, 21, 0.65);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+    font-variant-numeric: tabular-nums;
+  }
+  .tile .v-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(184, 130, 90, 0.95);
+    color: #fff;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .tile .ip-badge {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background: rgba(54, 130, 165, 0.92);
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 8, 7, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 100;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  .lightbox .close,
+  .lightbox .nav {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s;
+    font-size: 1.1rem;
+  }
+  .lightbox .close:hover,
+  .lightbox .nav:hover { background: rgba(255, 255, 255, 0.2); }
+  .lightbox .close { top: 1.5rem; right: 1.5rem; }
+  .lightbox .prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+  .lightbox .next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
+  .lightbox .caption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Portfolio Review</div>
+  <h1>Curly Salon Oslo — Style Book</h1>
+  <p>70 portfolio shots showcasing curl-specialist work across types 2 through 4, in two looks: an editorial set (1–50) and a candid iPhone/Instagram set (51–70). Stylist <em>Vanessa</em> appears in roughly half. Click any tile to view full size.</p>
+  <div class="stats">
+    <span><b id="stat-loaded">…</b> loaded</span>
+    <span><b id="stat-with-v">…</b> with Vanessa</span>
+    <span><b>70</b> total</span>
+    <span style="opacity:0.6">updated <span id="stat-updated">…</span></span>
+  </div>
+</header>
+
+<section>
+  <h2>Seed images</h2>
+  <p class="sub">Used as visual references for the portfolio shots — same room, same stylist.</p>
+  <div class="seeds">
+    <div class="card">
+      <img src="../images/salon-interior.png" alt="Salon interior">
+      <div class="meta"><h3>Salon Interior</h3><p>Grünerløkka, Oslo · Scandinavian premium</p></div>
+    </div>
+    <div class="card">
+      <img src="../images/vanessa.png" alt="Vanessa, stylist">
+      <div class="meta"><h3>Vanessa</h3><p>Curly hair specialist · Somali-Norwegian</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Editorial portfolio (1–50)</h2>
+  <p class="sub">Polished documentary-style shots — soft natural light, prime-lens look. Hover to lift, click to enlarge. The amber chip marks shots featuring Vanessa.</p>
+  <div class="grid" id="grid-editorial"></div>
+</section>
+
+<section>
+  <h2>Instagram set (51–70)</h2>
+  <p class="sub">Candid iPhone-style — real salon lighting, casual framing, the kind of shots a small salon would actually post. The cyan chip marks the iPhone aesthetic.</p>
+  <div class="grid" id="grid-iphone"></div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="close" aria-label="Close" onclick="closeLightbox()">×</button>
+  <button class="nav prev" aria-label="Previous" onclick="navLightbox(-1)">‹</button>
+  <button class="nav next" aria-label="Next" onclick="navLightbox(1)">›</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="caption" id="lightbox-caption"></div>
+</div>
+
+<footer>
+  <p>Curly Salon Oslo · Portfolio review · Generated via Codex imagegen pipeline</p>
+</footer>
+
+<script>
+  // Indices that include Vanessa — kept in sync with the orchestrator scripts.
+  const VANESSA_SHOTS = new Set([
+    // Editorial (1..50)
+    1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 42, 44, 46, 48, 50,
+    // iPhone (51..70)
+    51, 52, 54, 55, 57, 58, 60, 62, 64, 66, 68, 69
+  ]);
+  const IPHONE_SHOTS = new Set(Array.from({length: 20}, (_, k) => 51 + k));
+  const TOTAL = 70;
+
+  const gridEditorial = document.getElementById('grid-editorial');
+  const gridIphone = document.getElementById('grid-iphone');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+
+  let currentIndex = 0;
+  let availableIndices = [];
+
+  function pad(n) { return n.toString().padStart(2, '0'); }
+
+  function makeTile(i) {
+    const tile = document.createElement('div');
+    tile.className = 'tile missing';
+    tile.dataset.index = i;
+    const phone = IPHONE_SHOTS.has(i) ? '<span class="ip-badge">iPhone</span>' : '';
+    tile.innerHTML = `
+      <span class="num">${pad(i)}</span>
+      ${VANESSA_SHOTS.has(i) ? '<span class="v-badge">V</span>' : ''}
+      ${phone}
+      <span class="placeholder">…</span>
+    `;
+    tile.addEventListener('click', () => openLightbox(i));
+    return tile;
+  }
+
+  // Build tiles in their respective sections.
+  for (let i = 1; i <= 50; i++) gridEditorial.appendChild(makeTile(i));
+  for (let i = 51; i <= TOTAL; i++) gridIphone.appendChild(makeTile(i));
+
+  async function probeAndLoad(tile) {
+    const i = +tile.dataset.index;
+    const src = `../images/portfolio/${pad(i)}.png?t=${Date.now()}`;
+    try {
+      const r = await fetch(src, { method: 'HEAD', cache: 'no-store' });
+      if (!r.ok) return false;
+    } catch (_) {
+      return false;
+    }
+    // Found — swap placeholder for image.
+    const placeholder = tile.querySelector('.placeholder');
+    if (placeholder) placeholder.remove();
+    if (!tile.querySelector('img')) {
+      const img = document.createElement('img');
+      img.alt = `Shot ${pad(i)}`;
+      img.src = src;
+      tile.appendChild(img);
+    }
+    tile.classList.remove('missing');
+    return true;
+  }
+
+  async function pollMissing() {
+    const missing = [...document.querySelectorAll('.tile.missing')];
+    // Probe all missing in parallel — small enough set that this is fine.
+    await Promise.all(missing.map(probeAndLoad));
+    let loaded = 0, withV = 0;
+    document.querySelectorAll('.tile').forEach(t => {
+      if (!t.classList.contains('missing')) {
+        loaded++;
+        if (VANESSA_SHOTS.has(+t.dataset.index)) withV++;
+      }
+    });
+    document.getElementById('stat-loaded').textContent = loaded;
+    document.getElementById('stat-with-v').textContent = withV;
+    document.getElementById('stat-updated').textContent =
+      new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    availableIndices = [...document.querySelectorAll('.tile:not(.missing)')]
+      .map(t => +t.dataset.index)
+      .sort((a, b) => a - b);
+  }
+  pollMissing();
+  setInterval(pollMissing, 3000);
+
+  function openLightbox(i) {
+    if (!availableIndices.includes(i)) return;
+    currentIndex = i;
+    lbImg.src = `../images/portfolio/${pad(i)}.png`;
+    const tags = [];
+    if (VANESSA_SHOTS.has(i)) tags.push('with Vanessa');
+    if (IPHONE_SHOTS.has(i)) tags.push('iPhone');
+    lbCaption.textContent = `${pad(i)} / ${pad(TOTAL)}` + (tags.length ? ' · ' + tags.join(' · ') : '');
+    lightbox.classList.add('active');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lbImg.src = '';
+  }
+
+  function navLightbox(delta) {
+    if (!availableIndices.length) return;
+    const pos = availableIndices.indexOf(currentIndex);
+    const next = availableIndices[(pos + delta + availableIndices.length) % availableIndices.length];
+    openLightbox(next);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'ArrowRight') navLightbox(1);
+  });
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+</script>
+
+</body>
+</html>

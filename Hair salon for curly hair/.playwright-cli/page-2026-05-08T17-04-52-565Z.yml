@@ -1,0 +1,213 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Jackson & Coil — home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e6]
+    - navigation [ref=e11]:
+      - link "Cuts & services" [ref=e12] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e13] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e14] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e15] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e16] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e17] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e18] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e19] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e20] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e21]:
+        - button "EN" [ref=e22]
+        - generic [ref=e23]: /
+        - button "NO" [ref=e24]
+  - main [ref=e25]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Booking
+        - heading "Two minutes from here to chair." [level=1] [ref=e31]
+      - generic [ref=e33]:
+        - paragraph [ref=e35]:
+          - text: Step 3
+          - generic [ref=e36]: /5
+        - generic [ref=e37]:
+          - 'button "Step 1: Service" [ref=e38] [cursor=pointer]'
+          - 'button "Step 2: Stylist" [ref=e39] [cursor=pointer]'
+          - 'button "Step 3: Date & time" [disabled] [ref=e40]'
+          - 'button "Step 4: About you" [disabled] [ref=e41]'
+          - 'button "Step 5: Confirm" [disabled] [ref=e42]'
+      - generic [ref=e43]:
+        - button "Back" [ref=e44]:
+          - generic [ref=e45]: ←
+          - text: Back
+        - paragraph [ref=e206]: The Jackson Cut · Vanessa
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - paragraph [ref=e272]: 03 — Date & time
+          - heading "Pick a slot." [level=2] [ref=e273]
+          - paragraph [ref=e274]: Real availability, the next 14 days. Closed Sundays and Mondays. Thursday evenings run late.
+        - button "Next available 8 May — 10:00" [ref=e275]:
+          - generic [ref=e276]: Next available
+          - generic [ref=e277]: 8 May — 10:00
+        - paragraph [ref=e278]: Day
+        - generic [ref=e280]:
+          - button "Fri 8 May 11 open" [pressed] [ref=e281]:
+            - paragraph [ref=e282]: Fri
+            - paragraph [ref=e283]: 8 May
+            - paragraph [ref=e284]: 11 open
+          - button "Sat 9 May 8 open" [ref=e285]:
+            - paragraph [ref=e286]: Sat
+            - paragraph [ref=e287]: 9 May
+            - paragraph [ref=e288]: 8 open
+          - button "Sun 10 May Closed" [disabled] [ref=e289]:
+            - paragraph [ref=e290]: Sun
+            - paragraph [ref=e291]: 10 May
+            - paragraph [ref=e292]: Closed
+          - button "Mon 11 May Closed" [disabled] [ref=e293]:
+            - paragraph [ref=e294]: Mon
+            - paragraph [ref=e295]: 11 May
+            - paragraph [ref=e296]: Closed
+          - button "Tue 12 May 11 open" [ref=e297]:
+            - paragraph [ref=e298]: Tue
+            - paragraph [ref=e299]: 12 May
+            - paragraph [ref=e300]: 11 open
+          - button "Wed 13 May 10 open" [ref=e301]:
+            - paragraph [ref=e302]: Wed
+            - paragraph [ref=e303]: 13 May
+            - paragraph [ref=e304]: 10 open
+          - button "Thu 14 May 12 open" [ref=e305]:
+            - paragraph [ref=e306]: Thu
+            - paragraph [ref=e307]: 14 May
+            - paragraph [ref=e308]: 12 open
+          - button "Fri 15 May 11 open" [ref=e309]:
+            - paragraph [ref=e310]: Fri
+            - paragraph [ref=e311]: 15 May
+            - paragraph [ref=e312]: 11 open
+          - button "Sat 16 May 9 open" [ref=e313]:
+            - paragraph [ref=e314]: Sat
+            - paragraph [ref=e315]: 16 May
+            - paragraph [ref=e316]: 9 open
+          - button "Sun 17 May Closed" [disabled] [ref=e317]:
+            - paragraph [ref=e318]: Sun
+            - paragraph [ref=e319]: 17 May
+            - paragraph [ref=e320]: Closed
+          - button "Mon 18 May Closed" [disabled] [ref=e321]:
+            - paragraph [ref=e322]: Mon
+            - paragraph [ref=e323]: 18 May
+            - paragraph [ref=e324]: Closed
+          - button "Tue 19 May 10 open" [ref=e325]:
+            - paragraph [ref=e326]: Tue
+            - paragraph [ref=e327]: 19 May
+            - paragraph [ref=e328]: 10 open
+          - button "Wed 20 May 12 open" [ref=e329]:
+            - paragraph [ref=e330]: Wed
+            - paragraph [ref=e331]: 20 May
+            - paragraph [ref=e332]: 12 open
+          - button "Thu 21 May 9 open" [ref=e333]:
+            - paragraph [ref=e334]: Thu
+            - paragraph [ref=e335]: 21 May
+            - paragraph [ref=e336]: 9 open
+        - generic [ref=e337]:
+          - paragraph [ref=e338]: Time
+          - generic [ref=e339]:
+            - button "10:00" [ref=e340]
+            - button "11:00" [ref=e341]
+            - button "11:30" [ref=e342]
+            - button "12:00" [ref=e343]
+            - button "12:30" [ref=e344]
+            - button "13:00" [ref=e345]
+            - button "13:30" [ref=e346]
+            - button "14:30" [ref=e347]
+            - button "15:00" [ref=e348]
+            - button "16:30" [ref=e349]
+            - button "18:30" [ref=e350]
+        - generic [ref=e351]:
+          - paragraph [ref=e352]: Pick a day, then a time.
+          - button "Continue" [disabled] [ref=e353]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - link "Jackson & Coil." [ref=e137] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e138]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - heading "Visit" [level=3] [ref=e141]
+          - paragraph [ref=e142]:
+            - text: Markveien 35
+            - text: 0554 Oslo
+            - text: Norway
+        - generic [ref=e143]:
+          - heading "Hours" [level=3] [ref=e144]
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - generic [ref=e147]: Tuesday
+              - generic [ref=e148]: 10:00 — 19:00
+            - listitem [ref=e149]:
+              - generic [ref=e150]: Wednesday
+              - generic [ref=e151]: 10:00 — 19:00
+            - listitem [ref=e152]:
+              - generic [ref=e153]: Thursday
+              - generic [ref=e154]: 10:00 — 20:00
+            - listitem [ref=e155]:
+              - generic [ref=e156]: Friday
+              - generic [ref=e157]: 10:00 — 19:00
+            - listitem [ref=e158]:
+              - generic [ref=e159]: Saturday
+              - generic [ref=e160]: 10:00 — 17:00
+            - listitem [ref=e161]:
+              - generic [ref=e162]: Sunday & Monday
+              - generic [ref=e163]: Closed
+        - generic [ref=e164]:
+          - heading "Contact" [level=3] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "hei@jacksonandcoil.no" [ref=e168] [cursor=pointer]:
+                - /url: mailto:hei@jacksonandcoil.no
+            - listitem [ref=e169]: +47 22 00 00 00
+            - listitem [ref=e170]:
+              - link "@jacksonandcoil" [ref=e171] [cursor=pointer]:
+                - /url: https://instagram.com/jacksonandcoil
+        - generic [ref=e172]:
+          - heading "Pages" [level=3] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Cuts & services" [ref=e176] [cursor=pointer]:
+                - /url: /cuts-and-services
+            - listitem [ref=e177]:
+              - link "The method" [ref=e178] [cursor=pointer]:
+                - /url: /the-method
+            - listitem [ref=e179]:
+              - link "The team" [ref=e180] [cursor=pointer]:
+                - /url: /the-team
+            - listitem [ref=e181]:
+              - link "Portfolio" [ref=e182] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e183]:
+              - link "Shop" [ref=e184] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e185]:
+              - link "Journal" [ref=e186] [cursor=pointer]:
+                - /url: /journal
+            - listitem [ref=e187]:
+              - link "Visit" [ref=e188] [cursor=pointer]:
+                - /url: /visit
+            - listitem [ref=e189]:
+              - link "About" [ref=e190] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e191]:
+              - link "Book" [ref=e192] [cursor=pointer]:
+                - /url: /booking
+      - generic [ref=e193]:
+        - generic [ref=e194]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e195]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e201] [cursor=pointer]:
+    - img [ref=e202]
+  - alert [ref=e205]
