@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Jackson & Coil — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Jackson & Coil
+      - button "Open menu" [ref=e7]
+    - navigation [ref=e12]:
+      - link "Cuts & services" [ref=e13] [cursor=pointer]:
+        - /url: /cuts-and-services
+      - link "The method" [ref=e14] [cursor=pointer]:
+        - /url: /the-method
+      - link "The team" [ref=e15] [cursor=pointer]:
+        - /url: /the-team
+      - link "Portfolio" [ref=e16] [cursor=pointer]:
+        - /url: /portfolio
+      - link "Shop" [ref=e17] [cursor=pointer]:
+        - /url: /shop
+      - link "Journal" [ref=e18] [cursor=pointer]:
+        - /url: /journal
+      - link "Visit" [ref=e19] [cursor=pointer]:
+        - /url: /visit
+      - link "About" [ref=e20] [cursor=pointer]:
+        - /url: /about
+      - link "Book" [ref=e21] [cursor=pointer]:
+        - /url: /booking
+      - generic [ref=e22]:
+        - button "EN" [ref=e23]
+        - generic [ref=e24]: /
+        - button "NO" [ref=e25]
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e30]: Grünerløkka, Oslo
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - heading "Every curl pattern. One place." [level=1] [ref=e34]
+          - paragraph [ref=e35]: Oslo's first salon built around the curl spectrum. From loose waves to tight coils, every pattern gets the same care, by stylists who actually trained for it.
+          - generic [ref=e36]
+          - generic [ref=e40]: "Next available: Thursday 16:30"
+        - generic [ref=e42]:
+          - img "Black man with a high-top fade and coils on top, Oslo street setting" [ref=e424]
+          - generic
+          - generic [ref=e45]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: 01 / 03
+        - heading "Every curl pattern. One place." [level=2] [ref=e54]
+        - paragraph [ref=e55]: From Type 2 loose waves through Type 4 coils — same chair, same care, no kids' table. The whole spectrum, understood.
+      - generic [ref=e56]:
+        - generic [ref=e57]: 02 / 03
+        - heading "Dry consultation, every first visit, free." [level=2] [ref=e58]
+        - paragraph [ref=e59]: Fifteen minutes, dry, on your natural pattern. No obligation, no upsell. We see your hair before we touch it.
+      - generic [ref=e60]:
+        - generic [ref=e61]: 03 / 03
+        - heading "Trained for your hair, not against it." [level=2] [ref=e62]
+        - paragraph [ref=e63]: Curl Bar London. Devachan NYC. Hair Rules. The places that actually teach textured hair, with the credentials to back it.
+    - generic [ref=e66]:
+      - img "Founder Vanessa Jackson, portrait against cream backdrop" [ref=e68]
+      - generic [ref=e69]:
+        - text: The founder
+        - heading "Vanessa Jackson. Tottenham, then Devachan, then Oslo." [level=2] [ref=e70]
+        - generic [ref=e71]:
+          - paragraph [ref=e72]: Trained at Curl Bar London under Michelle Sultan, then a year at the original Devachan in New York and a season with Anthony Dickey at Hair Rules.
+          - paragraph [ref=e73]: Seven years working out of borrowed chairs in Oslo salons, building a quiet client list of women and men who'd otherwise be on flights to London or Stockholm.
+          - paragraph [ref=e74]: "\"Every curl pattern is the same job done with knowledge. Knowledge is something you go and get.\""
+        - link "Read the full story" [ref=e76] [cursor=pointer]:
+          - /url: /about
+          - text: Read the full story
+          - generic [ref=e77]: →
+      - img "Close-up of hands working through Type 4 coils" [ref=e79]
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - text: The portfolio
+          - heading "One gallery. The whole spectrum." [level=2] [ref=e84]
+        - paragraph [ref=e86]: Type 2 through Type 4. Women and men. Colour and cut. No "loose curl" tab. No men's section.
+      - generic [ref=e87]:
+        - figure "Type 4C / shaped dry 01" [ref=e88]:
+          - link "Type 4C crown, freshly shaped" [ref=e89] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e92]
+        - figure "Sculpt cut / fade and coils 02" [ref=e95]:
+          - link "Black man, low-fade with defined coils on top" [ref=e96] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e99]
+        - figure "Type 3B ringlets 03" [ref=e102]:
+          - link "Type 3B ringlet curls, finished cut" [ref=e103] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e106]
+        - figure "Type 4A coils 04" [ref=e109]:
+          - link "Type 4A coils, defined and shaped" [ref=e110] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e113]
+        - figure "Curl-safe colour / 3B 05" [ref=e116]:
+          - link "Curl-safe auburn balayage on Type 3B" [ref=e117] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e120]
+        - figure "Type 2B / mid-length 06" [ref=e123]:
+          - link "Type 2B/2C cut, studio" [ref=e124] [cursor=pointer]:
+            - /url: /portfolio
+          - generic [ref=e127]
+      - link "See the full portfolio" [ref=e131] [cursor=pointer]:
+        - /url: /portfolio
+        - text: See the full portfolio
+        - generic [ref=e132]: →
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - text: The method
+        - heading "The Jackson Cut." [level=2] [ref=e137]
+        - paragraph [ref=e138]: Dry. Curl by curl. On the natural pattern.
+        - paragraph [ref=e139]: "We cut the way the great curl houses cut: dry, on the curl as it actually falls, never wet, never tension-stretched. Every cut ends with you knowing what was done and why."
+        - list [ref=e140]:
+          - listitem [ref=e141]
+          - listitem [ref=e144]
+          - listitem [ref=e147]
+          - listitem [ref=e150]
+        - link "Read the method in full" [ref=e154] [cursor=pointer]:
+          - /url: /the-method
+          - text: Read the method in full
+          - generic [ref=e155]: →
+      - link "Watch the 45-second method film" [ref=e157] [cursor=pointer]:
+        - /url: /the-method
+        - img "Dry curl-by-curl cutting in progress" [ref=e158]
+        - generic [ref=e161]:
+          - img [ref=e163]
+          - generic [ref=e165]: Watch / 45 sec
+        - generic [ref=e166]: Vanessa cutting / Type 4A
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - text: The shop
+          - heading "Hard-to-find brands, finally in Oslo." [level=2] [ref=e171]
+        - paragraph [ref=e173]: Bread, Pattern, Bouclème, Adwoa, Innersense, Mielle. The products you currently order from Amazon UK — stocked here, modest markup, no flight.
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - link "Curl products and tools on cream surface" [ref=e176] [cursor=pointer]:
+            - /url: /shop
+          - generic [ref=e178]
+        - generic [ref=e183]:
+          - link "Leave-in conditioner" [ref=e184] [cursor=pointer]:
+            - /url: /shop
+          - generic [ref=e186]
+        - generic [ref=e191]:
+          - link "Twist / curl sponge" [ref=e192] [cursor=pointer]:
+            - /url: /shop
+          - generic [ref=e194]
+        - generic [ref=e199]:
+          - link "Silk durag" [ref=e200] [cursor=pointer]:
+            - /url: /shop
+          - generic [ref=e202]
+      - link "Browse the shop" [ref=e208] [cursor=pointer]:
+        - /url: /shop
+        - text: Browse the shop
+        - generic [ref=e209]: →
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - text: From the chair
+          - heading "Three years of borrowed-chair clients, in their own words." [level=2] [ref=e214]
+        - generic [ref=e215]:
+          - img "5 out of 5 stars" [ref=e216]
+          - generic [ref=e227]: 4.9 / 5 · Google
+      - generic [ref=e228]:
+        - article [ref=e229]:
+          - img "5 out of 5 stars" [ref=e230]
+          - paragraph [ref=e241]: First salon in Oslo where I didn't have to explain my hair before someone touched it. Vanessa cut dry, on the curl, and I walked out with shape I've only seen in London. The fact that I can now book this in my own city is a small life upgrade.
+          - generic [ref=e242]
+        - article [ref=e247]:
+          - img "5 out of 5 stars" [ref=e248]
+          - paragraph [ref=e259]: Fade is sharp, lineup is clean, and the coils on top are actually shaped — not just left to fend for themselves. One chair, both skills, no Stockholm flight. Booked the next four already.
+          - generic [ref=e260]
+        - article [ref=e265]:
+          - img "5 out of 5 stars" [ref=e266]
+          - paragraph [ref=e277]: Five Oslo salons told me my hair was "frizzy." Vanessa called it 3a and cut it accordingly. Day-three hair still has the shape, which has not happened to me before. The dry consultation alone was worth the trip.
+          - generic [ref=e278]
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - img [ref=e288]
+        - generic [ref=e302]:
+          - generic [ref=e303]: Markveien 35 · Grünerløkka
+          - generic [ref=e304]: 59.92°N · 10.76°E
+        - link "Open in Maps" [ref=e306] [cursor=pointer]:
+          - /url: /visit
+          - text: Open in Maps
+          - generic [ref=e307]: →
+      - generic [ref=e308]:
+        - generic [ref=e309]: Visit
+        - heading "Two minutes from Olaf Ryes plass." [level=2] [ref=e310]
+        - generic [ref=e313]: Next available — Thursday 16:30
+        - generic [ref=e314]:
+          - generic [ref=e315]
+          - generic [ref=e318]
+          - generic [ref=e321]
+          - generic [ref=e343]
+        - generic [ref=e349]:
+          - link "Book a chair" [ref=e350] [cursor=pointer]:
+            - /url: /booking
+          - link "Plan your visit" [ref=e351] [cursor=pointer]:
+            - /url: /visit
+  - contentinfo [ref=e352]:
+    - generic [ref=e353]:
+      - generic [ref=e354]:
+        - link "Jackson & Coil." [ref=e355] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e356]: Every curl pattern. One place. Trained for your hair, not against it.
+      - generic [ref=e357]:
+        - generic [ref=e358]:
+          - heading "Visit" [level=3] [ref=e359]
+          - paragraph [ref=e360]
+        - generic [ref=e361]:
+          - heading "Hours" [level=3] [ref=e362]
+          - list [ref=e363]
+        - generic [ref=e382]:
+          - heading "Contact" [level=3] [ref=e383]
+          - list [ref=e384]
+        - generic [ref=e390]:
+          - heading "Pages" [level=3] [ref=e391]
+          - list [ref=e392]
+      - generic [ref=e411]:
+        - generic [ref=e412]: © 2026 Jackson & Coil. All rights reserved.
+        - generic [ref=e413]: Curl-specialist hair salon. Grünerløkka, Oslo.
+  - button "Open Next.js Dev Tools" [ref=e419] [cursor=pointer]:
+    - img [ref=e420]
+  - alert [ref=e425]

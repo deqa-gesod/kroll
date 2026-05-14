@@ -1,0 +1,62 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: J&C
+          - generic [ref=e8]: Jackson & Coil
+        - navigation "Primary navigation" [ref=e9]:
+          - link "Cuts" [ref=e10] [cursor=pointer]:
+            - /url: /cuts-and-services
+          - link "Team" [ref=e11] [cursor=pointer]:
+            - /url: /the-team
+          - link "Portfolio" [ref=e12] [cursor=pointer]:
+            - /url: /portfolio
+          - link "Method" [ref=e13] [cursor=pointer]:
+            - /url: /the-method
+          - link "Shop" [ref=e14] [cursor=pointer]:
+            - /url: /shop
+          - link "Journal" [ref=e15] [cursor=pointer]:
+            - /url: /journal
+          - link "Visit" [ref=e16] [cursor=pointer]:
+            - /url: /visit
+          - link "About" [ref=e17] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=e18]:
+          - button "Switch language" [ref=e19]: "NO"
+          - link "Book now" [ref=e20] [cursor=pointer]:
+            - /url: /booking
+    - main [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: The team
+          - heading "Named stylists before the calendar." [level=1] [ref=e26]
+          - paragraph [ref=e27]: Choose Vanessa, choose a specialist, or choose no preference. Nobody is penalized for wanting the best fit.
+        - img "Jackson & Coil editorial documentary photography" [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img "Vanessa Jackson, Jackson & Coil stylist" [ref=e33]
+          - generic [ref=e34]
+        - generic [ref=e41]:
+          - img "Iman Ali, Jackson & Coil stylist" [ref=e43]
+          - generic [ref=e44]
+        - generic [ref=e51]:
+          - img "Jonas Bekele, Jackson & Coil stylist" [ref=e53]
+          - generic [ref=e54]
+    - contentinfo [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - paragraph [ref=e64]: Grünerløkka, Oslo
+          - heading "Dry consultation first. Then the cut." [level=2] [ref=e65]
+          - paragraph [ref=e66]: A curl-specialist salon for the full spectrum, with prices on the page and booking that stays inside the brand.
+          - generic [ref=e67]
+        - generic [ref=e70]:
+          - generic [ref=e71]
+          - generic [ref=e81]
+      - generic [ref=e88]: © 2026 Jackson & Coil. Prototype website2.
+  - button "Open Next.js Dev Tools" [ref=e94] [cursor=pointer]:
+    - img [ref=e95]
+  - alert [ref=e98]

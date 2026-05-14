@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: J&C
+          - generic [ref=e8]: Jackson & Coil
+        - navigation "Primary navigation" [ref=e9]:
+          - link "Cuts" [ref=e10] [cursor=pointer]:
+            - /url: /cuts-and-services
+          - link "Team" [ref=e11] [cursor=pointer]:
+            - /url: /the-team
+          - link "Portfolio" [ref=e12] [cursor=pointer]:
+            - /url: /portfolio
+          - link "Method" [ref=e13] [cursor=pointer]:
+            - /url: /the-method
+          - link "Shop" [ref=e14] [cursor=pointer]:
+            - /url: /shop
+          - link "Journal" [ref=e15] [cursor=pointer]:
+            - /url: /journal
+          - link "Visit" [ref=e16] [cursor=pointer]:
+            - /url: /visit
+          - link "About" [ref=e17] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=e18]:
+          - button "Switch language" [ref=e19]: "NO"
+          - link "Book now" [ref=e20] [cursor=pointer]:
+            - /url: /booking
+    - main [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: Cuts and services
+          - heading "One price, shown before the chair." [level=1] [ref=e26]
+          - paragraph [ref=e27]: First visit includes the dry consultation. Color starts with a consultation. Men's work uses sculpt, taper, definition and line.
+        - img "Jackson & Coil editorial documentary photography" [ref=e29]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - heading "First Visit Bundle" [level=2] [ref=e33]
+          - paragraph [ref=e34]: Consultation + Jackson Cut + finish + first-time retail discount.
+          - generic [ref=e35]:
+            - generic [ref=e36]
+            - generic [ref=e39]
+        - generic [ref=e42]:
+          - heading "The Jackson Cut" [level=2] [ref=e43]
+          - paragraph [ref=e44]: Dry, curl-by-curl cut for Type 2-4 hair.
+          - generic [ref=e45]:
+            - generic [ref=e46]
+            - generic [ref=e49]
+        - generic [ref=e52]:
+          - heading "The Sculpt Cut" [level=2] [ref=e53]
+          - paragraph [ref=e54]: Fade, lineup and dry coil shaping in one chair.
+          - generic [ref=e55]:
+            - generic [ref=e56]
+            - generic [ref=e59]
+        - generic [ref=e62]:
+          - heading "Sculpt Cut + Beard" [level=2] [ref=e63]
+          - paragraph [ref=e64]: Taper, coil definition, beard shape and edge.
+          - generic [ref=e65]:
+            - generic [ref=e66]
+            - generic [ref=e69]
+        - generic [ref=e72]:
+          - heading "Color, curl-safe" [level=2] [ref=e73]
+          - paragraph [ref=e74]: Consultation required before any chemical service.
+          - generic [ref=e75]:
+            - generic [ref=e76]
+            - generic [ref=e79]
+        - generic [ref=e82]:
+          - heading "Deep Treatment" [level=2] [ref=e83]
+          - paragraph [ref=e84]: Olaplex, protein or moisture reset as an add-on.
+          - generic [ref=e85]:
+            - generic [ref=e86]
+            - generic [ref=e89]
+        - generic [ref=e92]:
+          - heading "Free 15-min consultation" [level=2] [ref=e93]
+          - paragraph [ref=e94]: Dry assessment, no obligation, no pressure.
+          - generic [ref=e95]:
+            - generic [ref=e96]
+            - generic [ref=e99]
+        - generic [ref=e102]:
+          - heading "Children's cut" [level=2] [ref=e103]
+          - paragraph [ref=e104]: Under 12, dry shape and gentle finish.
+          - generic [ref=e105]:
+            - generic [ref=e106]
+            - generic [ref=e109]
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - heading "Arrive dry, detangled, natural." [level=2] [ref=e117]
+          - paragraph [ref=e118]: No hats, clips, braids, buns or stretched styles that change the pattern. Bring photos if they help. We need to see the hair before we touch it.
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - heading "No guessing at checkout." [level=2] [ref=e123]
+          - paragraph [ref=e124]: Every service shows price and time. Color has a published range because the work is variable, but the consultation happens before any bill changes.
+    - contentinfo [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Grünerløkka, Oslo
+          - heading "Dry consultation first. Then the cut." [level=2] [ref=e129]
+          - paragraph [ref=e130]: A curl-specialist salon for the full spectrum, with prices on the page and booking that stays inside the brand.
+          - generic [ref=e131]:
+            - link "Book now" [ref=e132] [cursor=pointer]:
+              - /url: /booking
+            - link "Visit the salon" [ref=e133] [cursor=pointer]:
+              - /url: /visit
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - heading "Navigate" [level=3] [ref=e136]
+            - generic [ref=e137]
+          - generic [ref=e145]:
+            - heading "Details" [level=3] [ref=e146]
+            - generic [ref=e147]
+      - generic [ref=e152]: © 2026 Jackson & Coil. Prototype website2.
+  - button "Open Next.js Dev Tools" [ref=e158] [cursor=pointer]:
+    - img [ref=e159]
+  - alert [ref=e162]

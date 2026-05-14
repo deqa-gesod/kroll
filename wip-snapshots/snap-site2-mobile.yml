@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Jackson & Coil home" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - button "Open menu" [ref=e9]
+    - main [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e16]
+        - generic [ref=e29]
+      - region "Spectrum is the operating word. One chair for coils, curls, waves, fades and shape-ups." [ref=e37]:
+        - generic [ref=e38]
+      - generic [ref=e47]:
+        - generic [ref=e48]
+        - generic [ref=e53]
+      - generic [ref=e69]:
+        - img "Close detail of dry curl-by-curl cutting on Type 4 hair" [ref=e71]
+        - generic [ref=e72]
+      - generic [ref=e77]:
+        - img "Vanessa Jackson working with a client, hands in hair, mid-laugh" [ref=e79]
+        - generic [ref=e80]
+      - generic [ref=e85]:
+        - generic [ref=e86]
+        - generic [ref=e90]
+        - link "Portfolio" [ref=e115] [cursor=pointer]:
+          - /url: /portfolio
+      - generic [ref=e116]:
+        - generic [ref=e117]
+        - generic [ref=e120]
+      - generic [ref=e197]:
+        - img "Lean warm Scandinavian salon interior with terracotta accents" [ref=e199]
+        - generic [ref=e200]
+    - contentinfo [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e207]
+        - generic [ref=e214]
+      - generic [ref=e232]: © 2026 Jackson & Coil. Prototype website2.
+  - button "Open Next.js Dev Tools" [ref=e238] [cursor=pointer]:
+    - img [ref=e239]
+  - alert [ref=e242]
