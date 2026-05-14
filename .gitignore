@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+.next/
+**/.next/
+
+# Cache og MCP-artifakter
+.playwright-mcp/
+**/.playwright-mcp/
+.codex-backup/
+**/.codex-backup/
+.cache/
+**/.cache/
+
+# OS
+.DS_Store
+**/.DS_Store
+
+# URL-kodet duplikat-mappe (artefakt fra et curl/wget-kall)
+Hair%20salon%20for%20curly%20hair/
+
+# Logger
+*.log
+**/logs/
+
+# Personlig kontekstfil til AI-agenter (ikke for offentlig repo)
+omdeqa.md
+*.docx
+
+# MDX-utkast (lever i deqa-portfolio)
+kroll-no.mdx.draft
+
+# Lokale env-filer
+.env
+.env.local
+.env.*.local
+!.env.example
