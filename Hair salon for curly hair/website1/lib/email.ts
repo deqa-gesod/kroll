@@ -49,11 +49,20 @@ export async function sendBookingEmail(b: BookingDetails): Promise<SendResult> {
     try {
       // Dynamic import so the bundle never hard-depends on the package.
       // If it's not installed, the catch below kicks in.
-      const mod = (await import(
-        /* webpackIgnore: true */ "@emailjs/browser"
-      ).catch(() => null)) as
-        | typeof import("@emailjs/browser")
-        | null;
+      type EmailjsModule = {
+        send: (
+          serviceId: string,
+          templateId: string,
+          params: Record<string, string>,
+          options: { publicKey: string },
+        ) => Promise<unknown>;
+      };
+      // Module name is constructed at runtime so the TS compiler does not
+      // resolve it. Avoids a hard dependency on @emailjs/browser at build time.
+      const pkg = ["@emailjs", "browser"].join("/");
+      const mod = (await import(/* webpackIgnore: true */ pkg).catch(
+        () => null,
+      )) as EmailjsModule | null;
       if (mod) {
         await mod.send(
           EMAILJS_SERVICE_ID,
